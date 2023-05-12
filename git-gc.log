@@ -108,3 +108,6 @@ error: failed to run pack-refs
 /dev/sda1        59G  4.7G   51G   9% /data
 ############################ annie - 05/12/23 00:27:28 EST ############################
 /dev/sda1        59G  7.7G   48G  14% /data
+error: repack died of signal 1
+error: failed to run repack
+/dev/sda1        59G  7.3G   49G  14% /data
