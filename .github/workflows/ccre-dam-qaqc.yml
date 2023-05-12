@@ -29,6 +29,7 @@ jobs:
             git config --global --add safe.directory $GITHUB_WORKSPACE
             git config --local user.name "$GITHUB_ACTOR"
             git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+            git checkout ccre-dam-data-qaqc
             git add ccre-waterquality_L1.csv
             git add ccre_met_L1.csv
             git commit -m "Updating QAQC files" || echo "No changes to commit"
