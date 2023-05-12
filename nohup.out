@@ -3,3 +3,8 @@ fatal: The remote end hung up unexpectedly
 Disk Usage before Git Garbage Collection:
 /dev/sda1        59G  7.7G   48G  14% /data
 Working on: /data/ccre-dam-data
+error: repack died of signal 1
+error: failed to run repack
+Working on: /data/annie-logs
+Disk Usage after Git Garbage Collection:
+/dev/sda1        59G  7.3G   49G  14% /data
