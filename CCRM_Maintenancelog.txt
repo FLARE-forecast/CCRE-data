@@ -1,0 +1,45 @@
+DataStream, TIMESTAMP_start, TIMESTAMP_end, parameter, colnumber, flag, notes
+CCRM, 2021-12-03 13:32:00 EST, 2021-12-03 14:11:00 EST, Rain_mm_Tot, 10, 1, checked_rain_gauge
+CCRM, 2021-12-03 13:23:00 EST, 2021-12-03 13:30:00 EST, PAR_Den_Avg, 5, 1, sensor_cleaned
+CCRM, 2021-12-03 13:23:00 EST, 2021-12-03 13:30:00 EST, PAR_Tot_Tot, 6, 1, sensor_cleaned
+CCRM, 2021-12-03 14:15:00 EST, 2021-12-03 14:25:00 EST, SR01Dn_Avg, 14, 1, sensor_cleaned
+CCRM, 2021-12-03 14:00:00 EST, 2021-12-03 14:18:00 EST, IR01DnCo_Avg, 16, 1, sensor_cleaned
+CCRM, 2021-12-03 13:50:00 EST, 2021-12-03 14:00:00 EST, IR01UpCo_Avg, 15, 1, sensor_cleaned
+CCRM, 2021-12-03 14:37:00 EST, 2021-12-03 14:46:00 EST, AirTC_Avg, 8, 1, sensor_cleaned
+CCRM, 2021-12-03 14:37:00 EST, 2021-12-03 14:46:00 EST, RH, 9, 1, sensor_cleaned
+CCRM, 2022-05-12 10:20:00 EST, 2022-05-12 10:30:00 EST, RH, 9, 1, RH sensor reading NAs so I moved it to another port on the data logger but that was not the issues
+CCRM, 2022-06-22 20:23:00 EST, 2022-06-22 20:23:00 EST, RH, 9, 0, RH sensor started reading values and not NAs
+CCRM, 2022-07-14 08:10:00 EST, 2023-01-24 17:00:00 EST, PAR_Den_Avg, 5, 1, Removed the PAR sensor to put at FCR while that one was removed for maintenance
+CCRM, 2022-07-14 08:10:00 EST, 2023-01-24 17:00:00 EST, PAR_Tot_Tot, 6, 1, Removed the PAR sensor to put at FCR while that one was removed for maintenance
+CCRM, 2022-07-19 00:00:00 EST, 2022-09-12 11:04:00 EST, Rain_mm_Tot, 10, 4, rain guage was clogged so precipitation was not accurate. 
+CCRM, 2022-09-12 11:05:00 EST, 2022-09-12 11:07:00 EST, Rain_mm_Tot, 10, 4, Unclogged rain guage to release all the water over these three minutes
+CCRM, 2022-10-04 00:01:00 EST, 2022-10-04 00:01:00 EST, Rain_mm_Tot, 10, 4, High rain value and low values for all sensor so eliminating all the observations
+CCRM, 2022-10-04 00:01:00 EST, 2022-10-04 00:01:00 EST, SR01Up_Avg, 13, 4, High rain value and low values for all sensor so eliminating all the observations
+CCRM, 2022-10-04 00:01:00 EST, 2022-10-04 00:01:00 EST, SR01Dn_Avg, 14, 4, High rain value and low values for all sensor so eliminating all the observations
+CCRM, 2022-10-04 00:01:00 EST, 2022-10-04 00:01:00 EST, IR01DnCo_Avg, 16, 4, High rain value and low values for all sensor so eliminating all the observations
+CCRM, 2022-10-04 00:01:00 EST, 2022-10-04 00:01:00 EST, IR01UpCo_Avg, 15, 4, High rain value and low values for all sensor so eliminating all the observations
+CCRM, 2022-10-04 00:01:00 EST, 2022-10-04 00:01:00 EST, AirTC_Avg, 8, 4, High rain value and low values for all sensor so eliminating all the observations
+CCRM, 2022-10-04 00:01:00 EST, 2022-10-04 00:01:00 EST, RH, 9, 4, High rain value and low values for all sensor so eliminating all the observations
+CCRM, 2022-10-04 00:01:00 EST, 2022-10-04 00:01:00 EST, WindSpeed, 11, 4, High rain value and low values for all sensor so eliminating all the observations
+CCRM, 2022-10-04 00:01:00 EST, 2022-10-04 00:01:00 EST, WindDir, 12, 4, High rain value and low values for all sensor so eliminating all the observations
+CCRM, 2022-10-04 00:34:00 EST, 2022-10-04 00:34:00 EST, Rain_mm_Tot, 10, 4, very high SR down value which could be related to power so eliminating for all sensors 
+CCRM, 2022-10-04 00:34:00 EST, 2022-10-04 00:34:00 EST, AirTC_Avg, 8, 4, very high SR down value which could be related to power so eliminating for all sensors 
+CCRM, 2022-10-04 00:34:00 EST, 2022-10-04 00:34:00 EST, RH, 9, 4, very high SR down value which could be related to power so eliminating for all sensors 
+CCRM, 2022-10-04 00:34:00 EST, 2022-10-04 00:34:00 EST, WindSpeed, 11, 4, very high SR down value which could be related to power so eliminating for all sensors
+CCRM, 2022-10-04 00:34:00 EST, 2022-10-04 00:34:00 EST, WindDir, 12, 4, very high SR down value which could be related to power so eliminating for all sensors
+CCRM, 2022-10-04 00:34:00 EST, 2022-10-04 00:34:00 EST, SR01Up_Avg, 13, 4, very high SR down value which could be related to power so eliminating for all sensors 
+CCRM, 2022-10-04 00:34:00 EST, 2022-10-04 00:34:00 EST, SR01Dn_Avg, 14, 4, very high SR down value which could be related to power so eliminating for all sensors 
+CCRM, 2022-10-04 00:34:00 EST, 2022-10-04 00:34:00 EST, IR01DnCo_Avg, 16, 4, very high SR down value which could be related to power so eliminating for all sensors 
+CCRM, 2022-10-04 00:34:00 EST, 2022-10-04 00:34:00 EST, IR01UpCo_Avg, 15, 4, very high SR down value which could be related to power so eliminating for all sensors 
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, WindSpeed, 11, 1, Met station blew over so sensors out of position and eliminated observations
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, WindDir, 12, 1, Met station blew over so sensors out of position and eliminated observations
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, SR01Up_Avg, 13, 1, Met station blew over so sensors out of position and eliminated observations 
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, SR01Dn_Avg, 14, 1, Met station blew over so sensors out of position and eliminated observations 
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, IR01DnCo_Avg, 16, 1, Met station blew over so sensors out of position and eliminated observations 
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, IR01UpCo_Avg, 15, 1, Met station blew over so sensors out of position and eliminated observations
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, PAR_Den_Avg, 5, 1, Met station blew over so sensors out of position and eliminated observations
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, PAR_Tot_Tot, 6, 1, Met station blew over so sensors out of position and eliminated observations
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, Rain_mm_Tot, 10, 5, Met station blew over but sensors not affected 
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, AirTC_Avg, 8, 5, Met station blew over but sensors not affected 
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, RH, 9, 5, Met station blew over but sensors not affected 
+CCRM, 2023-02-28 06:15:00 EST, 2023-02-28 12:11:00 EST, BP, 7, 5, Met station blew over but sensors not affected
