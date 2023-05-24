@@ -28,7 +28,7 @@ jobs:
            Rscript $GITHUB_WORKSPACE/R/QAQC_met_workflow.R
        - name: Configure Git
          run: |
-            git config --global --add safe.directory /__w/CCRE-data/CCRE-data
+            git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git config --local user.name "$GITHUB_ACTOR"
             git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
        - name: Commit files
