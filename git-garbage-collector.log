@@ -1,0 +1,9 @@
+
+############################ annie - 06/23/23 12:20:41 EST -0500 ############################
+
+Disk Usage Before Git Garbage Collector:
+/dev/sda1                           59G  525M   55G   1% /data
+Working on: /data/ccre-dam-data
+Working on: /data/annie-logs
+Disk Usage After Git Garbage Collector:
+/dev/sda1                           59G  460M   55G   1% /data
