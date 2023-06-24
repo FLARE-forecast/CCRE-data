@@ -4487,3 +4487,29 @@ To github.com:FLARE-forecast/CCRE-data.git
 Current branch main is up to date.
 To github.com:FLARE-forecast/CCRE-data.git
    33dbb84..855902e  main -> main
+[main 44feee1] Sat Jun 24 00:27:42 EST 2023
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+From github.com:FLARE-forecast/CCRE-data
+   855902e..dd7c629  main       -> origin/main
+First, rewinding head to replay your work on top of it...
+Applying: Sat Jun 24 00:27:42 EST 2023
+Using index info to reconstruct a base tree...
+M	annie
+Falling back to patching base and 3-way merge...
+Auto-merging annie
+CONFLICT (content): Merge conflict in annie
+error: Failed to merge in the changes.
+Patch failed at 0001 Sat Jun 24 00:27:42 EST 2023
+Use 'git am --show-current-patch' to see the failed patch
+
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
