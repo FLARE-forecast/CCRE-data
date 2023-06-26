@@ -4530,3 +4530,20 @@ state now, use
 
     git push origin HEAD:<name-of-remote-branch>
 
+[detached HEAD 51e0bc7] Mon Jun 26 00:27:44 EST 2023
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+It seems that there is already a rebase-apply directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+	git rebase (--continue | --abort | --skip)
+If that is not the case, please
+	rm -fr "/home/scc/applications/startup/CCRE-data/.git/rebase-apply"
+and run me again.  I am stopping in case you still have something
+valuable there.
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
