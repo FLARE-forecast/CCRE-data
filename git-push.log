@@ -321,3 +321,24 @@ Everything up-to-date
 
 Logs:
 
+[annie-logs d2dc824] 06/27/23 11:34:53 EST -0500: Logs
+ 1 file changed, 21 insertions(+)
+remote: This repository moved. Please use the new location:        
+remote:   git@github.com:FLARE-forecast/CCRE-data.git        
+To github.com:FLARE-forecast/CCRE.git
+   4a62d93..d2dc824  annie-logs -> annie-logs
+
+Completed at 06/27/23 11:34:55 EST
+
+
+############################ annie - 06/27/23 11:37:00 EST -0500 ############################
+
+Data:
+
+fatal: Unable to create '/data/ccre-dam-data/.git/index.lock': Permission denied
+fatal: Unable to create '/data/ccre-dam-data/.git/index.lock': Permission denied
+error: update_ref failed for ref 'refs/remotes/origin/ccre-dam-data': cannot lock ref 'refs/remotes/origin/ccre-dam-data': Unable to create '/data/ccre-dam-data/.git/refs/remotes/origin/ccre-dam-data.lock': Permission denied
+Everything up-to-date
+
+Logs:
+
