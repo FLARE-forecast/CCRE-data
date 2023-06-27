@@ -174,3 +174,69 @@ ping: github.com: Temporary failure in name resolution
 
 
 ping: connect: Network is unreachable
+
+############################ annie - 06/27/23 11:17:57 EST -0500 ############################
+
+ 11:17:57 up 1 min,  1 user,  load average: 0.18, 0.08, 0.03
+
+
+reboot   system boot  5.15.0-75-generi Tue Jun 27 11:16   still running
+reboot   system boot  5.15.0-75-generi Tue Jun 27 11:06 - 11:16  (00:09)
+reboot   system boot  5.15.0-75-generi Mon Jun 26 20:33 - 20:40  (00:06)
+reboot   system boot  5.15.0-75-generi Fri Jun 23 15:46 - 15:49  (00:02)
+reboot   system boot  5.15.0-75-generi Fri Jun 23 12:18 - 12:21  (00:03)
+
+
+
+
+Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+
+
+[    2.968622] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+
+
+[   14.977004] Initializing XFRM netlink socket
+[   16.930291] systemd-journald[23]: Received client request to flush runtime journal.
+[   16.944995] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   17.978236] device ovs-system entered promiscuous mode
+[   17.980252] Timeout policy base is empty
+[   17.980261] Failed to associated timeout policy `ovs_test_tp'
+[   18.048682] device eviCIBR6 entered promiscuous mode
+[   18.079729] device appCIBR6 entered promiscuous mode
+[   21.358342] device CIBR6a110001fff entered promiscuous mode
+[   21.448975] device CIBR6a110007fff entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           59G   11G   46G  19% /data
+
+
+enx0015ff025968:
+100.108.210.176/27
+
+
+
+
+enp2s0:
+
+
+PING github.com (140.82.114.4) 56(84) bytes of data.
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=1 ttl=50 time=42.1 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=2 ttl=50 time=24.9 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=3 ttl=50 time=48.2 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+rtt min/avg/max/mdev = 24.944/38.392/48.173/9.831 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=28.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=46.0 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=113 time=46.6 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 28.129/40.240/46.589/8.567 ms

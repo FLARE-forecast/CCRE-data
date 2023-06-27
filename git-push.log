@@ -66,3 +66,40 @@ and the repository exists.
 
 Logs:
 
+[annie-logs caab0e8] 06/27/23 11:08:46 EST -0500: Logs
+ 6 files changed, 356 insertions(+)
+ssh: Could not resolve hostname github.com: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Completed at 06/27/23 11:08:58 EST
+
+
+############################ annie - 06/27/23 11:18:57 EST -0500 ############################
+
+Data:
+
+error: open("ccre-met.csv"): Permission denied
+error: unable to index file 'ccre-met.csv'
+fatal: updating files failed
+On branch ccre-dam-data
+Your branch is ahead of 'origin/ccre-dam-data' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   ccre-met.csv
+	modified:   ccre-met_legacy_2021.csv
+
+no changes added to commit (use "git add" and/or "git commit -a")
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File ccre-met.csv is 92.69 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To github.com:FLARE-forecast/CCRE-data.git
+   7b23c104..0c5b37a5  ccre-dam-data -> ccre-dam-data
+
+Logs:
+
