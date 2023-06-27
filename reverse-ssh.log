@@ -194,3 +194,13 @@
 2023/06/27 11:28:12 autossh[2066]: child of 1507 execing /usr/bin/ssh
 2023/06/27 11:35:17 autossh[1507]: received signal to exit (15)
 2023/06/27 11:35:17 autossh[1507]: clear alarm timer (175 secs left)
+
+############################ annie - 06/27/23 11:37:07 EST -0500 ############################
+
+2023/06/27 11:37:07 autossh[1535]: checking for grace period, tries = 0
+2023/06/27 11:37:07 autossh[1535]: starting ssh (count 1)
+2023/06/27 11:37:07 autossh[1535]: ssh child pid is 1536
+2023/06/27 11:37:07 autossh[1535]: check on child 1536
+2023/06/27 11:37:07 autossh[1535]: clear alarm timer (0 secs left)
+2023/06/27 11:37:07 autossh[1535]: set alarm for 600 secs
+2023/06/27 11:37:07 autossh[1536]: child of 1535 execing /usr/bin/ssh

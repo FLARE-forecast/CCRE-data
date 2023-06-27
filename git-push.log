@@ -342,3 +342,30 @@ Everything up-to-date
 
 Logs:
 
+[annie-logs 925a4be] 06/27/23 11:37:00 EST -0500: Logs
+ 2 files changed, 23 insertions(+)
+remote: This repository moved. Please use the new location:        
+remote:   git@github.com:FLARE-forecast/CCRE-data.git        
+To github.com:FLARE-forecast/CCRE.git
+   d2dc824..925a4be  annie-logs -> annie-logs
+
+Completed at 06/27/23 11:37:02 EST
+
+
+############################ annie - 06/27/23 11:37:58 EST -0500 ############################
+
+Data:
+
+[ccre-dam-data 09169f85] 06/27/23 11:37:58 EST -0500: Git Backup
+ 6 files changed, 0 insertions(+), 0 deletions(-)
+ mode change 100644 => 100755 .github/workflows/ccre-dam-qaqc.yml
+ mode change 100644 => 100755 Add_EXO_to_Gateway.R
+ mode change 100644 => 100755 README.md
+ mode change 100644 => 100755 ccre-met.csv
+ mode change 100644 => 100755 ccre-met_legacy_2021.csv
+ mode change 100644 => 100755 ccre-waterquality.csv
+To github.com:FLARE-forecast/CCRE-data.git
+   0c5b37a5..09169f85  ccre-dam-data -> ccre-dam-data
+
+Logs:
+
