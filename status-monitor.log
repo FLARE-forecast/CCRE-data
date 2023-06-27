@@ -372,3 +372,69 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2004ms
 rtt min/avg/max/mdev = 29.725/40.077/46.440/7.384 ms
+
+############################ annie - 06/27/23 12:19:01 EST -0500 ############################
+
+ 12:19:01 up 39 min,  0 users,  load average: 0.04, 0.03, 0.06
+
+
+reboot   system boot  5.15.0-75-generi Tue Jun 27 11:39   still running
+reboot   system boot  5.15.0-75-generi Tue Jun 27 11:36 - 11:38  (00:02)
+reboot   system boot  5.15.0-75-generi Tue Jun 27 11:16 - 11:35  (00:18)
+reboot   system boot  5.15.0-75-generi Tue Jun 27 11:06 - 11:16  (00:09)
+reboot   system boot  5.15.0-75-generi Mon Jun 26 20:33 - 20:40  (00:06)
+
+
+
+
+Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+
+
+[    2.974711] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+
+
+[   17.513585] systemd-journald[23]: Received client request to flush runtime journal.
+[   17.527531] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   18.275230] device ovs-system entered promiscuous mode
+[   18.278351] Timeout policy base is empty
+[   18.278362] Failed to associated timeout policy `ovs_test_tp'
+[   18.352856] device eviCIBR6 entered promiscuous mode
+[   18.378787] device appCIBR6 entered promiscuous mode
+[   21.337972] device CIBR6a110001fff entered promiscuous mode
+[  446.095334] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Down
+[  486.688522] igb 0000:03:00.0 eno1: igb: eno1 NIC Link is Up 100 Mbps Full Duplex, Flow Control: RX/TX
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           59G  9.5G   46G  18% /data
+
+
+enx0015ff025968:
+100.108.210.176/27
+
+
+
+
+enp2s0:
+
+
+PING github.com (140.82.112.3) 56(84) bytes of data.
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=50 time=29.3 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=50 time=66.6 ms
+64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=50 time=45.7 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 29.272/47.206/66.617/15.281 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=29.6 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=27.4 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=113 time=48.5 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 27.371/35.180/48.540/9.491 ms
