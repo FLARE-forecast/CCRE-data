@@ -196,3 +196,34 @@ Everything up-to-date
 
 Logs:
 
+[annie-logs 630c957] 06/27/23 11:27:28 EST -0500: Logs
+ 1 file changed, 31 insertions(+)
+remote: This repository moved. Please use the new location:        
+remote:   git@github.com:FLARE-forecast/CCRE-data.git        
+To github.com:FLARE-forecast/CCRE.git
+   81f48a1..630c957  annie-logs -> annie-logs
+
+Completed at 06/27/23 11:27:31 EST
+
+
+############################ annie - 06/27/23 11:29:25 EST -0500 ############################
+
+Data:
+
+error: open("ccre-met.csv"): Permission denied
+error: unable to index file 'ccre-met.csv'
+fatal: updating files failed
+On branch ccre-dam-data
+Your branch is up to date with 'origin/ccre-dam-data'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   ccre-met.csv
+	modified:   ccre-met_legacy_2021.csv
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Everything up-to-date
+
+Logs:
+
