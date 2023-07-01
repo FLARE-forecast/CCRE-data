@@ -9240,3 +9240,500 @@ a"
 2023/07/01 12:23:47 autossh[1432]: clear alarm timer (0 secs left)
 2023/07/01 12:23:47 autossh[1432]: set alarm for 600 secs
 2023/07/01 12:23:47 autossh[12174]: child of 1432 execing /usr/bin/ssh
+2023/07/01 12:33:47 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 12:34:02 autossh[1432]: timeout polling to accept read connection
+2023/07/01 12:34:02 autossh[1432]: port down, restarting ssh
+2023/07/01 12:34:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 12:34:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 12:34:02 autossh[1432]: starting ssh (count 72)
+2023/07/01 12:34:02 autossh[1432]: ssh child pid is 12392
+2023/07/01 12:34:02 autossh[1432]: check on child 12392
+2023/07/01 12:34:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 12:34:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 12:34:02 autossh[12392]: child of 1432 execing /usr/bin/ssh
+2023/07/01 12:44:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 12:44:17 autossh[1432]: timeout polling to accept read connection
+2023/07/01 12:44:17 autossh[1432]: port down, restarting ssh
+2023/07/01 12:44:17 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 12:44:17 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 12:44:17 autossh[1432]: starting ssh (count 73)
+2023/07/01 12:44:17 autossh[1432]: ssh child pid is 12519
+2023/07/01 12:44:17 autossh[1432]: check on child 12519
+2023/07/01 12:44:17 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 12:44:17 autossh[1432]: set alarm for 600 secs
+2023/07/01 12:44:17 autossh[12519]: child of 1432 execing /usr/bin/ssh
+2023/07/01 12:54:17 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 12:54:32 autossh[1432]: timeout polling to accept read connection
+2023/07/01 12:54:32 autossh[1432]: port down, restarting ssh
+2023/07/01 12:54:32 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 12:54:32 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 12:54:32 autossh[1432]: starting ssh (count 74)
+2023/07/01 12:54:32 autossh[1432]: ssh child pid is 12646
+2023/07/01 12:54:32 autossh[1432]: check on child 12646
+2023/07/01 12:54:32 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 12:54:32 autossh[1432]: set alarm for 600 secs
+2023/07/01 12:54:32 autossh[12646]: child of 1432 execing /usr/bin/ssh
+2023/07/01 13:04:32 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 13:04:47 autossh[1432]: timeout polling to accept read connection
+2023/07/01 13:04:47 autossh[1432]: port down, restarting ssh
+2023/07/01 13:04:47 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:04:47 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 13:04:47 autossh[1432]: starting ssh (count 75)
+2023/07/01 13:04:47 autossh[1432]: ssh child pid is 12796
+2023/07/01 13:04:47 autossh[1432]: check on child 12796
+2023/07/01 13:04:47 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:04:47 autossh[1432]: set alarm for 600 secs
+2023/07/01 13:04:47 autossh[12796]: child of 1432 execing /usr/bin/ssh
+2023/07/01 13:14:47 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 13:15:02 autossh[1432]: timeout polling to accept read connection
+2023/07/01 13:15:02 autossh[1432]: port down, restarting ssh
+2023/07/01 13:15:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:15:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 13:15:02 autossh[1432]: starting ssh (count 76)
+2023/07/01 13:15:02 autossh[1432]: ssh child pid is 12931
+2023/07/01 13:15:02 autossh[1432]: check on child 12931
+2023/07/01 13:15:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:15:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 13:15:02 autossh[12931]: child of 1432 execing /usr/bin/ssh
+2023/07/01 13:25:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 13:25:02 autossh[1432]: not what I sent: "annie autossh 1432 1813334690 
+" : ""
+2023/07/01 13:25:02 autossh[1432]: connection ok
+2023/07/01 13:25:02 autossh[1432]: check on child 12931
+2023/07/01 13:25:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:25:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 13:35:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 13:35:02 autossh[1432]: not what I sent: "annie autossh 1432 384591512 
+" : ""
+2023/07/01 13:35:02 autossh[1432]: not what I sent: "annie autossh 1432 384591512 
+" : ""
+2023/07/01 13:35:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 13:35:02 autossh[1432]: port down, restarting ssh
+2023/07/01 13:35:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:35:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 13:35:02 autossh[1432]: starting ssh (count 77)
+2023/07/01 13:35:02 autossh[1432]: ssh child pid is 13182
+2023/07/01 13:35:02 autossh[1432]: check on child 13182
+2023/07/01 13:35:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:35:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 13:35:02 autossh[13182]: child of 1432 execing /usr/bin/ssh
+2023/07/01 13:45:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 13:45:02 autossh[1432]: not what I sent: "annie autossh 1432 221975820 
+" : ""
+2023/07/01 13:45:02 autossh[1432]: not what I sent: "annie autossh 1432 221975820 
+" : ""
+2023/07/01 13:45:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 13:45:02 autossh[1432]: port down, restarting ssh
+2023/07/01 13:45:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:45:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 13:45:02 autossh[1432]: starting ssh (count 78)
+2023/07/01 13:45:02 autossh[1432]: ssh child pid is 13308
+2023/07/01 13:45:02 autossh[1432]: check on child 13308
+2023/07/01 13:45:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:45:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 13:45:02 autossh[13308]: child of 1432 execing /usr/bin/ssh
+2023/07/01 13:55:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 13:55:02 autossh[1432]: not what I sent: "annie autossh 1432 1204242947 
+" : ""
+2023/07/01 13:55:02 autossh[1432]: not what I sent: "annie autossh 1432 1204242947 
+" : ""
+2023/07/01 13:55:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 13:55:02 autossh[1432]: port down, restarting ssh
+2023/07/01 13:55:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:55:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 13:55:02 autossh[1432]: starting ssh (count 79)
+2023/07/01 13:55:02 autossh[1432]: ssh child pid is 13436
+2023/07/01 13:55:02 autossh[1432]: check on child 13436
+2023/07/01 13:55:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 13:55:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 13:55:02 autossh[13436]: child of 1432 execing /usr/bin/ssh
+2023/07/01 14:05:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 14:05:02 autossh[1432]: not what I sent: "annie autossh 1432 1844016125 
+" : ""
+2023/07/01 14:05:02 autossh[1432]: not what I sent: "annie autossh 1432 1844016125 
+" : ""
+2023/07/01 14:05:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 14:05:02 autossh[1432]: port down, restarting ssh
+2023/07/01 14:05:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:05:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 14:05:02 autossh[1432]: starting ssh (count 80)
+2023/07/01 14:05:02 autossh[1432]: ssh child pid is 13633
+2023/07/01 14:05:02 autossh[1432]: check on child 13633
+2023/07/01 14:05:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:05:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 14:05:02 autossh[13633]: child of 1432 execing /usr/bin/ssh
+2023/07/01 14:15:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 14:15:02 autossh[1432]: not what I sent: "annie autossh 1432 1479245287 
+" : ""
+2023/07/01 14:15:02 autossh[1432]: not what I sent: "annie autossh 1432 1479245287 
+" : ""
+2023/07/01 14:15:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 14:15:02 autossh[1432]: port down, restarting ssh
+2023/07/01 14:15:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:15:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 14:15:02 autossh[1432]: starting ssh (count 81)
+2023/07/01 14:15:02 autossh[1432]: ssh child pid is 13776
+2023/07/01 14:15:02 autossh[1432]: check on child 13776
+2023/07/01 14:15:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:15:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 14:15:02 autossh[13776]: child of 1432 execing /usr/bin/ssh
+2023/07/01 14:25:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 14:25:02 autossh[1432]: not what I sent: "annie autossh 1432 1118706643 
+" : ""
+2023/07/01 14:25:02 autossh[1432]: not what I sent: "annie autossh 1432 1118706643 
+" : ""
+2023/07/01 14:25:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 14:25:02 autossh[1432]: port down, restarting ssh
+2023/07/01 14:25:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:25:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 14:25:02 autossh[1432]: starting ssh (count 82)
+2023/07/01 14:25:02 autossh[1432]: ssh child pid is 13923
+2023/07/01 14:25:02 autossh[1432]: check on child 13923
+2023/07/01 14:25:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:25:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 14:25:02 autossh[13923]: child of 1432 execing /usr/bin/ssh
+2023/07/01 14:35:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 14:35:02 autossh[1432]: not what I sent: "annie autossh 1432 469873268 
+" : ""
+2023/07/01 14:35:02 autossh[1432]: not what I sent: "annie autossh 1432 469873268 
+" : ""
+2023/07/01 14:35:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 14:35:02 autossh[1432]: port down, restarting ssh
+2023/07/01 14:35:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:35:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 14:35:02 autossh[1432]: starting ssh (count 83)
+2023/07/01 14:35:02 autossh[1432]: ssh child pid is 14048
+2023/07/01 14:35:02 autossh[1432]: check on child 14048
+2023/07/01 14:35:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:35:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 14:35:02 autossh[14048]: child of 1432 execing /usr/bin/ssh
+2023/07/01 14:45:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 14:45:02 autossh[1432]: not what I sent: "annie autossh 1432 1370014858 
+" : ""
+2023/07/01 14:45:02 autossh[1432]: not what I sent: "annie autossh 1432 1370014858 
+" : ""
+2023/07/01 14:45:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 14:45:02 autossh[1432]: port down, restarting ssh
+2023/07/01 14:45:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:45:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 14:45:02 autossh[1432]: starting ssh (count 84)
+2023/07/01 14:45:02 autossh[1432]: ssh child pid is 14186
+2023/07/01 14:45:02 autossh[1432]: check on child 14186
+2023/07/01 14:45:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:45:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 14:45:02 autossh[14186]: child of 1432 execing /usr/bin/ssh
+2023/07/01 14:55:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 14:55:02 autossh[1432]: not what I sent: "annie autossh 1432 1614114051 
+" : ""
+2023/07/01 14:55:02 autossh[1432]: not what I sent: "annie autossh 1432 1614114051 
+" : ""
+2023/07/01 14:55:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 14:55:02 autossh[1432]: port down, restarting ssh
+2023/07/01 14:55:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:55:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 14:55:02 autossh[1432]: starting ssh (count 85)
+2023/07/01 14:55:02 autossh[1432]: ssh child pid is 14312
+2023/07/01 14:55:02 autossh[1432]: check on child 14312
+2023/07/01 14:55:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 14:55:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 14:55:02 autossh[14312]: child of 1432 execing /usr/bin/ssh
+2023/07/01 15:05:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 15:05:02 autossh[1432]: not what I sent: "annie autossh 1432 2097139732 
+" : ""
+2023/07/01 15:05:02 autossh[1432]: not what I sent: "annie autossh 1432 2097139732 
+" : ""
+2023/07/01 15:05:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 15:05:02 autossh[1432]: port down, restarting ssh
+2023/07/01 15:05:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:05:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 15:05:02 autossh[1432]: starting ssh (count 86)
+2023/07/01 15:05:02 autossh[1432]: ssh child pid is 14458
+2023/07/01 15:05:02 autossh[1432]: check on child 14458
+2023/07/01 15:05:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:05:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 15:05:02 autossh[14458]: child of 1432 execing /usr/bin/ssh
+2023/07/01 15:15:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 15:15:02 autossh[1432]: not what I sent: "annie autossh 1432 1387997019 
+" : ""
+2023/07/01 15:15:02 autossh[1432]: not what I sent: "annie autossh 1432 1387997019 
+" : ""
+2023/07/01 15:15:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 15:15:02 autossh[1432]: port down, restarting ssh
+2023/07/01 15:15:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:15:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 15:15:02 autossh[1432]: starting ssh (count 87)
+2023/07/01 15:15:02 autossh[1432]: ssh child pid is 14584
+2023/07/01 15:15:02 autossh[1432]: check on child 14584
+2023/07/01 15:15:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:15:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 15:15:02 autossh[14584]: child of 1432 execing /usr/bin/ssh
+2023/07/01 15:25:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 15:25:02 autossh[1432]: not what I sent: "annie autossh 1432 1399912757 
+" : ""
+2023/07/01 15:25:02 autossh[1432]: not what I sent: "annie autossh 1432 1399912757 
+" : ""
+2023/07/01 15:25:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 15:25:02 autossh[1432]: port down, restarting ssh
+2023/07/01 15:25:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:25:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 15:25:02 autossh[1432]: starting ssh (count 88)
+2023/07/01 15:25:02 autossh[1432]: ssh child pid is 14713
+2023/07/01 15:25:02 autossh[1432]: check on child 14713
+2023/07/01 15:25:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:25:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 15:25:02 autossh[14713]: child of 1432 execing /usr/bin/ssh
+2023/07/01 15:35:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 15:35:02 autossh[1432]: not what I sent: "annie autossh 1432 757455851 
+" : ""
+2023/07/01 15:35:02 autossh[1432]: not what I sent: "annie autossh 1432 757455851 
+" : ""
+2023/07/01 15:35:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 15:35:02 autossh[1432]: port down, restarting ssh
+2023/07/01 15:35:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:35:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 15:35:02 autossh[1432]: starting ssh (count 89)
+2023/07/01 15:35:02 autossh[1432]: ssh child pid is 14841
+2023/07/01 15:35:02 autossh[1432]: check on child 14841
+2023/07/01 15:35:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:35:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 15:35:02 autossh[14841]: child of 1432 execing /usr/bin/ssh
+2023/07/01 15:45:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 15:45:02 autossh[1432]: not what I sent: "annie autossh 1432 1286729541 
+" : ""
+2023/07/01 15:45:02 autossh[1432]: not what I sent: "annie autossh 1432 1286729541 
+" : ""
+2023/07/01 15:45:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 15:45:02 autossh[1432]: port down, restarting ssh
+2023/07/01 15:45:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:45:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 15:45:02 autossh[1432]: starting ssh (count 90)
+2023/07/01 15:45:02 autossh[1432]: ssh child pid is 14965
+2023/07/01 15:45:02 autossh[1432]: check on child 14965
+2023/07/01 15:45:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:45:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 15:45:02 autossh[14965]: child of 1432 execing /usr/bin/ssh
+2023/07/01 15:55:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 15:55:02 autossh[1432]: not what I sent: "annie autossh 1432 1811094588 
+" : ""
+2023/07/01 15:55:02 autossh[1432]: not what I sent: "annie autossh 1432 1811094588 
+" : ""
+2023/07/01 15:55:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 15:55:02 autossh[1432]: port down, restarting ssh
+2023/07/01 15:55:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:55:02 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 15:55:02 autossh[1432]: starting ssh (count 91)
+2023/07/01 15:55:02 autossh[1432]: ssh child pid is 15091
+2023/07/01 15:55:02 autossh[1432]: check on child 15091
+2023/07/01 15:55:02 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 15:55:02 autossh[1432]: set alarm for 600 secs
+2023/07/01 15:55:02 autossh[15091]: child of 1432 execing /usr/bin/ssh
+2023/07/01 16:05:02 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 16:05:02 autossh[1432]: not what I sent: "annie autossh 1432 1906060015 
+" : ""
+2023/07/01 16:05:02 autossh[1432]: not what I sent: "annie autossh 1432 1906060015 
+" : ""
+2023/07/01 16:05:02 autossh[1432]: tried connection 3 times and failed
+2023/07/01 16:05:02 autossh[1432]: port down, restarting ssh
+2023/07/01 16:05:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:05:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 16:05:03 autossh[1432]: starting ssh (count 92)
+2023/07/01 16:05:03 autossh[1432]: ssh child pid is 15240
+2023/07/01 16:05:03 autossh[1432]: check on child 15240
+2023/07/01 16:05:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:05:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 16:05:03 autossh[15240]: child of 1432 execing /usr/bin/ssh
+2023/07/01 16:15:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 16:15:03 autossh[1432]: not what I sent: "annie autossh 1432 1041589630 
+" : ""
+2023/07/01 16:15:03 autossh[1432]: not what I sent: "annie autossh 1432 1041589630 
+" : ""
+2023/07/01 16:15:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 16:15:03 autossh[1432]: port down, restarting ssh
+2023/07/01 16:15:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:15:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 16:15:03 autossh[1432]: starting ssh (count 93)
+2023/07/01 16:15:03 autossh[1432]: ssh child pid is 15366
+2023/07/01 16:15:03 autossh[1432]: check on child 15366
+2023/07/01 16:15:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:15:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 16:15:03 autossh[15366]: child of 1432 execing /usr/bin/ssh
+2023/07/01 16:25:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 16:25:03 autossh[1432]: not what I sent: "annie autossh 1432 826897927 
+" : ""
+2023/07/01 16:25:03 autossh[1432]: not what I sent: "annie autossh 1432 826897927 
+" : ""
+2023/07/01 16:25:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 16:25:03 autossh[1432]: port down, restarting ssh
+2023/07/01 16:25:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:25:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 16:25:03 autossh[1432]: starting ssh (count 94)
+2023/07/01 16:25:03 autossh[1432]: ssh child pid is 15494
+2023/07/01 16:25:03 autossh[1432]: check on child 15494
+2023/07/01 16:25:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:25:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 16:25:03 autossh[15494]: child of 1432 execing /usr/bin/ssh
+2023/07/01 16:35:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 16:35:03 autossh[1432]: not what I sent: "annie autossh 1432 300476135 
+" : ""
+2023/07/01 16:35:03 autossh[1432]: not what I sent: "annie autossh 1432 300476135 
+" : ""
+2023/07/01 16:35:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 16:35:03 autossh[1432]: port down, restarting ssh
+2023/07/01 16:35:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:35:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 16:35:03 autossh[1432]: starting ssh (count 95)
+2023/07/01 16:35:03 autossh[1432]: ssh child pid is 15622
+2023/07/01 16:35:03 autossh[1432]: check on child 15622
+2023/07/01 16:35:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:35:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 16:35:03 autossh[15622]: child of 1432 execing /usr/bin/ssh
+2023/07/01 16:45:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 16:45:03 autossh[1432]: not what I sent: "annie autossh 1432 2101938466 
+" : ""
+2023/07/01 16:45:03 autossh[1432]: not what I sent: "annie autossh 1432 2101938466 
+" : ""
+2023/07/01 16:45:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 16:45:03 autossh[1432]: port down, restarting ssh
+2023/07/01 16:45:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:45:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 16:45:03 autossh[1432]: starting ssh (count 96)
+2023/07/01 16:45:03 autossh[1432]: ssh child pid is 15749
+2023/07/01 16:45:03 autossh[1432]: check on child 15749
+2023/07/01 16:45:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:45:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 16:45:03 autossh[15749]: child of 1432 execing /usr/bin/ssh
+2023/07/01 16:55:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 16:55:03 autossh[1432]: not what I sent: "annie autossh 1432 1788417965 
+" : ""
+2023/07/01 16:55:03 autossh[1432]: not what I sent: "annie autossh 1432 1788417965 
+" : ""
+2023/07/01 16:55:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 16:55:03 autossh[1432]: port down, restarting ssh
+2023/07/01 16:55:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:55:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 16:55:03 autossh[1432]: starting ssh (count 97)
+2023/07/01 16:55:03 autossh[1432]: ssh child pid is 15872
+2023/07/01 16:55:03 autossh[1432]: check on child 15872
+2023/07/01 16:55:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 16:55:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 16:55:03 autossh[15872]: child of 1432 execing /usr/bin/ssh
+2023/07/01 17:05:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 17:05:03 autossh[1432]: not what I sent: "annie autossh 1432 1774266229 
+" : ""
+2023/07/01 17:05:03 autossh[1432]: not what I sent: "annie autossh 1432 1774266229 
+" : ""
+2023/07/01 17:05:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 17:05:03 autossh[1432]: port down, restarting ssh
+2023/07/01 17:05:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:05:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 17:05:03 autossh[1432]: starting ssh (count 98)
+2023/07/01 17:05:03 autossh[1432]: ssh child pid is 16023
+2023/07/01 17:05:03 autossh[1432]: check on child 16023
+2023/07/01 17:05:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:05:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 17:05:03 autossh[16023]: child of 1432 execing /usr/bin/ssh
+2023/07/01 17:15:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 17:15:03 autossh[1432]: not what I sent: "annie autossh 1432 1799719167 
+" : ""
+2023/07/01 17:15:03 autossh[1432]: not what I sent: "annie autossh 1432 1799719167 
+" : ""
+2023/07/01 17:15:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 17:15:03 autossh[1432]: port down, restarting ssh
+2023/07/01 17:15:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:15:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 17:15:03 autossh[1432]: starting ssh (count 99)
+2023/07/01 17:15:03 autossh[1432]: ssh child pid is 16150
+2023/07/01 17:15:03 autossh[1432]: check on child 16150
+2023/07/01 17:15:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:15:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 17:15:03 autossh[16150]: child of 1432 execing /usr/bin/ssh
+2023/07/01 17:25:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 17:25:03 autossh[1432]: not what I sent: "annie autossh 1432 19891934 
+" : ""
+2023/07/01 17:25:03 autossh[1432]: not what I sent: "annie autossh 1432 19891934 
+" : ""
+2023/07/01 17:25:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 17:25:03 autossh[1432]: port down, restarting ssh
+2023/07/01 17:25:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:25:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 17:25:03 autossh[1432]: starting ssh (count 100)
+2023/07/01 17:25:03 autossh[1432]: ssh child pid is 16292
+2023/07/01 17:25:03 autossh[1432]: check on child 16292
+2023/07/01 17:25:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:25:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 17:25:03 autossh[16292]: child of 1432 execing /usr/bin/ssh
+2023/07/01 17:35:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 17:35:03 autossh[1432]: not what I sent: "annie autossh 1432 594426092 
+" : ""
+2023/07/01 17:35:03 autossh[1432]: not what I sent: "annie autossh 1432 594426092 
+" : ""
+2023/07/01 17:35:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 17:35:03 autossh[1432]: port down, restarting ssh
+2023/07/01 17:35:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:35:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 17:35:03 autossh[1432]: starting ssh (count 101)
+2023/07/01 17:35:03 autossh[1432]: ssh child pid is 16417
+2023/07/01 17:35:03 autossh[1432]: check on child 16417
+2023/07/01 17:35:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:35:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 17:35:03 autossh[16417]: child of 1432 execing /usr/bin/ssh
+2023/07/01 17:45:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 17:45:03 autossh[1432]: not what I sent: "annie autossh 1432 1084112795 
+" : ""
+2023/07/01 17:45:03 autossh[1432]: not what I sent: "annie autossh 1432 1084112795 
+" : ""
+2023/07/01 17:45:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 17:45:03 autossh[1432]: port down, restarting ssh
+2023/07/01 17:45:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:45:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 17:45:03 autossh[1432]: starting ssh (count 102)
+2023/07/01 17:45:03 autossh[1432]: ssh child pid is 16542
+2023/07/01 17:45:03 autossh[1432]: check on child 16542
+2023/07/01 17:45:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:45:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 17:45:03 autossh[16542]: child of 1432 execing /usr/bin/ssh
+2023/07/01 17:55:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 17:55:03 autossh[1432]: not what I sent: "annie autossh 1432 1048749096 
+" : ""
+2023/07/01 17:55:03 autossh[1432]: not what I sent: "annie autossh 1432 1048749096 
+" : ""
+2023/07/01 17:55:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 17:55:03 autossh[1432]: port down, restarting ssh
+2023/07/01 17:55:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:55:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 17:55:03 autossh[1432]: starting ssh (count 103)
+2023/07/01 17:55:03 autossh[1432]: ssh child pid is 16670
+2023/07/01 17:55:03 autossh[1432]: check on child 16670
+2023/07/01 17:55:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 17:55:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 17:55:03 autossh[16670]: child of 1432 execing /usr/bin/ssh
+2023/07/01 18:05:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 18:05:03 autossh[1432]: not what I sent: "annie autossh 1432 1626005088 
+" : ""
+2023/07/01 18:05:03 autossh[1432]: not what I sent: "annie autossh 1432 1626005088 
+" : ""
+2023/07/01 18:05:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 18:05:03 autossh[1432]: port down, restarting ssh
+2023/07/01 18:05:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 18:05:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 18:05:03 autossh[1432]: starting ssh (count 104)
+2023/07/01 18:05:03 autossh[1432]: ssh child pid is 16819
+2023/07/01 18:05:03 autossh[1432]: check on child 16819
+2023/07/01 18:05:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 18:05:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 18:05:03 autossh[16819]: child of 1432 execing /usr/bin/ssh
+2023/07/01 18:15:03 autossh[1432]: received SIGALRM (end-of-life 0)
+2023/07/01 18:15:03 autossh[1432]: not what I sent: "annie autossh 1432 896408120 
+" : ""
+2023/07/01 18:15:03 autossh[1432]: not what I sent: "annie autossh 1432 896408120 
+" : ""
+2023/07/01 18:15:03 autossh[1432]: tried connection 3 times and failed
+2023/07/01 18:15:03 autossh[1432]: port down, restarting ssh
+2023/07/01 18:15:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 18:15:03 autossh[1432]: checking for grace period, tries = 0
+2023/07/01 18:15:03 autossh[1432]: starting ssh (count 105)
+2023/07/01 18:15:03 autossh[1432]: ssh child pid is 16947
+2023/07/01 18:15:03 autossh[1432]: check on child 16947
+2023/07/01 18:15:03 autossh[1432]: clear alarm timer (0 secs left)
+2023/07/01 18:15:03 autossh[1432]: set alarm for 600 secs
+2023/07/01 18:15:03 autossh[16947]: child of 1432 execing /usr/bin/ssh
