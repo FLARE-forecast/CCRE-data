@@ -31007,3 +31007,14 @@ a"
 2023/07/12 18:10:38 autossh[1546]: clear alarm timer (0 secs left)
 2023/07/12 18:10:38 autossh[1546]: set alarm for 600 secs
 2023/07/12 18:10:38 autossh[16823]: child of 1546 execing /usr/bin/ssh
+2023/07/12 18:20:38 autossh[1546]: received SIGALRM (end-of-life 0)
+2023/07/12 18:20:53 autossh[1546]: timeout polling to accept read connection
+2023/07/12 18:20:53 autossh[1546]: port down, restarting ssh
+2023/07/12 18:20:53 autossh[1546]: clear alarm timer (0 secs left)
+2023/07/12 18:20:53 autossh[1546]: checking for grace period, tries = 0
+2023/07/12 18:20:53 autossh[1546]: starting ssh (count 106)
+2023/07/12 18:20:53 autossh[1546]: ssh child pid is 17151
+2023/07/12 18:20:53 autossh[1546]: check on child 17151
+2023/07/12 18:20:53 autossh[1546]: clear alarm timer (0 secs left)
+2023/07/12 18:20:53 autossh[1546]: set alarm for 600 secs
+2023/07/12 18:20:53 autossh[17151]: child of 1546 execing /usr/bin/ssh
