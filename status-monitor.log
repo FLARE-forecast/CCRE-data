@@ -5913,3 +5913,81 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2001ms
 rtt min/avg/max/mdev = 29.438/29.790/30.480/0.487 ms
+
+############################ annie - 07/15/23 06:19:01 EST -0500 ############################
+
+ 06:19:01 up  5:55,  0 users,  load average: 0.09, 0.08, 0.02
+
+
+reboot   system boot  5.15.0-75-generi Sat Jul 15 00:23   still running
+reboot   system boot  5.15.0-75-generi Fri Jul 14 00:23 - 00:10  (23:46)
+reboot   system boot  5.15.0-75-generi Thu Jul 13 00:23 - 00:10  (23:46)
+reboot   system boot  5.15.0-75-generi Wed Jul 12 00:23 - 00:10  (23:46)
+reboot   system boot  5.15.0-75-generi Tue Jul 11 00:23 - 00:10  (23:46)
+
+
+
+
+Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+
+
+[    2.904167] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+
+
+[ 6100.016691] device CIBR6a110010fff left promiscuous mode
+[ 6100.040663] device CIBR6a110011fff left promiscuous mode
+[ 6276.356459] device CIBR6a110011fff entered promiscuous mode
+[ 6727.186753] device CIBR6a110011fff left promiscuous mode
+[ 7015.478066] device CIBR6a110011fff entered promiscuous mode
+[ 7478.731899] device CIBR6a110010fff entered promiscuous mode
+[ 7496.942537] device CIBR6a110001fff entered promiscuous mode
+[ 7701.103970] device CIBR6a110001fff left promiscuous mode
+[ 7796.423389] device CIBR6a110007fff entered promiscuous mode
+[ 7886.884813] device CIBR6a110001fff entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           59G  8.3G   48G  15% /data
+
+
+Sat Jul 15 06:09:08 2023 [pid 6741] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 376 bytes, 13.14Kbyte/sec
+Sat Jul 15 06:09:09 2023 [pid 6744] CONNECT: Client "::ffff:10.10.1.1"
+Sat Jul 15 06:09:09 2023 [pid 6743] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sat Jul 15 06:09:11 2023 [pid 6745] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 376 bytes, 13.18Kbyte/sec
+Sat Jul 15 06:16:43 2023 [pid 6825] CONNECT: Client "::ffff:10.10.1.1"
+Sat Jul 15 06:16:43 2023 [pid 6824] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sat Jul 15 06:16:45 2023 [pid 6827] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1245 bytes, 12.94Kbyte/sec
+Sat Jul 15 06:16:46 2023 [pid 6876] CONNECT: Client "::ffff:10.10.1.1"
+Sat Jul 15 06:16:46 2023 [pid 6875] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sat Jul 15 06:16:49 2023 [pid 6877] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1245 bytes, 13.12Kbyte/sec
+
+
+enx0015ff025968:
+100.100.236.202/30
+
+
+
+
+enp2s0:
+
+
+PING github.com (140.82.113.3) 56(84) bytes of data.
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=1 ttl=50 time=41.5 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=2 ttl=50 time=35.5 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=3 ttl=50 time=34.0 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 33.974/36.992/41.465/3.226 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=31.5 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=30.1 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=28.3 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 28.295/29.966/31.533/1.323 ms
