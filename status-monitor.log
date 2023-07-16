@@ -6227,3 +6227,83 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2005ms
 rtt min/avg/max/mdev = 30.186/65.072/114.034/35.648 ms
+
+############################ annie - 07/16/23 06:19:02 EST -0500 ############################
+
+ 06:19:02 up  5:55,  0 users,  load average: 1.05, 1.03, 1.00
+
+
+reboot   system boot  5.15.0-75-generi Sun Jul 16 00:23   still running
+reboot   system boot  5.15.0-75-generi Sat Jul 15 00:23 - 00:10  (23:46)
+reboot   system boot  5.15.0-75-generi Fri Jul 14 00:23 - 00:10  (23:46)
+reboot   system boot  5.15.0-75-generi Thu Jul 13 00:23 - 00:10  (23:46)
+reboot   system boot  5.15.0-75-generi Wed Jul 12 00:23 - 00:10  (23:46)
+
+
+
+
+Bus 001 Device 005: ID 1410:9030 Novatel Wireless MiFi USB730L
+
+
+[    3.046648] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+[   10.566951] rndis_host 1-6:1.0 enx0015ff025968: unregister 'rndis_host' usb-0000:00:15.0-6, RNDIS device
+[   11.432751] cdc_ether 1-6:1.0 enx0015ff025968: renamed from eth0
+
+
+[ 5331.394353] device CIBR6a110007fff entered promiscuous mode
+[ 5578.117240] device CIBR6a110007fff left promiscuous mode
+[ 6158.028215] device CIBR6a110007fff entered promiscuous mode
+[ 6367.851695] device CIBR6a110007fff left promiscuous mode
+[ 7318.136241] device CIBR6a110010fff left promiscuous mode
+[ 7319.338403] device CIBR6a110011fff left promiscuous mode
+[ 7642.281718] perf: interrupt took too long (2503 > 2500), lowering kernel.perf_event_max_sample_rate to 79750
+[ 7838.123030] perf: interrupt took too long (3140 > 3128), lowering kernel.perf_event_max_sample_rate to 63500
+[ 8156.803716] perf: interrupt took too long (3938 > 3925), lowering kernel.perf_event_max_sample_rate to 50750
+[ 8894.320080] perf: interrupt took too long (4924 > 4922), lowering kernel.perf_event_max_sample_rate to 40500
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           59G  8.3G   48G  15% /data
+
+
+Sun Jul 16 06:09:08 2023 [pid 6509] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 374 bytes, 12.93Kbyte/sec
+Sun Jul 16 06:09:09 2023 [pid 6512] CONNECT: Client "::ffff:10.10.1.1"
+Sun Jul 16 06:09:09 2023 [pid 6511] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sun Jul 16 06:09:11 2023 [pid 6513] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 374 bytes, 12.56Kbyte/sec
+Sun Jul 16 06:16:43 2023 [pid 6594] CONNECT: Client "::ffff:10.10.1.1"
+Sun Jul 16 06:16:43 2023 [pid 6593] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sun Jul 16 06:16:45 2023 [pid 6595] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1221 bytes, 12.96Kbyte/sec
+Sun Jul 16 06:16:46 2023 [pid 6597] CONNECT: Client "::ffff:10.10.1.1"
+Sun Jul 16 06:16:46 2023 [pid 6596] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sun Jul 16 06:16:49 2023 [pid 6598] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1221 bytes, 12.98Kbyte/sec
+
+
+enx0015ff025968:
+100.88.177.231/28
+
+
+
+
+enp2s0:
+
+
+PING github.com (140.82.113.4) 56(84) bytes of data.
+64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=1 ttl=50 time=38.4 ms
+64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=2 ttl=50 time=34.8 ms
+64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=3 ttl=50 time=33.7 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 33.721/35.621/38.380/1.996 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=24.4 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=31.4 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=30.6 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 24.387/28.804/31.390/3.138 ms
