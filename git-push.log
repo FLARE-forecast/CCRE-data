@@ -4477,3 +4477,27 @@ To github.com:FLARE-forecast/CCRE-data.git
 
 Logs:
 
+[annie-logs 5118d7b] 07/19/23 00:30:07 EST -0500: Logs
+ 2 files changed, 33 insertions(+)
+remote: This repository moved. Please use the new location:        
+remote:   git@github.com:FLARE-forecast/CCRE-data.git        
+To github.com:FLARE-forecast/CCRE.git
+   70536bf..5118d7b  annie-logs -> annie-logs
+
+Completed at 07/19/23 00:30:33 EST
+
+
+############################ annie - 07/19/23 06:20:01 EST -0500 ############################
+
+Data:
+
+[ccre-dam-data 8960b7f5] 07/19/23 06:20:01 EST -0500: Git Backup
+ 2 files changed, 385 insertions(+)
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File ccre-met.csv is 96.46 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To github.com:FLARE-forecast/CCRE-data.git
+   05af7b51..8960b7f5  ccre-dam-data -> ccre-dam-data
+
+Logs:
+
