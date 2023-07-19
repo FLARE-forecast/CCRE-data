@@ -42268,3 +42268,14 @@ a"
 2023/07/19 12:11:57 autossh[1409]: clear alarm timer (0 secs left)
 2023/07/19 12:11:57 autossh[1409]: set alarm for 600 secs
 2023/07/19 12:11:57 autossh[12624]: child of 1409 execing /usr/bin/ssh
+2023/07/19 12:21:57 autossh[1409]: received SIGALRM (end-of-life 0)
+2023/07/19 12:22:12 autossh[1409]: timeout polling to accept read connection
+2023/07/19 12:22:12 autossh[1409]: port down, restarting ssh
+2023/07/19 12:22:12 autossh[1409]: clear alarm timer (0 secs left)
+2023/07/19 12:22:12 autossh[1409]: checking for grace period, tries = 0
+2023/07/19 12:22:12 autossh[1409]: starting ssh (count 71)
+2023/07/19 12:22:12 autossh[1409]: ssh child pid is 12993
+2023/07/19 12:22:12 autossh[1409]: check on child 12993
+2023/07/19 12:22:12 autossh[1409]: clear alarm timer (0 secs left)
+2023/07/19 12:22:12 autossh[1409]: set alarm for 600 secs
+2023/07/19 12:22:12 autossh[12993]: child of 1409 execing /usr/bin/ssh
