@@ -56182,3 +56182,378 @@ a"
 2023/07/26 18:23:48 autossh[1441]: clear alarm timer (0 secs left)
 2023/07/26 18:23:48 autossh[1441]: set alarm for 600 secs
 2023/07/26 18:23:48 autossh[18080]: child of 1441 execing /usr/bin/ssh
+2023/07/26 18:33:48 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 18:34:03 autossh[1441]: timeout polling to accept read connection
+2023/07/26 18:34:03 autossh[1441]: port down, restarting ssh
+2023/07/26 18:34:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 18:34:03 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 18:34:03 autossh[1441]: starting ssh (count 111)
+2023/07/26 18:34:03 autossh[1441]: ssh child pid is 18312
+2023/07/26 18:34:03 autossh[1441]: check on child 18312
+2023/07/26 18:34:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 18:34:03 autossh[1441]: set alarm for 600 secs
+2023/07/26 18:34:03 autossh[18312]: child of 1441 execing /usr/bin/ssh
+2023/07/26 18:44:03 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 18:44:18 autossh[1441]: timeout polling to accept read connection
+2023/07/26 18:44:18 autossh[1441]: port down, restarting ssh
+2023/07/26 18:44:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 18:44:18 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 18:44:18 autossh[1441]: starting ssh (count 112)
+2023/07/26 18:44:18 autossh[1441]: ssh child pid is 18439
+2023/07/26 18:44:18 autossh[1441]: check on child 18439
+2023/07/26 18:44:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 18:44:18 autossh[1441]: set alarm for 600 secs
+2023/07/26 18:44:18 autossh[18439]: child of 1441 execing /usr/bin/ssh
+2023/07/26 18:54:18 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 18:54:33 autossh[1441]: timeout polling to accept read connection
+2023/07/26 18:54:33 autossh[1441]: port down, restarting ssh
+2023/07/26 18:54:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 18:54:33 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 18:54:33 autossh[1441]: starting ssh (count 113)
+2023/07/26 18:54:33 autossh[1441]: ssh child pid is 18567
+2023/07/26 18:54:33 autossh[1441]: check on child 18567
+2023/07/26 18:54:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 18:54:33 autossh[1441]: set alarm for 600 secs
+2023/07/26 18:54:33 autossh[18567]: child of 1441 execing /usr/bin/ssh
+2023/07/26 19:04:33 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 19:04:48 autossh[1441]: timeout polling to accept read connection
+2023/07/26 19:04:48 autossh[1441]: port down, restarting ssh
+2023/07/26 19:04:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:04:48 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 19:04:48 autossh[1441]: starting ssh (count 114)
+2023/07/26 19:04:48 autossh[1441]: ssh child pid is 18721
+2023/07/26 19:04:48 autossh[1441]: check on child 18721
+2023/07/26 19:04:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:04:48 autossh[1441]: set alarm for 600 secs
+2023/07/26 19:04:48 autossh[18721]: child of 1441 execing /usr/bin/ssh
+2023/07/26 19:14:48 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 19:15:03 autossh[1441]: timeout polling to accept read connection
+2023/07/26 19:15:03 autossh[1441]: port down, restarting ssh
+2023/07/26 19:15:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:15:03 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 19:15:03 autossh[1441]: starting ssh (count 115)
+2023/07/26 19:15:03 autossh[1441]: ssh child pid is 18859
+2023/07/26 19:15:03 autossh[1441]: check on child 18859
+2023/07/26 19:15:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:15:03 autossh[1441]: set alarm for 600 secs
+2023/07/26 19:15:03 autossh[18859]: child of 1441 execing /usr/bin/ssh
+2023/07/26 19:25:03 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 19:25:18 autossh[1441]: timeout polling to accept read connection
+2023/07/26 19:25:18 autossh[1441]: port down, restarting ssh
+2023/07/26 19:25:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:25:18 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 19:25:18 autossh[1441]: starting ssh (count 116)
+2023/07/26 19:25:18 autossh[1441]: ssh child pid is 18988
+2023/07/26 19:25:18 autossh[1441]: check on child 18988
+2023/07/26 19:25:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:25:18 autossh[1441]: set alarm for 600 secs
+2023/07/26 19:25:18 autossh[18988]: child of 1441 execing /usr/bin/ssh
+2023/07/26 19:35:18 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 19:35:33 autossh[1441]: timeout polling to accept read connection
+2023/07/26 19:35:33 autossh[1441]: port down, restarting ssh
+2023/07/26 19:35:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:35:33 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 19:35:33 autossh[1441]: starting ssh (count 117)
+2023/07/26 19:35:33 autossh[1441]: ssh child pid is 19113
+2023/07/26 19:35:33 autossh[1441]: check on child 19113
+2023/07/26 19:35:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:35:33 autossh[1441]: set alarm for 600 secs
+2023/07/26 19:35:33 autossh[19113]: child of 1441 execing /usr/bin/ssh
+2023/07/26 19:45:33 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 19:45:48 autossh[1441]: timeout polling to accept read connection
+2023/07/26 19:45:48 autossh[1441]: port down, restarting ssh
+2023/07/26 19:45:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:45:48 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 19:45:48 autossh[1441]: starting ssh (count 118)
+2023/07/26 19:45:48 autossh[1441]: ssh child pid is 19240
+2023/07/26 19:45:48 autossh[1441]: check on child 19240
+2023/07/26 19:45:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:45:48 autossh[1441]: set alarm for 600 secs
+2023/07/26 19:45:48 autossh[19240]: child of 1441 execing /usr/bin/ssh
+2023/07/26 19:55:48 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 19:56:03 autossh[1441]: timeout polling to accept read connection
+2023/07/26 19:56:03 autossh[1441]: port down, restarting ssh
+2023/07/26 19:56:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:56:03 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 19:56:03 autossh[1441]: starting ssh (count 119)
+2023/07/26 19:56:03 autossh[1441]: ssh child pid is 19375
+2023/07/26 19:56:03 autossh[1441]: check on child 19375
+2023/07/26 19:56:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 19:56:03 autossh[1441]: set alarm for 600 secs
+2023/07/26 19:56:03 autossh[19375]: child of 1441 execing /usr/bin/ssh
+2023/07/26 20:06:03 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 20:06:18 autossh[1441]: timeout polling to accept read connection
+2023/07/26 20:06:18 autossh[1441]: port down, restarting ssh
+2023/07/26 20:06:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:06:18 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 20:06:18 autossh[1441]: starting ssh (count 120)
+2023/07/26 20:06:18 autossh[1441]: ssh child pid is 19526
+2023/07/26 20:06:18 autossh[1441]: check on child 19526
+2023/07/26 20:06:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:06:18 autossh[1441]: set alarm for 600 secs
+2023/07/26 20:06:18 autossh[19526]: child of 1441 execing /usr/bin/ssh
+2023/07/26 20:16:18 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 20:16:33 autossh[1441]: timeout polling to accept read connection
+2023/07/26 20:16:33 autossh[1441]: port down, restarting ssh
+2023/07/26 20:16:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:16:33 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 20:16:33 autossh[1441]: starting ssh (count 121)
+2023/07/26 20:16:33 autossh[1441]: ssh child pid is 19654
+2023/07/26 20:16:33 autossh[1441]: check on child 19654
+2023/07/26 20:16:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:16:33 autossh[1441]: set alarm for 600 secs
+2023/07/26 20:16:33 autossh[19654]: child of 1441 execing /usr/bin/ssh
+2023/07/26 20:26:33 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 20:26:48 autossh[1441]: timeout polling to accept read connection
+2023/07/26 20:26:48 autossh[1441]: port down, restarting ssh
+2023/07/26 20:26:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:26:48 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 20:26:48 autossh[1441]: starting ssh (count 122)
+2023/07/26 20:26:48 autossh[1441]: ssh child pid is 19790
+2023/07/26 20:26:48 autossh[1441]: check on child 19790
+2023/07/26 20:26:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:26:48 autossh[1441]: set alarm for 600 secs
+2023/07/26 20:26:48 autossh[19790]: child of 1441 execing /usr/bin/ssh
+2023/07/26 20:36:48 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 20:37:03 autossh[1441]: timeout polling to accept read connection
+2023/07/26 20:37:03 autossh[1441]: port down, restarting ssh
+2023/07/26 20:37:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:37:03 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 20:37:03 autossh[1441]: starting ssh (count 123)
+2023/07/26 20:37:03 autossh[1441]: ssh child pid is 19943
+2023/07/26 20:37:03 autossh[1441]: check on child 19943
+2023/07/26 20:37:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:37:03 autossh[1441]: set alarm for 600 secs
+2023/07/26 20:37:03 autossh[19943]: child of 1441 execing /usr/bin/ssh
+2023/07/26 20:47:03 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 20:47:18 autossh[1441]: timeout polling to accept read connection
+2023/07/26 20:47:18 autossh[1441]: port down, restarting ssh
+2023/07/26 20:47:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:47:18 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 20:47:18 autossh[1441]: starting ssh (count 124)
+2023/07/26 20:47:18 autossh[1441]: ssh child pid is 20080
+2023/07/26 20:47:18 autossh[1441]: check on child 20080
+2023/07/26 20:47:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:47:18 autossh[1441]: set alarm for 600 secs
+2023/07/26 20:47:18 autossh[20080]: child of 1441 execing /usr/bin/ssh
+2023/07/26 20:57:18 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 20:57:33 autossh[1441]: timeout polling to accept read connection
+2023/07/26 20:57:33 autossh[1441]: port down, restarting ssh
+2023/07/26 20:57:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:57:33 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 20:57:33 autossh[1441]: starting ssh (count 125)
+2023/07/26 20:57:33 autossh[1441]: ssh child pid is 20205
+2023/07/26 20:57:33 autossh[1441]: check on child 20205
+2023/07/26 20:57:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 20:57:33 autossh[1441]: set alarm for 600 secs
+2023/07/26 20:57:33 autossh[20205]: child of 1441 execing /usr/bin/ssh
+2023/07/26 21:07:33 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 21:07:48 autossh[1441]: timeout polling to accept read connection
+2023/07/26 21:07:48 autossh[1441]: port down, restarting ssh
+2023/07/26 21:07:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:07:48 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 21:07:48 autossh[1441]: starting ssh (count 126)
+2023/07/26 21:07:48 autossh[1441]: ssh child pid is 20354
+2023/07/26 21:07:48 autossh[1441]: check on child 20354
+2023/07/26 21:07:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:07:48 autossh[1441]: set alarm for 600 secs
+2023/07/26 21:07:48 autossh[20354]: child of 1441 execing /usr/bin/ssh
+2023/07/26 21:17:48 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 21:18:03 autossh[1441]: timeout polling to accept read connection
+2023/07/26 21:18:03 autossh[1441]: port down, restarting ssh
+2023/07/26 21:18:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:18:03 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 21:18:03 autossh[1441]: starting ssh (count 127)
+2023/07/26 21:18:03 autossh[1441]: ssh child pid is 20492
+2023/07/26 21:18:03 autossh[1441]: check on child 20492
+2023/07/26 21:18:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:18:03 autossh[1441]: set alarm for 600 secs
+2023/07/26 21:18:03 autossh[20492]: child of 1441 execing /usr/bin/ssh
+2023/07/26 21:28:03 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 21:28:18 autossh[1441]: timeout polling to accept read connection
+2023/07/26 21:28:18 autossh[1441]: port down, restarting ssh
+2023/07/26 21:28:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:28:18 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 21:28:18 autossh[1441]: starting ssh (count 128)
+2023/07/26 21:28:18 autossh[1441]: ssh child pid is 20621
+2023/07/26 21:28:18 autossh[1441]: check on child 20621
+2023/07/26 21:28:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:28:18 autossh[1441]: set alarm for 600 secs
+2023/07/26 21:28:18 autossh[20621]: child of 1441 execing /usr/bin/ssh
+2023/07/26 21:38:18 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 21:38:33 autossh[1441]: timeout polling to accept read connection
+2023/07/26 21:38:33 autossh[1441]: port down, restarting ssh
+2023/07/26 21:38:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:38:33 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 21:38:33 autossh[1441]: starting ssh (count 129)
+2023/07/26 21:38:33 autossh[1441]: ssh child pid is 20746
+2023/07/26 21:38:33 autossh[1441]: check on child 20746
+2023/07/26 21:38:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:38:33 autossh[1441]: set alarm for 600 secs
+2023/07/26 21:38:33 autossh[20746]: child of 1441 execing /usr/bin/ssh
+2023/07/26 21:48:33 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 21:48:48 autossh[1441]: timeout polling to accept read connection
+2023/07/26 21:48:48 autossh[1441]: port down, restarting ssh
+2023/07/26 21:48:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:48:48 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 21:48:48 autossh[1441]: starting ssh (count 130)
+2023/07/26 21:48:48 autossh[1441]: ssh child pid is 20870
+2023/07/26 21:48:48 autossh[1441]: check on child 20870
+2023/07/26 21:48:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:48:48 autossh[1441]: set alarm for 600 secs
+2023/07/26 21:48:48 autossh[20870]: child of 1441 execing /usr/bin/ssh
+2023/07/26 21:58:48 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 21:59:03 autossh[1441]: timeout polling to accept read connection
+2023/07/26 21:59:03 autossh[1441]: port down, restarting ssh
+2023/07/26 21:59:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:59:03 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 21:59:03 autossh[1441]: starting ssh (count 131)
+2023/07/26 21:59:03 autossh[1441]: ssh child pid is 21063
+2023/07/26 21:59:03 autossh[1441]: check on child 21063
+2023/07/26 21:59:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 21:59:03 autossh[1441]: set alarm for 600 secs
+2023/07/26 21:59:03 autossh[21063]: child of 1441 execing /usr/bin/ssh
+2023/07/26 22:09:03 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 22:09:18 autossh[1441]: timeout polling to accept read connection
+2023/07/26 22:09:18 autossh[1441]: port down, restarting ssh
+2023/07/26 22:09:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 22:09:18 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 22:09:18 autossh[1441]: starting ssh (count 132)
+2023/07/26 22:09:18 autossh[1441]: ssh child pid is 21214
+2023/07/26 22:09:18 autossh[1441]: check on child 21214
+2023/07/26 22:09:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 22:09:18 autossh[1441]: set alarm for 600 secs
+2023/07/26 22:09:18 autossh[21214]: child of 1441 execing /usr/bin/ssh
+2023/07/26 22:19:18 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 22:19:33 autossh[1441]: timeout polling to accept read connection
+2023/07/26 22:19:33 autossh[1441]: port down, restarting ssh
+2023/07/26 22:19:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 22:19:33 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 22:19:33 autossh[1441]: starting ssh (count 133)
+2023/07/26 22:19:33 autossh[1441]: ssh child pid is 21343
+2023/07/26 22:19:33 autossh[1441]: check on child 21343
+2023/07/26 22:19:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 22:19:33 autossh[1441]: set alarm for 600 secs
+2023/07/26 22:19:33 autossh[21343]: child of 1441 execing /usr/bin/ssh
+2023/07/26 22:29:33 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 22:29:48 autossh[1441]: timeout polling to accept read connection
+2023/07/26 22:29:48 autossh[1441]: port down, restarting ssh
+2023/07/26 22:29:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 22:29:48 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 22:29:48 autossh[1441]: starting ssh (count 134)
+2023/07/26 22:29:48 autossh[1441]: ssh child pid is 21472
+2023/07/26 22:29:48 autossh[1441]: check on child 21472
+2023/07/26 22:29:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 22:29:48 autossh[1441]: set alarm for 600 secs
+2023/07/26 22:29:48 autossh[21472]: child of 1441 execing /usr/bin/ssh
+2023/07/26 22:39:48 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 22:40:03 autossh[1441]: timeout polling to accept read connection
+2023/07/26 22:40:03 autossh[1441]: port down, restarting ssh
+2023/07/26 22:40:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 22:40:03 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 22:40:03 autossh[1441]: starting ssh (count 135)
+2023/07/26 22:40:03 autossh[1441]: ssh child pid is 21607
+2023/07/26 22:40:03 autossh[1441]: check on child 21607
+2023/07/26 22:40:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 22:40:03 autossh[1441]: set alarm for 600 secs
+2023/07/26 22:40:03 autossh[21607]: child of 1441 execing /usr/bin/ssh
+2023/07/26 22:50:03 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 22:50:18 autossh[1441]: timeout polling to accept read connection
+2023/07/26 22:50:18 autossh[1441]: port down, restarting ssh
+2023/07/26 22:50:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 22:50:18 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 22:50:18 autossh[1441]: starting ssh (count 136)
+2023/07/26 22:50:18 autossh[1441]: ssh child pid is 21735
+2023/07/26 22:50:18 autossh[1441]: check on child 21735
+2023/07/26 22:50:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 22:50:18 autossh[1441]: set alarm for 600 secs
+2023/07/26 22:50:18 autossh[21735]: child of 1441 execing /usr/bin/ssh
+2023/07/26 23:00:18 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 23:00:33 autossh[1441]: timeout polling to accept read connection
+2023/07/26 23:00:33 autossh[1441]: port down, restarting ssh
+2023/07/26 23:00:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:00:33 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 23:00:33 autossh[1441]: starting ssh (count 137)
+2023/07/26 23:00:33 autossh[1441]: ssh child pid is 21885
+2023/07/26 23:00:33 autossh[1441]: check on child 21885
+2023/07/26 23:00:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:00:33 autossh[1441]: set alarm for 600 secs
+2023/07/26 23:00:33 autossh[21885]: child of 1441 execing /usr/bin/ssh
+2023/07/26 23:10:33 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 23:10:48 autossh[1441]: timeout polling to accept read connection
+2023/07/26 23:10:48 autossh[1441]: port down, restarting ssh
+2023/07/26 23:10:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:10:48 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 23:10:48 autossh[1441]: starting ssh (count 138)
+2023/07/26 23:10:48 autossh[1441]: ssh child pid is 22010
+2023/07/26 23:10:48 autossh[1441]: check on child 22010
+2023/07/26 23:10:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:10:48 autossh[1441]: set alarm for 600 secs
+2023/07/26 23:10:48 autossh[22010]: child of 1441 execing /usr/bin/ssh
+2023/07/26 23:20:48 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 23:21:03 autossh[1441]: timeout polling to accept read connection
+2023/07/26 23:21:03 autossh[1441]: port down, restarting ssh
+2023/07/26 23:21:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:21:03 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 23:21:03 autossh[1441]: starting ssh (count 139)
+2023/07/26 23:21:03 autossh[1441]: ssh child pid is 22151
+2023/07/26 23:21:03 autossh[1441]: check on child 22151
+2023/07/26 23:21:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:21:03 autossh[1441]: set alarm for 600 secs
+2023/07/26 23:21:03 autossh[22151]: child of 1441 execing /usr/bin/ssh
+2023/07/26 23:31:03 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 23:31:18 autossh[1441]: timeout polling to accept read connection
+2023/07/26 23:31:18 autossh[1441]: port down, restarting ssh
+2023/07/26 23:31:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:31:18 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 23:31:18 autossh[1441]: starting ssh (count 140)
+2023/07/26 23:31:18 autossh[1441]: ssh child pid is 22277
+2023/07/26 23:31:18 autossh[1441]: check on child 22277
+2023/07/26 23:31:18 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:31:18 autossh[1441]: set alarm for 600 secs
+2023/07/26 23:31:18 autossh[22277]: child of 1441 execing /usr/bin/ssh
+2023/07/26 23:41:18 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 23:41:33 autossh[1441]: timeout polling to accept read connection
+2023/07/26 23:41:33 autossh[1441]: port down, restarting ssh
+2023/07/26 23:41:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:41:33 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 23:41:33 autossh[1441]: starting ssh (count 141)
+2023/07/26 23:41:33 autossh[1441]: ssh child pid is 22401
+2023/07/26 23:41:33 autossh[1441]: check on child 22401
+2023/07/26 23:41:33 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:41:33 autossh[1441]: set alarm for 600 secs
+2023/07/26 23:41:33 autossh[22401]: child of 1441 execing /usr/bin/ssh
+2023/07/26 23:51:33 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/26 23:51:48 autossh[1441]: timeout polling to accept read connection
+2023/07/26 23:51:48 autossh[1441]: port down, restarting ssh
+2023/07/26 23:51:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:51:48 autossh[1441]: checking for grace period, tries = 0
+2023/07/26 23:51:48 autossh[1441]: starting ssh (count 142)
+2023/07/26 23:51:48 autossh[1441]: ssh child pid is 22527
+2023/07/26 23:51:48 autossh[1441]: check on child 22527
+2023/07/26 23:51:48 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/26 23:51:48 autossh[1441]: set alarm for 600 secs
+2023/07/26 23:51:48 autossh[22527]: child of 1441 execing /usr/bin/ssh
+2023/07/27 00:01:48 autossh[1441]: received SIGALRM (end-of-life 0)
+2023/07/27 00:02:03 autossh[1441]: timeout polling to accept read connection
+2023/07/27 00:02:03 autossh[1441]: port down, restarting ssh
+2023/07/27 00:02:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/27 00:02:03 autossh[1441]: checking for grace period, tries = 0
+2023/07/27 00:02:03 autossh[1441]: starting ssh (count 143)
+2023/07/27 00:02:03 autossh[1441]: ssh child pid is 22695
+2023/07/27 00:02:03 autossh[1441]: check on child 22695
+2023/07/27 00:02:03 autossh[1441]: clear alarm timer (0 secs left)
+2023/07/27 00:02:03 autossh[1441]: set alarm for 600 secs
+2023/07/27 00:02:03 autossh[22695]: child of 1441 execing /usr/bin/ssh
+2023/07/27 00:10:12 autossh[1441]: received signal to exit (15)
+2023/07/27 00:10:12 autossh[1441]: clear alarm timer (111 secs left)
+
+############################ annie - 07/27/23 00:17:00 EST -0500 ############################
+
+2023/07/27 00:17:00 autossh[1442]: checking for grace period, tries = 0
+2023/07/27 00:17:00 autossh[1442]: starting ssh (count 1)
+2023/07/27 00:17:00 autossh[1442]: ssh child pid is 1443
+2023/07/27 00:17:00 autossh[1442]: check on child 1443
+2023/07/27 00:17:00 autossh[1442]: clear alarm timer (0 secs left)
+2023/07/27 00:17:00 autossh[1442]: set alarm for 600 secs
+2023/07/27 00:17:00 autossh[1443]: child of 1442 execing /usr/bin/ssh
