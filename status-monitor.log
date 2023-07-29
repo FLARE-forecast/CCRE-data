@@ -11141,3 +11141,81 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
 rtt min/avg/max/mdev = 32.027/34.730/37.792/2.367 ms
+
+############################ annie - 07/29/23 00:17:00 EST -0500 ############################
+
+ 00:17:00 up 1 min,  0 users,  load average: 0.27, 0.12, 0.04
+
+
+reboot   system boot  5.15.0-75-generi Sat Jul 29 00:15   still running
+reboot   system boot  5.15.0-75-generi Fri Jul 28 16:58 - 00:10  (07:11)
+reboot   system boot  5.15.0-75-generi Fri Jul 28 00:15 - 00:10  (23:54)
+reboot   system boot  5.15.0-75-generi Thu Jul 27 00:15 - 00:10  (23:54)
+reboot   system boot  5.15.0-75-generi Wed Jul 26 00:15 - 00:10  (23:54)
+
+
+
+
+Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+
+
+[    3.033001] cdc_ether 1-6:1.0 enx0015ff025968: renamed from eth0
+
+
+[   15.118965] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[   15.123844] Bridge firewalling registered
+[   15.339658] Initializing XFRM netlink socket
+[   17.247551] systemd-journald[24]: Received client request to flush runtime journal.
+[   17.257864] systemd-journald[24]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   18.200458] device ovs-system entered promiscuous mode
+[   18.204922] Timeout policy base is empty
+[   18.204934] Failed to associated timeout policy `ovs_test_tp'
+[   18.276072] device eviCIBR6 entered promiscuous mode
+[   18.326953] device appCIBR6 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           59G  9.1G   47G  17% /data
+
+
+Sat Jul 29 00:09:11 2023 [pid 8231] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 369 bytes, 12.89Kbyte/sec
+Sat Jul 29 00:09:12 2023 [pid 8233] CONNECT: Client "::ffff:10.10.1.1"
+Sat Jul 29 00:09:12 2023 [pid 8232] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sat Jul 29 00:09:14 2023 [pid 8234] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 369 bytes, 12.39Kbyte/sec
+Sat Jul 29 00:16:46 2023 [pid 1293] CONNECT: Client "::ffff:10.10.1.1"
+Sat Jul 29 00:16:46 2023 [pid 1292] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sat Jul 29 00:16:49 2023 [pid 1294] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1300 bytes, 13.54Kbyte/sec
+Sat Jul 29 00:16:50 2023 [pid 1296] CONNECT: Client "::ffff:10.10.1.1"
+Sat Jul 29 00:16:50 2023 [pid 1295] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sat Jul 29 00:16:52 2023 [pid 1297] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1300 bytes, 13.55Kbyte/sec
+
+
+enx0015ff025968:
+100.69.230.50/30
+
+
+
+
+enp2s0:
+
+
+PING github.com (140.82.113.4) 56(84) bytes of data.
+64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=1 ttl=50 time=23.1 ms
+64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=2 ttl=50 time=27.5 ms
+64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=3 ttl=50 time=32.9 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 23.137/27.854/32.925/4.003 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=21.8 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=29.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=27.7 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 21.751/26.213/29.225/3.219 ms
