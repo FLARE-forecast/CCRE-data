@@ -11697,3 +11697,85 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2004ms
 rtt min/avg/max/mdev = 23.700/29.451/33.795/4.239 ms
+
+############################ annie - 07/30/23 06:19:02 EST -0500 ############################
+
+ 06:19:02 up  6:03,  0 users,  load average: 0.03, 0.02, 0.00
+
+
+reboot   system boot  5.15.0-75-generi Sun Jul 30 00:15   still running
+reboot   system boot  5.15.0-75-generi Sat Jul 29 11:26 - 00:10  (12:43)
+reboot   system boot  5.15.0-75-generi Sat Jul 29 00:15 - 00:10  (23:54)
+reboot   system boot  5.15.0-75-generi Fri Jul 28 16:58 - 00:10  (07:11)
+reboot   system boot  5.15.0-75-generi Fri Jul 28 00:15 - 00:10  (23:54)
+
+
+
+
+Bus 001 Device 006: ID 1410:9030 Novatel Wireless MiFi USB730L
+
+
+[    3.047392] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+[ 8704.933337] rndis_host 1-6:1.0 enx0015ff025968: unregister 'rndis_host' usb-0000:00:15.0-6, RNDIS device
+[ 8706.133906] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+[ 9855.096425] rndis_host 1-6:1.0 enx0015ff025968: unregister 'rndis_host' usb-0000:00:15.0-6, RNDIS device
+[ 9856.063141] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+
+
+[ 9855.849855] usb 1-6: new high-speed USB device number 6 using xhci_hcd
+[ 9856.004540] usb 1-6: New USB device found, idVendor=1410, idProduct=9030, bcdDevice= 3.10
+[ 9856.004560] usb 1-6: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 9856.004568] usb 1-6: Product: MiFi USB730L
+[ 9856.004574] usb 1-6: Manufacturer: Novatel Wireless
+[ 9856.004579] usb 1-6: SerialNumber: 0123456789ABCDEF
+[ 9856.050449] rndis_host 1-6:1.0 eth0: register 'rndis_host' at usb-0000:00:15.0-6, RNDIS device, 00:15:ff:02:59:68
+[ 9856.052490] hid-generic 0003:1410:9030.0003: hiddev0,hidraw0: USB HID v1.01 Device [Novatel Wireless MiFi USB730L] on usb-0000:00:15.0-6/input2
+[ 9856.063141] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+[ 9858.696615] device CIBR6a110007fff left promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           59G  9.1G   47G  17% /data
+
+
+Sun Jul 30 06:09:03 2023 [pid 6865] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 372 bytes, 12.94Kbyte/sec
+Sun Jul 30 06:09:04 2023 [pid 6878] CONNECT: Client "::ffff:10.10.1.1"
+Sun Jul 30 06:09:04 2023 [pid 6877] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sun Jul 30 06:09:06 2023 [pid 6879] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 372 bytes, 13.09Kbyte/sec
+Sun Jul 30 06:16:48 2023 [pid 6958] CONNECT: Client "::ffff:10.10.1.1"
+Sun Jul 30 06:16:48 2023 [pid 6957] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sun Jul 30 06:16:50 2023 [pid 6959] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1205 bytes, 12.75Kbyte/sec
+Sun Jul 30 06:16:51 2023 [pid 6962] CONNECT: Client "::ffff:10.10.1.1"
+Sun Jul 30 06:16:51 2023 [pid 6961] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Sun Jul 30 06:16:53 2023 [pid 6963] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1205 bytes, 12.78Kbyte/sec
+
+
+enx0015ff025968:
+100.84.253.129/30
+
+
+
+
+enp2s0:
+
+
+PING github.com (140.82.113.3) 56(84) bytes of data.
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=1 ttl=48 time=36.7 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=2 ttl=48 time=34.4 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=3 ttl=48 time=33.4 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 33.373/34.820/36.723/1.404 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=29.6 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=28.9 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=27.2 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 27.240/28.604/29.630/1.004 ms
