@@ -1387,3 +1387,6 @@ fatal: gc is already running on machine 'annie' pid 1587 (use --force if not)
 Working on: /data/annie-logs
 Disk Usage After Git Garbage Collector:
 /dev/sda1                           59G   13G   43G  23% /data
+Working on: /data/annie-logs
+Disk Usage After Git Garbage Collector:
+/dev/sda1                           59G  9.2G   47G  17% /data
