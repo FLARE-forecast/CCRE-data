@@ -18287,3 +18287,83 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2001ms
 rtt min/avg/max/mdev = 29.516/30.597/32.024/1.052 ms
+
+############################ annie - 08/16/23 00:17:10 EST -0500 ############################
+
+ 00:17:10 up 1 min,  0 users,  load average: 0.30, 0.12, 0.04
+
+
+reboot   system boot  5.15.0-75-generi Wed Aug 16 00:16   still running
+reboot   system boot  5.15.0-75-generi Tue Aug 15 00:16 - 00:10  (23:54)
+reboot   system boot  5.15.0-75-generi Mon Aug 14 00:16 - 00:10  (23:54)
+reboot   system boot  5.15.0-75-generi Sun Aug 13 00:16 - 00:10  (23:54)
+reboot   system boot  5.15.0-75-generi Sat Aug 12 00:16 - 00:10  (23:54)
+
+
+
+
+Bus 001 Device 005: ID 1410:9030 Novatel Wireless MiFi USB730L
+
+
+[    2.968651] cdc_ether 1-6:1.0 enx0015ff025968: renamed from eth0
+[   10.451062] cdc_ether 1-6:1.0 enx0015ff025968: unregister 'cdc_ether' usb-0000:00:15.0-6, CDC Ethernet Device
+[   11.335740] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+
+
+[   15.777931] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[   15.782845] Bridge firewalling registered
+[   16.004427] Initializing XFRM netlink socket
+[   17.930899] systemd-journald[23]: Received client request to flush runtime journal.
+[   17.941554] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   18.925747] device ovs-system entered promiscuous mode
+[   18.928419] Timeout policy base is empty
+[   18.928429] Failed to associated timeout policy `ovs_test_tp'
+[   18.999917] device eviCIBR6 entered promiscuous mode
+[   19.027760] device appCIBR6 entered promiscuous mode
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           59G  9.8G   46G  18% /data
+
+
+Wed Aug 16 00:09:04 2023 [pid 22310] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 373 bytes, 12.87Kbyte/sec
+Wed Aug 16 00:09:05 2023 [pid 22313] CONNECT: Client "::ffff:10.10.1.1"
+Wed Aug 16 00:09:05 2023 [pid 22312] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Wed Aug 16 00:09:07 2023 [pid 22314] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 373 bytes, 12.95Kbyte/sec
+Wed Aug 16 00:16:39 2023 [pid 1242] CONNECT: Client "::ffff:10.10.1.1"
+Wed Aug 16 00:16:39 2023 [pid 1241] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Wed Aug 16 00:16:41 2023 [pid 1243] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1305 bytes, 13.54Kbyte/sec
+Wed Aug 16 00:16:42 2023 [pid 1247] CONNECT: Client "::ffff:10.10.1.1"
+Wed Aug 16 00:16:42 2023 [pid 1246] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Wed Aug 16 00:16:45 2023 [pid 1248] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1305 bytes, 13.49Kbyte/sec
+
+
+enx0015ff025968:
+100.102.115.80/27
+
+
+
+
+enp2s0:
+
+
+PING github.com (140.82.113.3) 56(84) bytes of data.
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=1 ttl=50 time=33.8 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=2 ttl=50 time=35.6 ms
+64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=3 ttl=50 time=42.9 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 33.773/37.398/42.868/3.935 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=29.1 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=28.3 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=36.6 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 28.295/31.338/36.608/3.740 ms
