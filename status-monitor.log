@@ -18607,3 +18607,83 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
 rtt min/avg/max/mdev = 31.394/39.259/50.259/8.014 ms
+
+############################ annie - 08/16/23 18:19:01 EST -0500 ############################
+
+ 18:19:01 up 18:03,  0 users,  load average: 0.01, 0.02, 0.00
+
+
+reboot   system boot  5.15.0-75-generi Wed Aug 16 00:16   still running
+reboot   system boot  5.15.0-75-generi Tue Aug 15 00:16 - 00:10  (23:54)
+reboot   system boot  5.15.0-75-generi Mon Aug 14 00:16 - 00:10  (23:54)
+reboot   system boot  5.15.0-75-generi Sun Aug 13 00:16 - 00:10  (23:54)
+reboot   system boot  5.15.0-75-generi Sat Aug 12 00:16 - 00:10  (23:54)
+
+
+
+
+Bus 001 Device 005: ID 1410:9030 Novatel Wireless MiFi USB730L
+
+
+[    2.968651] cdc_ether 1-6:1.0 enx0015ff025968: renamed from eth0
+[   10.451062] cdc_ether 1-6:1.0 enx0015ff025968: unregister 'cdc_ether' usb-0000:00:15.0-6, CDC Ethernet Device
+[   11.335740] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+
+
+[24057.243213] device CIBR6a110011fff entered promiscuous mode
+[25302.483584] device CIBR6a110011fff left promiscuous mode
+[25436.458844] device CIBR6a110011fff entered promiscuous mode
+[25724.953812] device CIBR6a110011fff left promiscuous mode
+[28976.706810] device CIBR6a110005fff entered promiscuous mode
+[30353.251525] device CIBR6a110005fff left promiscuous mode
+[43674.122217] perf: interrupt took too long (2515 > 2500), lowering kernel.perf_event_max_sample_rate to 79500
+[50282.421233] device CIBR6a110005fff entered promiscuous mode
+[51953.792171] device CIBR6a110005fff left promiscuous mode
+[63584.858484] perf: interrupt took too long (3188 > 3143), lowering kernel.perf_event_max_sample_rate to 62500
+
+
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+/dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+/dev/sda1                           59G  9.8G   46G  18% /data
+
+
+Wed Aug 16 18:09:09 2023 [pid 17010] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 373 bytes, 12.90Kbyte/sec
+Wed Aug 16 18:16:41 2023 [pid 17091] CONNECT: Client "::ffff:10.10.1.1"
+Wed Aug 16 18:16:41 2023 [pid 17090] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Wed Aug 16 18:16:43 2023 [pid 17092] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1239 bytes, 13.06Kbyte/sec
+Wed Aug 16 18:16:44 2023 [pid 17096] CONNECT: Client "::ffff:10.10.1.1"
+Wed Aug 16 18:16:44 2023 [pid 17095] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Wed Aug 16 18:16:47 2023 [pid 17097] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1239 bytes, 13.09Kbyte/sec
+Wed Aug 16 18:18:58 2023 [pid 17124] CONNECT: Client "::ffff:10.10.1.1"
+Wed Aug 16 18:18:58 2023 [pid 17123] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+Wed Aug 16 18:19:00 2023 [pid 17125] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 372 bytes, 13.06Kbyte/sec
+
+
+enx0015ff025968:
+100.102.115.80/27
+
+
+
+
+enp2s0:
+
+
+PING github.com (140.82.114.4) 56(84) bytes of data.
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=1 ttl=48 time=38.3 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=2 ttl=48 time=36.9 ms
+64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=3 ttl=48 time=34.9 ms
+
+--- github.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 34.933/36.734/38.337/1.396 ms
+
+
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=30.4 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=34.0 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=26.1 ms
+
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 26.144/30.206/34.046/3.229 ms
