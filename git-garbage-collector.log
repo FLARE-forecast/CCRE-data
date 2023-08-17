@@ -1892,3 +1892,13 @@ Disk Usage After Git Garbage Collector:
 Disk Usage Before Git Garbage Collector:
 /dev/sda1                           59G  9.8G   46G  18% /data
 Working on: /data/ccre-dam-data
+
+############################ annie - 08/17/23 00:20:11 EST -0500 ############################
+
+Disk Usage Before Git Garbage Collector:
+/dev/sda1                           59G   13G   43G  23% /data
+Working on: /data/ccre-dam-data
+fatal: gc is already running on machine 'annie' pid 1616 (use --force if not)
+Working on: /data/annie-logs
+Disk Usage After Git Garbage Collector:
+/dev/sda1                           59G   13G   43G  23% /data
