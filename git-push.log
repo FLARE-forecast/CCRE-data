@@ -10020,3 +10020,449 @@ Completed at 08/17/23 12:24:22 EST
 08/18/23 00:00:22 EST -0500 |  ! [remote rejected]   19a9313ccedd49d9931a0cbe66c2415781e42c8f -> ccre-dam-data (failed)
 08/18/23 00:00:22 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
 08/18/23 00:00:22 EST -0500 | Processing directory: /data/annie-logs
+08/18/23 00:00:22 EST -0500 | [annie-logs b62a14e] 08/18/23 00:00:22 EST -0500
+08/18/23 00:00:22 EST -0500 |  2 files changed, 75 insertions(+)
+08/18/23 00:00:24 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 00:00:24 EST -0500 |    235fe61..b62a14e  b62a14edac34401cecef05ce2212fe66f2f64d47 -> annie-logs
+08/18/23 00:00:24 EST -0500 | ##########  END  ##########
+08/18/23 00:02:22 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 00:02:23 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 00:02:23 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 00:02:23 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 00:02:23 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 00:04:36 EST -0500 | ########## START ##########
+08/18/23 00:04:36 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 00:04:44 EST -0500 | [ccre-dam-data 57c8bc1c] 08/18/23 00:04:36 EST -0500
+08/18/23 00:04:44 EST -0500 |  2 files changed, 44 insertions(+)
+08/18/23 00:18:11 EST -0500 | ########## START ##########
+08/18/23 00:18:11 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 00:18:17 EST -0500 | [ccre-dam-data 8aefdd56] 08/18/23 00:18:11 EST -0500
+08/18/23 00:18:17 EST -0500 |  2 files changed, 21 insertions(+)
+08/18/23 00:20:02 EST -0500 | ########## START ##########
+08/18/23 00:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 00:20:05 EST -0500 | [ccre-dam-data 681ebc73] 08/18/23 00:20:02 EST -0500
+08/18/23 00:20:05 EST -0500 |  1 file changed, 1 insertion(+)
+08/18/23 00:51:49 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 00:51:49 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 00:51:49 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 00:51:49 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 00:51:49 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 00:52:16 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 00:52:16 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 00:52:16 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 00:52:16 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 00:52:16 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 01:20:02 EST -0500 | ########## START ##########
+08/18/23 01:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 01:20:09 EST -0500 | [ccre-dam-data 02ae3f29] 08/18/23 01:20:02 EST -0500
+08/18/23 01:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 01:25:26 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 01:25:27 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 01:25:27 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 01:25:27 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 01:25:27 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 01:26:18 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 01:26:19 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 01:26:19 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 01:26:19 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 01:26:19 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 01:44:34 EST -0500 | send-pack: unexpected disconnect while reading sideband packet
+08/18/23 01:44:34 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 01:44:34 EST -0500 | fatal: the remote end hung up unexpectedly
+08/18/23 02:09:32 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 02:09:32 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 02:09:32 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 02:09:32 EST -0500 |  ! [remote rejected]   1582f3583d87a357e9e525c660d63c19be61876b -> ccre-dam-data (failed)
+08/18/23 02:09:32 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 02:14:40 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 02:14:41 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 02:14:41 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 02:14:41 EST -0500 |  ! [remote rejected]   1582f3583d87a357e9e525c660d63c19be61876b -> ccre-dam-data (failed)
+08/18/23 02:14:41 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 02:20:02 EST -0500 | ########## START ##########
+08/18/23 02:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 02:20:09 EST -0500 | [ccre-dam-data 0d24fb10] 08/18/23 02:20:02 EST -0500
+08/18/23 02:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 02:37:42 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 02:37:42 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 02:37:42 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 02:37:42 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 02:37:42 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 03:07:09 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 03:07:09 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 03:07:09 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 03:07:09 EST -0500 |  ! [remote rejected]   a66548b39ec422f884ec09efcd72a8d2c65ee3ee -> ccre-dam-data (failed)
+08/18/23 03:07:09 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 03:15:03 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 03:15:03 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 03:15:03 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 03:15:03 EST -0500 |  ! [remote rejected]   a66548b39ec422f884ec09efcd72a8d2c65ee3ee -> ccre-dam-data (failed)
+08/18/23 03:15:03 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 03:20:01 EST -0500 | ########## START ##########
+08/18/23 03:20:01 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 03:20:08 EST -0500 | [ccre-dam-data 18ea80d5] 08/18/23 03:20:01 EST -0500
+08/18/23 03:20:08 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 03:25:38 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 03:25:38 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 03:25:38 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 03:25:38 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 03:25:38 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 03:44:25 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 03:44:25 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 03:44:25 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 03:44:25 EST -0500 |  ! [remote rejected]   1582f3583d87a357e9e525c660d63c19be61876b -> ccre-dam-data (failed)
+08/18/23 03:44:25 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 04:20:02 EST -0500 | ########## START ##########
+08/18/23 04:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 04:20:10 EST -0500 | [ccre-dam-data 228060ee] 08/18/23 04:20:02 EST -0500
+08/18/23 04:20:10 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 04:33:08 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 04:33:08 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 04:33:08 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 04:33:08 EST -0500 |  ! [remote rejected]   c54d100f122da38f650b677a04aff6bb9b83bf0b -> ccre-dam-data (failed)
+08/18/23 04:33:08 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 04:41:39 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 04:41:39 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 04:41:39 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 04:41:39 EST -0500 |  ! [remote rejected]   c54d100f122da38f650b677a04aff6bb9b83bf0b -> ccre-dam-data (failed)
+08/18/23 04:41:39 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 04:50:32 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 04:50:32 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 04:50:32 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 04:50:32 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 04:50:33 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 04:53:18 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 04:53:19 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 04:53:19 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 04:53:19 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 04:53:19 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 05:14:40 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 05:14:40 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 05:14:40 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 05:14:40 EST -0500 |  ! [remote rejected]   a66548b39ec422f884ec09efcd72a8d2c65ee3ee -> ccre-dam-data (failed)
+08/18/23 05:14:40 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 05:20:01 EST -0500 | ########## START ##########
+08/18/23 05:20:01 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 05:20:08 EST -0500 | [ccre-dam-data 407a39da] 08/18/23 05:20:01 EST -0500
+08/18/23 05:20:08 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 06:20:02 EST -0500 | ########## START ##########
+08/18/23 06:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 06:20:09 EST -0500 | [ccre-dam-data 98ae0bbc] 08/18/23 06:20:02 EST -0500
+08/18/23 06:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 06:29:10 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 06:29:10 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 06:29:10 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 06:29:10 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 06:29:10 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 06:56:19 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 06:56:20 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 06:56:20 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 06:56:20 EST -0500 |  ! [remote rejected]   19a9313ccedd49d9931a0cbe66c2415781e42c8f -> ccre-dam-data (failed)
+08/18/23 06:56:20 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 07:06:03 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 07:06:03 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 07:06:03 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 07:06:03 EST -0500 |  ! [remote rejected]   19a9313ccedd49d9931a0cbe66c2415781e42c8f -> ccre-dam-data (failed)
+08/18/23 07:06:03 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 07:20:02 EST -0500 | ########## START ##########
+08/18/23 07:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 07:20:09 EST -0500 | [ccre-dam-data ee06884f] 08/18/23 07:20:02 EST -0500
+08/18/23 07:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 07:44:46 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 07:44:46 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 07:44:46 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 07:44:46 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 07:44:46 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 07:46:12 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 07:46:12 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 07:46:12 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 07:46:12 EST -0500 |  ! [remote rejected]   1582f3583d87a357e9e525c660d63c19be61876b -> ccre-dam-data (failed)
+08/18/23 07:46:12 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 08:00:33 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 08:00:33 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 08:00:33 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 08:00:33 EST -0500 |  ! [remote rejected]   c54d100f122da38f650b677a04aff6bb9b83bf0b -> ccre-dam-data (failed)
+08/18/23 08:00:33 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 08:05:25 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 08:05:26 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 08:05:26 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 08:05:26 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 08:05:26 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 08:20:02 EST -0500 | ########## START ##########
+08/18/23 08:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 08:20:09 EST -0500 | [ccre-dam-data 42e94549] 08/18/23 08:20:02 EST -0500
+08/18/23 08:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 08:42:52 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 08:42:52 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 08:42:52 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 08:42:52 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 08:42:52 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 08:59:04 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 08:59:04 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 08:59:04 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 08:59:04 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 08:59:04 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 09:12:26 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 09:12:26 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 09:12:26 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 09:12:26 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 09:12:26 EST -0500 |  ! [remote rejected]   12d37e9ccda7f2a456516898b40724d3a6ba32b5 -> ccre-dam-data (failed)
+08/18/23 09:12:26 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 09:12:26 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 09:12:26 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 09:12:26 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 09:12:26 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 09:13:09 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 09:13:10 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 09:13:10 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 09:13:10 EST -0500 |  ! [remote rejected]   12d37e9ccda7f2a456516898b40724d3a6ba32b5 -> ccre-dam-data (failed)
+08/18/23 09:13:10 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 09:20:02 EST -0500 | ########## START ##########
+08/18/23 09:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 09:20:09 EST -0500 | [ccre-dam-data 6b2ad68c] 08/18/23 09:20:02 EST -0500
+08/18/23 09:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 09:37:36 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 09:37:36 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 09:37:36 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 09:37:36 EST -0500 |  ! [remote rejected]   1582f3583d87a357e9e525c660d63c19be61876b -> ccre-dam-data (failed)
+08/18/23 09:37:36 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 09:38:54 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 09:38:54 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 09:38:54 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 09:38:54 EST -0500 |  ! [remote rejected]   a66548b39ec422f884ec09efcd72a8d2c65ee3ee -> ccre-dam-data (failed)
+08/18/23 09:38:54 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 09:50:49 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 09:50:50 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 09:50:50 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 09:50:50 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 09:50:50 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 09:52:36 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 09:52:36 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 09:52:36 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 09:52:36 EST -0500 |  ! [remote rejected]   19a9313ccedd49d9931a0cbe66c2415781e42c8f -> ccre-dam-data (failed)
+08/18/23 09:52:36 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 10:12:35 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 10:12:35 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 10:12:35 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 10:12:35 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 10:12:35 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 10:20:02 EST -0500 | ########## START ##########
+08/18/23 10:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 10:20:09 EST -0500 | [ccre-dam-data 63f3fa6a] 08/18/23 10:20:02 EST -0500
+08/18/23 10:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 10:27:31 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 10:27:31 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 10:27:31 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 10:27:31 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 10:27:31 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 10:47:06 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 10:47:06 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 10:47:06 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 10:47:06 EST -0500 |  ! [remote rejected]   1582f3583d87a357e9e525c660d63c19be61876b -> ccre-dam-data (failed)
+08/18/23 10:47:06 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 10:52:46 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 10:52:46 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 10:52:46 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 10:52:46 EST -0500 |  ! [remote rejected]   8d903bac8fffed8da2c6c4e63bb37c266ba9c3d9 -> ccre-dam-data (failed)
+08/18/23 10:52:46 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 10:57:28 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 10:57:28 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 10:57:28 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 10:57:28 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 10:57:28 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 10:58:34 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 10:58:34 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 10:58:34 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 10:58:34 EST -0500 |  ! [remote rejected]   8d903bac8fffed8da2c6c4e63bb37c266ba9c3d9 -> ccre-dam-data (failed)
+08/18/23 10:58:34 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 11:06:54 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 11:06:54 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 11:06:54 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 11:06:54 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 11:06:54 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 11:15:36 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 11:15:37 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 11:15:37 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 11:15:37 EST -0500 |  ! [remote rejected]   c54d100f122da38f650b677a04aff6bb9b83bf0b -> ccre-dam-data (failed)
+08/18/23 11:15:37 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 11:16:41 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 11:16:42 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 11:16:42 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 11:16:42 EST -0500 |  ! [remote rejected]   a66548b39ec422f884ec09efcd72a8d2c65ee3ee -> ccre-dam-data (failed)
+08/18/23 11:16:42 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 11:20:02 EST -0500 | ########## START ##########
+08/18/23 11:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 11:20:09 EST -0500 | [ccre-dam-data dee67487] 08/18/23 11:20:02 EST -0500
+08/18/23 11:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 11:24:49 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 11:24:49 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 11:24:49 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 11:24:49 EST -0500 |  ! [remote rejected]   1582f3583d87a357e9e525c660d63c19be61876b -> ccre-dam-data (failed)
+08/18/23 11:24:49 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 11:35:46 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 11:35:46 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 11:35:46 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 11:35:46 EST -0500 |  ! [remote rejected]   12d37e9ccda7f2a456516898b40724d3a6ba32b5 -> ccre-dam-data (failed)
+08/18/23 11:35:46 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 11:55:12 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 11:55:13 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 11:55:13 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 11:55:13 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 11:55:13 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 12:03:21 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 12:03:21 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 12:03:21 EST -0500 | 
+08/18/23 12:03:21 EST -0500 | Please make sure you have the correct access rights
+08/18/23 12:03:21 EST -0500 | and the repository exists.
+08/18/23 12:08:30 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 12:08:30 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 12:08:30 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 12:08:30 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 12:08:31 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 12:17:13 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 12:17:13 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 12:17:13 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 12:17:13 EST -0500 |  ! [remote rejected]   1582f3583d87a357e9e525c660d63c19be61876b -> ccre-dam-data (failed)
+08/18/23 12:17:13 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 12:20:02 EST -0500 | ########## START ##########
+08/18/23 12:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 12:20:09 EST -0500 | [ccre-dam-data bffa3271] 08/18/23 12:20:02 EST -0500
+08/18/23 12:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 12:41:30 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 12:41:30 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 12:41:30 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 12:41:30 EST -0500 |  ! [remote rejected]   a66548b39ec422f884ec09efcd72a8d2c65ee3ee -> ccre-dam-data (failed)
+08/18/23 12:41:30 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 12:47:59 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 12:47:59 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 12:47:59 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 12:47:59 EST -0500 |  ! [remote rejected]   57c8bc1c40d795577af25ad28e3f7c8642bc8f6b -> ccre-dam-data (failed)
+08/18/23 12:47:59 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 12:50:41 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 12:50:41 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 12:50:41 EST -0500 | 
+08/18/23 12:50:41 EST -0500 | Please make sure you have the correct access rights
+08/18/23 12:50:41 EST -0500 | and the repository exists.
+08/18/23 12:50:59 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 12:51:00 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 12:51:00 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 12:51:00 EST -0500 |  ! [remote rejected]   57c8bc1c40d795577af25ad28e3f7c8642bc8f6b -> ccre-dam-data (failed)
+08/18/23 12:51:00 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 12:51:20 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 12:51:21 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 12:51:21 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 12:51:21 EST -0500 |  ! [remote rejected]   1582f3583d87a357e9e525c660d63c19be61876b -> ccre-dam-data (failed)
+08/18/23 12:51:21 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 13:00:00 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 13:00:00 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 13:00:00 EST -0500 | 
+08/18/23 13:00:00 EST -0500 | Please make sure you have the correct access rights
+08/18/23 13:00:00 EST -0500 | and the repository exists.
+08/18/23 13:00:25 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 13:00:26 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 13:00:26 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 13:00:26 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 13:00:26 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 13:03:02 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 13:03:02 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 13:03:02 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 13:03:02 EST -0500 |  ! [remote rejected]   19a9313ccedd49d9931a0cbe66c2415781e42c8f -> ccre-dam-data (failed)
+08/18/23 13:03:02 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 13:09:45 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 13:09:45 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 13:09:45 EST -0500 | 
+08/18/23 13:09:45 EST -0500 | Please make sure you have the correct access rights
+08/18/23 13:09:45 EST -0500 | and the repository exists.
+08/18/23 13:12:04 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 13:12:05 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 13:12:05 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 13:12:05 EST -0500 |  ! [remote rejected]   a66548b39ec422f884ec09efcd72a8d2c65ee3ee -> ccre-dam-data (failed)
+08/18/23 13:12:05 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 13:19:31 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 13:19:31 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 13:19:31 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 13:19:31 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 13:19:31 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 13:20:02 EST -0500 | ########## START ##########
+08/18/23 13:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 13:20:09 EST -0500 | [ccre-dam-data 253dbf55] 08/18/23 13:20:02 EST -0500
+08/18/23 13:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 13:21:06 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 13:21:06 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 13:21:06 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 13:21:06 EST -0500 |  ! [remote rejected]   c54d100f122da38f650b677a04aff6bb9b83bf0b -> ccre-dam-data (failed)
+08/18/23 13:21:06 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 13:43:46 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 13:43:46 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 13:43:46 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 13:43:46 EST -0500 |  ! [remote rejected]   8d903bac8fffed8da2c6c4e63bb37c266ba9c3d9 -> ccre-dam-data (failed)
+08/18/23 13:43:46 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 13:50:58 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 13:50:58 EST -0500 | 
+08/18/23 13:50:58 EST -0500 | Please make sure you have the correct access rights
+08/18/23 13:50:58 EST -0500 | and the repository exists.
+08/18/23 13:50:58 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 14:18:19 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 14:18:20 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 14:18:20 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 14:18:20 EST -0500 |  ! [remote rejected]   ab021baa55aaa59955896e6ea2cbff9fee7f6d0d -> ccre-dam-data (failed)
+08/18/23 14:18:20 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 14:20:02 EST -0500 | ########## START ##########
+08/18/23 14:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 14:20:04 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 14:20:05 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 14:20:05 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 14:20:05 EST -0500 |  ! [remote rejected]   a66548b39ec422f884ec09efcd72a8d2c65ee3ee -> ccre-dam-data (failed)
+08/18/23 14:20:05 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 14:20:09 EST -0500 | [ccre-dam-data 82e2e880] 08/18/23 14:20:02 EST -0500
+08/18/23 14:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 14:29:50 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 14:29:50 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 14:29:50 EST -0500 | 
+08/18/23 14:29:50 EST -0500 | Please make sure you have the correct access rights
+08/18/23 14:29:50 EST -0500 | and the repository exists.
+08/18/23 14:35:22 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 14:35:22 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 14:35:22 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 14:35:22 EST -0500 |  ! [remote rejected]   a66548b39ec422f884ec09efcd72a8d2c65ee3ee -> ccre-dam-data (failed)
+08/18/23 14:35:22 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 14:39:01 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 14:39:01 EST -0500 | 
+08/18/23 14:39:01 EST -0500 | Please make sure you have the correct access rights
+08/18/23 14:39:01 EST -0500 | and the repository exists.
+08/18/23 14:39:01 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 14:39:19 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 14:39:20 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 14:39:20 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 14:39:20 EST -0500 |  ! [remote rejected]   12982a8fc3dce40c409ef963533d6737fed3d218 -> ccre-dam-data (failed)
+08/18/23 14:39:20 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 14:49:08 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 14:49:08 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 14:49:08 EST -0500 | 
+08/18/23 14:49:08 EST -0500 | Please make sure you have the correct access rights
+08/18/23 14:49:08 EST -0500 | and the repository exists.
+08/18/23 14:49:32 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 14:49:32 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 14:49:32 EST -0500 | 
+08/18/23 14:49:32 EST -0500 | Please make sure you have the correct access rights
+08/18/23 14:49:32 EST -0500 | and the repository exists.
+08/18/23 15:20:02 EST -0500 | ########## START ##########
+08/18/23 15:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 15:20:09 EST -0500 | [ccre-dam-data a01b4776] 08/18/23 15:20:02 EST -0500
+08/18/23 15:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 15:26:39 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 15:26:40 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 15:26:40 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 15:26:40 EST -0500 |  ! [remote rejected]   8aefdd56b840d9cf341bb2f01889cae900f541e0 -> ccre-dam-data (failed)
+08/18/23 15:26:40 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 15:32:48 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 15:32:49 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 15:32:49 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 15:32:49 EST -0500 |  ! [remote rejected]   a66548b39ec422f884ec09efcd72a8d2c65ee3ee -> ccre-dam-data (failed)
+08/18/23 15:32:49 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 15:37:42 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 15:37:42 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 15:37:42 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 15:37:42 EST -0500 |  ! [remote rejected]   8aefdd56b840d9cf341bb2f01889cae900f541e0 -> ccre-dam-data (failed)
+08/18/23 15:37:42 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 15:37:42 EST -0500 | Processing directory: /data/annie-logs
