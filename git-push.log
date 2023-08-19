@@ -11279,3 +11279,176 @@ Completed at 08/17/23 12:24:22 EST
 08/18/23 22:14:26 EST -0500 | Connection to github.com closed by remote host.
 08/18/23 22:16:14 EST -0500 | fatal: Could not read from remote repository.
 08/18/23 22:16:14 EST -0500 | 
+08/18/23 22:16:14 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:16:14 EST -0500 | and the repository exists.
+08/18/23 22:16:14 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:16:14 EST -0500 | Processing directory: /data/annie-logs
+08/18/23 22:16:14 EST -0500 | [annie-logs 985d164] 08/18/23 22:16:14 EST -0500
+08/18/23 22:16:14 EST -0500 |  1 file changed, 97 insertions(+)
+08/18/23 22:16:58 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:16:58 EST -0500 | 
+08/18/23 22:16:58 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:16:58 EST -0500 | and the repository exists.
+08/18/23 22:16:58 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:17:53 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:17:53 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:17:53 EST -0500 | 
+08/18/23 22:17:53 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:17:53 EST -0500 | and the repository exists.
+08/18/23 22:18:57 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:18:57 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:18:57 EST -0500 | 
+08/18/23 22:18:57 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:18:57 EST -0500 | and the repository exists.
+08/18/23 22:19:38 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:19:38 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:19:38 EST -0500 | 
+08/18/23 22:19:38 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:19:38 EST -0500 | and the repository exists.
+08/18/23 22:20:02 EST -0500 | ########## START ##########
+08/18/23 22:20:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 22:20:09 EST -0500 | [ccre-dam-data 6cfffb0c] 08/18/23 22:20:02 EST -0500
+08/18/23 22:20:09 EST -0500 |  2 files changed, 66 insertions(+)
+08/18/23 22:20:29 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:20:29 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:20:29 EST -0500 | 
+08/18/23 22:20:29 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:20:29 EST -0500 | and the repository exists.
+08/18/23 22:24:14 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:24:14 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:24:14 EST -0500 | 
+08/18/23 22:24:14 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:24:14 EST -0500 | and the repository exists.
+08/18/23 22:24:52 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:24:52 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:24:52 EST -0500 | 
+08/18/23 22:24:52 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:24:52 EST -0500 | and the repository exists.
+08/18/23 22:25:15 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:25:15 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:25:15 EST -0500 | 
+08/18/23 22:25:15 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:25:15 EST -0500 | and the repository exists.
+08/18/23 22:25:29 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 22:25:30 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 22:25:30 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 22:25:30 EST -0500 |  ! [remote rejected]   8d903bac8fffed8da2c6c4e63bb37c266ba9c3d9 -> ccre-dam-data (failed)
+08/18/23 22:25:30 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 22:25:57 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:25:57 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:25:57 EST -0500 | 
+08/18/23 22:25:57 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:25:57 EST -0500 | and the repository exists.
+08/18/23 22:27:01 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 22:27:01 EST -0500 |    b62a14e..85903fc  85903fcdc7d48b93d402855422d1da33802e33c7 -> annie-logs
+08/18/23 22:28:20 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 22:28:20 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 22:28:20 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 22:28:20 EST -0500 |  ! [remote rejected]   02ae3f296dc2fedaadfb587595656d21d5d219e5 -> ccre-dam-data (failed)
+08/18/23 22:28:20 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 22:29:55 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:29:55 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:29:55 EST -0500 | 
+08/18/23 22:29:55 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:29:55 EST -0500 | and the repository exists.
+08/18/23 22:30:04 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:30:04 EST -0500 | 
+08/18/23 22:30:04 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:30:04 EST -0500 | and the repository exists.
+08/18/23 22:30:04 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:30:08 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:30:08 EST -0500 | 
+08/18/23 22:30:08 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:30:08 EST -0500 | and the repository exists.
+08/18/23 22:30:08 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:30:15 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:30:15 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:30:15 EST -0500 | 
+08/18/23 22:30:15 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:30:15 EST -0500 | and the repository exists.
+08/18/23 22:33:03 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:33:03 EST -0500 | 
+08/18/23 22:33:03 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:33:03 EST -0500 | and the repository exists.
+08/18/23 22:33:03 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:33:46 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:33:46 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:33:46 EST -0500 | 
+08/18/23 22:33:46 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:33:46 EST -0500 | and the repository exists.
+08/18/23 22:33:51 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:33:51 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:33:51 EST -0500 | 
+08/18/23 22:33:51 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:33:51 EST -0500 | and the repository exists.
+08/18/23 22:34:22 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:34:22 EST -0500 | 
+08/18/23 22:34:22 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:34:22 EST -0500 | and the repository exists.
+08/18/23 22:34:22 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:34:59 EST -0500 | send-pack: unexpected disconnect while reading sideband packet
+08/18/23 22:34:59 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:34:59 EST -0500 | fatal: the remote end hung up unexpectedly
+08/18/23 22:35:08 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:35:08 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:35:08 EST -0500 | 
+08/18/23 22:35:08 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:35:08 EST -0500 | and the repository exists.
+08/18/23 22:36:01 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:36:01 EST -0500 | 
+08/18/23 22:36:01 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:36:01 EST -0500 | and the repository exists.
+08/18/23 22:36:01 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:36:01 EST -0500 | ##########  END  ##########
+08/18/23 22:37:25 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:37:25 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:37:25 EST -0500 | 
+08/18/23 22:37:25 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:37:25 EST -0500 | and the repository exists.
+08/18/23 22:37:36 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:37:36 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:37:36 EST -0500 | 
+08/18/23 22:37:36 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:37:36 EST -0500 | and the repository exists.
+08/18/23 22:39:31 EST -0500 | remote: fatal: pack exceeds maximum allowed size (2.00 GiB)        
+08/18/23 22:39:32 EST -0500 | error: remote unpack failed: index-pack failed
+08/18/23 22:39:32 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/18/23 22:39:32 EST -0500 |  ! [remote rejected]   12d37e9ccda7f2a456516898b40724d3a6ba32b5 -> ccre-dam-data (failed)
+08/18/23 22:39:32 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/18/23 22:39:55 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:39:55 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:39:55 EST -0500 | 
+08/18/23 22:39:55 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:39:55 EST -0500 | and the repository exists.
+08/18/23 22:40:01 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:40:01 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:40:01 EST -0500 | 
+08/18/23 22:40:01 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:40:01 EST -0500 | and the repository exists.
+08/18/23 22:40:02 EST -0500 | ########## START ##########
+08/18/23 22:40:02 EST -0500 | Processing directory: /data/ccre-dam-data
+08/18/23 22:40:10 EST -0500 | [ccre-dam-data d26a356b] 08/18/23 22:40:02 EST -0500
+08/18/23 22:40:10 EST -0500 |  2 files changed, 22 insertions(+)
+08/18/23 22:41:12 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:41:12 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:41:12 EST -0500 | 
+08/18/23 22:41:12 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:41:12 EST -0500 | and the repository exists.
+08/18/23 22:41:33 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:41:33 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:41:33 EST -0500 | 
+08/18/23 22:41:33 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:41:33 EST -0500 | and the repository exists.
+08/18/23 22:42:13 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:42:13 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:42:13 EST -0500 | 
+08/18/23 22:42:13 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:42:13 EST -0500 | and the repository exists.
+08/18/23 22:43:33 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:43:33 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:43:33 EST -0500 | 
+08/18/23 22:43:33 EST -0500 | Please make sure you have the correct access rights
+08/18/23 22:43:33 EST -0500 | and the repository exists.
+08/18/23 22:43:47 EST -0500 | Connection to github.com closed by remote host.
+08/18/23 22:43:47 EST -0500 | fatal: Could not read from remote repository.
+08/18/23 22:43:47 EST -0500 | 
