@@ -19855,3 +19855,1757 @@ rtt min/avg/max/mdev = 34.787/35.273/36.009/0.528 ms
 08/18/23 18:19:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2004ms
 08/18/23 18:19:06 EST -0500 | rtt min/avg/max/mdev = 103.545/117.305/140.754/16.663 ms
 08/18/23 18:19:06 EST -0500 | ##########  END  ##########
+08/18/23 22:56:08 EST -0500 | ########## START ##########
+08/18/23 22:56:08 EST -0500 |  22:56:08 up 1 min,  0 users,  load average: 0.63, 0.23, 0.08
+08/18/23 22:56:08 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55   still running
+08/18/23 22:56:08 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16   still running
+08/18/23 22:56:08 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 15:06 - 00:10  (09:03)
+08/18/23 22:56:08 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 00:16 - 15:06  (14:50)
+08/18/23 22:56:08 EST -0500 | reboot   system boot  5.15.0-75-generi Wed Aug 16 00:16 - 00:10  (23:54)
+08/18/23 22:56:08 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/18/23 22:56:08 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/18/23 22:56:08 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/18/23 22:56:08 EST -0500 | Bus 001 Device 005: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/18/23 22:56:08 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/18/23 22:56:08 EST -0500 | [    2.988382] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/18/23 22:56:08 EST -0500 | [    6.718432] rndis_host 1-6:1.0 enx0015ff025968: unregister 'rndis_host' usb-0000:00:15.0-6, RNDIS device
+08/18/23 22:56:08 EST -0500 | [    8.876405] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/18/23 22:56:08 EST -0500 | [   15.717083] Initializing XFRM netlink socket
+08/18/23 22:56:08 EST -0500 | [   17.579049] systemd-journald[23]: Received client request to flush runtime journal.
+08/18/23 22:56:08 EST -0500 | [   17.596685] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+08/18/23 22:56:08 EST -0500 | [   18.587340] device ovs-system entered promiscuous mode
+08/18/23 22:56:08 EST -0500 | [   18.588959] Timeout policy base is empty
+08/18/23 22:56:08 EST -0500 | [   18.588970] Failed to associated timeout policy `ovs_test_tp'
+08/18/23 22:56:08 EST -0500 | [   18.656848] device eviCIBR6 entered promiscuous mode
+08/18/23 22:56:08 EST -0500 | [   18.678475] device appCIBR6 entered promiscuous mode
+08/18/23 22:56:08 EST -0500 | [   35.995748] device CIBR6a110007fff entered promiscuous mode
+08/18/23 22:56:08 EST -0500 | [   55.560756] device CIBR6a110011fff entered promiscuous mode
+08/18/23 22:56:08 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/18/23 22:56:08 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/18/23 22:56:08 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.4G   45G  18% /
+08/18/23 22:56:08 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/18/23 22:56:08 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/18/23 22:56:08 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/18/23 22:56:08 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/18/23 22:56:08 EST -0500 | /dev/sda1                           59G  9.7G   46G  18% /data
+08/18/23 22:56:08 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/18/23 22:56:08 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/18/23 22:56:08 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/18/23 22:56:08 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:08 EST -0500 |     inet6 ::1/128 scope host 
+08/18/23 22:56:08 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:08 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/18/23 22:56:08 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/18/23 22:56:08 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/18/23 22:56:08 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/18/23 22:56:08 EST -0500 |     altname enp3s0
+08/18/23 22:56:08 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/18/23 22:56:08 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:08 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/18/23 22:56:08 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:08 EST -0500 | 5: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/18/23 22:56:08 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/18/23 22:56:08 EST -0500 |     inet 100.65.140.114/30 metric 100 brd 100.65.140.115 scope global dynamic enx0015ff025968
+08/18/23 22:56:08 EST -0500 |        valid_lft 7155sec preferred_lft 7155sec
+08/18/23 22:56:08 EST -0500 |     inet6 2600:1003:b850:4ca1:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/18/23 22:56:08 EST -0500 |        valid_lft 86372sec preferred_lft 14372sec
+08/18/23 22:56:08 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/18/23 22:56:08 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:08 EST -0500 | 6: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/18/23 22:56:08 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/18/23 22:56:08 EST -0500 | 7: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/18/23 22:56:08 EST -0500 |     link/ether 02:42:c0:96:f8:c1 brd ff:ff:ff:ff:ff:ff
+08/18/23 22:56:08 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/18/23 22:56:08 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:09 EST -0500 | 8: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/18/23 22:56:09 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/18/23 22:56:09 EST -0500 | 9: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/18/23 22:56:09 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/18/23 22:56:09 EST -0500 | 10: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/18/23 22:56:09 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/18/23 22:56:09 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/18/23 22:56:09 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:09 EST -0500 | 11: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/18/23 22:56:09 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/18/23 22:56:09 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/18/23 22:56:09 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:09 EST -0500 | 12: CIBR6a110011fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/18/23 22:56:09 EST -0500 |     link/ether f2:f5:a8:b6:74:e8 brd ff:ff:ff:ff:ff:ff
+08/18/23 22:56:09 EST -0500 |     inet6 fe80::f0f5:a8ff:feb6:74e8/64 scope link 
+08/18/23 22:56:09 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:09 EST -0500 | 13: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/18/23 22:56:09 EST -0500 |     link/none 
+08/18/23 22:56:09 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/18/23 22:56:09 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:09 EST -0500 |     inet6 fe80::277e:8368:ae48:8972/64 scope link stable-privacy 
+08/18/23 22:56:09 EST -0500 |        valid_lft forever preferred_lft forever
+08/18/23 22:56:09 EST -0500 | Fri Aug 18 22:46:44 2023 [pid 437557] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1322 bytes, 13.69Kbyte/sec
+08/18/23 22:56:09 EST -0500 | Fri Aug 18 22:46:45 2023 [pid 437560] CONNECT: Client "::ffff:10.10.1.1"
+08/18/23 22:56:09 EST -0500 | Fri Aug 18 22:46:45 2023 [pid 437559] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/18/23 22:56:09 EST -0500 | Fri Aug 18 22:46:47 2023 [pid 437561] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1322 bytes, 13.74Kbyte/sec
+08/18/23 22:56:09 EST -0500 | Fri Aug 18 22:48:58 2023 [pid 438146] CONNECT: Client "::ffff:10.10.1.1"
+08/18/23 22:56:09 EST -0500 | Fri Aug 18 22:48:58 2023 [pid 438145] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/18/23 22:56:09 EST -0500 | Fri Aug 18 22:49:01 2023 [pid 438147] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 376 bytes, 13.18Kbyte/sec
+08/18/23 22:56:09 EST -0500 | Fri Aug 18 22:49:02 2023 [pid 438423] CONNECT: Client "::ffff:10.10.1.1"
+08/18/23 22:56:09 EST -0500 | Fri Aug 18 22:49:02 2023 [pid 438422] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/18/23 22:56:09 EST -0500 | Fri Aug 18 22:49:04 2023 [pid 438424] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 376 bytes, 13.10Kbyte/sec
+08/18/23 22:56:09 EST -0500 | PING github.com (140.82.112.4) 56(84) bytes of data.
+08/18/23 22:56:09 EST -0500 | 64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=1 ttl=50 time=26.9 ms
+08/18/23 22:56:09 EST -0500 | 64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=2 ttl=50 time=35.5 ms
+08/18/23 22:56:10 EST -0500 | 64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=3 ttl=50 time=33.6 ms
+08/18/23 22:56:10 EST -0500 | 
+08/18/23 22:56:10 EST -0500 | --- github.com ping statistics ---
+08/18/23 22:56:10 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/18/23 22:56:10 EST -0500 | rtt min/avg/max/mdev = 26.913/32.037/35.549/3.705 ms
+08/18/23 22:56:10 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/18/23 22:56:10 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=34.8 ms
+08/18/23 22:56:11 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=32.7 ms
+08/18/23 22:56:12 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=31.4 ms
+08/18/23 22:56:12 EST -0500 | 
+08/18/23 22:56:12 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/18/23 22:56:12 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+08/18/23 22:56:12 EST -0500 | rtt min/avg/max/mdev = 31.421/32.986/34.798/1.389 ms
+08/18/23 22:56:12 EST -0500 | ##########  END  ##########
+08/19/23 00:17:11 EST -0500 | ########## START ##########
+08/19/23 00:17:11 EST -0500 |  00:17:11 up 1 min,  0 users,  load average: 0.24, 0.11, 0.04
+08/19/23 00:17:11 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16   still running
+08/19/23 00:17:11 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/19/23 00:17:11 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16 - 00:10  (23:54)
+08/19/23 00:17:11 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 15:06 - 00:10  (09:03)
+08/19/23 00:17:11 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 00:16 - 15:06  (14:50)
+08/19/23 00:17:11 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/19/23 00:17:11 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/19/23 00:17:11 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/19/23 00:17:11 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/19/23 00:17:11 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/19/23 00:17:11 EST -0500 | [    3.251868] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/19/23 00:17:11 EST -0500 | [   17.604712] systemd-journald[23]: Received client request to flush runtime journal.
+08/19/23 00:17:11 EST -0500 | [   17.616772] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+08/19/23 00:17:11 EST -0500 | [   18.616755] device ovs-system entered promiscuous mode
+08/19/23 00:17:11 EST -0500 | [   18.619116] Timeout policy base is empty
+08/19/23 00:17:11 EST -0500 | [   18.619125] Failed to associated timeout policy `ovs_test_tp'
+08/19/23 00:17:11 EST -0500 | [   18.680411] device eviCIBR6 entered promiscuous mode
+08/19/23 00:17:11 EST -0500 | [   18.714965] device appCIBR6 entered promiscuous mode
+08/19/23 00:17:11 EST -0500 | [   42.565636] device CIBR6a110001fff entered promiscuous mode
+08/19/23 00:17:11 EST -0500 | [   50.072720] device CIBR6a110005fff entered promiscuous mode
+08/19/23 00:17:11 EST -0500 | [   65.023622] device CIBR6a110007fff entered promiscuous mode
+08/19/23 00:17:11 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/19/23 00:17:11 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/19/23 00:17:11 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.4G   45G  18% /
+08/19/23 00:17:11 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/19/23 00:17:11 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/19/23 00:17:11 EST -0500 | /dev/sda1                           59G  9.8G   46G  18% /data
+08/19/23 00:17:11 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/19/23 00:17:11 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/19/23 00:17:11 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/19/23 00:17:11 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 |     inet6 ::1/128 scope host 
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 |     altname enp3s0
+08/19/23 00:17:11 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 |     inet 100.92.140.150/30 metric 100 brd 100.92.140.151 scope global dynamic enx0015ff025968
+08/19/23 00:17:11 EST -0500 |        valid_lft 7152sec preferred_lft 7152sec
+08/19/23 00:17:11 EST -0500 |     inet6 2600:1003:b841:1d88:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/19/23 00:17:11 EST -0500 |        valid_lft 86382sec preferred_lft 14382sec
+08/19/23 00:17:11 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/19/23 00:17:11 EST -0500 |     link/ether 02:42:76:25:06:23 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 | 10: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 | 11: CIBR6a110005fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/ether d2:b3:ce:fd:8c:f8 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 |     inet6 fe80::d0b3:ceff:fefd:8cf8/64 scope link 
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 | 12: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 00:17:11 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:17:11 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link tentative 
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 | 13: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/19/23 00:17:11 EST -0500 |     link/none 
+08/19/23 00:17:11 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 |     inet6 fe80::4920:95a0:3c33:5cd2/64 scope link stable-privacy 
+08/19/23 00:17:11 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:17:11 EST -0500 | Sat Aug 19 00:09:05 2023 [pid 26651] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 371 bytes, 12.92Kbyte/sec
+08/19/23 00:17:11 EST -0500 | Sat Aug 19 00:09:06 2023 [pid 26654] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 00:17:11 EST -0500 | Sat Aug 19 00:09:07 2023 [pid 26653] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 00:17:11 EST -0500 | Sat Aug 19 00:09:09 2023 [pid 26655] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 371 bytes, 12.73Kbyte/sec
+08/19/23 00:17:11 EST -0500 | Sat Aug 19 00:16:40 2023 [pid 1838] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 00:17:11 EST -0500 | Sat Aug 19 00:16:40 2023 [pid 1837] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 00:17:11 EST -0500 | Sat Aug 19 00:16:43 2023 [pid 1839] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1304 bytes, 13.50Kbyte/sec
+08/19/23 00:17:11 EST -0500 | Sat Aug 19 00:16:44 2023 [pid 1864] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 00:17:11 EST -0500 | Sat Aug 19 00:16:44 2023 [pid 1863] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 00:17:11 EST -0500 | Sat Aug 19 00:16:46 2023 [pid 1865] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1304 bytes, 13.55Kbyte/sec
+08/19/23 00:17:11 EST -0500 | PING github.com (140.82.112.4) 56(84) bytes of data.
+08/19/23 00:17:11 EST -0500 | 64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=1 ttl=50 time=33.1 ms
+08/19/23 00:17:12 EST -0500 | 64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=2 ttl=50 time=28.7 ms
+08/19/23 00:17:13 EST -0500 | 64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=3 ttl=50 time=37.6 ms
+08/19/23 00:17:13 EST -0500 | 
+08/19/23 00:17:13 EST -0500 | --- github.com ping statistics ---
+08/19/23 00:17:13 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/19/23 00:17:13 EST -0500 | rtt min/avg/max/mdev = 28.715/33.134/37.591/3.623 ms
+08/19/23 00:17:13 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/19/23 00:17:13 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=27.5 ms
+08/19/23 00:17:14 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=31.8 ms
+08/19/23 00:17:15 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=113 time=28.2 ms
+08/19/23 00:17:15 EST -0500 | 
+08/19/23 00:17:15 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/19/23 00:17:15 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/19/23 00:17:15 EST -0500 | rtt min/avg/max/mdev = 27.531/29.165/31.808/1.886 ms
+08/19/23 00:17:15 EST -0500 | ##########  END  ##########
+08/19/23 00:19:01 EST -0500 | ########## START ##########
+08/19/23 00:19:01 EST -0500 |  00:19:01 up 3 min,  0 users,  load average: 1.12, 0.38, 0.14
+08/19/23 00:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16   still running
+08/19/23 00:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/19/23 00:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16 - 00:10  (23:54)
+08/19/23 00:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 15:06 - 00:10  (09:03)
+08/19/23 00:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 00:16 - 15:06  (14:50)
+08/19/23 00:19:01 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/19/23 00:19:01 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/19/23 00:19:01 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/19/23 00:19:01 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/19/23 00:19:01 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/19/23 00:19:01 EST -0500 | [    3.251868] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/19/23 00:19:01 EST -0500 | [   17.616772] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+08/19/23 00:19:01 EST -0500 | [   18.616755] device ovs-system entered promiscuous mode
+08/19/23 00:19:01 EST -0500 | [   18.619116] Timeout policy base is empty
+08/19/23 00:19:01 EST -0500 | [   18.619125] Failed to associated timeout policy `ovs_test_tp'
+08/19/23 00:19:01 EST -0500 | [   18.680411] device eviCIBR6 entered promiscuous mode
+08/19/23 00:19:01 EST -0500 | [   18.714965] device appCIBR6 entered promiscuous mode
+08/19/23 00:19:01 EST -0500 | [   42.565636] device CIBR6a110001fff entered promiscuous mode
+08/19/23 00:19:01 EST -0500 | [   50.072720] device CIBR6a110005fff entered promiscuous mode
+08/19/23 00:19:01 EST -0500 | [   65.023622] device CIBR6a110007fff entered promiscuous mode
+08/19/23 00:19:01 EST -0500 | [   90.002641] device CIBR6a110007fff left promiscuous mode
+08/19/23 00:19:01 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/19/23 00:19:01 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/19/23 00:19:01 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.4G   45G  18% /
+08/19/23 00:19:01 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/19/23 00:19:01 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/19/23 00:19:01 EST -0500 | /dev/sda1                           59G  9.8G   46G  18% /data
+08/19/23 00:19:01 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/19/23 00:19:01 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/19/23 00:19:01 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 00:19:01 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/19/23 00:19:01 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/19/23 00:19:01 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:01 EST -0500 |     inet6 ::1/128 scope host 
+08/19/23 00:19:01 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:01 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/19/23 00:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:19:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/19/23 00:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:19:02 EST -0500 |     altname enp3s0
+08/19/23 00:19:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/19/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/19/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:02 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/19/23 00:19:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:19:02 EST -0500 |     inet 100.92.140.150/30 metric 100 brd 100.92.140.151 scope global dynamic enx0015ff025968
+08/19/23 00:19:02 EST -0500 |        valid_lft 7042sec preferred_lft 7042sec
+08/19/23 00:19:02 EST -0500 |     inet6 2600:1003:b841:1d88:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/19/23 00:19:02 EST -0500 |        valid_lft 86365sec preferred_lft 14365sec
+08/19/23 00:19:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/19/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 00:19:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:19:02 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/19/23 00:19:02 EST -0500 |     link/ether 02:42:76:25:06:23 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:19:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/19/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:02 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 00:19:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:19:02 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 00:19:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:19:02 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 00:19:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:19:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/19/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:02 EST -0500 | 10: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 00:19:02 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:19:02 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/19/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:02 EST -0500 | 11: CIBR6a110005fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 00:19:02 EST -0500 |     link/ether d2:b3:ce:fd:8c:f8 brd ff:ff:ff:ff:ff:ff
+08/19/23 00:19:02 EST -0500 |     inet6 fe80::d0b3:ceff:fefd:8cf8/64 scope link 
+08/19/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:02 EST -0500 | 13: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/19/23 00:19:02 EST -0500 |     link/none 
+08/19/23 00:19:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/19/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:02 EST -0500 |     inet6 fe80::4920:95a0:3c33:5cd2/64 scope link stable-privacy 
+08/19/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 00:19:02 EST -0500 | Sat Aug 19 00:16:40 2023 [pid 1837] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 00:19:02 EST -0500 | Sat Aug 19 00:16:43 2023 [pid 1839] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1304 bytes, 13.50Kbyte/sec
+08/19/23 00:19:02 EST -0500 | Sat Aug 19 00:16:44 2023 [pid 1864] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 00:19:02 EST -0500 | Sat Aug 19 00:16:44 2023 [pid 1863] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 00:19:02 EST -0500 | Sat Aug 19 00:16:46 2023 [pid 1865] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1304 bytes, 13.55Kbyte/sec
+08/19/23 00:19:02 EST -0500 | Sat Aug 19 00:18:57 2023 [pid 3997] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 00:19:02 EST -0500 | Sat Aug 19 00:18:58 2023 [pid 3996] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 00:19:02 EST -0500 | Sat Aug 19 00:19:00 2023 [pid 3998] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 373 bytes, 12.94Kbyte/sec
+08/19/23 00:19:02 EST -0500 | Sat Aug 19 00:19:01 2023 [pid 4017] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 00:19:02 EST -0500 | Sat Aug 19 00:19:01 2023 [pid 4016] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 00:19:02 EST -0500 | PING github.com (140.82.114.3) 56(84) bytes of data.
+08/19/23 00:19:02 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=1 ttl=50 time=30.6 ms
+08/19/23 00:19:02 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=2 ttl=50 time=29.6 ms
+08/19/23 00:19:03 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=3 ttl=50 time=29.1 ms
+08/19/23 00:19:03 EST -0500 | 
+08/19/23 00:19:03 EST -0500 | --- github.com ping statistics ---
+08/19/23 00:19:03 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/19/23 00:19:03 EST -0500 | rtt min/avg/max/mdev = 29.106/29.764/30.566/0.604 ms
+08/19/23 00:19:03 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/19/23 00:19:03 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=32.1 ms
+08/19/23 00:19:04 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=33.6 ms
+08/19/23 00:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=113 time=35.5 ms
+08/19/23 00:19:05 EST -0500 | 
+08/19/23 00:19:05 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/19/23 00:19:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/19/23 00:19:06 EST -0500 | rtt min/avg/max/mdev = 32.122/33.737/35.481/1.374 ms
+08/19/23 00:19:06 EST -0500 | ##########  END  ##########
+08/19/23 06:19:02 EST -0500 | ########## START ##########
+08/19/23 06:19:02 EST -0500 |  06:19:02 up  6:03,  0 users,  load average: 0.08, 0.19, 0.25
+08/19/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16   still running
+08/19/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/19/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16 - 00:10  (23:54)
+08/19/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 15:06 - 00:10  (09:03)
+08/19/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 00:16 - 15:06  (14:50)
+08/19/23 06:19:02 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/19/23 06:19:02 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/19/23 06:19:02 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/19/23 06:19:02 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/19/23 06:19:02 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/19/23 06:19:02 EST -0500 | [    3.251868] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/19/23 06:19:02 EST -0500 | [ 2601.088893] device CIBR6a110001fff left promiscuous mode
+08/19/23 06:19:02 EST -0500 | [ 2977.981476] perf: interrupt took too long (2533 > 2500), lowering kernel.perf_event_max_sample_rate to 78750
+08/19/23 06:19:02 EST -0500 | [ 3026.273042] device CIBR6a110001fff entered promiscuous mode
+08/19/23 06:19:02 EST -0500 | [ 3215.686588] device CIBR6a110007fff entered promiscuous mode
+08/19/23 06:19:02 EST -0500 | [ 4058.661368] perf: interrupt took too long (3171 > 3166), lowering kernel.perf_event_max_sample_rate to 63000
+08/19/23 06:19:02 EST -0500 | [ 5388.028251] perf: interrupt took too long (3991 > 3963), lowering kernel.perf_event_max_sample_rate to 50000
+08/19/23 06:19:02 EST -0500 | [ 5425.679751] device CIBR6a110007fff left promiscuous mode
+08/19/23 06:19:02 EST -0500 | [ 5465.718222] device CIBR6a110007fff entered promiscuous mode
+08/19/23 06:19:02 EST -0500 | [ 7640.227624] perf: interrupt took too long (5002 > 4988), lowering kernel.perf_event_max_sample_rate to 39750
+08/19/23 06:19:02 EST -0500 | [12578.046410] perf: interrupt took too long (6267 > 6252), lowering kernel.perf_event_max_sample_rate to 31750
+08/19/23 06:19:02 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/19/23 06:19:02 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/19/23 06:19:02 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/19/23 06:19:02 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/19/23 06:19:02 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/19/23 06:19:02 EST -0500 | /dev/sda1                           59G   10G   46G  18% /data
+08/19/23 06:19:02 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/19/23 06:19:02 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/19/23 06:19:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 06:19:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/19/23 06:19:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 |     inet6 ::1/128 scope host 
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/19/23 06:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/19/23 06:19:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/19/23 06:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/19/23 06:19:02 EST -0500 |     altname enp3s0
+08/19/23 06:19:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/19/23 06:19:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/19/23 06:19:02 EST -0500 |     inet 100.92.140.150/30 metric 100 brd 100.92.140.151 scope global dynamic enx0015ff025968
+08/19/23 06:19:02 EST -0500 |        valid_lft 7042sec preferred_lft 7042sec
+08/19/23 06:19:02 EST -0500 |     inet6 2600:1003:b841:1d88:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/19/23 06:19:02 EST -0500 |        valid_lft 86393sec preferred_lft 14393sec
+08/19/23 06:19:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 06:19:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/19/23 06:19:02 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/19/23 06:19:02 EST -0500 |     link/ether 02:42:76:25:06:23 brd ff:ff:ff:ff:ff:ff
+08/19/23 06:19:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 06:19:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/19/23 06:19:02 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 06:19:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 06:19:02 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 06:19:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 06:19:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 | 17: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 06:19:02 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/19/23 06:19:02 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 | 19: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 06:19:02 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/19/23 06:19:02 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 | 24: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/19/23 06:19:02 EST -0500 |     link/none 
+08/19/23 06:19:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 |     inet6 fe80::7286:8abb:c40e:9ed5/64 scope link stable-privacy 
+08/19/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 06:19:02 EST -0500 | Sat Aug 19 06:09:02 2023 [pid 113630] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 373 bytes, 12.98Kbyte/sec
+08/19/23 06:19:02 EST -0500 | Sat Aug 19 06:09:03 2023 [pid 113905] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 06:19:02 EST -0500 | Sat Aug 19 06:09:03 2023 [pid 113904] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 06:19:02 EST -0500 | Sat Aug 19 06:09:05 2023 [pid 113906] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 373 bytes, 12.62Kbyte/sec
+08/19/23 06:19:02 EST -0500 | Sat Aug 19 06:16:37 2023 [pid 116154] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 06:19:02 EST -0500 | Sat Aug 19 06:16:37 2023 [pid 116153] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 06:19:02 EST -0500 | Sat Aug 19 06:16:39 2023 [pid 116155] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1210 bytes, 12.78Kbyte/sec
+08/19/23 06:19:02 EST -0500 | Sat Aug 19 06:16:40 2023 [pid 116157] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 06:19:02 EST -0500 | Sat Aug 19 06:16:40 2023 [pid 116156] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 06:19:02 EST -0500 | Sat Aug 19 06:16:43 2023 [pid 116158] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1210 bytes, 12.77Kbyte/sec
+08/19/23 06:19:03 EST -0500 | PING github.com (140.82.113.3) 56(84) bytes of data.
+08/19/23 06:19:03 EST -0500 | 64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=1 ttl=50 time=246 ms
+08/19/23 06:19:03 EST -0500 | 64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=2 ttl=50 time=202 ms
+08/19/23 06:19:04 EST -0500 | 64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=3 ttl=50 time=221 ms
+08/19/23 06:19:04 EST -0500 | 
+08/19/23 06:19:04 EST -0500 | --- github.com ping statistics ---
+08/19/23 06:19:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/19/23 06:19:04 EST -0500 | rtt min/avg/max/mdev = 201.933/222.747/245.565/17.868 ms
+08/19/23 06:19:05 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/19/23 06:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=212 ms
+08/19/23 06:19:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=238 ms
+08/19/23 06:19:07 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=203 ms
+08/19/23 06:19:07 EST -0500 | 
+08/19/23 06:19:07 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/19/23 06:19:07 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+08/19/23 06:19:07 EST -0500 | rtt min/avg/max/mdev = 203.312/217.603/237.640/14.591 ms
+08/19/23 06:19:07 EST -0500 | ##########  END  ##########
+08/19/23 12:19:01 EST -0500 | ########## START ##########
+08/19/23 12:19:01 EST -0500 |  12:19:01 up 12:03,  0 users,  load average: 0.51, 0.66, 0.40
+08/19/23 12:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16   still running
+08/19/23 12:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/19/23 12:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16 - 00:10  (23:54)
+08/19/23 12:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 15:06 - 00:10  (09:03)
+08/19/23 12:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 00:16 - 15:06  (14:50)
+08/19/23 12:19:02 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/19/23 12:19:02 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/19/23 12:19:02 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/19/23 12:19:02 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/19/23 12:19:02 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/19/23 12:19:02 EST -0500 | [    3.251868] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/19/23 12:19:02 EST -0500 | [ 5465.718222] device CIBR6a110007fff entered promiscuous mode
+08/19/23 12:19:02 EST -0500 | [ 7640.227624] perf: interrupt took too long (5002 > 4988), lowering kernel.perf_event_max_sample_rate to 39750
+08/19/23 12:19:02 EST -0500 | [12578.046410] perf: interrupt took too long (6267 > 6252), lowering kernel.perf_event_max_sample_rate to 31750
+08/19/23 12:19:02 EST -0500 | [29873.032367] perf: interrupt took too long (7861 > 7833), lowering kernel.perf_event_max_sample_rate to 25250
+08/19/23 12:19:02 EST -0500 | [36801.904251] device CIBR6a110007fff left promiscuous mode
+08/19/23 12:19:02 EST -0500 | [36873.794133] device CIBR6a110007fff entered promiscuous mode
+08/19/23 12:19:02 EST -0500 | [40337.941604] device CIBR6a110007fff left promiscuous mode
+08/19/23 12:19:02 EST -0500 | [40372.873435] device CIBR6a110007fff entered promiscuous mode
+08/19/23 12:19:02 EST -0500 | [42582.946394] device CIBR6a110007fff left promiscuous mode
+08/19/23 12:19:02 EST -0500 | [42763.314814] device CIBR6a110007fff entered promiscuous mode
+08/19/23 12:19:02 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/19/23 12:19:02 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/19/23 12:19:02 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/19/23 12:19:02 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/19/23 12:19:02 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/19/23 12:19:02 EST -0500 | /dev/sda1                           59G   11G   46G  19% /data
+08/19/23 12:19:02 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/19/23 12:19:02 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/19/23 12:19:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 12:19:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/19/23 12:19:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 |     inet6 ::1/128 scope host 
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/19/23 12:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/19/23 12:19:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/19/23 12:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/19/23 12:19:02 EST -0500 |     altname enp3s0
+08/19/23 12:19:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/19/23 12:19:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/19/23 12:19:02 EST -0500 |     inet 100.92.140.150/30 metric 100 brd 100.92.140.151 scope global dynamic enx0015ff025968
+08/19/23 12:19:02 EST -0500 |        valid_lft 7044sec preferred_lft 7044sec
+08/19/23 12:19:02 EST -0500 |     inet6 2600:1003:b841:1d88:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/19/23 12:19:02 EST -0500 |        valid_lft 86355sec preferred_lft 14355sec
+08/19/23 12:19:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 12:19:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/19/23 12:19:02 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/19/23 12:19:02 EST -0500 |     link/ether 02:42:76:25:06:23 brd ff:ff:ff:ff:ff:ff
+08/19/23 12:19:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 12:19:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/19/23 12:19:02 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 12:19:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 12:19:02 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 12:19:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 12:19:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 | 17: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 12:19:02 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/19/23 12:19:02 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 | 32: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/19/23 12:19:02 EST -0500 |     link/none 
+08/19/23 12:19:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 |     inet6 fe80::716b:73b9:daf5:3b91/64 scope link stable-privacy 
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 | 33: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 12:19:02 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/19/23 12:19:02 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/19/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 12:19:02 EST -0500 | Sat Aug 19 12:09:00 2023 [pid 226075] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 372 bytes, 13.06Kbyte/sec
+08/19/23 12:19:02 EST -0500 | Sat Aug 19 12:16:42 2023 [pid 228613] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 12:19:02 EST -0500 | Sat Aug 19 12:16:42 2023 [pid 228612] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 12:19:02 EST -0500 | Sat Aug 19 12:16:44 2023 [pid 228614] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1228 bytes, 13.01Kbyte/sec
+08/19/23 12:19:02 EST -0500 | Sat Aug 19 12:16:45 2023 [pid 228617] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 12:19:02 EST -0500 | Sat Aug 19 12:16:45 2023 [pid 228616] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 12:19:02 EST -0500 | Sat Aug 19 12:16:48 2023 [pid 228618] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1228 bytes, 12.68Kbyte/sec
+08/19/23 12:19:02 EST -0500 | Sat Aug 19 12:18:59 2023 [pid 229200] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 12:19:02 EST -0500 | Sat Aug 19 12:18:59 2023 [pid 229199] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 12:19:02 EST -0500 | Sat Aug 19 12:19:01 2023 [pid 229201] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 375 bytes, 13.07Kbyte/sec
+08/19/23 12:19:02 EST -0500 | PING github.com (140.82.113.3) 56(84) bytes of data.
+08/19/23 12:19:02 EST -0500 | 64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=1 ttl=50 time=125 ms
+08/19/23 12:19:03 EST -0500 | 64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=2 ttl=50 time=111 ms
+08/19/23 12:19:04 EST -0500 | 64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=3 ttl=50 time=142 ms
+08/19/23 12:19:04 EST -0500 | 
+08/19/23 12:19:04 EST -0500 | --- github.com ping statistics ---
+08/19/23 12:19:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+08/19/23 12:19:04 EST -0500 | rtt min/avg/max/mdev = 111.474/126.372/142.286/12.599 ms
+08/19/23 12:19:04 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/19/23 12:19:04 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=152 ms
+08/19/23 12:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=160 ms
+08/19/23 12:19:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=157 ms
+08/19/23 12:19:06 EST -0500 | 
+08/19/23 12:19:06 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/19/23 12:19:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/19/23 12:19:06 EST -0500 | rtt min/avg/max/mdev = 152.491/156.653/160.220/3.183 ms
+08/19/23 12:19:06 EST -0500 | ##########  END  ##########
+08/19/23 17:38:13 EST -0500 | ########## START ##########
+08/19/23 17:38:13 EST -0500 |  17:38:13 up 1 min,  0 users,  load average: 1.27, 0.54, 0.19
+08/19/23 17:38:13 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37   still running
+08/19/23 17:38:13 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16   still running
+08/19/23 17:38:13 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/19/23 17:38:13 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16 - 00:10  (23:54)
+08/19/23 17:38:13 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 15:06 - 00:10  (09:03)
+08/19/23 17:38:13 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/19/23 17:38:13 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/19/23 17:38:13 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/19/23 17:38:13 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/19/23 17:38:13 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/19/23 17:38:13 EST -0500 | [    2.959436] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/19/23 17:38:13 EST -0500 | [   16.824713] Initializing XFRM netlink socket
+08/19/23 17:38:13 EST -0500 | [   18.884689] systemd-journald[23]: Received client request to flush runtime journal.
+08/19/23 17:38:13 EST -0500 | [   18.893797] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+08/19/23 17:38:13 EST -0500 | [   19.869291] device ovs-system entered promiscuous mode
+08/19/23 17:38:13 EST -0500 | [   19.872516] Timeout policy base is empty
+08/19/23 17:38:13 EST -0500 | [   19.872526] Failed to associated timeout policy `ovs_test_tp'
+08/19/23 17:38:13 EST -0500 | [   19.939895] device eviCIBR6 entered promiscuous mode
+08/19/23 17:38:13 EST -0500 | [   19.979928] device appCIBR6 entered promiscuous mode
+08/19/23 17:38:13 EST -0500 | [   23.377947] device CIBR6a110007fff entered promiscuous mode
+08/19/23 17:38:13 EST -0500 | [   51.219958] device CIBR6a110001fff entered promiscuous mode
+08/19/23 17:38:13 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/19/23 17:38:13 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/19/23 17:38:13 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/19/23 17:38:13 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/19/23 17:38:13 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/19/23 17:38:13 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/19/23 17:38:13 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/19/23 17:38:13 EST -0500 | /dev/sda1                           59G   11G   46G  19% /data
+08/19/23 17:38:13 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 17:38:13 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/19/23 17:38:13 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 |     inet6 ::1/128 scope host 
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/19/23 17:38:13 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/19/23 17:38:13 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/19/23 17:38:13 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/19/23 17:38:13 EST -0500 |     altname enp3s0
+08/19/23 17:38:13 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/19/23 17:38:13 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/19/23 17:38:13 EST -0500 |     inet 100.101.74.225/30 metric 100 brd 100.101.74.227 scope global dynamic enx0015ff025968
+08/19/23 17:38:13 EST -0500 |        valid_lft 7139sec preferred_lft 7139sec
+08/19/23 17:38:13 EST -0500 |     inet6 2600:1003:b846:e264:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/19/23 17:38:13 EST -0500 |        valid_lft 86375sec preferred_lft 14375sec
+08/19/23 17:38:13 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 17:38:13 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/19/23 17:38:13 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/19/23 17:38:13 EST -0500 |     link/ether 02:42:9c:34:4e:d2 brd ff:ff:ff:ff:ff:ff
+08/19/23 17:38:13 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 17:38:13 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/19/23 17:38:13 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 17:38:13 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 17:38:13 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 17:38:13 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 17:38:13 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 | 10: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 17:38:13 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/19/23 17:38:13 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 | 11: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 17:38:13 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/19/23 17:38:13 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 | 12: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/19/23 17:38:13 EST -0500 |     link/none 
+08/19/23 17:38:13 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 |     inet6 fe80::b7db:ad:7a0a:a2fd/64 scope link stable-privacy 
+08/19/23 17:38:13 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 17:38:13 EST -0500 | Sat Aug 19 17:29:06 2023 [pid 328762] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 375 bytes, 13.16Kbyte/sec
+08/19/23 17:38:13 EST -0500 | Sat Aug 19 17:29:07 2023 [pid 328768] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 17:38:13 EST -0500 | Sat Aug 19 17:29:07 2023 [pid 328767] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 17:38:13 EST -0500 | Sat Aug 19 17:29:09 2023 [pid 328769] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 375 bytes, 12.61Kbyte/sec
+08/19/23 17:38:13 EST -0500 | Sat Aug 19 17:37:13 2023 [pid 1182] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 17:38:13 EST -0500 | Sat Aug 19 17:37:13 2023 [pid 1181] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 17:38:13 EST -0500 | Sat Aug 19 17:37:15 2023 [pid 1281] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1254 bytes, 13.25Kbyte/sec
+08/19/23 17:38:13 EST -0500 | Sat Aug 19 17:37:16 2023 [pid 1524] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 17:38:13 EST -0500 | Sat Aug 19 17:37:16 2023 [pid 1523] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 17:38:13 EST -0500 | Sat Aug 19 17:37:19 2023 [pid 1529] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1254 bytes, 13.18Kbyte/sec
+08/19/23 17:38:13 EST -0500 | PING github.com (140.82.112.3) 56(84) bytes of data.
+08/19/23 17:38:13 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=50 time=34.9 ms
+08/19/23 17:38:14 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=50 time=31.3 ms
+08/19/23 17:38:15 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=50 time=29.7 ms
+08/19/23 17:38:15 EST -0500 | 
+08/19/23 17:38:15 EST -0500 | --- github.com ping statistics ---
+08/19/23 17:38:15 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/19/23 17:38:15 EST -0500 | rtt min/avg/max/mdev = 29.686/31.969/34.935/2.196 ms
+08/19/23 17:38:15 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/19/23 17:38:15 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=32.1 ms
+08/19/23 17:38:16 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=34.2 ms
+08/19/23 17:38:17 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=113 time=30.3 ms
+08/19/23 17:38:17 EST -0500 | 
+08/19/23 17:38:17 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/19/23 17:38:17 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/19/23 17:38:17 EST -0500 | rtt min/avg/max/mdev = 30.320/32.197/34.213/1.592 ms
+08/19/23 17:38:17 EST -0500 | ##########  END  ##########
+08/19/23 18:19:01 EST -0500 | ########## START ##########
+08/19/23 18:19:01 EST -0500 |  18:19:01 up 42 min,  0 users,  load average: 0.96, 0.46, 0.35
+08/19/23 18:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37   still running
+08/19/23 18:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16   still running
+08/19/23 18:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/19/23 18:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16 - 00:10  (23:54)
+08/19/23 18:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Aug 17 15:06 - 00:10  (09:03)
+08/19/23 18:19:01 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/19/23 18:19:01 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/19/23 18:19:01 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/19/23 18:19:01 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/19/23 18:19:01 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/19/23 18:19:01 EST -0500 | [    2.959436] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/19/23 18:19:01 EST -0500 | [   16.824713] Initializing XFRM netlink socket
+08/19/23 18:19:01 EST -0500 | [   18.884689] systemd-journald[23]: Received client request to flush runtime journal.
+08/19/23 18:19:01 EST -0500 | [   18.893797] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+08/19/23 18:19:01 EST -0500 | [   19.869291] device ovs-system entered promiscuous mode
+08/19/23 18:19:01 EST -0500 | [   19.872516] Timeout policy base is empty
+08/19/23 18:19:01 EST -0500 | [   19.872526] Failed to associated timeout policy `ovs_test_tp'
+08/19/23 18:19:01 EST -0500 | [   19.939895] device eviCIBR6 entered promiscuous mode
+08/19/23 18:19:01 EST -0500 | [   19.979928] device appCIBR6 entered promiscuous mode
+08/19/23 18:19:01 EST -0500 | [   23.377947] device CIBR6a110007fff entered promiscuous mode
+08/19/23 18:19:01 EST -0500 | [   51.219958] device CIBR6a110001fff entered promiscuous mode
+08/19/23 18:19:01 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/19/23 18:19:01 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/19/23 18:19:01 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/19/23 18:19:01 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/19/23 18:19:01 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/19/23 18:19:01 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/19/23 18:19:01 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/19/23 18:19:02 EST -0500 | /dev/sda1                           59G   11G   46G  19% /data
+08/19/23 18:19:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 18:19:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/19/23 18:19:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 |     inet6 ::1/128 scope host 
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/19/23 18:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/19/23 18:19:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/19/23 18:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/19/23 18:19:02 EST -0500 |     altname enp3s0
+08/19/23 18:19:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/19/23 18:19:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/19/23 18:19:02 EST -0500 |     inet 100.101.74.225/30 metric 100 brd 100.101.74.227 scope global dynamic enx0015ff025968
+08/19/23 18:19:02 EST -0500 |        valid_lft 4690sec preferred_lft 4690sec
+08/19/23 18:19:02 EST -0500 |     inet6 2600:1003:b846:e264:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/19/23 18:19:02 EST -0500 |        valid_lft 86362sec preferred_lft 14362sec
+08/19/23 18:19:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 18:19:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/19/23 18:19:02 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/19/23 18:19:02 EST -0500 |     link/ether 02:42:9c:34:4e:d2 brd ff:ff:ff:ff:ff:ff
+08/19/23 18:19:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/19/23 18:19:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/19/23 18:19:02 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 18:19:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 18:19:02 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/19/23 18:19:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/19/23 18:19:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 | 10: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 18:19:02 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/19/23 18:19:02 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 | 11: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/19/23 18:19:02 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/19/23 18:19:02 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 | 13: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/19/23 18:19:02 EST -0500 |     link/none 
+08/19/23 18:19:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 |     inet6 fe80::e734:bcd9:c3f7:7ba2/64 scope link stable-privacy 
+08/19/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/19/23 18:19:02 EST -0500 | Sat Aug 19 18:16:40 2023 [pid 15409] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 18:19:02 EST -0500 | Sat Aug 19 18:16:42 2023 [pid 15411] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1234 bytes, 13.02Kbyte/sec
+08/19/23 18:19:02 EST -0500 | Sat Aug 19 18:16:43 2023 [pid 15414] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 18:19:02 EST -0500 | Sat Aug 19 18:16:44 2023 [pid 15413] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 18:19:02 EST -0500 | Sat Aug 19 18:16:46 2023 [pid 15415] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1234 bytes, 12.97Kbyte/sec
+08/19/23 18:19:02 EST -0500 | Sat Aug 19 18:18:57 2023 [pid 15992] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 18:19:02 EST -0500 | Sat Aug 19 18:18:57 2023 [pid 15991] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 18:19:02 EST -0500 | Sat Aug 19 18:18:59 2023 [pid 15993] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 375 bytes, 13.09Kbyte/sec
+08/19/23 18:19:02 EST -0500 | Sat Aug 19 18:19:00 2023 [pid 15995] CONNECT: Client "::ffff:10.10.1.1"
+08/19/23 18:19:02 EST -0500 | Sat Aug 19 18:19:01 2023 [pid 15994] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/19/23 18:19:02 EST -0500 | PING github.com (140.82.114.3) 56(84) bytes of data.
+08/19/23 18:19:02 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=1 ttl=48 time=25.8 ms
+08/19/23 18:19:03 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=2 ttl=48 time=48.6 ms
+08/19/23 18:19:04 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=3 ttl=48 time=77.8 ms
+08/19/23 18:19:04 EST -0500 | 
+08/19/23 18:19:04 EST -0500 | --- github.com ping statistics ---
+08/19/23 18:19:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+08/19/23 18:19:04 EST -0500 | rtt min/avg/max/mdev = 25.845/50.721/77.756/21.247 ms
+08/19/23 18:19:04 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/19/23 18:19:04 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=82.8 ms
+08/19/23 18:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=99.1 ms
+08/19/23 18:19:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=113 time=112 ms
+08/19/23 18:19:06 EST -0500 | 
+08/19/23 18:19:06 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/19/23 18:19:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/19/23 18:19:06 EST -0500 | rtt min/avg/max/mdev = 82.756/97.971/112.016/11.974 ms
+08/19/23 18:19:06 EST -0500 | ##########  END  ##########
+08/20/23 00:17:11 EST -0500 | ########## START ##########
+08/20/23 00:17:11 EST -0500 |  00:17:11 up 1 min,  0 users,  load average: 0.33, 0.13, 0.04
+08/20/23 00:17:11 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 00:16   still running
+08/20/23 00:17:11 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37 - 00:10  (06:33)
+08/20/23 00:17:11 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16 - 00:10  (23:54)
+08/20/23 00:17:11 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/20/23 00:17:11 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16 - 00:10  (23:54)
+08/20/23 00:17:11 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/20/23 00:17:11 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/20/23 00:17:11 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/20/23 00:17:11 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/20/23 00:17:11 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/20/23 00:17:11 EST -0500 | [    3.026842] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/20/23 00:17:11 EST -0500 | [   17.171883] systemd-journald[23]: Received client request to flush runtime journal.
+08/20/23 00:17:11 EST -0500 | [   17.190374] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+08/20/23 00:17:11 EST -0500 | [   18.241058] device ovs-system entered promiscuous mode
+08/20/23 00:17:11 EST -0500 | [   18.243984] Timeout policy base is empty
+08/20/23 00:17:11 EST -0500 | [   18.243992] Failed to associated timeout policy `ovs_test_tp'
+08/20/23 00:17:11 EST -0500 | [   18.313555] device eviCIBR6 entered promiscuous mode
+08/20/23 00:17:11 EST -0500 | [   18.360612] device appCIBR6 entered promiscuous mode
+08/20/23 00:17:11 EST -0500 | [   45.717445] device CIBR6a110001fff entered promiscuous mode
+08/20/23 00:17:11 EST -0500 | [   51.733588] device CIBR6a110005fff entered promiscuous mode
+08/20/23 00:17:11 EST -0500 | [   69.383151] device CIBR6a110007fff entered promiscuous mode
+08/20/23 00:17:12 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/20/23 00:17:12 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/20/23 00:17:12 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/20/23 00:17:12 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/20/23 00:17:12 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/20/23 00:17:12 EST -0500 | /dev/sda1                           59G   11G   45G  19% /data
+08/20/23 00:17:12 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/20/23 00:17:12 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/20/23 00:17:12 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/20/23 00:17:12 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 |     inet6 ::1/128 scope host 
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 |     altname enp3s0
+08/20/23 00:17:12 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 |     inet 100.106.201.123/29 metric 100 brd 100.106.201.127 scope global dynamic enx0015ff025968
+08/20/23 00:17:12 EST -0500 |        valid_lft 7171sec preferred_lft 7171sec
+08/20/23 00:17:12 EST -0500 |     inet6 2600:1003:b86e:ebf7:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/20/23 00:17:12 EST -0500 |        valid_lft 86380sec preferred_lft 14380sec
+08/20/23 00:17:12 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/20/23 00:17:12 EST -0500 |     link/ether 02:42:bc:fd:7e:b6 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 | 10: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 | 11: CIBR6a110005fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/ether d2:b3:ce:fd:8c:f8 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 |     inet6 fe80::d0b3:ceff:fefd:8cf8/64 scope link 
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 | 12: CIBR6a110007fff: <BROADCAST,MULTICAST> mtu 1500 qdisc noop master ovs-system state DOWN group default qlen 1000
+08/20/23 00:17:12 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:17:12 EST -0500 | 13: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/20/23 00:17:12 EST -0500 |     link/none 
+08/20/23 00:17:12 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 |     inet6 fe80::22f1:6ba6:ad0e:7f7c/64 scope link stable-privacy 
+08/20/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:17:12 EST -0500 | Sun Aug 20 00:09:01 2023 [pid 126613] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 374 bytes, 13.09Kbyte/sec
+08/20/23 00:17:12 EST -0500 | Sun Aug 20 00:09:02 2023 [pid 126891] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 00:17:12 EST -0500 | Sun Aug 20 00:09:02 2023 [pid 126890] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 00:17:12 EST -0500 | Sun Aug 20 00:09:05 2023 [pid 126892] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 374 bytes, 12.73Kbyte/sec
+08/20/23 00:17:12 EST -0500 | Sun Aug 20 00:16:37 2023 [pid 1822] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 00:17:12 EST -0500 | Sun Aug 20 00:16:37 2023 [pid 1821] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 00:17:12 EST -0500 | Sun Aug 20 00:16:39 2023 [pid 1823] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1299 bytes, 13.51Kbyte/sec
+08/20/23 00:17:12 EST -0500 | Sun Aug 20 00:16:40 2023 [pid 1825] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 00:17:12 EST -0500 | Sun Aug 20 00:16:40 2023 [pid 1824] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 00:17:12 EST -0500 | Sun Aug 20 00:16:42 2023 [pid 1826] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1299 bytes, 13.49Kbyte/sec
+08/20/23 00:17:12 EST -0500 | PING github.com (140.82.112.3) 56(84) bytes of data.
+08/20/23 00:17:12 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=48 time=28.5 ms
+08/20/23 00:17:13 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=48 time=38.2 ms
+08/20/23 00:17:14 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=48 time=35.7 ms
+08/20/23 00:17:14 EST -0500 | 
+08/20/23 00:17:14 EST -0500 | --- github.com ping statistics ---
+08/20/23 00:17:14 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/20/23 00:17:14 EST -0500 | rtt min/avg/max/mdev = 28.533/34.133/38.187/4.090 ms
+08/20/23 00:17:14 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/20/23 00:17:14 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=34.6 ms
+08/20/23 00:17:15 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=31.2 ms
+08/20/23 00:17:16 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=28.4 ms
+08/20/23 00:17:16 EST -0500 | 
+08/20/23 00:17:16 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/20/23 00:17:16 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/20/23 00:17:16 EST -0500 | rtt min/avg/max/mdev = 28.427/31.413/34.645/2.544 ms
+08/20/23 00:17:16 EST -0500 | ##########  END  ##########
+08/20/23 00:19:02 EST -0500 | ########## START ##########
+08/20/23 00:19:02 EST -0500 |  00:19:02 up 3 min,  0 users,  load average: 1.22, 0.41, 0.15
+08/20/23 00:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 00:16   still running
+08/20/23 00:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37 - 00:10  (06:33)
+08/20/23 00:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16 - 00:10  (23:54)
+08/20/23 00:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/20/23 00:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16 - 00:10  (23:54)
+08/20/23 00:19:02 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/20/23 00:19:02 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/20/23 00:19:02 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/20/23 00:19:02 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/20/23 00:19:02 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/20/23 00:19:02 EST -0500 | [    3.026842] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/20/23 00:19:02 EST -0500 | [   18.243992] Failed to associated timeout policy `ovs_test_tp'
+08/20/23 00:19:02 EST -0500 | [   18.313555] device eviCIBR6 entered promiscuous mode
+08/20/23 00:19:02 EST -0500 | [   18.360612] device appCIBR6 entered promiscuous mode
+08/20/23 00:19:02 EST -0500 | [   45.717445] device CIBR6a110001fff entered promiscuous mode
+08/20/23 00:19:02 EST -0500 | [   51.733588] device CIBR6a110005fff entered promiscuous mode
+08/20/23 00:19:02 EST -0500 | [   69.383151] device CIBR6a110007fff entered promiscuous mode
+08/20/23 00:19:02 EST -0500 | [   95.769166] device CIBR6a110001fff left promiscuous mode
+08/20/23 00:19:02 EST -0500 | [  114.680755] device CIBR6a110001fff entered promiscuous mode
+08/20/23 00:19:02 EST -0500 | [  138.558034] device CIBR6a110011fff entered promiscuous mode
+08/20/23 00:19:02 EST -0500 | [  155.231628] device CIBR6a110011fff left promiscuous mode
+08/20/23 00:19:02 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/20/23 00:19:02 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/20/23 00:19:02 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/20/23 00:19:02 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/20/23 00:19:02 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/20/23 00:19:02 EST -0500 | /dev/sda1                           59G   11G   45G  19% /data
+08/20/23 00:19:02 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/20/23 00:19:02 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/20/23 00:19:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/20/23 00:19:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 |     inet6 ::1/128 scope host 
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 |     altname enp3s0
+08/20/23 00:19:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 |     inet 100.106.201.123/29 metric 100 brd 100.106.201.127 scope global dynamic enx0015ff025968
+08/20/23 00:19:02 EST -0500 |        valid_lft 7060sec preferred_lft 7060sec
+08/20/23 00:19:02 EST -0500 |     inet6 2600:1003:b86e:ebf7:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/20/23 00:19:02 EST -0500 |        valid_lft 86368sec preferred_lft 14368sec
+08/20/23 00:19:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/20/23 00:19:02 EST -0500 |     link/ether 02:42:bc:fd:7e:b6 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 | 11: CIBR6a110005fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/ether d2:b3:ce:fd:8c:f8 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 |     inet6 fe80::d0b3:ceff:fefd:8cf8/64 scope link 
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 | 12: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 | 13: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/20/23 00:19:02 EST -0500 |     link/none 
+08/20/23 00:19:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 |     inet6 fe80::22f1:6ba6:ad0e:7f7c/64 scope link stable-privacy 
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 | 14: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 00:19:02 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/20/23 00:19:02 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/20/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 00:19:02 EST -0500 | Sun Aug 20 00:09:01 2023 [pid 126613] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 374 bytes, 13.09Kbyte/sec
+08/20/23 00:19:02 EST -0500 | Sun Aug 20 00:09:02 2023 [pid 126891] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 00:19:02 EST -0500 | Sun Aug 20 00:09:02 2023 [pid 126890] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 00:19:02 EST -0500 | Sun Aug 20 00:09:05 2023 [pid 126892] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 374 bytes, 12.73Kbyte/sec
+08/20/23 00:19:02 EST -0500 | Sun Aug 20 00:16:37 2023 [pid 1822] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 00:19:02 EST -0500 | Sun Aug 20 00:16:37 2023 [pid 1821] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 00:19:02 EST -0500 | Sun Aug 20 00:16:39 2023 [pid 1823] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1299 bytes, 13.51Kbyte/sec
+08/20/23 00:19:02 EST -0500 | Sun Aug 20 00:16:40 2023 [pid 1825] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 00:19:02 EST -0500 | Sun Aug 20 00:16:40 2023 [pid 1824] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 00:19:02 EST -0500 | Sun Aug 20 00:16:42 2023 [pid 1826] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1299 bytes, 13.49Kbyte/sec
+08/20/23 00:19:02 EST -0500 | PING github.com (140.82.112.3) 56(84) bytes of data.
+08/20/23 00:19:02 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=48 time=33.5 ms
+08/20/23 00:19:03 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=48 time=34.2 ms
+08/20/23 00:19:04 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=48 time=31.6 ms
+08/20/23 00:19:04 EST -0500 | 
+08/20/23 00:19:04 EST -0500 | --- github.com ping statistics ---
+08/20/23 00:19:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/20/23 00:19:04 EST -0500 | rtt min/avg/max/mdev = 31.600/33.112/34.212/1.105 ms
+08/20/23 00:19:04 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/20/23 00:19:04 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=36.4 ms
+08/20/23 00:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=32.6 ms
+08/20/23 00:19:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=30.7 ms
+08/20/23 00:19:06 EST -0500 | 
+08/20/23 00:19:06 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/20/23 00:19:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+08/20/23 00:19:06 EST -0500 | rtt min/avg/max/mdev = 30.733/33.258/36.396/2.352 ms
+08/20/23 00:19:06 EST -0500 | ##########  END  ##########
+08/20/23 06:19:02 EST -0500 | ########## START ##########
+08/20/23 06:19:02 EST -0500 |  06:19:02 up  6:03,  0 users,  load average: 0.36, 0.57, 1.35
+08/20/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 00:16   still running
+08/20/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37 - 00:10  (06:33)
+08/20/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16 - 00:10  (23:54)
+08/20/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/20/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16 - 00:10  (23:54)
+08/20/23 06:19:02 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/20/23 06:19:02 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/20/23 06:19:02 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/20/23 06:19:02 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/20/23 06:19:02 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/20/23 06:19:02 EST -0500 | [    3.026842] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/20/23 06:19:02 EST -0500 | [ 2179.351485] device CIBR6a110001fff entered promiscuous mode
+08/20/23 06:19:02 EST -0500 | [ 2392.118123] device CIBR6a110001fff left promiscuous mode
+08/20/23 06:19:02 EST -0500 | [ 2561.524981] perf: interrupt took too long (3186 > 3151), lowering kernel.perf_event_max_sample_rate to 62750
+08/20/23 06:19:02 EST -0500 | [ 3385.287907] device CIBR6a110001fff entered promiscuous mode
+08/20/23 06:19:02 EST -0500 | [ 3402.530863] perf: interrupt took too long (4002 > 3982), lowering kernel.perf_event_max_sample_rate to 49750
+08/20/23 06:19:02 EST -0500 | [ 3652.203532] device CIBR6a110001fff left promiscuous mode
+08/20/23 06:19:02 EST -0500 | [ 4647.522170] perf: interrupt took too long (5010 > 5002), lowering kernel.perf_event_max_sample_rate to 39750
+08/20/23 06:19:02 EST -0500 | [ 7595.447357] perf: interrupt took too long (6264 > 6262), lowering kernel.perf_event_max_sample_rate to 31750
+08/20/23 06:19:02 EST -0500 | [17277.297979] mce: CMCI storm detected: switching to poll mode
+08/20/23 06:19:02 EST -0500 | [17577.403376] mce: CMCI storm subsided: switching to interrupt mode
+08/20/23 06:19:02 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/20/23 06:19:02 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/20/23 06:19:02 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/20/23 06:19:02 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/20/23 06:19:02 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/20/23 06:19:02 EST -0500 | /dev/sda1                           59G   11G   45G  20% /data
+08/20/23 06:19:02 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/20/23 06:19:02 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/20/23 06:19:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 06:19:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/20/23 06:19:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 |     inet6 ::1/128 scope host 
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/20/23 06:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/20/23 06:19:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/20/23 06:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/20/23 06:19:02 EST -0500 |     altname enp3s0
+08/20/23 06:19:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/20/23 06:19:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/20/23 06:19:02 EST -0500 |     inet 100.106.201.123/29 metric 100 brd 100.106.201.127 scope global dynamic enx0015ff025968
+08/20/23 06:19:02 EST -0500 |        valid_lft 7063sec preferred_lft 7063sec
+08/20/23 06:19:02 EST -0500 |     inet6 2600:1003:b86e:ebf7:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/20/23 06:19:02 EST -0500 |        valid_lft 86371sec preferred_lft 14371sec
+08/20/23 06:19:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 06:19:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/20/23 06:19:02 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/20/23 06:19:02 EST -0500 |     link/ether 02:42:bc:fd:7e:b6 brd ff:ff:ff:ff:ff:ff
+08/20/23 06:19:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 06:19:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/20/23 06:19:02 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 06:19:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 06:19:02 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 06:19:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 06:19:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 | 17: CIBR6a110011fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 06:19:02 EST -0500 |     link/ether f2:f5:a8:b6:74:e8 brd ff:ff:ff:ff:ff:ff
+08/20/23 06:19:02 EST -0500 |     inet6 fe80::f0f5:a8ff:feb6:74e8/64 scope link 
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 | 18: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 06:19:02 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/20/23 06:19:02 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 | 27: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/20/23 06:19:02 EST -0500 |     link/none 
+08/20/23 06:19:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 |     inet6 fe80::1310:56bf:c887:556/64 scope link stable-privacy 
+08/20/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 06:19:02 EST -0500 | Sun Aug 20 06:16:41 2023 [pid 117472] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1246 bytes, 13.08Kbyte/sec
+08/20/23 06:19:02 EST -0500 | Sun Aug 20 06:16:42 2023 [pid 117475] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 06:19:02 EST -0500 | Sun Aug 20 06:16:42 2023 [pid 117474] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 06:19:02 EST -0500 | Sun Aug 20 06:16:44 2023 [pid 117476] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1246 bytes, 13.03Kbyte/sec
+08/20/23 06:19:02 EST -0500 | Sun Aug 20 06:18:56 2023 [pid 118031] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 06:19:02 EST -0500 | Sun Aug 20 06:18:56 2023 [pid 118030] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 06:19:02 EST -0500 | Sun Aug 20 06:18:58 2023 [pid 118032] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 374 bytes, 12.98Kbyte/sec
+08/20/23 06:19:02 EST -0500 | Sun Aug 20 06:18:59 2023 [pid 118035] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 06:19:02 EST -0500 | Sun Aug 20 06:18:59 2023 [pid 118034] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 06:19:02 EST -0500 | Sun Aug 20 06:19:01 2023 [pid 118036] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 374 bytes, 12.82Kbyte/sec
+08/20/23 06:19:02 EST -0500 | PING github.com (140.82.112.4) 56(84) bytes of data.
+08/20/23 06:19:02 EST -0500 | 64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=1 ttl=50 time=88.7 ms
+08/20/23 06:19:03 EST -0500 | 64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=2 ttl=50 time=95.1 ms
+08/20/23 06:19:04 EST -0500 | 64 bytes from lb-140-82-112-4-iad.github.com (140.82.112.4): icmp_seq=3 ttl=50 time=98.9 ms
+08/20/23 06:19:04 EST -0500 | 
+08/20/23 06:19:04 EST -0500 | --- github.com ping statistics ---
+08/20/23 06:19:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+08/20/23 06:19:04 EST -0500 | rtt min/avg/max/mdev = 88.719/94.252/98.948/4.217 ms
+08/20/23 06:19:04 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/20/23 06:19:04 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=87.0 ms
+08/20/23 06:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=82.1 ms
+08/20/23 06:19:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=106 ms
+08/20/23 06:19:06 EST -0500 | 
+08/20/23 06:19:06 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/20/23 06:19:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/20/23 06:19:06 EST -0500 | rtt min/avg/max/mdev = 82.118/91.805/106.333/10.461 ms
+08/20/23 06:19:06 EST -0500 | ##########  END  ##########
+08/20/23 12:19:02 EST -0500 | ########## START ##########
+08/20/23 12:19:02 EST -0500 |  12:19:02 up 12:03,  0 users,  load average: 0.34, 0.72, 0.80
+08/20/23 12:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 00:16   still running
+08/20/23 12:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37 - 00:10  (06:33)
+08/20/23 12:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16 - 00:10  (23:54)
+08/20/23 12:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/20/23 12:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 00:16 - 00:10  (23:54)
+08/20/23 12:19:02 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/20/23 12:19:02 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/20/23 12:19:02 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/20/23 12:19:02 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/20/23 12:19:02 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/20/23 12:19:02 EST -0500 | [    3.026842] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/20/23 12:19:02 EST -0500 | [42195.524842] device CIBR6a110011fff left promiscuous mode
+08/20/23 12:19:02 EST -0500 | [42197.915173] device CIBR6a110007fff left promiscuous mode
+08/20/23 12:19:02 EST -0500 | [42369.875455] device CIBR6a110007fff entered promiscuous mode
+08/20/23 12:19:02 EST -0500 | [42717.452515] device CIBR6a110001fff entered promiscuous mode
+08/20/23 12:19:02 EST -0500 | [42903.579536] device CIBR6a110011fff entered promiscuous mode
+08/20/23 12:19:02 EST -0500 | [43026.611389] device CIBR6a110007fff left promiscuous mode
+08/20/23 12:19:02 EST -0500 | [43261.996219] device CIBR6a110007fff entered promiscuous mode
+08/20/23 12:19:02 EST -0500 | [43272.582335] device CIBR6a110011fff left promiscuous mode
+08/20/23 12:19:02 EST -0500 | [43272.629057] device CIBR6a110001fff left promiscuous mode
+08/20/23 12:19:02 EST -0500 | [43272.669686] device CIBR6a110007fff left promiscuous mode
+08/20/23 12:19:02 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/20/23 12:19:02 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/20/23 12:19:02 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/20/23 12:19:02 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/20/23 12:19:02 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/20/23 12:19:02 EST -0500 | /dev/sda1                           59G   11G   45G  20% /data
+08/20/23 12:19:02 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/20/23 12:19:02 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/20/23 12:19:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 12:19:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/20/23 12:19:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/20/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 12:19:02 EST -0500 |     inet6 ::1/128 scope host 
+08/20/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 12:19:02 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/20/23 12:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/20/23 12:19:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/20/23 12:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/20/23 12:19:02 EST -0500 |     altname enp3s0
+08/20/23 12:19:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/20/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 12:19:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/20/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 12:19:02 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/20/23 12:19:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/20/23 12:19:02 EST -0500 |     inet 100.106.201.123/29 metric 100 brd 100.106.201.127 scope global dynamic enx0015ff025968
+08/20/23 12:19:02 EST -0500 |        valid_lft 7063sec preferred_lft 7063sec
+08/20/23 12:19:02 EST -0500 |     inet6 2600:1003:b86e:ebf7:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/20/23 12:19:02 EST -0500 |        valid_lft 86388sec preferred_lft 14388sec
+08/20/23 12:19:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/20/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 12:19:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 12:19:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/20/23 12:19:02 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/20/23 12:19:02 EST -0500 |     link/ether 02:42:bc:fd:7e:b6 brd ff:ff:ff:ff:ff:ff
+08/20/23 12:19:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/20/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 12:19:02 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 12:19:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/20/23 12:19:02 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 12:19:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 12:19:02 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 12:19:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 12:19:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/20/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 12:19:02 EST -0500 | 59: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/20/23 12:19:02 EST -0500 |     link/none 
+08/20/23 12:19:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/20/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 12:19:02 EST -0500 |     inet6 fe80::496c:82d0:2f9f:a9d7/64 scope link stable-privacy 
+08/20/23 12:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 12:19:02 EST -0500 | Sun Aug 20 12:16:42 2023 [pid 231632] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1228 bytes, 12.88Kbyte/sec
+08/20/23 12:19:02 EST -0500 | Sun Aug 20 12:16:43 2023 [pid 231635] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 12:19:02 EST -0500 | Sun Aug 20 12:16:43 2023 [pid 231634] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 12:19:02 EST -0500 | Sun Aug 20 12:16:45 2023 [pid 231636] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1228 bytes, 12.96Kbyte/sec
+08/20/23 12:19:02 EST -0500 | Sun Aug 20 12:18:56 2023 [pid 232252] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 12:19:02 EST -0500 | Sun Aug 20 12:18:56 2023 [pid 232251] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 12:19:02 EST -0500 | Sun Aug 20 12:18:59 2023 [pid 232253] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 374 bytes, 12.93Kbyte/sec
+08/20/23 12:19:02 EST -0500 | Sun Aug 20 12:19:00 2023 [pid 232256] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 12:19:02 EST -0500 | Sun Aug 20 12:19:00 2023 [pid 232255] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 12:19:02 EST -0500 | Sun Aug 20 12:19:02 2023 [pid 232257] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 374 bytes, 13.07Kbyte/sec
+08/20/23 12:19:03 EST -0500 | PING github.com (140.82.114.3) 56(84) bytes of data.
+08/20/23 12:19:03 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=1 ttl=50 time=157 ms
+08/20/23 12:19:03 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=2 ttl=50 time=129 ms
+08/20/23 12:19:04 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=3 ttl=50 time=146 ms
+08/20/23 12:19:04 EST -0500 | 
+08/20/23 12:19:04 EST -0500 | --- github.com ping statistics ---
+08/20/23 12:19:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+08/20/23 12:19:04 EST -0500 | rtt min/avg/max/mdev = 128.588/143.679/156.614/11.542 ms
+08/20/23 12:19:05 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/20/23 12:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=162 ms
+08/20/23 12:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=139 ms
+08/20/23 12:19:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=115 ms
+08/20/23 12:19:06 EST -0500 | 
+08/20/23 12:19:06 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/20/23 12:19:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+08/20/23 12:19:06 EST -0500 | rtt min/avg/max/mdev = 115.437/138.697/161.823/18.937 ms
+08/20/23 12:19:06 EST -0500 | ##########  END  ##########
+08/20/23 14:02:53 EST -0500 | ########## START ##########
+08/20/23 14:02:53 EST -0500 |  14:02:53 up 1 min,  0 users,  load average: 0.97, 0.45, 0.17
+08/20/23 14:02:53 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 14:01   still running
+08/20/23 14:02:53 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 00:16   still running
+08/20/23 14:02:53 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37 - 00:10  (06:33)
+08/20/23 14:02:53 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16 - 00:10  (23:54)
+08/20/23 14:02:53 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/20/23 14:02:53 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/20/23 14:02:53 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/20/23 14:02:53 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/20/23 14:02:53 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/20/23 14:02:53 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/20/23 14:02:53 EST -0500 | [    2.979983] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/20/23 14:02:53 EST -0500 | [   16.339681] Initializing XFRM netlink socket
+08/20/23 14:02:53 EST -0500 | [   18.292953] systemd-journald[23]: Received client request to flush runtime journal.
+08/20/23 14:02:53 EST -0500 | [   18.312885] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+08/20/23 14:02:53 EST -0500 | [   19.301239] device ovs-system entered promiscuous mode
+08/20/23 14:02:53 EST -0500 | [   19.303059] Timeout policy base is empty
+08/20/23 14:02:53 EST -0500 | [   19.303069] Failed to associated timeout policy `ovs_test_tp'
+08/20/23 14:02:53 EST -0500 | [   19.370195] device eviCIBR6 entered promiscuous mode
+08/20/23 14:02:53 EST -0500 | [   19.394033] device appCIBR6 entered promiscuous mode
+08/20/23 14:02:53 EST -0500 | [   27.422851] device CIBR6a110001fff entered promiscuous mode
+08/20/23 14:02:53 EST -0500 | [   59.204232] device CIBR6a110007fff entered promiscuous mode
+08/20/23 14:02:53 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/20/23 14:02:53 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/20/23 14:02:53 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/20/23 14:02:53 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/20/23 14:02:53 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/20/23 14:02:53 EST -0500 | /dev/sda1                           59G   11G   45G  20% /data
+08/20/23 14:02:53 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/20/23 14:02:53 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/20/23 14:02:53 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 14:02:53 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/20/23 14:02:53 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 |     inet6 ::1/128 scope host 
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/20/23 14:02:53 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/20/23 14:02:53 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/20/23 14:02:53 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/20/23 14:02:53 EST -0500 |     altname enp3s0
+08/20/23 14:02:53 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/20/23 14:02:53 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/20/23 14:02:53 EST -0500 |     inet 100.93.1.73/30 metric 100 brd 100.93.1.75 scope global dynamic enx0015ff025968
+08/20/23 14:02:53 EST -0500 |        valid_lft 7144sec preferred_lft 7144sec
+08/20/23 14:02:53 EST -0500 |     inet6 2600:1003:b854:8e4e:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/20/23 14:02:53 EST -0500 |        valid_lft 86372sec preferred_lft 14372sec
+08/20/23 14:02:53 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 14:02:53 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/20/23 14:02:53 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/20/23 14:02:53 EST -0500 |     link/ether 02:42:79:35:55:95 brd ff:ff:ff:ff:ff:ff
+08/20/23 14:02:53 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 14:02:53 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/20/23 14:02:53 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 14:02:53 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 14:02:53 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 14:02:53 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 14:02:53 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 | 10: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 14:02:53 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/20/23 14:02:53 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 | 11: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 14:02:53 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/20/23 14:02:53 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 | 12: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/20/23 14:02:53 EST -0500 |     link/none 
+08/20/23 14:02:53 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 |     inet6 fe80::4b1f:ba26:9592:2632/64 scope link stable-privacy 
+08/20/23 14:02:53 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 14:02:53 EST -0500 | Sun Aug 20 13:56:45 2023 [pid 264231] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1231 bytes, 12.93Kbyte/sec
+08/20/23 14:02:53 EST -0500 | Sun Aug 20 13:56:46 2023 [pid 264234] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 14:02:53 EST -0500 | Sun Aug 20 13:56:46 2023 [pid 264233] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 14:02:53 EST -0500 | Sun Aug 20 13:56:48 2023 [pid 264235] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1231 bytes, 12.90Kbyte/sec
+08/20/23 14:02:53 EST -0500 | Sun Aug 20 13:59:19 2023 [pid 264739] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 14:02:53 EST -0500 | Sun Aug 20 14:00:04 2023 [pid 264737] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 14:02:53 EST -0500 | Sun Aug 20 14:00:10 2023 [pid 264750] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 371 bytes, 12.88Kbyte/sec
+08/20/23 14:02:53 EST -0500 | Sun Aug 20 14:00:12 2023 [pid 264757] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 14:02:53 EST -0500 | Sun Aug 20 14:00:22 2023 [pid 264756] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 14:02:53 EST -0500 | Sun Aug 20 14:00:25 2023 [pid 264779] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 371 bytes, 12.98Kbyte/sec
+08/20/23 14:02:53 EST -0500 | PING github.com (140.82.114.3) 56(84) bytes of data.
+08/20/23 14:02:53 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=1 ttl=50 time=27.5 ms
+08/20/23 14:02:54 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=2 ttl=50 time=36.2 ms
+08/20/23 14:02:55 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=3 ttl=50 time=33.2 ms
+08/20/23 14:02:55 EST -0500 | 
+08/20/23 14:02:55 EST -0500 | --- github.com ping statistics ---
+08/20/23 14:02:55 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/20/23 14:02:55 EST -0500 | rtt min/avg/max/mdev = 27.467/32.311/36.236/3.638 ms
+08/20/23 14:02:55 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/20/23 14:02:55 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=25.7 ms
+08/20/23 14:02:56 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=31.8 ms
+08/20/23 14:02:57 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=31.7 ms
+08/20/23 14:02:57 EST -0500 | 
+08/20/23 14:02:57 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/20/23 14:02:57 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/20/23 14:02:57 EST -0500 | rtt min/avg/max/mdev = 25.716/29.738/31.809/2.844 ms
+08/20/23 14:02:57 EST -0500 | ##########  END  ##########
+08/20/23 18:19:01 EST -0500 | ########## START ##########
+08/20/23 18:19:01 EST -0500 |  18:19:01 up  4:17,  0 users,  load average: 0.20, 0.63, 0.73
+08/20/23 18:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 14:01   still running
+08/20/23 18:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 00:16   still running
+08/20/23 18:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37 - 00:10  (06:33)
+08/20/23 18:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16 - 00:10  (23:54)
+08/20/23 18:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Aug 18 22:55 - 00:10  (01:15)
+08/20/23 18:19:01 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/20/23 18:19:01 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/20/23 18:19:01 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/20/23 18:19:01 EST -0500 | Bus 001 Device 005: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/20/23 18:19:01 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/20/23 18:19:01 EST -0500 | [    2.979983] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/20/23 18:19:01 EST -0500 | [ 2246.703885] rndis_host 1-6:1.0 enx0015ff025968: unregister 'rndis_host' usb-0000:00:15.0-6, RNDIS device
+08/20/23 18:19:01 EST -0500 | [ 2269.973802] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/20/23 18:19:01 EST -0500 | [13049.551684] device CIBR6a110001fff entered promiscuous mode
+08/20/23 18:19:01 EST -0500 | [13195.838406] perf: interrupt took too long (6217 > 6207), lowering kernel.perf_event_max_sample_rate to 32000
+08/20/23 18:19:01 EST -0500 | [13325.938340] device CIBR6a110011fff entered promiscuous mode
+08/20/23 18:19:01 EST -0500 | [13343.903931] device CIBR6a110001fff left promiscuous mode
+08/20/23 18:19:01 EST -0500 | [14055.806851] device CIBR6a110011fff left promiscuous mode
+08/20/23 18:19:01 EST -0500 | [14109.227571] device CIBR6a110007fff left promiscuous mode
+08/20/23 18:19:01 EST -0500 | [14168.157812] device CIBR6a110011fff entered promiscuous mode
+08/20/23 18:19:01 EST -0500 | [14191.791068] device CIBR6a110007fff entered promiscuous mode
+08/20/23 18:19:01 EST -0500 | [14193.448368] device CIBR6a110011fff left promiscuous mode
+08/20/23 18:19:01 EST -0500 | [14350.741782] device CIBR6a110001fff entered promiscuous mode
+08/20/23 18:19:01 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/20/23 18:19:01 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/20/23 18:19:01 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/20/23 18:19:01 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/20/23 18:19:01 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/20/23 18:19:01 EST -0500 | /dev/sda1                           59G   12G   45G  20% /data
+08/20/23 18:19:01 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/20/23 18:19:02 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/20/23 18:19:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 18:19:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/20/23 18:19:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 |     inet6 ::1/128 scope host 
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/20/23 18:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/20/23 18:19:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/20/23 18:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/20/23 18:19:02 EST -0500 |     altname enp3s0
+08/20/23 18:19:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 18:19:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/20/23 18:19:02 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/20/23 18:19:02 EST -0500 |     link/ether 02:42:79:35:55:95 brd ff:ff:ff:ff:ff:ff
+08/20/23 18:19:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/20/23 18:19:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/20/23 18:19:02 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 18:19:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 18:19:02 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/20/23 18:19:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/20/23 18:19:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 | 23: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/20/23 18:19:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/20/23 18:19:02 EST -0500 |     inet 100.84.225.246/30 metric 100 brd 100.84.225.247 scope global dynamic enx0015ff025968
+08/20/23 18:19:02 EST -0500 |        valid_lft 4880sec preferred_lft 4880sec
+08/20/23 18:19:02 EST -0500 |     inet6 2600:1003:b865:d35f:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/20/23 18:19:02 EST -0500 |        valid_lft 86353sec preferred_lft 14353sec
+08/20/23 18:19:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 | 36: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 18:19:02 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/20/23 18:19:02 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 | 37: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/20/23 18:19:02 EST -0500 |     link/none 
+08/20/23 18:19:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 |     inet6 fe80::d772:f03b:2de:b74/64 scope link stable-privacy 
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 | 38: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/20/23 18:19:02 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/20/23 18:19:02 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/20/23 18:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/20/23 18:19:02 EST -0500 | Sun Aug 20 18:09:00 2023 [pid 80456] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 18:19:02 EST -0500 | Sun Aug 20 18:09:02 2023 [pid 80458] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 374 bytes, 12.99Kbyte/sec
+08/20/23 18:19:02 EST -0500 | Sun Aug 20 18:16:34 2023 [pid 82980] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 18:19:02 EST -0500 | Sun Aug 20 18:16:34 2023 [pid 82979] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 18:19:02 EST -0500 | Sun Aug 20 18:16:36 2023 [pid 82981] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1241 bytes, 13.02Kbyte/sec
+08/20/23 18:19:02 EST -0500 | Sun Aug 20 18:16:37 2023 [pid 82985] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 18:19:02 EST -0500 | Sun Aug 20 18:16:37 2023 [pid 82984] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 18:19:02 EST -0500 | Sun Aug 20 18:16:40 2023 [pid 82986] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1241 bytes, 12.92Kbyte/sec
+08/20/23 18:19:02 EST -0500 | Sun Aug 20 18:19:01 2023 [pid 83870] CONNECT: Client "::ffff:10.10.1.1"
+08/20/23 18:19:02 EST -0500 | Sun Aug 20 18:19:01 2023 [pid 83868] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/20/23 18:19:02 EST -0500 | PING github.com (140.82.114.3) 56(84) bytes of data.
+08/20/23 18:19:02 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=1 ttl=48 time=104 ms
+08/20/23 18:19:03 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=2 ttl=48 time=133 ms
+08/20/23 18:19:04 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=3 ttl=48 time=97.4 ms
+08/20/23 18:19:04 EST -0500 | 
+08/20/23 18:19:04 EST -0500 | --- github.com ping statistics ---
+08/20/23 18:19:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/20/23 18:19:04 EST -0500 | rtt min/avg/max/mdev = 97.373/111.444/132.858/15.388 ms
+08/20/23 18:19:04 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/20/23 18:19:04 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=116 ms
+08/20/23 18:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=96.0 ms
+08/20/23 18:19:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=85.9 ms
+08/20/23 18:19:06 EST -0500 | 
+08/20/23 18:19:06 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/20/23 18:19:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+08/20/23 18:19:06 EST -0500 | rtt min/avg/max/mdev = 85.932/99.236/115.773/12.395 ms
+08/20/23 18:19:06 EST -0500 | ##########  END  ##########
+08/21/23 00:17:12 EST -0500 | ########## START ##########
+08/21/23 00:17:12 EST -0500 |  00:17:12 up 1 min,  0 users,  load average: 0.41, 0.13, 0.04
+08/21/23 00:17:12 EST -0500 | reboot   system boot  5.15.0-75-generi Mon Aug 21 00:16   still running
+08/21/23 00:17:12 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 14:01 - 00:10  (10:08)
+08/21/23 00:17:12 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 00:16 - 00:10  (23:54)
+08/21/23 00:17:12 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37 - 00:10  (06:33)
+08/21/23 00:17:12 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16 - 00:10  (23:54)
+08/21/23 00:17:12 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/21/23 00:17:12 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/21/23 00:17:12 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/21/23 00:17:12 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/21/23 00:17:12 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/21/23 00:17:12 EST -0500 | [    2.987995] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/21/23 00:17:12 EST -0500 | [   15.454726] Initializing XFRM netlink socket
+08/21/23 00:17:12 EST -0500 | [   17.399331] systemd-journald[23]: Received client request to flush runtime journal.
+08/21/23 00:17:12 EST -0500 | [   17.416479] systemd-journald[23]: File /var/log/journal/a390ab7b5da041789c7c8333c3ddc3b9/system.journal corrupted or uncleanly shut down, renaming and replacing.
+08/21/23 00:17:12 EST -0500 | [   18.412595] device ovs-system entered promiscuous mode
+08/21/23 00:17:12 EST -0500 | [   18.414815] Timeout policy base is empty
+08/21/23 00:17:12 EST -0500 | [   18.414824] Failed to associated timeout policy `ovs_test_tp'
+08/21/23 00:17:12 EST -0500 | [   18.481980] device eviCIBR6 entered promiscuous mode
+08/21/23 00:17:12 EST -0500 | [   18.522299] device appCIBR6 entered promiscuous mode
+08/21/23 00:17:12 EST -0500 | [   42.420649] device CIBR6a110001fff entered promiscuous mode
+08/21/23 00:17:12 EST -0500 | [   42.565491] device CIBR6a110005fff entered promiscuous mode
+08/21/23 00:17:12 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/21/23 00:17:12 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/21/23 00:17:12 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/21/23 00:17:12 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/21/23 00:17:12 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/21/23 00:17:12 EST -0500 | /dev/sda1                           59G   12G   45G  21% /data
+08/21/23 00:17:12 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/21/23 00:17:12 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/21/23 00:17:12 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/21/23 00:17:12 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/21/23 00:17:12 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 |     inet6 ::1/128 scope host 
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/21/23 00:17:12 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:17:12 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/21/23 00:17:12 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:17:12 EST -0500 |     altname enp3s0
+08/21/23 00:17:12 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/21/23 00:17:12 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:17:12 EST -0500 |     inet 100.78.63.55/28 metric 100 brd 100.78.63.63 scope global dynamic enx0015ff025968
+08/21/23 00:17:12 EST -0500 |        valid_lft 7155sec preferred_lft 7155sec
+08/21/23 00:17:12 EST -0500 |     inet6 2600:1003:b86e:4320:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/21/23 00:17:12 EST -0500 |        valid_lft 86380sec preferred_lft 14380sec
+08/21/23 00:17:12 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/21/23 00:17:12 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:17:12 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/21/23 00:17:12 EST -0500 |     link/ether 02:42:47:65:a3:10 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:17:12 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/21/23 00:17:12 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:17:12 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/21/23 00:17:12 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:17:12 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/21/23 00:17:12 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:17:12 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 | 10: CIBR6a110001fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/21/23 00:17:12 EST -0500 |     link/ether 6e:6c:5b:05:d3:88 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:17:12 EST -0500 |     inet6 fe80::6c6c:5bff:fe05:d388/64 scope link 
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 | 11: CIBR6a110005fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/21/23 00:17:12 EST -0500 |     link/ether d2:b3:ce:fd:8c:f8 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:17:12 EST -0500 |     inet6 fe80::d0b3:ceff:fefd:8cf8/64 scope link 
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 | 12: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/21/23 00:17:12 EST -0500 |     link/none 
+08/21/23 00:17:12 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 |     inet6 fe80::c72f:8059:acfa:360b/64 scope link stable-privacy 
+08/21/23 00:17:12 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:17:12 EST -0500 | Mon Aug 21 00:09:04 2023 [pid 194515] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 375 bytes, 12.95Kbyte/sec
+08/21/23 00:17:12 EST -0500 | Mon Aug 21 00:09:05 2023 [pid 194522] CONNECT: Client "::ffff:10.10.1.1"
+08/21/23 00:17:12 EST -0500 | Mon Aug 21 00:09:05 2023 [pid 194521] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 00:17:12 EST -0500 | Mon Aug 21 00:09:08 2023 [pid 194523] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 375 bytes, 13.05Kbyte/sec
+08/21/23 00:17:12 EST -0500 | Mon Aug 21 00:16:39 2023 [pid 1827] CONNECT: Client "::ffff:10.10.1.1"
+08/21/23 00:17:12 EST -0500 | Mon Aug 21 00:16:39 2023 [pid 1826] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 00:17:12 EST -0500 | Mon Aug 21 00:16:42 2023 [pid 1828] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1304 bytes, 13.30Kbyte/sec
+08/21/23 00:17:12 EST -0500 | Mon Aug 21 00:16:43 2023 [pid 1877] CONNECT: Client "::ffff:10.10.1.1"
+08/21/23 00:17:12 EST -0500 | Mon Aug 21 00:16:43 2023 [pid 1876] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 00:17:12 EST -0500 | Mon Aug 21 00:16:45 2023 [pid 1878] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1304 bytes, 13.46Kbyte/sec
+08/21/23 00:17:12 EST -0500 | PING github.com (140.82.113.3) 56(84) bytes of data.
+08/21/23 00:17:12 EST -0500 | 64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=1 ttl=50 time=33.4 ms
+08/21/23 00:17:13 EST -0500 | 64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=2 ttl=50 time=35.9 ms
+08/21/23 00:17:14 EST -0500 | 64 bytes from lb-140-82-113-3-iad.github.com (140.82.113.3): icmp_seq=3 ttl=50 time=33.9 ms
+08/21/23 00:17:14 EST -0500 | 
+08/21/23 00:17:14 EST -0500 | --- github.com ping statistics ---
+08/21/23 00:17:14 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+08/21/23 00:17:14 EST -0500 | rtt min/avg/max/mdev = 33.405/34.406/35.909/1.082 ms
+08/21/23 00:17:14 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/21/23 00:17:14 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=27.3 ms
+08/21/23 00:17:15 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=35.2 ms
+08/21/23 00:17:16 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=34.5 ms
+08/21/23 00:17:16 EST -0500 | 
+08/21/23 00:17:16 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/21/23 00:17:16 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+08/21/23 00:17:16 EST -0500 | rtt min/avg/max/mdev = 27.296/32.344/35.241/3.582 ms
+08/21/23 00:17:16 EST -0500 | ##########  END  ##########
+08/21/23 00:19:01 EST -0500 | ########## START ##########
+08/21/23 00:19:01 EST -0500 |  00:19:01 up 3 min,  0 users,  load average: 1.11, 0.38, 0.14
+08/21/23 00:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Mon Aug 21 00:16   still running
+08/21/23 00:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 14:01 - 00:10  (10:08)
+08/21/23 00:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 00:16 - 00:10  (23:54)
+08/21/23 00:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37 - 00:10  (06:33)
+08/21/23 00:19:01 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16 - 00:10  (23:54)
+08/21/23 00:19:01 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/21/23 00:19:02 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/21/23 00:19:02 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/21/23 00:19:02 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/21/23 00:19:02 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/21/23 00:19:02 EST -0500 | [    2.987995] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/21/23 00:19:02 EST -0500 | [   18.412595] device ovs-system entered promiscuous mode
+08/21/23 00:19:02 EST -0500 | [   18.414815] Timeout policy base is empty
+08/21/23 00:19:02 EST -0500 | [   18.414824] Failed to associated timeout policy `ovs_test_tp'
+08/21/23 00:19:02 EST -0500 | [   18.481980] device eviCIBR6 entered promiscuous mode
+08/21/23 00:19:02 EST -0500 | [   18.522299] device appCIBR6 entered promiscuous mode
+08/21/23 00:19:02 EST -0500 | [   42.420649] device CIBR6a110001fff entered promiscuous mode
+08/21/23 00:19:02 EST -0500 | [   42.565491] device CIBR6a110005fff entered promiscuous mode
+08/21/23 00:19:02 EST -0500 | [   87.867717] device CIBR6a110007fff entered promiscuous mode
+08/21/23 00:19:02 EST -0500 | [   94.979436] device CIBR6a110001fff left promiscuous mode
+08/21/23 00:19:02 EST -0500 | [  155.181625] device CIBR6a110011fff entered promiscuous mode
+08/21/23 00:19:02 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/21/23 00:19:02 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/21/23 00:19:02 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/21/23 00:19:02 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/21/23 00:19:02 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/21/23 00:19:02 EST -0500 | /dev/sda1                           59G   12G   45G  21% /data
+08/21/23 00:19:02 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/21/23 00:19:02 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/21/23 00:19:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/21/23 00:19:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 |     inet6 ::1/128 scope host 
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 |     altname enp3s0
+08/21/23 00:19:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 |     inet 100.78.63.55/28 metric 100 brd 100.78.63.63 scope global dynamic enx0015ff025968
+08/21/23 00:19:02 EST -0500 |        valid_lft 7045sec preferred_lft 7045sec
+08/21/23 00:19:02 EST -0500 |     inet6 2600:1003:b86e:4320:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/21/23 00:19:02 EST -0500 |        valid_lft 86366sec preferred_lft 14366sec
+08/21/23 00:19:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/21/23 00:19:02 EST -0500 |     link/ether 02:42:47:65:a3:10 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 | 11: CIBR6a110005fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/ether d2:b3:ce:fd:8c:f8 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 |     inet6 fe80::d0b3:ceff:fefd:8cf8/64 scope link 
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 | 12: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/21/23 00:19:02 EST -0500 |     link/none 
+08/21/23 00:19:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 |     inet6 fe80::c72f:8059:acfa:360b/64 scope link stable-privacy 
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 | 13: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 | 14: CIBR6a110011fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/21/23 00:19:02 EST -0500 |     link/ether f2:f5:a8:b6:74:e8 brd ff:ff:ff:ff:ff:ff
+08/21/23 00:19:02 EST -0500 |     inet6 fe80::f0f5:a8ff:feb6:74e8/64 scope link 
+08/21/23 00:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 00:19:02 EST -0500 | Mon Aug 21 00:16:39 2023 [pid 1826] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 00:19:02 EST -0500 | Mon Aug 21 00:16:42 2023 [pid 1828] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1304 bytes, 13.30Kbyte/sec
+08/21/23 00:19:02 EST -0500 | Mon Aug 21 00:16:43 2023 [pid 1877] CONNECT: Client "::ffff:10.10.1.1"
+08/21/23 00:19:02 EST -0500 | Mon Aug 21 00:16:43 2023 [pid 1876] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 00:19:02 EST -0500 | Mon Aug 21 00:16:45 2023 [pid 1878] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1304 bytes, 13.46Kbyte/sec
+08/21/23 00:19:02 EST -0500 | Mon Aug 21 00:18:56 2023 [pid 3995] CONNECT: Client "::ffff:10.10.1.1"
+08/21/23 00:19:02 EST -0500 | Mon Aug 21 00:18:56 2023 [pid 3994] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 00:19:02 EST -0500 | Mon Aug 21 00:18:59 2023 [pid 3996] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 376 bytes, 13.12Kbyte/sec
+08/21/23 00:19:02 EST -0500 | Mon Aug 21 00:19:00 2023 [pid 3998] CONNECT: Client "::ffff:10.10.1.1"
+08/21/23 00:19:02 EST -0500 | Mon Aug 21 00:19:00 2023 [pid 3997] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 00:19:02 EST -0500 | PING github.com (140.82.113.4) 56(84) bytes of data.
+08/21/23 00:19:02 EST -0500 | 64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=1 ttl=48 time=25.2 ms
+08/21/23 00:19:03 EST -0500 | 64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=2 ttl=48 time=33.6 ms
+08/21/23 00:19:04 EST -0500 | 64 bytes from lb-140-82-113-4-iad.github.com (140.82.113.4): icmp_seq=3 ttl=48 time=31.8 ms
+08/21/23 00:19:04 EST -0500 | 
+08/21/23 00:19:04 EST -0500 | --- github.com ping statistics ---
+08/21/23 00:19:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/21/23 00:19:04 EST -0500 | rtt min/avg/max/mdev = 25.173/30.196/33.620/3.629 ms
+08/21/23 00:19:04 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/21/23 00:19:04 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=25.3 ms
+08/21/23 00:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=24.1 ms
+08/21/23 00:19:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=31.5 ms
+08/21/23 00:19:06 EST -0500 | 
+08/21/23 00:19:06 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/21/23 00:19:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+08/21/23 00:19:06 EST -0500 | rtt min/avg/max/mdev = 24.073/26.947/31.464/3.233 ms
+08/21/23 00:19:06 EST -0500 | ##########  END  ##########
+08/21/23 06:19:02 EST -0500 | ########## START ##########
+08/21/23 06:19:02 EST -0500 |  06:19:02 up  6:03,  0 users,  load average: 0.19, 0.32, 0.25
+08/21/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Mon Aug 21 00:16   still running
+08/21/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 14:01 - 00:10  (10:08)
+08/21/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sun Aug 20 00:16 - 00:10  (23:54)
+08/21/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 17:37 - 00:10  (06:33)
+08/21/23 06:19:02 EST -0500 | reboot   system boot  5.15.0-75-generi Sat Aug 19 00:16 - 00:10  (23:54)
+08/21/23 06:19:02 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+08/21/23 06:19:02 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+08/21/23 06:19:02 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+08/21/23 06:19:02 EST -0500 | Bus 001 Device 002: ID 1410:9030 Novatel Wireless MiFi USB730L
+08/21/23 06:19:02 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+08/21/23 06:19:02 EST -0500 | [    2.987995] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+08/21/23 06:19:02 EST -0500 | [ 2029.726801] device CIBR6a110001fff left promiscuous mode
+08/21/23 06:19:02 EST -0500 | [ 2302.755826] device CIBR6a110001fff entered promiscuous mode
+08/21/23 06:19:02 EST -0500 | [ 2659.810932] device CIBR6a110001fff left promiscuous mode
+08/21/23 06:19:02 EST -0500 | [ 3172.475318] device CIBR6a110001fff entered promiscuous mode
+08/21/23 06:19:02 EST -0500 | [ 3409.916450] device CIBR6a110001fff left promiscuous mode
+08/21/23 06:19:02 EST -0500 | [ 3688.565825] perf: interrupt took too long (2522 > 2500), lowering kernel.perf_event_max_sample_rate to 79250
+08/21/23 06:19:02 EST -0500 | [ 4522.800639] perf: interrupt took too long (3165 > 3152), lowering kernel.perf_event_max_sample_rate to 63000
+08/21/23 06:19:02 EST -0500 | [ 6096.931878] perf: interrupt took too long (3972 > 3956), lowering kernel.perf_event_max_sample_rate to 50250
+08/21/23 06:19:02 EST -0500 | [ 8289.953195] perf: interrupt took too long (4978 > 4965), lowering kernel.perf_event_max_sample_rate to 40000
+08/21/23 06:19:02 EST -0500 | [12740.017794] perf: interrupt took too long (6236 > 6222), lowering kernel.perf_event_max_sample_rate to 32000
+08/21/23 06:19:02 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+08/21/23 06:19:02 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+08/21/23 06:19:02 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G  9.5G   45G  18% /
+08/21/23 06:19:02 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+08/21/23 06:19:02 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+08/21/23 06:19:02 EST -0500 | /dev/sda1                           59G   12G   45G  21% /data
+08/21/23 06:19:02 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+08/21/23 06:19:02 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+08/21/23 06:19:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+08/21/23 06:19:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+08/21/23 06:19:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 |     inet6 ::1/128 scope host 
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+08/21/23 06:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+08/21/23 06:19:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+08/21/23 06:19:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+08/21/23 06:19:02 EST -0500 |     altname enp3s0
+08/21/23 06:19:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+08/21/23 06:19:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+08/21/23 06:19:02 EST -0500 |     inet 100.78.63.55/28 metric 100 brd 100.78.63.63 scope global dynamic enx0015ff025968
+08/21/23 06:19:02 EST -0500 |        valid_lft 7043sec preferred_lft 7043sec
+08/21/23 06:19:02 EST -0500 |     inet6 2600:1003:b86e:4320:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+08/21/23 06:19:02 EST -0500 |        valid_lft 86381sec preferred_lft 14381sec
+08/21/23 06:19:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/21/23 06:19:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+08/21/23 06:19:02 EST -0500 | 6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+08/21/23 06:19:02 EST -0500 |     link/ether 02:42:47:65:a3:10 brd ff:ff:ff:ff:ff:ff
+08/21/23 06:19:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 | 7: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+08/21/23 06:19:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+08/21/23 06:19:02 EST -0500 | 8: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+08/21/23 06:19:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+08/21/23 06:19:02 EST -0500 | 9: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+08/21/23 06:19:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+08/21/23 06:19:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 | 14: CIBR6a110011fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/21/23 06:19:02 EST -0500 |     link/ether f2:f5:a8:b6:74:e8 brd ff:ff:ff:ff:ff:ff
+08/21/23 06:19:02 EST -0500 |     inet6 fe80::f0f5:a8ff:feb6:74e8/64 scope link 
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 | 17: CIBR6a110007fff: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc fq_codel master ovs-system state UNKNOWN group default qlen 1000
+08/21/23 06:19:02 EST -0500 |     link/ether 1a:7e:28:16:22:31 brd ff:ff:ff:ff:ff:ff
+08/21/23 06:19:02 EST -0500 |     inet6 fe80::187e:28ff:fe16:2231/64 scope link 
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 | 25: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+08/21/23 06:19:02 EST -0500 |     link/none 
+08/21/23 06:19:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 |     inet6 fe80::2f1d:7697:645e:a110/64 scope link stable-privacy 
+08/21/23 06:19:02 EST -0500 |        valid_lft forever preferred_lft forever
+08/21/23 06:19:02 EST -0500 | Mon Aug 21 06:09:00 2023 [pid 113481] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 06:19:02 EST -0500 | Mon Aug 21 06:09:02 2023 [pid 113483] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 373 bytes, 13.08Kbyte/sec
+08/21/23 06:19:02 EST -0500 | Mon Aug 21 06:16:34 2023 [pid 115969] CONNECT: Client "::ffff:10.10.1.1"
+08/21/23 06:19:02 EST -0500 | Mon Aug 21 06:16:34 2023 [pid 115968] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 06:19:02 EST -0500 | Mon Aug 21 06:16:36 2023 [pid 115970] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1227 bytes, 12.88Kbyte/sec
+08/21/23 06:19:02 EST -0500 | Mon Aug 21 06:16:37 2023 [pid 115973] CONNECT: Client "::ffff:10.10.1.1"
+08/21/23 06:19:02 EST -0500 | Mon Aug 21 06:16:38 2023 [pid 115972] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 06:19:02 EST -0500 | Mon Aug 21 06:16:40 2023 [pid 115974] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1227 bytes, 12.92Kbyte/sec
+08/21/23 06:19:02 EST -0500 | Mon Aug 21 06:19:01 2023 [pid 116523] CONNECT: Client "::ffff:10.10.1.1"
+08/21/23 06:19:02 EST -0500 | Mon Aug 21 06:19:01 2023 [pid 116522] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+08/21/23 06:19:03 EST -0500 | PING github.com (140.82.114.4) 56(84) bytes of data.
+08/21/23 06:19:03 EST -0500 | 64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=1 ttl=48 time=289 ms
+08/21/23 06:19:03 EST -0500 | 64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=2 ttl=48 time=275 ms
+08/21/23 06:19:04 EST -0500 | 64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=3 ttl=48 time=290 ms
+08/21/23 06:19:04 EST -0500 | 
+08/21/23 06:19:04 EST -0500 | --- github.com ping statistics ---
+08/21/23 06:19:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+08/21/23 06:19:04 EST -0500 | rtt min/avg/max/mdev = 275.490/284.919/290.072/6.677 ms
+08/21/23 06:19:05 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+08/21/23 06:19:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=293 ms
+08/21/23 06:19:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=221 ms
+08/21/23 06:19:07 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=273 ms
+08/21/23 06:19:07 EST -0500 | 
+08/21/23 06:19:07 EST -0500 | --- 8.8.8.8 ping statistics ---
+08/21/23 06:19:07 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2000ms
+08/21/23 06:19:07 EST -0500 | rtt min/avg/max/mdev = 220.603/262.048/292.812/30.431 ms
+08/21/23 06:19:07 EST -0500 | ##########  END  ##########
