@@ -14377,3 +14377,17 @@ Completed at 08/17/23 12:24:22 EST
 08/21/23 09:23:23 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
 08/21/23 09:23:23 EST -0500 |    a1ffc81f..8eaf0cee  8eaf0ceec71ac7e3a6d4f9fbb76e1481936a47ff -> ccre-dam-data
 08/21/23 09:23:27 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/21/23 09:23:27 EST -0500 |  ! [remote rejected]   91b5149cd73256f8b342145d98c218102db6a226 -> ccre-dam-data (cannot lock ref 'refs/heads/ccre-dam-data': is at 8eaf0ceec71ac7e3a6d4f9fbb76e1481936a47ff but expected a1ffc81f0a7152d4a39abc4f38b2c793f8d61ec7)
+08/21/23 09:23:27 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
+08/21/23 09:23:27 EST -0500 | Processing directory: /data/annie-logs
+08/21/23 09:23:27 EST -0500 | [annie-logs d147818] 08/21/23 09:23:27 EST -0500
+08/21/23 09:23:27 EST -0500 |  1 file changed, 18 insertions(+)
+08/21/23 09:23:29 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/21/23 09:23:29 EST -0500 |    b08e9d2..d147818  d147818025006378f58f33ac4fb77b74c1aab7fc -> annie-logs
+08/21/23 09:23:29 EST -0500 | ##########  END  ##########
+08/21/23 09:23:35 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/21/23 09:23:35 EST -0500 |    8eaf0cee..c912d17f  c912d17fd558cf65070ba037fbaaaec34aeb0452 -> ccre-dam-data
+08/21/23 09:23:46 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/21/23 09:23:46 EST -0500 |    c912d17f..1f971a10  1f971a103e6c926128667096df9e2e1912ce8ca9 -> ccre-dam-data
+08/21/23 09:23:58 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/21/23 09:23:58 EST -0500 |    1f971a10..e8e0acd5  e8e0acd5bcd4abcbdfa33bc88e7b78b0d9d4995d -> ccre-dam-data
