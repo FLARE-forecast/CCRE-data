@@ -46318,3 +46318,106 @@ rtt min/avg/max/mdev = 34.787/35.273/36.009/0.528 ms
 10/06/23 08:25:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
 10/06/23 08:25:06 EST -0500 | rtt min/avg/max/mdev = 26.342/30.636/34.104/3.222 ms
 10/06/23 08:25:06 EST -0500 | ##########  END  ##########
+10/06/23 14:25:02 EST -0500 | ########## START ##########
+10/06/23 14:25:02 EST -0500 |  14:25:02 up 14:08,  0 users,  load average: 0.00, 0.00, 0.00
+10/06/23 14:25:02 EST -0500 | reboot   system boot  5.15.0-75-generi Fri Oct  6 00:16   still running
+10/06/23 14:25:02 EST -0500 | reboot   system boot  5.15.0-75-generi Thu Oct  5 00:16 - 00:10  (23:53)
+10/06/23 14:25:02 EST -0500 | reboot   system boot  5.15.0-75-generi Wed Oct  4 00:16 - 00:10  (23:53)
+10/06/23 14:25:02 EST -0500 | reboot   system boot  5.15.0-75-generi Tue Oct  3 00:16 - 00:10  (23:53)
+10/06/23 14:25:02 EST -0500 | reboot   system boot  5.15.0-75-generi Mon Oct  2 00:16 - 00:10  (23:53)
+10/06/23 14:25:02 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+10/06/23 14:25:02 EST -0500 | Bus 001 Device 004: ID 8087:0a2b Intel Corp. Bluetooth wireless interface
+10/06/23 14:25:02 EST -0500 | Bus 001 Device 003: ID 0424:2514 Microchip Technology, Inc. (formerly SMSC) USB 2.0 Hub
+10/06/23 14:25:02 EST -0500 | Bus 001 Device 005: ID 1410:9030 Novatel Wireless MiFi USB730L
+10/06/23 14:25:02 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+10/06/23 14:25:02 EST -0500 | [    2.966771] rndis_host 1-6:1.0 enx0015ff025968: renamed from eth0
+10/06/23 14:25:02 EST -0500 | [   10.419249] rndis_host 1-6:1.0 enx0015ff025968: unregister 'rndis_host' usb-0000:00:15.0-6, RNDIS device
+10/06/23 14:25:02 EST -0500 | [   11.280380] cdc_ether 1-6:1.0 enx0015ff025968: renamed from eth0
+10/06/23 14:25:02 EST -0500 | [46742.254503] device CIBR6a110007fff entered promiscuous mode
+10/06/23 14:25:02 EST -0500 | [47859.158823] device CIBR6a110007fff left promiscuous mode
+10/06/23 14:25:02 EST -0500 | [47975.028696] device CIBR6a110007fff entered promiscuous mode
+10/06/23 14:25:02 EST -0500 | [48010.780421] device CIBR6a110007fff left promiscuous mode
+10/06/23 14:25:02 EST -0500 | [48057.700354] device CIBR6a110007fff entered promiscuous mode
+10/06/23 14:25:02 EST -0500 | [48178.440382] device CIBR6a110007fff left promiscuous mode
+10/06/23 14:25:02 EST -0500 | [48897.101696] device CIBR6a110007fff entered promiscuous mode
+10/06/23 14:25:02 EST -0500 | [48901.865006] device CIBR6a110007fff left promiscuous mode
+10/06/23 14:25:02 EST -0500 | [49178.703222] device CIBR6a110007fff entered promiscuous mode
+10/06/23 14:25:02 EST -0500 | [49309.358204] device CIBR6a110007fff left promiscuous mode
+10/06/23 14:25:02 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+10/06/23 14:25:02 EST -0500 | tmpfs                              374M  1.4M  373M   1% /run
+10/06/23 14:25:02 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   57G   11G   44G  20% /
+10/06/23 14:25:02 EST -0500 | tmpfs                              1.9G     0  1.9G   0% /dev/shm
+10/06/23 14:25:02 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+10/06/23 14:25:02 EST -0500 | /dev/sda1                           59G  319M   56G   1% /data
+10/06/23 14:25:02 EST -0500 | /dev/mmcblk0p2                     2.0G  253M  1.6G  14% /boot
+10/06/23 14:25:02 EST -0500 | /dev/mmcblk0p1                     1.1G  6.1M  1.1G   1% /boot/efi
+10/06/23 14:25:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+10/06/23 14:25:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+10/06/23 14:25:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+10/06/23 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+10/06/23 14:25:02 EST -0500 |     inet6 ::1/128 scope host 
+10/06/23 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+10/06/23 14:25:02 EST -0500 | 2: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+10/06/23 14:25:02 EST -0500 |     link/ether 00:01:c0:27:d5:b2 brd ff:ff:ff:ff:ff:ff
+10/06/23 14:25:02 EST -0500 | 3: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+10/06/23 14:25:02 EST -0500 |     link/ether 00:01:c0:27:d5:b3 brd ff:ff:ff:ff:ff:ff
+10/06/23 14:25:02 EST -0500 |     altname enp3s0
+10/06/23 14:25:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno1
+10/06/23 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+10/06/23 14:25:02 EST -0500 |     inet6 fe80::201:c0ff:fe27:d5b3/64 scope link 
+10/06/23 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+10/06/23 14:25:02 EST -0500 | 5: wlp1s0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+10/06/23 14:25:02 EST -0500 |     link/ether ac:67:5d:d0:31:80 brd ff:ff:ff:ff:ff:ff
+10/06/23 14:25:02 EST -0500 | 6: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+10/06/23 14:25:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+10/06/23 14:25:02 EST -0500 |     inet 100.70.237.120/28 metric 100 brd 100.70.237.127 scope global dynamic enx0015ff025968
+10/06/23 14:25:02 EST -0500 |        valid_lft 6726sec preferred_lft 6726sec
+10/06/23 14:25:02 EST -0500 |     inet6 2600:1003:b852:8154:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+10/06/23 14:25:02 EST -0500 |        valid_lft 86382sec preferred_lft 14382sec
+10/06/23 14:25:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+10/06/23 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+10/06/23 14:25:02 EST -0500 | 7: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+10/06/23 14:25:02 EST -0500 |     link/ether 02:42:5b:bc:12:c6 brd ff:ff:ff:ff:ff:ff
+10/06/23 14:25:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+10/06/23 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+10/06/23 14:25:02 EST -0500 | 8: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+10/06/23 14:25:02 EST -0500 |     link/ether 2a:44:43:33:01:89 brd ff:ff:ff:ff:ff:ff
+10/06/23 14:25:02 EST -0500 | 9: eviCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1410 qdisc noqueue state UNKNOWN group default qlen 1000
+10/06/23 14:25:02 EST -0500 |     link/ether 1e:de:c7:ab:9e:46 brd ff:ff:ff:ff:ff:ff
+10/06/23 14:25:02 EST -0500 | 10: appCIBR6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1350 qdisc noqueue state UNKNOWN group default qlen 1000
+10/06/23 14:25:02 EST -0500 |     link/ether ea:01:90:84:1f:46 brd ff:ff:ff:ff:ff:ff
+10/06/23 14:25:02 EST -0500 |     inet 10.10.100.6/24 scope global appCIBR6
+10/06/23 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+10/06/23 14:25:02 EST -0500 | 70: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+10/06/23 14:25:02 EST -0500 |     link/none 
+10/06/23 14:25:02 EST -0500 |     inet 10.10.200.6/24 scope global nebula1
+10/06/23 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+10/06/23 14:25:02 EST -0500 |     inet6 fe80::d61f:b6bb:8d27:796e/64 scope link stable-privacy 
+10/06/23 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+10/06/23 14:25:02 EST -0500 | Fri Oct  6 14:16:24 2023 [pid 373515] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1257 bytes, 13.06Kbyte/sec
+10/06/23 14:25:02 EST -0500 | Fri Oct  6 14:16:25 2023 [pid 373518] CONNECT: Client "::ffff:10.10.1.1"
+10/06/23 14:25:02 EST -0500 | Fri Oct  6 14:16:26 2023 [pid 373517] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+10/06/23 14:25:02 EST -0500 | Fri Oct  6 14:16:28 2023 [pid 373519] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1257 bytes, 13.12Kbyte/sec
+10/06/23 14:25:02 EST -0500 | Fri Oct  6 14:18:49 2023 [pid 374286] CONNECT: Client "::ffff:10.10.1.1"
+10/06/23 14:25:02 EST -0500 | Fri Oct  6 14:18:49 2023 [pid 374285] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+10/06/23 14:25:02 EST -0500 | Fri Oct  6 14:18:51 2023 [pid 374287] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality.csv", 373 bytes, 12.42Kbyte/sec
+10/06/23 14:25:02 EST -0500 | Fri Oct  6 14:18:52 2023 [pid 374290] CONNECT: Client "::ffff:10.10.1.1"
+10/06/23 14:25:02 EST -0500 | Fri Oct  6 14:18:52 2023 [pid 374289] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+10/06/23 14:25:02 EST -0500 | Fri Oct  6 14:18:55 2023 [pid 374291] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality.csv", 373 bytes, 12.76Kbyte/sec
+10/06/23 14:25:02 EST -0500 | PING github.com (140.82.114.3) 56(84) bytes of data.
+10/06/23 14:25:02 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=1 ttl=48 time=48.5 ms
+10/06/23 14:25:03 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=2 ttl=48 time=47.7 ms
+10/06/23 14:25:04 EST -0500 | 64 bytes from lb-140-82-114-3-iad.github.com (140.82.114.3): icmp_seq=3 ttl=48 time=44.7 ms
+10/06/23 14:25:04 EST -0500 | 
+10/06/23 14:25:04 EST -0500 | --- github.com ping statistics ---
+10/06/23 14:25:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+10/06/23 14:25:04 EST -0500 | rtt min/avg/max/mdev = 44.671/46.946/48.482/1.641 ms
+10/06/23 14:25:04 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+10/06/23 14:25:04 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=36.3 ms
+10/06/23 14:25:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=33.0 ms
+10/06/23 14:25:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=113 time=49.6 ms
+10/06/23 14:25:06 EST -0500 | 
+10/06/23 14:25:06 EST -0500 | --- 8.8.8.8 ping statistics ---
+10/06/23 14:25:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+10/06/23 14:25:06 EST -0500 | rtt min/avg/max/mdev = 33.021/39.643/49.567/7.146 ms
+10/06/23 14:25:06 EST -0500 | ##########  END  ##########
