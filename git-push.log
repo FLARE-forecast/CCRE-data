@@ -29479,3 +29479,13 @@ Completed at 08/17/23 12:24:22 EST
 12/09/23 08:30:21 EST -0500 | remote: warning: File ccre-met.csv is 59.52 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
 12/09/23 08:30:21 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
 12/09/23 08:30:22 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+12/09/23 08:30:22 EST -0500 |    29f4a79..7ed202c  7ed202c2eb797f440486079f4f46ea36f259be28 -> ccre-dam-data
+12/09/23 08:30:22 EST -0500 | Processing: /data/annie-logs
+12/09/23 08:30:22 EST -0500 | [annie-logs 45805b11] Sat 2023-12-09 08:30:22 EST
+12/09/23 08:30:22 EST -0500 |  2 files changed, 128 insertions(+)
+12/09/23 08:30:24 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+12/09/23 08:30:24 EST -0500 |    adbca432..45805b11  45805b11761413e3b7705cc4ff59220934ad2bde -> annie-logs
+12/09/23 08:30:24 EST -0500 | ##########  END  ##########
+12/09/23 08:32:16 EST -0500 | ########## START ##########
+12/09/23 08:32:16 EST -0500 | Processing: /data/ccre-dam-data
+12/09/23 08:32:16 EST -0500 | On branch ccre-dam-data
