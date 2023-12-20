@@ -24,8 +24,7 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
     .default = col_character(),
     TIMESTAMP_start = col_datetime("%Y-%m-%d %H:%M:%S%*"),
     TIMESTAMP_end = col_datetime("%Y-%m-%d %H:%M:%S%*"),
-    flag = col_integer(),
-    colnumber = col_integer()
+    flag = col_integer()
   )) 
   
   log <- log_read
@@ -34,20 +33,21 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
   if (!is.null(start_date)){
     Met <- Met %>% 
       filter(DateTime >= start_date)
-    log <- log %>% 
-      filter(TIMESTAMP_start >= start_date)
+    log <- log %>%
+      filter(TIMESTAMP_start <= end_date)
   }
   
   if(!is.null(end_date)){
     Met <- Met %>% 
       filter(DateTime <= end_date)
-    log <- log %>% 
-      filter(TIMESTAMP_end <= end_date)
+    log <- log %>%
+      filter(TIMESTAMP_end >= start_date)
   }
   
   if (nrow(log) == 0){
     log <- log_read
   }
+  
   
   ####Create data flags for publishing ####
   #get rid of NaNs
@@ -56,56 +56,186 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
   for(i in 5:17) { #for loop to create new columns in data frame
     Met[,paste0("Flag_",colnames(Met[i]))] <- 0 #creates flag column + name of variable
     Met[,paste0("Note_",colnames(Met[i]))] <- NA #creates note column + names of variable
-    Met[which(is.na(Met[,i])),i] <- NA
+    
+    ## flag missing data (may be overwritten by maint log flag assignment)
+    # Met[which(is.na(Met[,i])),i] <- NA
+    
     Met[c(which(is.na(Met[,i]))),paste0("Flag_",colnames(Met[i]))] <-2 #puts in flag 2
     Met[c(which(is.na(Met[,i]))),paste0("Note_",colnames(Met[i]))] <- "Sample not collected" #note for flag 2
   }
   
+  # START OLD MAINT LOG CODE
   #### Load in maintenance txt file #### 
   # the maintenance file tracks when sensors were repaired or offline due to maintenance
   
   #create loop putting in maintenance flags (these are flags for values removed due
   # to maintenance and also flags potentially questionable values)
   
-  # modify fcr met data based on the information in the log
-  for(i in 1:nrow(log)){
-    # get start and end time of one maintenance event
-    start <- log$TIMESTAMP_start[i]
-    end <- log$TIMESTAMP_end[i]
-    
-    # Get Maintenance column
-    maintenance_cols <- log$colnumber[i]  
-    
-    #Get the Maintenance Flag and notes
-    
-    flag <- log$flag[i]
-    note <- log$notes[i]
-    
-    # Now take out the maintenance values
-    
-    if (flag!=5){
-      #print(j)
-      Met[c(which(Met$DateTime>=start & Met$DateTime<=end)), paste0("Flag_",colnames(Met[,maintenance_cols]))] = flag #when met timestamp is between remove timestamp
-      #and met column derived from remove column
-      #matching time frame, inserting flag
-      Met[c(which(Met$DateTime>=start & Met$DateTime<=end)), paste0("Note_",colnames(Met[,maintenance_cols]))]= note#same as above, but for notes
-      
-      Met[c(which(Met$DateTime>=start & Met$DateTime<=end)), maintenance_cols] = NA
-    }else{
-      ## #if statement for a questionable value
-      Met[c(which(Met$DateTime>=start & Met$DateTime<=end)),paste0("Flag_",colnames(Met[,maintenance_cols]))] = flag #when met timestamp is between remove timestamp
-      #and met column derived from remove column
-      # adding note from maintenance log to Met file
-      Met[c(which(Met$DateTime>=start & Met$DateTime<=end)), paste0("Note_",colnames(Met[,maintenance_cols]))] = note #same as above, but for notes
-    }
-    next
-  }
+  # # modify fcr met data based on the information in the log
+  # for(i in 1:nrow(log)){
+  #   # get start and end time of one maintenance event
+  #   start <- log$TIMESTAMP_start[i]
+  #   end <- log$TIMESTAMP_end[i]
+  #   
+  #   # Get Maintenance column
+  #   maintenance_cols <- log$colnumber[i]  
+  #   
+  #   #Get the Maintenance Flag and notes
+  #   
+  #   flag <- log$flag[i]
+  #   note <- log$notes[i]
+  #   
+  #   # Now take out the maintenance values
+  #   
+  #   if (flag!=5){
+  #     #print(j)
+  #     Met[c(which(Met$DateTime>=start & Met$DateTime<=end)), paste0("Flag_",colnames(Met[,maintenance_cols]))] = flag #when met timestamp is between remove timestamp
+  #     #and met column derived from remove column
+  #     #matching time frame, inserting flag
+  #     Met[c(which(Met$DateTime>=start & Met$DateTime<=end)), paste0("Note_",colnames(Met[,maintenance_cols]))]= note#same as above, but for notes
+  #     
+  #     Met[c(which(Met$DateTime>=start & Met$DateTime<=end)), maintenance_cols] = NA
+  #   }else{
+  #     ## #if statement for a questionable value
+  #     Met[c(which(Met$DateTime>=start & Met$DateTime<=end)),paste0("Flag_",colnames(Met[,maintenance_cols]))] = flag #when met timestamp is between remove timestamp
+  #     #and met column derived from remove column
+  #     # adding note from maintenance log to Met file
+  #     Met[c(which(Met$DateTime>=start & Met$DateTime<=end)), paste0("Note_",colnames(Met[,maintenance_cols]))] = note #same as above, but for notes
+  #   }
+  #   next
+  # }
+  # END OLD MAINT LOG CODE
   
+  
+  ## START NEW MAINT LOG CODE
+
+  # MET FLAGS
+  # 1 - SAMPLE DISREGARDED DUE TO MAINTENANCE - SET TO NA
+  # 2 - MISSING SAMPLE - SET TO NA
+  # 3 - NEGATIVE VALUE - SET TO ZERO - (AIR TEMP EXCLUDED)
+  # 4- SUSPECT SAMPPLE - SET TO UPDATED VALUE OR NA
+  # 5 - KEEP ORIGINAL VALUE BUT FLAG
+
+  ## ADD MAINTENANCE LOG FLAGS (manual edits to the data for suspect samples or human error)
+  #maintenance_file <- 'Data/DataNotYetUploadedToEDI/YSI_PAR_Secchi/maintenance_log.txt'
+  # log_read <- read_csv(maintenance_file, col_types = cols(
+  #   .default = col_character(),
+  #   TIMESTAMP_start = col_datetime("%Y-%m-%d %H:%M:%S%*"),
+  #   TIMESTAMP_end = col_datetime("%Y-%m-%d %H:%M:%S%*"),
+  #   flag = col_integer()
+  # ))
+  # 
+  # log <- log_read
+
+  for(i in 1:nrow(log)){
+    ### Assign variables based on lines in the maintenance log.
+
+    ### get start and end time of one maintenance event
+    start <- force_tz(as.POSIXct(log$TIMESTAMP_start[i]), tzone = "America/New_York")
+    end <- force_tz(as.POSIXct(log$TIMESTAMP_end[i]), tzone = "America/New_York")
+
+    ### Get the Reservoir Name
+    Reservoir <- log$Reservoir[i]
+
+    ### Get the Site Number
+    Site <- as.numeric(log$Site[i])
+
+    ### Get the depth value
+    #Depth <- as.numeric(log$Depth[i]) ## IS THERE SUPPOSED TO BE A COLUMN ADDED TO MAINT LOG CALLED NEW_VALUE?
+
+    ### Get the Maintenance Flag
+    flag <- log$flag[i]
+
+    ### Get the new value for a column
+    update_value <- as.numeric(log$updated_value[i])
+    
+    ## Get the offset value for a column
+    offset_value <- log$updated_value[i]
+
+    ### Get the names of the columns affected by maintenance
+    colname_start <- log$start_parameter[i]
+    colname_end <- log$end_parameter[i]
+
+    ### if it is only one parameter parameter then only one column will be selected
+
+    if(is.na(colname_start)){
+
+      maintenance_cols <- colnames(Met%>%select(colname_end))
+
+    }else if(is.na(colname_end)){
+
+      maintenance_cols <- colnames(Met%>%select(colname_start))
+
+    }else{
+      maintenance_cols <- colnames(Met%>%select(colname_start:colname_end))
+    }
+
+    if(is.na(end)){
+      # If there the maintenance is on going then the columns will be removed until
+      # and end date is added
+      Time <- Met |> filter(DateTime >= start) |> select(DateTime)
+
+    }else if (is.na(start)){
+      # If there is only an end date change columns from beginning of data frame until end date
+      Time <- Met |> filter(DateTime <= end) |> select(DateTime)
+
+    }else {
+      Time <- Met |> filter(DateTime >= start & DateTime <= end) |> select(DateTime)
+    }
+
+    ### This is where information in the maintenance log gets updated
+
+    if(flag %in% c(1,2)){
+      # The observations are changed to NA for maintenance or other issues found in the maintenance log
+      Met[Met$DateTime %in% Time$DateTime, maintenance_cols] <- NA
+      Met[Met$DateTime %in% Time$DateTime, paste0("Flag_",maintenance_cols)] <- flag
+
+    }else if (flag %in% c(3)){
+      ## change negative values but exclude air temperature
+
+      if('AirTemp_C_Average' %in% maintenance_cols){
+        maintenance_cols[!maintenance_cols == 'AirTemp_C_Average']
+      }
+
+      Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- 0
+
+    }else if (flag %in% c(4)){
+      # UPDATE THE MANUAL ISSUE FLAGS (BAD SAMPLE / USER ERROR) AND SET TO NEW VALUE OR NA (NA value is an option and can be actually used here)
+      
+      # No scenarios where offset is needed -- add as situaions arise (see FCRE met code)
+      
+      Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag) 
+      Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- as.numeric(update_value)
+
+      if(length(maintenance_cols) == 1){
+        if('Rain_Total_mm' == maintenance_cols & !is.na(offset_value)){
+          # UPDATE THE MANUAL ISSUE FLAGS (BAD SAMPLE / USER ERROR) AND SET TO NEW VALUE OR NA (NA value is an option and can be actually used here)
+          Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag)
+          Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- 0.001494+(0.110725*as.numeric(update_value)) ## how to make this work with offset value??
+        } else{
+          Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag) 
+          Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- as.numeric(update_value)
+        }
+        
+      } else{
+        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag) 
+        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- as.numeric(update_value)
+      }
+
+    }else if(flag %in% c(5)){
+      # UPDATE THE MANUAL ISSUE FLAGS (BAD SAMPLE / USER ERROR) BUT KEEP ORIGINAL VALUE
+      Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag)
+
+    }else{
+      warning("Flag not coded in the L1 script. See Austin or Adrienne")
+    }
+  }
+  #### END NEW MAINTENANCE LOG CODE
+
   #### Rain totals QAQC######
   
   # Take out Rain Totals above 5mm in 1 minute
   Rain<-c(which(!is.na(Met$Rain_Total_mm) & Met$Rain_Total_mm>5))
-  
   Met[Rain, "Note_Rain_Total_mm"]<-"Rain total over 5mm in one minute so removed as outlier"
   Met[Rain, "Flag_Rain_Total_mm"]<-4
   Met[Rain, "Rain_Total_mm"] <- NA
@@ -220,37 +350,37 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
   # Met[IR_Up,"Note_InfraredRadiationUp_Average_W_m2"]<-"Value corrected with InfRadUp equation as described in metadata" 
   # Met[IR_Up,"Flag_InfraredRadiationUp_Average_W_m2"]<-4
   
-  if(is.null(start_date)){
-    # Read in the FCR met file 
-    inUrl1  <- "https://pasta-s.lternet.edu/package/data/eml/edi/143/8/a5524c686e2154ec0fd0459d46a7d1eb" 
-    infile1 <- paste0(getwd(),"/Data/Met_final_2015_2022.csv")
-    download.file(inUrl1,infile1,method="curl")
-    
-    
-    fc <- read_csv("./Data/Met_final_2015_2022.csv", header=T) %>%
-      #fc <-read_csv("./misc_data_files/FCR_Met_final_2015_2022.csv")%>%  
-      mutate(DateTime = as.POSIXct(strptime(DateTime, "%Y-%m-%d %H:%M:%S", tz="EST"))) %>% 
-      filter(DateTime>as.POSIXct("2021-03-29 00:00:00"))%>%
-      select(DateTime,Rain_Total_mm)
-    
-    Met<-merge(Met, fc, by="DateTime")
-    
-    # Name of which argument to use below
-    FCR_rain<-which(Met$DateTime>"2022-07-19 00:00:00" & Met$DateTime<"2022-09-12 12:09:00")  
-    
-    Met[FCR_rain,"Rain_Total_mm.x"]<- 0.001494+(0.110725*Met[FCR_rain,"Rain_Total_mm.y"]) 
-    Met[FCR_rain,"Note_Rain_Total_mm"]<-"Substituted value calculated from FCR rain guage and linear_model" 
-    Met[FCR_rain,"Flag_Rain_Total_mm"]<-4
-    
-    # Change the values that should be 0 but are 0.001494 because of the linear model 
-    Met[which(Met$Rain_Total_mm.x==0.001494),"Rain_Total_mm.x"]<-0
-    
-    # Take out FCR rain 
-    Met$Rain_Total_mm.y<-NULL
-    
-    # Change back to Rain_Total_mm
-    Met<-Met%>%dplyr::rename("Rain_Total_mm"="Rain_Total_mm.x")
-  }
+  # if(is.null(start_date)){
+  #   # Read in the FCR met file 
+  #   inUrl1  <- "https://pasta-s.lternet.edu/package/data/eml/edi/143/8/a5524c686e2154ec0fd0459d46a7d1eb" 
+  #   infile1 <- paste0(getwd(),"/Data/Met_final_2015_2022.csv")
+  #   download.file(inUrl1,infile1,method="curl")
+  #   
+  #   
+  #   fc <- read_csv("./Data/Met_final_2015_2022.csv", header=T) %>%
+  #     #fc <-read_csv("./misc_data_files/FCR_Met_final_2015_2022.csv")%>%  
+  #     mutate(DateTime = as.POSIXct(strptime(DateTime, "%Y-%m-%d %H:%M:%S", tz="EST"))) %>% 
+  #     filter(DateTime>as.POSIXct("2021-03-29 00:00:00"))%>%
+  #     select(DateTime,Rain_Total_mm)
+  #   
+  #   Met<-merge(Met, fc, by="DateTime")
+  #   
+  #   # Name of which argument to use below
+  #   FCR_rain<-which(Met$DateTime>"2022-07-19 00:00:00" & Met$DateTime<"2022-09-12 12:09:00")  
+  #   
+  #   Met[FCR_rain,"Rain_Total_mm.x"]<- 0.001494+(0.110725*Met[FCR_rain,"Rain_Total_mm.y"]) 
+  #   Met[FCR_rain,"Note_Rain_Total_mm"]<-"Substituted value calculated from FCR rain guage and linear_model" 
+  #   Met[FCR_rain,"Flag_Rain_Total_mm"]<-4
+  #   
+  #   # Change the values that should be 0 but are 0.001494 because of the linear model 
+  #   Met[which(Met$Rain_Total_mm.x==0.001494),"Rain_Total_mm.x"]<-0
+  #   
+  #   # Take out FCR rain 
+  #   Met$Rain_Total_mm.y<-NULL
+  #   
+  #   # Change back to Rain_Total_mm
+  #   Met<-Met%>%dplyr::rename("Rain_Total_mm"="Rain_Total_mm.x")
+  # }
   
   ###Impossible Outliers####
   #take out impossible outliers and Infinite values before the other outliers are removed

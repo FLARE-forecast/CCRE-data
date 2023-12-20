@@ -21,6 +21,7 @@ source('R/met_qaqc_function.R')
 
 ## identify latest date for data on EDI (need to add one (+1) to both dates because we want to exclude all possible start_day data and include all possible data for end_day)
 package_ID <- 'edi.779.19' # may need to change once package is fully published
+#package_ID <- 'edi.1105.1'
 eml <- read_metadata(package_ID, env = 'staging') ## change once out of staging
 date_attribute <- xml_find_all(eml, xpath = ".//temporalCoverage/rangeOfDates/endDate/calendarDate")
 last_edi_date <- as.Date(xml_text(date_attribute)) + lubridate::days(1)
@@ -28,9 +29,9 @@ last_edi_date <- as.Date(xml_text(date_attribute)) + lubridate::days(1)
 day_of_run <- Sys.Date() + lubridate::days(1)
 
 ## assign data files 
-met_data <- 'ccre-met.csv'
+met_data <- 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-met.csv'
 #manual_data_url <- 'https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/BVRPlatform/BVR_manual_2022.csv'# no manual file for CCR
-maintenance_file <- 'CCRM_Maintenancelog.txt'
+maintenance_file <- 'CCRM_Maintenancelog_new.txt'
 outfile <-'ccre_met_L1.csv'
 
 ## run QAQC on the data within github
