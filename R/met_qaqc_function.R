@@ -1,4 +1,4 @@
-qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = NULL, end_date = NULL){
+qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = NULL, end_date = NULL, notes = NULL){
   
   #### Name the data file #### 
   # This section either uses the compiled data from FCR_MET_QAQC_Plots_2015_2022.Rmd which is already labeled Met
@@ -554,6 +554,11 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
     Met_final <- Met_final[Met_final$DateTime<ymd_hms(current_time_end),]
   }
   
+  
+  ## Should we include notes columns? Remove if notes is false
+  if (notes == FALSE){
+    Met_final <- Met_final |> select(-contains('Note'))
+  }
   
   #### Write to CSV ####
   # write_csv was giving the wrong times. Let's see if this is better. 

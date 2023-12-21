@@ -39,7 +39,8 @@ qaqc_ccrmet(data_file = met_data,
             maintenance_file = maintenance_file, 
             output_file = outfile, 
             start_date = last_edi_date,  
-            end_date = day_of_run)
+            end_date = day_of_run, 
+            notes = FALSE)
 
 #wq_qaqc <- read_csv('ccre-waterquality_L1.csv')
 
