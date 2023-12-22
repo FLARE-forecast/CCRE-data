@@ -18,6 +18,9 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
     Met=data_file
   }
   
+  Met$Reservoir <- 'CCR'
+  Met$Site <- 50
+  
   ## read in maintenance file 
   log_read <- read_csv(maintenance_file, col_types = cols(
     #read_csv("./Data/DataAlreadyUploadedToEDI/EDIProductionFiles/MakeEML_CCRMetData/2022/misc_data_files/CCRM_Met_Maintenance_2021_2022.txt", col_types = cols(
@@ -149,8 +152,8 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
     ### Get the new value for a column
     update_value <- as.numeric(log$updated_value[i])
     
-    ## Get the offset value for a column
-    offset_value <- log$updated_value[i]
+    ## Get the adjustment code from column
+    maint_adjustment_code <- log$adjustment_code[i]
 
     ### Get the names of the columns affected by maintenance
     colname_start <- log$start_parameter[i]
@@ -160,14 +163,14 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
 
     if(is.na(colname_start)){
 
-      maintenance_cols <- colnames(Met%>%select(colname_end))
+      maintenance_cols <- colnames(Met%>%select((colname_end)))
 
     }else if(is.na(colname_end)){
 
-      maintenance_cols <- colnames(Met%>%select(colname_start))
+      maintenance_cols <- colnames(Met%>%select((colname_start)))
 
     }else{
-      maintenance_cols <- colnames(Met%>%select(colname_start:colname_end))
+      maintenance_cols <- colnames(Met%>%select((colname_start:colname_end)))
     }
 
     if(is.na(end)){
@@ -204,15 +207,18 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
       
       # No scenarios where offset is needed -- add as situaions arise (see FCRE met code)
       
-      Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag) 
-      Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- as.numeric(update_value)
+      # Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag) 
+      # Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- as.numeric(update_value)
 
       if(length(maintenance_cols) == 1){
         if('Rain_Total_mm' == maintenance_cols & !is.na(offset_value)){
           # UPDATE THE MANUAL ISSUE FLAGS (BAD SAMPLE / USER ERROR) AND SET TO NEW VALUE OR NA (NA value is an option and can be actually used here)
+          original_values <- Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols]  
+          
           Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag)
-          Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- 0.001494+(0.110725*as.numeric(update_value)) ## how to make this work with offset value??
-        } else{
+          Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- eval(parse(text = maint_adjustment_code))
+          catdata[Time, new_col] <- catdata[Time, maintenance_cols] + eval(parse(text=update_value))
+          } else{
           Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag) 
           Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- as.numeric(update_value)
         }
