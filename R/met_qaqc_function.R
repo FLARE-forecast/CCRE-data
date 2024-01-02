@@ -203,29 +203,16 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
       Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- 0
 
     }else if (flag %in% c(4)){
-      # UPDATE THE MANUAL ISSUE FLAGS (BAD SAMPLE / USER ERROR) AND SET TO NEW VALUE OR NA (NA value is an option and can be actually used here)
       
-      # No scenarios where offset is needed -- add as situaions arise (see FCRE met code)
-      
-      # Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag) 
-      # Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- as.numeric(update_value)
-
-      if(length(maintenance_cols) == 1){
-        if('Rain_Total_mm' == maintenance_cols & !is.na(offset_value)){
-          # UPDATE THE MANUAL ISSUE FLAGS (BAD SAMPLE / USER ERROR) AND SET TO NEW VALUE OR NA (NA value is an option and can be actually used here)
-          original_values <- Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols]  
-          
-          Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag)
-          Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- eval(parse(text = maint_adjustment_code))
-          catdata[Time, new_col] <- catdata[Time, maintenance_cols] + eval(parse(text=update_value))
-          } else{
-          Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag) 
-          Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- as.numeric(update_value)
-        }
-        
-      } else{
-        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag) 
+      if(is.na(adjustment_code)){ ## Just use updated value if no adjustment code is provided
+        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag)
         Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- as.numeric(update_value)
+        
+      } else if(!is.na(adjustment_code)){ ## Use adjustment code if it's non-NA
+        original_values <- Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols]
+        
+        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag)
+        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- eval(parse(text = maint_adjustment_code))
       }
 
     }else if(flag %in% c(5)){
