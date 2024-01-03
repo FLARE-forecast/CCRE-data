@@ -31,7 +31,7 @@ day_of_run <- Sys.Date() + lubridate::days(1)
 ## assign data files 
 met_data <- 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-met.csv'
 #manual_data_url <- 'https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/BVRPlatform/BVR_manual_2022.csv'# no manual file for CCR
-maintenance_file <- 'CCRM_Maintenancelog_new.txt'
+maintenance_file <- 'CCRM_Maintenancelog_new.csv'
 outfile <-'ccre_met_L1.csv'
 
 ## run QAQC on the data within github
