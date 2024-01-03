@@ -22,7 +22,7 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
   Met$Site <- 50
   
   ## read in maintenance file 
-  log_read <- read_csv(maintenance_file, col_types = cols(
+  log_read <- read_csv2(maintenance_file, col_types = cols(
     #read_csv("./Data/DataAlreadyUploadedToEDI/EDIProductionFiles/MakeEML_CCRMetData/2022/misc_data_files/CCRM_Met_Maintenance_2021_2022.txt", col_types = cols(
     .default = col_character(),
     TIMESTAMP_start = col_datetime("%Y-%m-%d %H:%M:%S%*"),
