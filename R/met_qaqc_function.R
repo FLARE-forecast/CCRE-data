@@ -170,7 +170,16 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
       maintenance_cols <- colnames(Met%>%select((colname_start)))
 
     }else{
-      maintenance_cols <- colnames(Met%>%select((colname_start:colname_end)))
+      maint_col_df <- Met |> 
+        select(-contains(c('Flag','Note', 'CR3000'))) |>
+        select("DateTime","Record", 
+                 "PAR_umolm2s_Average", "PAR_Total_mmol_m2", "BP_Average_kPa", "AirTemp_C_Average", 
+                 "RH_percent", "Rain_Total_mm", "WindSpeed_Average_m_s", "WindDir_degrees", "ShortwaveRadiationUp_Average_W_m2",
+                 "ShortwaveRadiationDown_Average_W_m2", "InfraredRadiationUp_Average_W_m2",
+                 "InfraredRadiationDown_Average_W_m2", "Albedo_Average_W_m2")
+      
+      maintenance_cols <- colnames(maint_col_df%>%select((colname_start:colname_end)))
+      
     }
 
     if(is.na(end)){
