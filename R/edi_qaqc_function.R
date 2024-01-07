@@ -403,7 +403,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   ### Remove observations when sensors are out of the water ###
   
   #create depth column
-  ccrwater=ccrwater%>%mutate(LvlDepth_m_13=LvlPressure_psi_13*0.70455)#1psi=2.31ft, 1ft=0.305m
+  ccrwater <- ccrwater%>%mutate(LvlDepth_m_13=LvlPressure_psi_13*0.70455)#1psi=2.31ft, 1ft=0.305m
   
   
   # Using the find_depths function
@@ -431,7 +431,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   
   
   # reorder columns
-  ccrwater <- ccrwater %>% select(Reservoir, Site, DateTime,  
+  ccrwater2 <- ccrwater2 %>% select(Reservoir, Site, DateTime,  
                                   ThermistorTemp_C_1, ThermistorTemp_C_2, ThermistorTemp_C_3, ThermistorTemp_C_4,
                                   ThermistorTemp_C_5, ThermistorTemp_C_6, ThermistorTemp_C_7, ThermistorTemp_C_8,
                                   ThermistorTemp_C_9,ThermistorTemp_C_10,ThermistorTemp_C_11, ThermistorTemp_C_12,
@@ -447,10 +447,10 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   
   
   # convert datetimes to characters so that they are properly formatted in the output file
-  ccrwater$DateTime <- as.character(ccrwater$DateTime)
+  ccrwater2$DateTime <- as.character(ccrwater2$DateTime)
   
   # write to output file
-  write_csv(ccrwater, output_file)
+  write_csv(ccrwater2, output_file)
 }
 
 # Example usage
