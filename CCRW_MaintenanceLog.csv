@@ -1,0 +1,69 @@
+Reservoir;Site;DataStream; TIMESTAMP_start; TIMESTAMP_end; start_parameter; end_parameter; flag;update_value;adjustment_code; notes
+CCR;51;CCRW; 2021-03-29 15:20:00 EST; 2021-05-11 15:50:00 EST; ThermistorTemp_C_1; ThermistorTemp_C_13;1;NA;NA; temp string deployed at test depth
+CCR;51;CCRW; 2021-03-29 15:20:00 EST; 2021-05-11 15:50:00 EST; LvlPressure_psi_13; LvlTemp_C_13;1;NA;NA; pressure sensor deployed with temp string at test depth
+CCR;51;CCRW; 2021-04-11 13:30:00 EST; 2021-04-11 15:30:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was out of place
+CCR;51;CCRW; 2021-04-12 13:30:00 EST; 2021-04-12 15:30:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was out of place
+CCR;51;CCRW; 2021-04-19 15:50:00 EST; 2021-04-19 16:00:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was up for maintenance
+CCR;51;CCRW; 2021-04-26 16:05:00 EST; 2021-04-26 16:15:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was up for maintenance
+CCR;51;CCRW; 2021-07-01 16:30:00 EST; 2021-07-02 13:10:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was out of place and then up for maintenance
+CCR;51;CCRW; 2021-07-02 12:50:00 EST; 2021-07-02 13:30:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2021-07-02 13:45:00 EST; 2021-07-02 15:20:00 EST; ThermistorTemp_C_1; ThermistorTemp_C_13;1;NA;NA; temp string pulled up for cleaning and inspection
+CCR;51;CCRW; 2021-07-02 13:45:00 EST; 2021-07-02 15:20:00 EST; LvlPressure_psi_13; LvlTemp_C_13;1;NA;NA; pressure sensor pulled up for cleaning and inspection
+CCR;51;CCRW; 2021-07-28 11:40:00 EST; 2021-07-28 11:40:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2021-08-06 10:50:00 EST; 2021-08-30 08:10:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was wrapped around the intake and out of place
+CCR;51;CCRW; 2021-08-19 09:10:00 EST; 2021-08-19 09:20:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2021-08-20 12:50:00 EST; 2021-08-20 12:50:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2021-08-30 10:00:00 EST; 2021-08-30 10:00:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2021-08-30 09:50:00 EST; 2021-08-30 09:50:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was up for maintenance
+CCR;51;CCRW; 2021-09-07 15:25:00 EST; 2021-09-27 08:30:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO removed values because of malfunctioning wiper
+CCR;51;CCRW; 2021-09-23 10:30:00 EST; 2021-09-23 10:50:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; EXOs was up for maintenance and data download
+CCR;51;CCRW; 2021-09-23 10:50:00 EST; 2021-09-27 08:20:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was up and removed for maintenance at the lab
+CCR;51;CCRW; 2021-09-27 08:00:00 EST; 2021-09-27 08:10:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download and Central wiper removed
+CCR;51;CCRW; 2021-10-04 08:10:00 EST; 2021-10-04 08:30:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2021-10-12 08:30:00 EST; 2021-10-12 08:30:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2021-10-26 08:30:00 EST; 2021-10-26 08:40:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2021-11-08 16:10:00 EST; 2021-11-08 16:10:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; EXOs were up for maintenance and data download
+CCR;51;CCRW; 2021-11-19 16:10:00 EST; 2021-11-19 16:10:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was out of the water
+CCR;51;CCRW; 2021-12-03 13:35:00 EST; 2021-12-03 13:45:00 EST; ThermistorTemp_C_1; ThermistorTemp_C_13;1;NA;NA; temp string pulled up for cleaning and inspection
+CCR;51;CCRW; 2021-12-03 13:35:00 EST; 2021-12-03 13:45:00 EST; LvlPressure_psi_13; LvlTemp_C_13;1;NA;NA; temp string pulled up for cleaning and inspection
+CCR;51;CCRW; 2021-12-03 14:00:00 EST; 2021-12-03 14:00:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was up for maintenance
+CCR;51;CCRW; 2021-12-03 15:10:00 EST; 2021-12-03 15:10:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2021-12-04 11:40:00 EST; 2021-12-04 11:40:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2021-12-14 10:45:00 EST; 2021-12-14 10:55:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2022-01-11 12:05:00 EST; 2022-01-11 10:15:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2022-01-14 00:00:00 EST; 2022-01-26 17:00:00 EST; EXOTemp_C_9; EXOWiper_V_9;4;NA;NA; 9m EXO removed observations because sensor malfunctioned
+CCR;51;CCRW; 2022-01-26 16:50:00 EST; 2022-01-26 17:40:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2022-01-26 17:10:00 EST; 2022-04-20 15:10:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO removed for service
+CCR;51;CCRW; 2022-02-09 09:50:00 EST; 2022-02-09 10:20:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2022-04-20 12:50:00 EST; 2022-04-20 13:50:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO bad data 
+CCR;51;CCRW; 2022-05-12 09:00:00 EST; 2022-05-12 09:30:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; EXOs were up for maintenance 
+CCR;51;CCRW; 2022-08-27 09:10:00 EST; 2022-08-27 09:30:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was up for maintenance 
+CCR;51;CCRW; 2022-09-12 10:10:00 EST; 2022-09-12 11:20:00 EST; ThermistorTemp_C_1; ThermistorTemp_C_13;1;NA;NA; temp string pulled up for cleaning and inspection
+CCR;51;CCRW; 2022-09-12 10:10:00 EST; 2022-09-12 11:20:00 EST; LvlPressure_psi_13; LvlTemp_C_13;1;NA;NA; temp string pulled up for cleaning and inspection
+CCR;51;CCRW; 2022-09-12 12:30:00 EST; 2022-09-12 13:00:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance 
+CCR;51;CCRW; 2022-09-12 11:10:00 EST; 2022-09-12 11:30:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO was up for maintenance 
+CCR;51;CCRW; 2022-10-04 01:00:00 EST; 2022-10-04 01:00:00 EST; ThermistorTemp_C_1;  EXOWiper_V_9;1;NA;NA; power issue leading to bad data
+CCR;51;CCRW; 2022-10-04 03:00:00 EST; 2022-10-04 03:00:00 EST; ThermistorTemp_C_1;  EXOWiper_V_9;1;NA;NA; power issue leading to bad data  
+CCR;51;CCRW; 2022-10-04 06:50:00 EST; 2022-10-04 06:50:00 EST; ThermistorTemp_C_1;  EXOWiper_V_9;1;NA;NA; power issue leading to bad data
+CCR;51;CCRW; 2022-10-17 17:40:00 EST; 2022-10-17 17:40:00 EST; ThermistorTemp_C_1;  EXOWiper_V_9;1;NA;NA; power issue leading to bad data
+CCR;51;CCRW; 2022-10-18 03:20:00 EST; 2022-10-18 03:20:00 EST; ThermistorTemp_C_1;  EXOWiper_V_9;1;NA;NA; power issue leading to bad data
+CCR;51;CCRW; 2022-12-12 13:20:00 EST; 2022-12-16 14:20:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; EXOs removed for maintenance and calibration
+CCR;51;CCRW; 2022-12-16 14:30:00 EST; 2023-03-13 14:50:00 EST; EXOTemp_C_1; EXOWiper_V_1;7;NA;NA; 1m EXO was moved to FCR while that EXO is sent for maintenance
+CCR;51;CCRW; 2023-03-21 15:05:00 EST; 2023-03-21 15:10:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; Both EXOs up for cleaning
+CCR;51;CCRW; 2023-05-04 18:15:00 EST; 2023-05-10 14:55:00 EST; EXOTemp_C_9; EXOWiper_V_9;2;NA;NA; 9m EXO3 malfunction
+CCR;51;CCRW; 2023-05-08 16:05:00 EST; 2023-05-08 16:15:00 EST; EXOTemp_C_1; EXOWiper_V_1;2;NA;NA; 1m EXO2 out of position
+CCR;51;CCRW; 2023-05-10 12:35:00 EST; 2023-05-10 12:45:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for maintenance
+CCR;51;CCRW; 2023-05-10 15:15:00 EST; 2023-05-10 15:45:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for maintenance and cleaning
+CCR;51;CCRW; 2023-06-07 10:25:00 EST; 2023-06-07 12:05:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; 1m and 9m EXO up for cleaning
+CCR;51;CCRW; 2023-06-27 12:15:00 EST; 2023-06-27 12:25:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for maintenance and cleaning
+CCR;51;CCRW; 2023-07-05 01:25:00 EST; 2023-07-05 01:35:00 EST; EXOTemp_C_1; EXOWiper_V_1;2;NA;NA; 1m EXO2 out of position
+CCR;51;CCRW; 2023-07-19 17:55:00 EST; 2023-07-19 18:05:00 EST; EXOTemp_C_1; EXOWiper_V_1;2;NA;NA; 1m EXO2 out of position
+CCR;51;CCRW; 2023-08-14 12:00:00 EST; 2023-09-18 16:00:00 EST; EXOTemp_C_1; EXOWiper_V_1;2;NA;NA; water level dropped and sensor at the surface 
+CCR;51;CCRW; 2023-08-31 01:35:00 EST; 2023-08-31 01:45:00 EST; EXOTemp_C_9; EXOWiper_V_9;2;NA;NA; 9m EXO3 out of position
+CCR;51;CCRW; 2023-08-31 09:05:00 EST; 2023-08-31 09:35:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
+CCR;51;CCRW; 2023-09-18 14:15:00 EST; 2023-09-18 14:35:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
+CCR;51;CCRW; 2023-10-16 14:35:00 EST; 2023-10-16 15:05:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; Both EXOs up for maintenance
+CCR;51;CCRW; 2023-11-03 14:55:00 EST; 2023-11-03 01:45:00 EST; EXOTemp_C_9; EXOWiper_V_9;2;NA;NA; 9m EXO3 out of position
+CCR;51;CCRW; 2023-11-20 11:05:00 EST; 2023-11-20 12:05:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for cleaning
+CCR;51;CCRW; 2023-11-16 15:15:00 EST; 2023-11-20 12:05:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 exploded batteries and sensor malfunction
+CCR;51;CCRW; 2023-11-20 12:05:00 EST; NA; EXOTemp_C_1; EXOWiper_V_1;7;NA;NA; 9m EXO3 returned for serious maintenance
