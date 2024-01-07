@@ -32,7 +32,7 @@ day_of_run <- Sys.Date() + lubridate::days(1)
 ## assign data files 
 wq_data <- 'ccre-waterquality.csv'
 manual_data_url <- 'https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCRWaterquality_L1.csv'
-maintenance_file <- 'CCRW_maintenanceLog.csv'
+maintenance_file <- 'CCRW_MaintenanceLog.csv'
 outfile <-'ccre-waterquality_L1.csv'
 
 ## run QAQC on the data within github
