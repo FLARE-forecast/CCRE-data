@@ -1,8 +1,8 @@
 #install.packages("EDIutils")
 #install.packages("xml2")
 #install.packages("here")
-install.package("rqdatatable")
-install.package("devtools")
+install.packages("rqdatatable")
+install.packages("devtools")
 
 library(tidyverse)
 library(EDIutils)
