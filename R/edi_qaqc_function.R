@@ -124,6 +124,9 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   ccrwater$Reservoir="CCR"
   ccrwater$Site=51
 
+  ## assign timezone
+  ccrwater$DateTime <- force_tz(as.POSIXct(ccrwater$DateTime), tzone = "America/New_York")
+  
     ### Convert RFU to ugL for Algae sensor ### 
   
   # Linear Relationship for chla when ugL not calculated
