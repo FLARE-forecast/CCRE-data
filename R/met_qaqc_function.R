@@ -20,6 +20,8 @@ qaqc_ccrmet <- function(data_file, maintenance_file, output_file, start_date = N
   
   Met$Reservoir <- 'CCR'
   Met$Site <- 50
+  Met$DateTime <- force_tz(as.POSIXct(Met$DateTime), tzone = "America/New_York")
+  
   
   ## read in maintenance file 
   log_read <- read_csv2(maintenance_file, col_types = cols(
