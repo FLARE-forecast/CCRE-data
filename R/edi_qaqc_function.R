@@ -123,8 +123,21 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   ### add Reservoir and Site columns
   ccrwater$Reservoir="CCR"
   ccrwater$Site=51
+
+    ### Convert RFU to ugL for Algae sensor ### 
+  
+  # Linear Relationship for chla when ugL not calculated
+  # slope = 4.00 , int= -0.63
+  
+  ccrwater[c(which(is.na(ccrwater$EXOChla_ugL_1) & !is.na(ccrwater$EXOChla_RFU_1))), "Flag_EXOChla_ugL_1"]<- 6
+  ccrwater[c(which(is.na(ccrwater$EXOChla_ugL_1) & !is.na(ccrwater$EXOChla_RFU_1))), "EXOChla_ugL_1"]<- (ccrwater[c(which(is.na(ccrwater$EXOChla_ugL_1) & !is.na(ccrwater$EXOChla_RFU_1))), "EXOChla_RFU_1"]*4.00)-0.63
   
   
+  # Linear Relationship for phyco when ugL not calculated
+  # slope = 1.00 , int = -0.59
+  
+  ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "Flag_EXOBGAPC_ugL_1"]<- 6
+  ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "EXOBGAPC_ugL_1"]<- (ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "EXOBGAPC_RFU_1"]*1.00)-0.59
   
   
   #####Create Flag columns#####
@@ -141,25 +154,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     ccrwater[c(which((ccrwater[,k]<0))),k] <- 0 #replaces value with 0
   }
 
-   ### Convert RFU to ugL for Algae sensor ### 
-  
-  # Linear Relationship for chla when ugL not calculated
-  # slope = 4.00 , int= -0.63
-  
-  ccrwater[c(which(is.na(ccrwater$EXOChla_ugL_1) & !is.na(ccrwater$EXOChla_RFU_1))), "Flag_EXOChla_ugL_1"]<- 6
-  ccrwater[c(which(is.na(ccrwater$EXOChla_ugL_1) & !is.na(ccrwater$EXOChla_RFU_1))), "EXOChla_ugL_1"]<- (ccrwater[c(which(is.na(ccrwater$EXOChla_ugL_1) & !is.na(ccrwater$EXOChla_RFU_1))), "EXOChla_RFU_1"]*4.00)-0.63
-  
-  
-  # Linear Relationship for phyco when ugL not calculated
-  # slope = 1.00 , int = -0.59
-  
-  ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "Flag_EXOBGAPC_ugL_1"]<- 6
-  ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "EXOBGAPC_ugL_1"]<- (ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "EXOBGAPC_RFU_1"]*1.00)-0.59
-  
-  
-  
-  
-  
+ 
   
   #####Maintenance Log QAQC############ 
   
