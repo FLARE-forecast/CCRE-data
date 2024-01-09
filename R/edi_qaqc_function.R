@@ -84,6 +84,9 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   # #rearrange the column headers based on the original file since they get jumbled during the join 
    ccrwater <- CCR%>%
      select(all_of(CATPRES_COL_NAMES)) 
+
+   # Set timezone as EST. Streaming sensors don't observe daylight savings
+  ccrwater$DateTime <- force_tz(as.POSIXct(ccrwater$DateTime), tzone = "EST")
   
   # Take out the EXO_Date and EXO_Time column because we don't publish them 
   
@@ -102,6 +105,10 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     TIMESTAMP_end = col_datetime("%Y-%m-%d %H:%M:%S%*"),
     flag = col_integer()
   ))
+
+  # Set timezone as EST. Streaming sensors don't observe daylight savings
+  log$TIMESTAMP_start <- force_tz(as.POSIXct(log$TIMESTAMP_start), tzone = "EST")
+  log$TIMESTAMP_end <- force_tz(as.POSIXct(log$TIMESTAMP_end), tzone = "EST")
   
   ### identify the date subsetting for the data
   if (!is.null(start_date)){
