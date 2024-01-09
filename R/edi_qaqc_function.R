@@ -1,5 +1,3 @@
-
-
 qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-waterquality.csv",
                      data2_file = "https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCRWaterquality_L1.csv",
                      EXO2_manual_file = "https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCR_1_5_EXO_L1.csv", 
@@ -8,7 +6,6 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
                      start_date = NULL, 
                      end_date = NULL)
 {
-  
   
   # Call the source function to get the depths
   
@@ -35,7 +32,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     # read catwalk data and maintenance log
     # NOTE: date-times throughout this script are processed as UTC
     ccrwater <- read_csv(data_file, skip = 1, col_names = CATPRES_COL_NAMES,
-                        col_types = cols(.default = col_double(), DateTime = col_datetime()))
+                         col_types = cols(.default = col_double(), DateTime = col_datetime()))
   } else {
     
     ccrwater <- data_file
@@ -51,14 +48,14 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   } else{
     
     ccrwater2 <- read_csv(data2_file, skip = 1, col_names = CATPRES_COL_NAMES,
-                         col_types = cols(.default = col_double(), DateTime = col_datetime()))
+                          col_types = cols(.default = col_double(), DateTime = col_datetime()))
   }
   
   # Read in EXO file
   
   EXO <- read_csv(EXO2_manual_file, col_names=T,
-                col_types = cols(.default = col_double(), DateTime = col_datetime()), show_col_types = T)
- 
+                  col_types = cols(.default = col_double(), DateTime = col_datetime()), show_col_types = T)
+  
   
   
   # Bind the streaming data and the manual downloads together so we can get any missing observations 
@@ -80,12 +77,12 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
                              by = "DateTime",
                              jointype = "LEFT")
   
- 
+  
   # #rearrange the column headers based on the original file since they get jumbled during the join 
-   ccrwater <- CCR%>%
-     select(all_of(CATPRES_COL_NAMES)) 
-
-   # Set timezone as EST. Streaming sensors don't observe daylight savings
+  ccrwater <- CCR%>%
+    select(all_of(CATPRES_COL_NAMES)) 
+  
+  # Set timezone as EST. Streaming sensors don't observe daylight savings
   ccrwater$DateTime <- force_tz(as.POSIXct(ccrwater$DateTime), tzone = "EST")
   
   # Take out the EXO_Date and EXO_Time column because we don't publish them 
@@ -105,7 +102,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     TIMESTAMP_end = col_datetime("%Y-%m-%d %H:%M:%S%*"),
     flag = col_integer()
   ))
-
+  
   # Set timezone as EST. Streaming sensors don't observe daylight savings
   log$TIMESTAMP_start <- force_tz(as.POSIXct(log$TIMESTAMP_start), tzone = "EST")
   log$TIMESTAMP_end <- force_tz(as.POSIXct(log$TIMESTAMP_end), tzone = "EST")
@@ -126,15 +123,23 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     
   }
   
-
+  
   ### add Reservoir and Site columns
   ccrwater$Reservoir="CCR"
   ccrwater$Site=51
-
-  ## assign timezone
-  ccrwater$DateTime <- force_tz(as.POSIXct(ccrwater$DateTime), tzone = "America/New_York")
   
-    ### Convert RFU to ugL for Algae sensor ### 
+  
+  #####Create Flag columns#####
+  
+  
+  # for loop to create flag columns
+  for(j in colnames(ccrwater%>%select(ThermistorTemp_C_1:LvlTemp_C_13))) { #for loop to create new columns in data frame
+    ccrwater[,paste0("Flag_",j)] <- 0 #creates flag column + name of variable
+    ccrwater[c(which(is.na(ccrwater[,j]))),paste0("Flag_",j)] <-7 #puts in flag 7 if value not collected
+  }
+  
+  
+  ### Convert RFU to ugL for Algae sensor ### 
   
   # Linear Relationship for chla when ugL not calculated
   # slope = 4.00 , int= -0.63
@@ -149,22 +154,11 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "Flag_EXOBGAPC_ugL_1"]<- 6
   ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "EXOBGAPC_ugL_1"]<- (ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "EXOBGAPC_RFU_1"]*1.00)-0.59
   
-  
-  #####Create Flag columns#####
-  
-  
-  # for loop to create flag columns
-  for(j in colnames(ccrwater%>%select(ThermistorTemp_C_1:LvlTemp_C_13))) { #for loop to create new columns in data frame
-    ccrwater[,paste0("Flag_",j)] <- 0 #creates flag column + name of variable
-    ccrwater[c(which(is.na(ccrwater[,j]))),paste0("Flag_",j)] <-7 #puts in flag 7 if value not collected
-  }
   #update 
   for(k in colnames(ccrwater%>%select(EXOCond_uScm_1:EXOfDOM_QSU_1,EXOCond_uScm_9:EXOfDOM_QSU_9 ))) { #for loop to create new columns in data frame
     ccrwater[c(which((ccrwater[,k]<0))),paste0("Flag_",k)] <- 3
     ccrwater[c(which((ccrwater[,k]<0))),k] <- 0 #replaces value with 0
   }
-
- 
   
   #####Maintenance Log QAQC############ 
   
@@ -339,7 +333,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   ccrwater[which(ccrwater$EXODepth_m_1< 0.5),exo_flag]<- 2
   #Change the EXO data to NAs when the EXO is above 0.5m and not due to maintenance
   ccrwater[which(ccrwater$EXODepth_m_1 < 0.5), exo_idx] <- NA
- 
+  
   
   #index only the colummns with EXO at the beginning
   exo_idx9 <-grep("^EXO.*_9$",colnames(ccrwater))
@@ -366,7 +360,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   ccrwater[which(ccrwater$EXOWiper_V_9 !=0 & ccrwater$EXOWiper_V_9 < 0.7 & ccrwater$EXOWiper_V_9 > 1.6), exo_idx9] <- NA
   
   
- 
+  
   
   ############## Leading and Lagging QAQC ##########################
   # This finds the point that is way out of range from the leading and lagging point 
@@ -395,10 +389,10 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     # Replace the observations that are above the threshold with NA and then put a flag in the flag column
     
     ccrwater[c(which((abs(ccrwater$Var_lag - ccrwater$Var) > Var_threshold) &
-                      (abs(ccrwater$Var_lead - ccrwater$Var) > Var_threshold)&!is.na(ccrwater$Var))) ,a] <-NA
+                       (abs(ccrwater$Var_lead - ccrwater$Var) > Var_threshold)&!is.na(ccrwater$Var))) ,a] <-NA
     
     ccrwater[c(which((abs(ccrwater$Var_lag - ccrwater$Var) > Var_threshold) &
-                      (abs(ccrwater$Var_lead - ccrwater$Var) > Var_threshold)&!is.na(ccrwater$Var))) ,paste0("Flag_",colnames(ccrwater[a]))]<-2
+                       (abs(ccrwater$Var_lead - ccrwater$Var) > Var_threshold)&!is.na(ccrwater$Var))) ,paste0("Flag_",colnames(ccrwater[a]))]<-2
   }
   
   # Remove the leading and lagging columns
@@ -414,14 +408,14 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   # Using the find_depths function
   
   ccrwater2 <- find_depths (data_file = ccrwater, # data_file = the file of most recent data either from EDI or GitHub. Currently reads in the L1 file
-                           depth_offset = "https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data-qaqc/CCR_Depth_offsets.csv",  # depth_offset = the file of depth of each sensor relative to each other. This file for BVR is on GitHub
-                           output = NULL, # output = the path where you would like the data saved
-                           date_offset = NULL, # Date_offset = the date we moved the sensors so we know where to split the file. If you don't need to split the file put NULL
-                           offset_column1 = "Offset",# offset_column1 = name of the column in the depth_offset file to subtract against the actual depth to get the sensor depth
-                           offset_column2 = NULL, # offset_column2 = name of the second column if applicable for the column with the depth offsets
-                           round_digits = 2, #round_digits = number of digits you would like to round to
-                           bin_width = 0.25, # bin width in m
-                           wide_data = T)  
+                            depth_offset = "https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data-qaqc/CCR_Depth_offsets.csv",  # depth_offset = the file of depth of each sensor relative to each other. This file for BVR is on GitHub
+                            output = NULL, # output = the path where you would like the data saved
+                            date_offset = NULL, # Date_offset = the date we moved the sensors so we know where to split the file. If you don't need to split the file put NULL
+                            offset_column1 = "Offset",# offset_column1 = name of the column in the depth_offset file to subtract against the actual depth to get the sensor depth
+                            offset_column2 = NULL, # offset_column2 = name of the second column if applicable for the column with the depth offsets
+                            round_digits = 2, #round_digits = number of digits you would like to round to
+                            bin_width = 0.25, # bin width in m
+                            wide_data = T)  
   
   # Flag observations that were removed but don't have a flag yet
   
@@ -430,25 +424,25 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   }
   
   
-
- 
+  
+  
   #############################################################################################################################  
   
   
   # reorder columns
   ccrwater2 <- ccrwater2 %>% select(Reservoir, Site, DateTime,  
-                                  ThermistorTemp_C_1, ThermistorTemp_C_2, ThermistorTemp_C_3, ThermistorTemp_C_4,
-                                  ThermistorTemp_C_5, ThermistorTemp_C_6, ThermistorTemp_C_7, ThermistorTemp_C_8,
-                                  ThermistorTemp_C_9,ThermistorTemp_C_10,ThermistorTemp_C_11, ThermistorTemp_C_12,
-                                  ThermistorTemp_C_13, EXOTemp_C_1, EXOCond_uScm_1,
-                                  EXOSpCond_uScm_1, EXOTDS_mgL_1, EXODOsat_percent_1, EXODO_mgL_1, EXOChla_RFU_1,
-                                  EXOChla_ugL_1, EXOBGAPC_RFU_1, EXOBGAPC_ugL_1, EXOfDOM_RFU_1, EXOfDOM_QSU_1,
-                                  EXOPressure_psi_1, EXODepth_m_1, EXOBattery_V_1, EXOCablepower_V_1, EXOWiper_V_1,
-                                  EXOTemp_C_9, EXOCond_uScm_9,
-                                  EXOSpCond_uScm_9, EXOTDS_mgL_9, EXODOsat_percent_9, EXODO_mgL_9, 
-                                  EXOfDOM_RFU_9, EXOfDOM_QSU_9,EXOPressure_psi_9, EXODepth_m_9, EXOBattery_V_9,
-                                  EXOCablepower_V_9, EXOWiper_V_9,LvlPressure_psi_13,LvlDepth_m_13, LvlTemp_C_13, 
-                                  RECORD, CR3000Battery_V, CR3000Panel_Temp_C,everything())
+                                    ThermistorTemp_C_1, ThermistorTemp_C_2, ThermistorTemp_C_3, ThermistorTemp_C_4,
+                                    ThermistorTemp_C_5, ThermistorTemp_C_6, ThermistorTemp_C_7, ThermistorTemp_C_8,
+                                    ThermistorTemp_C_9,ThermistorTemp_C_10,ThermistorTemp_C_11, ThermistorTemp_C_12,
+                                    ThermistorTemp_C_13, EXOTemp_C_1, EXOCond_uScm_1,
+                                    EXOSpCond_uScm_1, EXOTDS_mgL_1, EXODOsat_percent_1, EXODO_mgL_1, EXOChla_RFU_1,
+                                    EXOChla_ugL_1, EXOBGAPC_RFU_1, EXOBGAPC_ugL_1, EXOfDOM_RFU_1, EXOfDOM_QSU_1,
+                                    EXOPressure_psi_1, EXODepth_m_1, EXOBattery_V_1, EXOCablepower_V_1, EXOWiper_V_1,
+                                    EXOTemp_C_9, EXOCond_uScm_9,
+                                    EXOSpCond_uScm_9, EXOTDS_mgL_9, EXODOsat_percent_9, EXODO_mgL_9, 
+                                    EXOfDOM_RFU_9, EXOfDOM_QSU_9,EXOPressure_psi_9, EXODepth_m_9, EXOBattery_V_9,
+                                    EXOCablepower_V_9, EXOWiper_V_9,LvlPressure_psi_13,LvlDepth_m_13, LvlTemp_C_13, 
+                                    RECORD, CR3000Battery_V, CR3000Panel_Temp_C,everything())
   
   
   # convert datetimes to characters so that they are properly formatted in the output file
@@ -458,9 +452,8 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   write_csv(ccrwater2, output_file)
 }
 
-# Example usage
-# qaqc_ccr(output_file = "CCR_L1.csv", start_date = as.Date("2022-01-01"), end_date = Sys.Date())
-
+# # Example usage
+#  qaqc_ccr(output_file = "CCRCatwalk_L1.csv", start_date = as.Date("2023-01-01"), end_date = Sys.Date())
 
 
 
