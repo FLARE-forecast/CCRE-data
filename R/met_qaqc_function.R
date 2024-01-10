@@ -22,7 +22,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     Met=data_file
   }
   
-
+  
   #read in manual data from the data logger to fill in missing gaps
   
   if(is.null(data2_file)){
@@ -112,13 +112,13 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     Met[c(which(is.na(Met[,i]))),paste0("Note_",colnames(Met[i]))] <- "Sample not collected" #note for flag 2
   }
   
- 
+  
   for(i in 1:nrow(log)){
     ### Assign variables based on lines in the maintenance log.
     
     ### get start and end time of one maintenance event
-    start <- force_tz(as.POSIXct(log$TIMESTAMP_start[i]), tzone = "America/New_York")
-    end <- force_tz(as.POSIXct(log$TIMESTAMP_end[i]), tzone = "America/New_York")
+    start <- force_tz(as.POSIXct(log$TIMESTAMP_start[i]), tzone = "EST")
+    end <- force_tz(as.POSIXct(log$TIMESTAMP_end[i]), tzone = "EST")
     
     ### Get the Reservoir Name
     Reservoir <- log$Reservoir[i]
@@ -133,10 +133,10 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     flag <- log$flag[i]
     
     ### Get the new value for a column
-    update_value <- as.numeric(log$updated_value[i])
+    update_value <- as.numeric(log$update_value[i])
     
     ## Get the adjustment code from column
-    maint_adjustment_code <- log$adjustment_code[i]
+    adjustment_code <- log$adjustment_code[i]
     
     ### Get the names of the columns affected by maintenance
     colname_start <- log$start_parameter[i]
@@ -204,7 +204,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
         original_values <- Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols]
         
         Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag)
-        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- eval(parse(text = maint_adjustment_code))
+        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- eval(parse(text = adjustment_code))
       }
       
     }else if(flag %in% c(5)){
@@ -420,7 +420,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   #get sunrise and sunset times
   suntimes=getSunlightTimes(date = seq.Date(as.Date("2021-03-29"), Sys.Date(), by = 1),
                             keep = c("sunrise",  "sunset"),
-                            lat = 37.37, lon = -79.96, tz = "UTC")
+                            lat = 37.37, lon = -79.96, tz = "EST")
   
   #create date column
   Met$date <- as.Date(Met$DateTime)
@@ -538,24 +538,25 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   }
   
   #### Write to CSV ####
-  # convert datetimes to characters so that they are properly formatted in the output file
-  Met_final$DateTime <- as.character(Met_final$DateTime)
+  
   
   # write_csv was giving the wrong times. Let's see if this is better. 
   # If the output file is NULL then we are using it in a function and want the file returned and not saved. 
   if (is.null(output_file)){
     return(Met_final)
   }else{
+    # convert datetimes to characters so that they are properly formatted in the output file
+    Met_final$DateTime <- as.character(Met_final$DateTime)
     write_csv(Met_final, output_file)
   }
   
 }
 
 # # Example Use
-# qaqc_ccrmet(data_file = 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-met.csv',
+# sdf <- qaqc_ccrmet(data_file = 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-met.csv',
 # data2_file = 'https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCRMetstation_L1.csv',
-# maintenance_file = 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data-qaqc/CCRM_Maintenancelog_new.csv', 
-# output_file = "CCRMet_L1.csv", 
-# start_date = as.Date("2023-01-01"), 
-# end_date = Sys.Date(), 
-# notes = FALSE)
+# maintenance_file = 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data-qaqc/CCRM_Maintenancelog_new.csv',
+# output_file = NULL,
+# start_date = force_tz(as.POSIXct("2023-01-01 00:00:00"), tzone = "EST"),
+# end_date = Sys.Date(),
+# notes = TRUE)
