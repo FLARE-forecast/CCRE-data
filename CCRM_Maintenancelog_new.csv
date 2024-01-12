@@ -13,3 +13,4 @@ CCR; 51; CCRM; 2022-09-12 11:05:00 EST; 2022-09-12 11:07:00 EST; Rain_Total_mm; 
 CCR; 51; CCRM; 2022-10-04 00:01:00 EST; 2022-10-04 00:01:00 EST; AirTemp_C_Average; InfraredRadiationDown_Average_W_m2; 4; NA; NA; High rain value and low values for all sensor so eliminating all the observations
 CCR; 51; CCRM; 2022-10-04 00:34:00 EST; 2022-10-04 00:34:00 EST; AirTemp_C_Average; InfraredRadiationDown_Average_W_m2; 4; NA; NA; very high SR down value which could be related to power so eliminating for all sensors
 CCR; 51; CCRM; 2023-02-28 06:15:00 EST; 2023-02-28 12:11:00 EST; PAR_umolm2s_Average; InfraredRadiationDown_Average_W_m2; 1; NA; NA; Met station blew over so sensors out of position and eliminated observations
+CCR; 51; CCRM; 2023-06-07 12:40:00 EST; 2023-06-07 12:46:00 EST; Rain_Total_mm; NA; 1;NA;NA; cleaning out rain gauge so says there was rain when there was none
