@@ -445,11 +445,15 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
                                     RECORD, CR3000Battery_V, CR3000Panel_Temp_C,everything())
   
   
-  # convert datetimes to characters so that they are properly formatted in the output file
-  ccrwater2$DateTime <- as.character(ccrwater2$DateTime)
-  
-  # write to output file
-  write_csv(ccrwater2, output_file)
+  # write_csv was giving the wrong times. Let's see if this is better. 
+  # If the output file is NULL then we are using it in a function and want the file returned and not saved. 
+  if (is.null(output_file)){
+    return(ccrwater2)
+  }else{
+    # convert datetimes to characters so that they are properly formatted in the output file
+    ccrwater2$DateTime <- as.character(ccrwater2$DateTime)
+    write_csv(ccrwater2, output_file)
+  }
 }
 
 # # Example usage
