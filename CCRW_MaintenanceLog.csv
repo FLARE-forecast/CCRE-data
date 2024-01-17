@@ -71,13 +71,11 @@ CCR;51;CCRW; 2023-08-14 11:25:00 EST; 2023-09-18 16:00:00 EST; EXOTemp_C_1; EXOW
 CCR;51;CCRW; 2023-08-31 01:35:00 EST; 2023-08-31 01:55:00 EST; EXOTemp_C_9; EXOWiper_V_9;2;NA;NA; 9m EXO3 out of position
 CCR;51;CCRW; 2023-08-31 07:15:00 EST; 2023-08-31 09:35:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
 CCR;51;CCRW; 2023-09-18 14:15:00 EST; 2023-09-18 14:35:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
-CCR;51;CCRW; 2023-10-09 14:15:00 EST; 2023-10-09 14:25:00 EST; EXOTemp_C_1; EXOWiper_V_1;2;NA;NA; EXO2 out of position-remove value
+CCR;51;CCRW; 2023-10-09 14:05:00 EST; 2023-10-09 14:25:00 EST; EXOTemp_C_1; EXOWiper_V_1;2;NA;NA; EXO2 out of position-remove value
 CCR;51;CCRW; 2023-10-12 12:00:00 EST; 2023-10-20 10:10:00 EST; EXOCond_uScm_9; EXOTDS_mgL_9;2;NA;NA; Bad Conductivity reading probably due to EXO3 wiper over sensor during reading take out readings below 81.5
 CCR;51;CCRW; 2023-10-16 13:45:00 EST; 2023-10-16 19:25:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; Both EXOs up for maintenance and extra time for issues
 CCR;51;CCRW; 2023-11-02 07:45:00 EST; 2023-11-02 10:45:00 EST; EXOTemp_C_9; EXOWiper_V_9;2;NA;NA; Issues after EXO3 battery compartment was flooded. Take out values because do not trust them
 CCR;51;CCRW; 2023-11-03 14:55:00 EST; 2023-11-03 01:45:00 EST; EXOTemp_C_9; EXOWiper_V_9;2;NA;NA; 9m EXO3 out of position
-CCR;51;CCRW; 2023-11-14 09:05:00 EST; 2023-11-14 16:55:00 EST; ThermistorTemp_C_1; ThermistorTemp_C_13;2;NA;NA; Temp string out of position because of dam maintenance
-CCR;51;CCRW; 2023-11-14 09:05:00 EST; 2023-11-14 16:55:00 EST; LvlPressure_psi_13; LvlTemp_C_13;2;NA;NA; Temp string out of position because of dam maintenance
 CCR;51;CCRW; 2023-11-20 11:05:00 EST; 2023-11-20 12:05:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for cleaning
 CCR;51;CCRW; 2023-11-16 15:15:00 EST; 2023-11-20 12:05:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 exploded batteries and sensor malfunction
 CCR;51;CCRW; 2023-11-20 12:05:00 EST; NA; EXOTemp_C_1; EXOWiper_V_1;7;NA;NA; 9m EXO3 returned for serious maintenance
