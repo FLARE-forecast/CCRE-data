@@ -48,7 +48,8 @@ CCR;51;CCRW; 2022-10-04 06:50:00 EST; 2022-10-04 06:50:00 EST; ThermistorTemp_C_
 CCR;51;CCRW; 2022-10-17 17:40:00 EST; 2022-10-17 17:40:00 EST; ThermistorTemp_C_1;  EXOWiper_V_9;1;NA;NA; power issue leading to bad data
 CCR;51;CCRW; 2022-10-18 03:20:00 EST; 2022-10-18 03:20:00 EST; ThermistorTemp_C_1;  EXOWiper_V_9;1;NA;NA; power issue leading to bad data
 CCR;51;CCRW; 2022-12-12 13:20:00 EST; 2022-12-16 14:20:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; EXOs removed for maintenance and calibration
-CCR;51;CCRW; 2022-12-16 14:30:00 EST; 2023-03-13 14:55:00 EST; EXOTemp_C_1; EXOWiper_V_1;7;NA;NA; 1m EXO was moved to FCR while that EXO is sent for maintenance
+CCR;51;CCRW; 2022-12-16 14:30:00 EST; 2023-03-13 14:45:00 EST; EXOTemp_C_1; EXOWiper_V_1;7;NA;NA; 1m EXO2 was moved to FCR while that EXO is sent for maintenance
+CCR;51;CCRW; 2023-03-13 14:45:00 EST; 2023-03-13 14:55:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 redeployed at CCR
 CCR;51;CCRW; 2023-03-21 15:05:00 EST; 2023-03-21 15:10:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; Both EXOs up for cleaning
 CCR;51;CCRW; 2023-04-16 16:25:00 EST; 2023-04-16 16:35:00 EST; EXOfDOM_RFU_9; EXOfDOM_QSU_9;2;NA;NA; high fDOM value. Removed
 CCR;51;CCRW; 2023-04-18 08:45:00 EST; 2023-04-18 08:55:00 EST; EXOfDOM_RFU_9; EXOfDOM_QSU_9;2;NA;NA; high fDOM value. Removed
