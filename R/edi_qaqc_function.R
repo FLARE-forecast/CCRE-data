@@ -90,6 +90,9 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   if("EXO_Date_1" %in% colnames(ccrwater)){
     ccrwater <- ccrwater%>%select(-any_of(c(starts_with("EXO_Date"), starts_with("EXO_Time"))))
   }
+
+# Duplicates were getting through so run it again after merging EXO files
+  ccrwater <- ccrwater[!duplicated(ccrwater$DateTime), ]
   
   # convert NaN to NAs in the dataframe
   ccrwater[sapply(ccrwater, is.nan)] <- NA
