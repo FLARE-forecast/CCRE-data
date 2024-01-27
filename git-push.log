@@ -36187,3 +36187,24 @@ Completed at 08/17/23 12:24:22 EST
 01/26/24 20:30:24 EST -0500 |    5d980a84..0fc692f0  0fc692f0502cb3d76297e97f4212d263c93ac719 -> annie-logs
 01/26/24 20:30:24 EST -0500 | ##########  END  ##########
 01/26/24 20:32:34 EST -0500 | ########## START ##########
+01/26/24 20:32:34 EST -0500 | Processing: /data/ccre-dam-data
+01/26/24 20:32:34 EST -0500 | On branch ccre-dam-data
+01/26/24 20:32:34 EST -0500 | Your branch is up to date with 'origin/ccre-dam-data'.
+01/26/24 20:32:34 EST -0500 | 
+01/26/24 20:32:34 EST -0500 | nothing to commit, working tree clean
+01/26/24 20:32:34 EST -0500 | Processing: /data/annie-logs
+01/26/24 20:32:34 EST -0500 | [annie-logs c4be40a3] Fri 2024-01-26 20:32:34 EST
+01/26/24 20:32:34 EST -0500 |  1 file changed, 14 insertions(+)
+01/26/24 20:32:36 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+01/26/24 20:32:36 EST -0500 |    0fc692f0..c4be40a3  c4be40a3b9d204d4da006cf89d5eb687f27a307c -> annie-logs
+01/26/24 20:32:36 EST -0500 | ##########  END  ##########
+01/27/24 00:20:01 EST -0500 | ########## START ##########
+01/27/24 00:20:01 EST -0500 | Processing: /data/ccre-dam-data
+01/27/24 00:20:10 EST -0500 | [ccre-dam-data 989d803] Sat 2024-01-27 00:20:01 EST
+01/27/24 00:20:10 EST -0500 |  2 files changed, 253 insertions(+)
+01/27/24 00:20:21 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+01/27/24 00:20:21 EST -0500 | remote: warning: File ccre-met.csv is 68.14 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+01/27/24 00:20:21 EST -0500 | remote: warning: File ccre-waterquality.csv is 51.78 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+01/27/24 00:20:21 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+01/27/24 00:20:21 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+01/27/24 00:20:21 EST -0500 |    c3fa425..989d803  989d80336300f4f3bf4f03488f0eab6a6b114236 -> ccre-dam-data
