@@ -93,8 +93,8 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   }
   
   if (nrow(log) == 0){
-    log <- log_read
-  }
+    print('No Maintenance Events Found...')
+  } else{
   
   
   ####Create data flags for publishing ####
@@ -214,6 +214,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     }else{
       warning("Flag not coded in the L1 script. See Austin or Adrienne")
     }
+  }
   }
   #### END NEW MAINTENANCE LOG CODE
   
