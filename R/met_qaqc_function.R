@@ -92,9 +92,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
       filter(TIMESTAMP_end >= start_date)
   }
   
-  if (nrow(log) == 0){
-    print('No Maintenance Events Found...')
-  } else{
+  
   
   
   ####Create data flags for publishing ####
@@ -221,7 +219,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     }
   }
  }
-}
+
     
   #### END NEW MAINTENANCE LOG CODE
   
