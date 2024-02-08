@@ -22,7 +22,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     Met=data_file
   }
   
-  
+  print("read in raw file")
   #read in manual data from the data logger to fill in missing gaps
   
   if(is.null(data2_file)){
@@ -40,7 +40,8 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
                     "ShortwaveRadiationDown_Average_W_m2", "InfraredRadiationUp_Average_W_m2",
                     "InfraredRadiationDown_Average_W_m2", "Albedo_Average_W_m2")
   }
-  
+
+  print("read in manual file")
   # Bind the streaming data and the manual downloads together so we can get any missing observations 
   Met <-bind_rows(Met,Met2)%>%
     drop_na(DateTime)
@@ -72,6 +73,8 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   )) 
   
   log <- log_read
+
+  print('read in maint log')
   
   # Set timezone as EST. Streaming sensors don't observe daylight savings
   log$TIMESTAMP_start <- force_tz(as.POSIXct(log$TIMESTAMP_start), tzone = "EST")
@@ -555,7 +558,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     Met_final$DateTime <- as.character(Met_final$DateTime)
     write_csv(Met_final, output_file)
   }
-  
+  print("CCR Met file qaqc")
 }
 
 # # Example Use
