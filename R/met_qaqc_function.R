@@ -111,7 +111,12 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     Met[c(which(is.na(Met[,i]))),paste0("Flag_",colnames(Met[i]))] <-2 #puts in flag 2
     Met[c(which(is.na(Met[,i]))),paste0("Note_",colnames(Met[i]))] <- "Sample not collected" #note for flag 2
   }
-  
+
+
+  if(nrow(log)==0){
+     print('No Maintenance Events Found...')
+
+   } else {
   
   for(i in 1:nrow(log)){
     ### Assign variables based on lines in the maintenance log.
@@ -215,7 +220,9 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
       warning("Flag not coded in the L1 script. See Austin or Adrienne")
     }
   }
-  }
+ }
+}
+    
   #### END NEW MAINTENANCE LOG CODE
   
   #### Rain totals QAQC######
