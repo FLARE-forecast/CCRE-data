@@ -165,7 +165,10 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   
   #####Maintenance Log QAQC############ 
   
-  
+  if(nrow(log)==0){
+     print('No Maintenance Events Found...')
+
+   } else {
   # modify ccrwater based on the information in the log   
   
   for(i in 1:nrow(log))
@@ -321,7 +324,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
       }
     }
   }    
-  
+}
   ############## Remove and Flag when sensor is out of position ####################
   
   #change EXO_1 at 1.5m values to NA if EXO depth is less than 0.3m and Flag as 2
