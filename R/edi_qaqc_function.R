@@ -404,6 +404,8 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   # Remove the leading and lagging columns
   
   ccrwater<-ccrwater%>%select(-c(Var, Var_lag, Var_lead))
+
+  print("leading and lagging worked")
   
   ### Remove observations when sensors are out of the water ###
   
@@ -422,7 +424,8 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
                             round_digits = 2, #round_digits = number of digits you would like to round to
                             bin_width = 0.25, # bin width in m
                             wide_data = T)  
-  
+
+  print("depth function worked")
   # Flag observations that were removed but don't have a flag yet
   
   for(j in colnames(ccrwater2%>%select(ThermistorTemp_C_1:ThermistorTemp_C_13))) { #for loop to create new columns in data frame
@@ -460,6 +463,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     ccrwater2$DateTime <- as.character(ccrwater2$DateTime)
     write_csv(ccrwater2, output_file)
   }
+  print("CCR WQ file qaqced")
 }
 
 # # Example usage
