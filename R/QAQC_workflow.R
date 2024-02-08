@@ -33,13 +33,14 @@ day_of_run <- Sys.Date() + lubridate::days(1)
 ## assign data files 
 wq_data <- 'ccre-waterquality.csv'
 manual_data_url <- 'https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCRWaterquality_L1.csv'
+EXO2 <- "https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCR_1_5_EXO_L1.csv"
 maintenance_file <- 'CCRW_MaintenanceLog.csv'
 outfile <-'ccre-waterquality_L1.csv'
 
 ## run QAQC on the data within github
-qaqc_ccr(data_file = wq_data, data2_file = manual_data_url, maintenance_file = maintenance_file, output_file = outfile, start_date = last_edi_date,  end_date = day_of_run)
+qaqc_ccr(data_file = wq_data, data2_file = manual_data_url, EXO2_manual_file = EXO, maintenance_file = maintenance_file, output_file = outfile, start_date = last_edi_date,  end_date = day_of_run)
 
-wq_qaqc <- read_csv('ccre-waterquality_L1.csv')
+#wq_qaqc <- read_csv('ccre-waterquality_L1.csv')
 
 ## convert all flag columns from numeric to factor data type -- this is also done inside of the function. Needs to be called at FLARE run time in the future, unless the flag columns are changed
 # wq_qaqc <- wq_qaqc %>%
