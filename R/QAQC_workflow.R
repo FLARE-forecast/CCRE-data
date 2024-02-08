@@ -38,7 +38,7 @@ maintenance_file <- 'CCRW_MaintenanceLog.csv'
 outfile <-'ccre-waterquality_L1.csv'
 
 ## run QAQC on the data within github
-qaqc_ccr(data_file = wq_data, data2_file = manual_data_url, EXO2_manual_file = EXO, maintenance_file = maintenance_file, output_file = outfile, start_date = last_edi_date,  end_date = day_of_run)
+qaqc_ccr(data_file = wq_data, data2_file = manual_data_url, EXO2_manual_file = EXO2, maintenance_file = maintenance_file, output_file = outfile, start_date = last_edi_date,  end_date = day_of_run)
 
 #wq_qaqc <- read_csv('ccre-waterquality_L1.csv')
 
