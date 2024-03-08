@@ -42367,3 +42367,123 @@ Completed at 08/17/23 12:24:22 EST
 03/07/24 21:25:37 EST -0500 | Please make sure you have the correct access rights
 03/07/24 21:25:37 EST -0500 | and the repository exists.
 03/07/24 21:27:48 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:27:48 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:27:48 EST -0500 | 
+03/07/24 21:27:48 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:27:48 EST -0500 | and the repository exists.
+03/07/24 21:27:48 EST -0500 | Processing: /data/annie-logs
+03/07/24 21:27:48 EST -0500 | [annie-logs 2cfd1b23] Thu 2024-03-07 21:27:48 EST
+03/07/24 21:27:48 EST -0500 |  1 file changed, 98 insertions(+)
+03/07/24 21:29:59 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:29:59 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:29:59 EST -0500 | 
+03/07/24 21:29:59 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:29:59 EST -0500 | and the repository exists.
+03/07/24 21:32:10 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:32:10 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:32:10 EST -0500 | 
+03/07/24 21:32:10 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:32:10 EST -0500 | and the repository exists.
+03/07/24 21:34:21 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:34:21 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:34:21 EST -0500 | 
+03/07/24 21:34:21 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:34:21 EST -0500 | and the repository exists.
+03/07/24 21:36:32 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:36:32 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:36:32 EST -0500 | 
+03/07/24 21:36:32 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:36:32 EST -0500 | and the repository exists.
+03/07/24 21:38:43 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:38:43 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:38:43 EST -0500 | 
+03/07/24 21:38:43 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:38:43 EST -0500 | and the repository exists.
+03/07/24 21:40:54 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:40:54 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:40:54 EST -0500 | 
+03/07/24 21:40:54 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:40:54 EST -0500 | and the repository exists.
+03/07/24 21:43:05 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:43:05 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:43:05 EST -0500 | 
+03/07/24 21:43:05 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:43:05 EST -0500 | and the repository exists.
+03/07/24 21:45:16 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:45:16 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:45:16 EST -0500 | 
+03/07/24 21:45:16 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:45:16 EST -0500 | and the repository exists.
+03/07/24 21:47:28 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:47:28 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:47:28 EST -0500 | 
+03/07/24 21:47:28 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:47:28 EST -0500 | and the repository exists.
+03/07/24 21:49:39 EST -0500 | ssh: connect to host github.com port 22: Connection timed out
+03/07/24 21:49:39 EST -0500 | fatal: Could not read from remote repository.
+03/07/24 21:49:39 EST -0500 | 
+03/07/24 21:49:39 EST -0500 | Please make sure you have the correct access rights
+03/07/24 21:49:39 EST -0500 | and the repository exists.
+03/07/24 21:49:39 EST -0500 | ##########  END  ##########
+03/08/24 00:20:31 EST -0500 | ########## START ##########
+03/08/24 00:20:31 EST -0500 | Processing: /data/ccre-dam-data
+03/08/24 00:20:42 EST -0500 | [ccre-dam-data e6233a6] Fri 2024-03-08 00:20:31 EST
+03/08/24 00:20:42 EST -0500 |  2 files changed, 209 insertions(+)
+03/08/24 00:20:53 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+03/08/24 00:20:53 EST -0500 | remote: warning: File ccre-met.csv is 75.20 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:20:53 EST -0500 | remote: warning: File ccre-waterquality.csv is 53.79 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:20:53 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+03/08/24 00:20:53 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+03/08/24 00:20:53 EST -0500 |    4333064..66ff368  66ff368be86551ee09cfbfed957134e64e07249f -> ccre-dam-data
+03/08/24 00:21:04 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+03/08/24 00:21:04 EST -0500 | remote: warning: File ccre-met.csv is 75.21 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:04 EST -0500 | remote: warning: File ccre-waterquality.csv is 53.79 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:04 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+03/08/24 00:21:04 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+03/08/24 00:21:04 EST -0500 |    66ff368..10d6341  10d63418b2864b42b15a7ef507812db5482503ad -> ccre-dam-data
+03/08/24 00:21:11 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+03/08/24 00:21:11 EST -0500 | remote: warning: File ccre-met.csv is 75.21 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:11 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+03/08/24 00:21:12 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+03/08/24 00:21:12 EST -0500 |    10d6341..a530ec5  a530ec5c33a2bcee87ef2e54a639c5c63c006ac8 -> ccre-dam-data
+03/08/24 00:21:23 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+03/08/24 00:21:23 EST -0500 | remote: warning: File ccre-met.csv is 75.26 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:23 EST -0500 | remote: warning: File ccre-waterquality.csv is 53.81 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:23 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+03/08/24 00:21:23 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+03/08/24 00:21:23 EST -0500 |    a530ec5..9871336  987133614cb0fd3ffcb863624848721b0344f4aa -> ccre-dam-data
+03/08/24 00:21:34 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+03/08/24 00:21:34 EST -0500 | remote: warning: File ccre-met.csv is 75.27 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:34 EST -0500 | remote: warning: File ccre-waterquality.csv is 53.81 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:34 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+03/08/24 00:21:34 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+03/08/24 00:21:34 EST -0500 |    9871336..06acd02  06acd02e6d76163e2c9cb21933d24791b1eb39b0 -> ccre-dam-data
+03/08/24 00:21:45 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+03/08/24 00:21:45 EST -0500 | remote: warning: File ccre-met.csv is 75.31 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:45 EST -0500 | remote: warning: File ccre-waterquality.csv is 53.82 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:45 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+03/08/24 00:21:45 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+03/08/24 00:21:45 EST -0500 |    06acd02..1927369  19273698904e1a5b2618294ba662e2266c78712d -> ccre-dam-data
+03/08/24 00:21:56 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+03/08/24 00:21:56 EST -0500 | remote: warning: File ccre-met.csv is 75.31 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:56 EST -0500 | remote: warning: File ccre-waterquality.csv is 53.82 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:21:56 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+03/08/24 00:21:56 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+03/08/24 00:21:56 EST -0500 |    1927369..9733708  9733708ea0fff592a9e87a3e4904b00f0e24e172 -> ccre-dam-data
+03/08/24 00:22:07 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+03/08/24 00:22:07 EST -0500 | remote: warning: File ccre-met.csv is 75.35 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:22:07 EST -0500 | remote: warning: File ccre-waterquality.csv is 53.83 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:22:07 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+03/08/24 00:22:08 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+03/08/24 00:22:08 EST -0500 |    9733708..4458e81  4458e81f61823736526e6d1a17b3f6777747885c -> ccre-dam-data
+03/08/24 00:22:19 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+03/08/24 00:22:19 EST -0500 | remote: warning: File ccre-waterquality.csv is 53.83 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:22:19 EST -0500 | remote: warning: File ccre-met.csv is 75.36 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:22:19 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+03/08/24 00:22:19 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+03/08/24 00:22:19 EST -0500 |    4458e81..9c372c9  9c372c9f6d5fe38a5e4754a598dc184e9ec8c43d -> ccre-dam-data
+03/08/24 00:22:30 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+03/08/24 00:22:30 EST -0500 | remote: warning: File ccre-met.csv is 75.38 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:22:30 EST -0500 | remote: warning: File ccre-waterquality.csv is 53.84 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+03/08/24 00:22:30 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+03/08/24 00:22:31 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
