@@ -50470,3 +50470,13 @@ Completed at 08/17/23 12:24:22 EST
 09/07/24 20:30:22 EDT -0400 | remote: warning: File ccre-waterquality.csv is 63.14 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
 09/07/24 20:30:22 EDT -0400 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
 09/07/24 20:30:25 EDT -0400 | To github.com:FLARE-forecast/CCRE-data.git
+09/07/24 20:30:25 EDT -0400 |    6ec1ae1..a43d84c  a43d84c53879ab2ea41a27d314c21f02d3e5eff1 -> ccre-dam-data
+09/07/24 20:30:25 EDT -0400 | Processing: /data/annie-logs
+09/07/24 20:30:26 EDT -0400 | [annie-logs f645772] Sat 2024-09-07 20:30:25 EDT
+09/07/24 20:30:26 EDT -0400 |  2 files changed, 126 insertions(+)
+09/07/24 20:30:29 EDT -0400 | To github.com:FLARE-forecast/CCRE-data.git
+09/07/24 20:30:29 EDT -0400 |    0600fef..f645772  f64577292589d99f16744aca0bc915c383d1dd51 -> annie-logs
+09/07/24 20:30:29 EDT -0400 | ##########  END  ##########
+09/07/24 20:31:13 EDT -0400 | ########## START ##########
+09/07/24 20:31:13 EDT -0400 | Processing: /data/ccre-dam-data
+09/07/24 20:31:13 EDT -0400 | On branch ccre-dam-data
