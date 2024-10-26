@@ -55892,3 +55892,19 @@ Completed at 08/17/23 12:24:22 EST
 10/26/24 01:26:26 EDT -0400 | remote: warning: File ccre-waterquality.csv is 65.60 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
 10/26/24 01:26:26 EDT -0400 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
 10/26/24 01:26:29 EDT -0400 | To github.com:FLARE-forecast/CCRE-data.git
+10/26/24 01:26:29 EDT -0400 |    f3de385..ec1cf62  ec1cf6238d6ab3c339481712cef74b3e367b9dc9 -> ccre-dam-data
+10/26/24 01:26:29 EDT -0400 | Processing: /data/annie-logs
+10/26/24 01:26:29 EDT -0400 | [annie-logs 47f9034] Sat 2024-10-26 01:26:29 EDT
+10/26/24 01:26:29 EDT -0400 |  1 file changed, 15 insertions(+)
+10/26/24 01:26:30 EDT -0400 | To github.com:FLARE-forecast/CCRE-data.git
+10/26/24 01:26:30 EDT -0400 |    e264790..47f9034  47f9034796695a52cec07f30d15cf7055099a0de -> annie-logs
+10/26/24 01:26:30 EDT -0400 | ##########  END  ##########
+10/26/24 08:30:02 EDT -0400 | ########## START ##########
+10/26/24 08:30:02 EDT -0400 | Processing: /data/ccre-dam-data
+10/26/24 08:30:11 EDT -0400 | [ccre-dam-data 115e2f6] Sat 2024-10-26 08:30:02 EDT
+10/26/24 08:30:11 EDT -0400 |  2 files changed, 462 insertions(+)
+10/26/24 08:30:24 EDT -0400 | remote: warning: See https://gh.io/lfs for more information.        
+10/26/24 08:30:24 EDT -0400 | remote: warning: File ccre-met.csv is 52.58 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+10/26/24 08:30:24 EDT -0400 | remote: warning: File ccre-waterquality.csv is 65.61 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+10/26/24 08:30:24 EDT -0400 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+10/26/24 08:30:26 EDT -0400 | To github.com:FLARE-forecast/CCRE-data.git
