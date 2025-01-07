@@ -5,6 +5,7 @@ CCR; 51; CCRM; 2021-12-03 14:15:00 EST; 2021-12-03 14:25:00 EST; ShortwaveRadiat
 CCR; 51; CCRM; 2021-12-03 14:00:00 EST; 2021-12-03 14:18:00 EST; InfraredRadiationDown_Average_W_m2; NA; 1; NA; NA; sensor_cleaned
 CCR; 51; CCRM; 2021-12-03 13:50:00 EST; 2021-12-03 14:00:00 EST; InfraredRadiationUp_Average_W_m2; NA; 1; NA; NA; sensor_cleaned
 CCR; 51; CCRM; 2021-12-03 14:37:00 EST; 2021-12-03 14:46:00 EST; AirTemp_C_Average; RH_percent; 1; NA; NA; sensor_cleaned
+CCR; 51; CCRM; 2022-05-12 10:02:00 EST; 2022-05-12 10:05:00 EST; AirTemp_C_Average; NA; 4; NA; NA; very low temperature readings before troubleshooting RH
 CCR; 51; CCRM; 2022-05-12 10:20:00 EST; 2022-05-12 10:30:00 EST; RH_percent; NA; 1; NA; NA; RH_percent sensor reading NAs so I moved it to another port on the data logger but that was not the issues
 CCR; 51; CCRM; 2022-06-22 20:23:00 EST; 2022-06-22 20:23:00 EST; RH_percent; NA; 1; NA; NA; RH_percent sensor started reading values and not NAs
 CCR; 51; CCRM; 2022-07-14 08:10:00 EST; 2023-01-24 17:00:00 EST; PAR_umolm2s_Average; PAR_Total_mmol_m2; 1; NA; NA; Removed the PAR sensor to put at FCR while that one was removed for maintenance
