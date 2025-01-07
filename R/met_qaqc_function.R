@@ -6,6 +6,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
                         end_date = NULL, 
                         notes = NULL){
   
+  
   #### Name the data file #### 
   # This section either uses the compiled data from FCR_MET_QAQC_Plots_2015_2022.Rmd which is already labeled Met
   # or it reads in and formats the current file off the data logger
@@ -40,7 +41,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
                     "ShortwaveRadiationDown_Average_W_m2", "InfraredRadiationUp_Average_W_m2",
                     "InfraredRadiationDown_Average_W_m2", "Albedo_Average_W_m2")
   }
-
+  
   print("read in manual file")
   # Bind the streaming data and the manual downloads together so we can get any missing observations 
   Met <-bind_rows(Met,Met2)%>%
@@ -73,7 +74,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   )) 
   
   log <- log_read
-
+  
   print('read in maint log')
   
   # Set timezone as EST. Streaming sensors don't observe daylight savings
@@ -97,7 +98,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   
   
   
-  
+ # print("subset maintenance log")
   ####Create data flags for publishing ####
   #get rid of NaNs
   #create flag + notes columns for data columns c(5:17)
@@ -112,119 +113,127 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     Met[c(which(is.na(Met[,i]))),paste0("Flag_",colnames(Met[i]))] <-2 #puts in flag 2
     Met[c(which(is.na(Met[,i]))),paste0("Note_",colnames(Met[i]))] <- "Sample not collected" #note for flag 2
   }
-
-
-  if(nrow(log)==0){
-     print('No Maintenance Events Found...')
-
-   } else {
   
-  for(i in 1:nrow(log)){
-    ### Assign variables based on lines in the maintenance log.
+ # print("make flag columns")
+  
+  if(nrow(log)==0){
+    print('No Maintenance Events Found...')
     
-    ### get start and end time of one maintenance event
-    start <- force_tz(as.POSIXct(log$TIMESTAMP_start[i]), tzone = "EST")
-    end <- force_tz(as.POSIXct(log$TIMESTAMP_end[i]), tzone = "EST")
+  } else {
     
-    ### Get the Reservoir Name
-    Reservoir <- log$Reservoir[i]
-    
-    ### Get the Site Number
-    Site <- as.numeric(log$Site[i])
-    
-    ### Get the depth value
-    #Depth <- as.numeric(log$Depth[i]) ## IS THERE SUPPOSED TO BE A COLUMN ADDED TO MAINT LOG CALLED NEW_VALUE?
-    
-    ### Get the Maintenance Flag
-    flag <- log$flag[i]
-    
-    ### Get the new value for a column
-    update_value <- as.numeric(log$update_value[i])
-    
-    ## Get the adjustment code from column
-    adjustment_code <- log$adjustment_code[i]
-    
-    ### Get the names of the columns affected by maintenance
-    colname_start <- log$start_parameter[i]
-    colname_end <- log$end_parameter[i]
-    
-    ### if it is only one parameter parameter then only one column will be selected
-    
-    if(is.na(colname_start)){
+    for(i in 1:nrow(log)){
+      ### Assign variables based on lines in the maintenance log.
       
-      maintenance_cols <- colnames(Met%>%select((colname_end)))
+      ### get start and end time of one maintenance event
+      start <- force_tz(as.POSIXct(log$TIMESTAMP_start[i]), tzone = "EST")
+      end <- force_tz(as.POSIXct(log$TIMESTAMP_end[i]), tzone = "EST")
       
-    }else if(is.na(colname_end)){
+      ### Get the Reservoir Name
+      Reservoir <- log$Reservoir[i]
       
-      maintenance_cols <- colnames(Met%>%select((colname_start)))
+      ### Get the Site Number
+      Site <- as.numeric(log$Site[i])
       
-    }else{
-      maint_col_df <- Met |> 
-        select(-contains(c('Flag','Note', 'CR3000'))) |>
-        select("DateTime","Record", 
-               "PAR_umolm2s_Average", "PAR_Total_mmol_m2", "BP_Average_kPa", "AirTemp_C_Average", 
-               "RH_percent", "Rain_Total_mm", "WindSpeed_Average_m_s", "WindDir_degrees", "ShortwaveRadiationUp_Average_W_m2",
-               "ShortwaveRadiationDown_Average_W_m2", "InfraredRadiationUp_Average_W_m2",
-               "InfraredRadiationDown_Average_W_m2", "Albedo_Average_W_m2")
+      ### Get the depth value
+      #Depth <- as.numeric(log$Depth[i]) ## IS THERE SUPPOSED TO BE A COLUMN ADDED TO MAINT LOG CALLED NEW_VALUE?
       
-      maintenance_cols <- colnames(maint_col_df%>%select((colname_start:colname_end)))
+      ### Get the Maintenance Flag
+      flag <- as.numeric(log$flag[i])
       
-    }
-    
-    if(is.na(end)){
-      # If there the maintenance is on going then the columns will be removed until
-      # and end date is added
-      Time <- Met |> filter(DateTime >= start) |> select(DateTime)
+      ### Get the new value for a column
+      update_value <- as.numeric(log$update_value[i])
       
-    }else if (is.na(start)){
-      # If there is only an end date change columns from beginning of data frame until end date
-      Time <- Met |> filter(DateTime <= end) |> select(DateTime)
+      ## Get the adjustment code from column
+      adjustment_code <- log$adjustment_code[i]
       
-    }else {
-      Time <- Met |> filter(DateTime >= start & DateTime <= end) |> select(DateTime)
-    }
-    
-    ### This is where information in the maintenance log gets updated
-    
-    if(flag %in% c(1,2)){
-      # The observations are changed to NA for maintenance or other issues found in the maintenance log
-      Met[Met$DateTime %in% Time$DateTime, maintenance_cols] <- NA
-      Met[Met$DateTime %in% Time$DateTime, paste0("Flag_",maintenance_cols)] <- flag
+      ### Get the names of the columns affected by maintenance
+      colname_start <- log$start_parameter[i]
+      colname_end <- log$end_parameter[i]
       
-    }else if (flag %in% c(3)){
-      ## change negative values but exclude air temperature
+      ### if it is only one parameter parameter then only one column will be selected
       
-      if('AirTemp_C_Average' %in% maintenance_cols){
-        maintenance_cols[!maintenance_cols == 'AirTemp_C_Average']
+      if(is.na(colname_start)){
+        
+        maintenance_cols <- colnames(Met%>%select((colname_end)))
+        
+      }else if(is.na(colname_end)){
+        
+        maintenance_cols <- colnames(Met%>%select((colname_start)))
+        
+      }else{
+        maint_col_df <- Met |> 
+          select(-contains(c('Flag','Note', 'CR3000'))) |>
+          select("DateTime","Record", 
+                 "PAR_umolm2s_Average", "PAR_Total_mmol_m2", "BP_Average_kPa", "AirTemp_C_Average", 
+                 "RH_percent", "Rain_Total_mm", "WindSpeed_Average_m_s", "WindDir_degrees", "ShortwaveRadiationUp_Average_W_m2",
+                 "ShortwaveRadiationDown_Average_W_m2", "InfraredRadiationUp_Average_W_m2",
+                 "InfraredRadiationDown_Average_W_m2", "Albedo_Average_W_m2")
+        
+        maintenance_cols <- colnames(maint_col_df%>%select((colname_start:colname_end)))
+        
       }
       
-      Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- 0
+      ### Getting the start and end time vector to fix. If the end time is NA then it will put NAs 
+      # until the maintenance log is updated
       
-    }else if (flag %in% c(4)){
-      
-      if(is.na(adjustment_code)){ ## Just use updated value if no adjustment code is provided
-        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag)
-        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- as.numeric(update_value)
+      if(is.na(end)){
+        # If there the maintenance is on going then the columns will be removed until
+        # and end date is added
+        Time <- Met$DateTime >= start
         
-      } else if(!is.na(adjustment_code)){ ## Use adjustment code if it's non-NA
-        original_values <- Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols]
+      }else if (is.na(start)){
+        # If there is only an end date change columns from beginning of data frame until end date
+        Time <- Met$DateTime <= end
         
-        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag)
-        Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols] <- eval(parse(text = adjustment_code))
+      }else {
+        
+        Time <- Met$DateTime >= start & Met$DateTime <= end
+        
       }
       
-    }else if(flag %in% c(5)){
-      # UPDATE THE MANUAL ISSUE FLAGS (BAD SAMPLE / USER ERROR) BUT KEEP ORIGINAL VALUE
-      Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),paste0("Flag_",maintenance_cols)] <- as.numeric(flag)
+      ### This is where information in the maintenance log gets updated
       
-    }else{
-      warning("Flag not coded in the L1 script. See Austin or Adrienne")
+      if(flag %in% c(1,2)){
+        # The observations are changed to NA for maintenance or other issues found in the maintenance log
+        Met[Time, maintenance_cols] <- NA
+        Met[Time, paste0("Flag_",maintenance_cols)] <- flag
+        
+      }else if (flag %in% c(3)){
+        ## change negative values but exclude air temperature
+        
+        if('AirTemp_C_Average' %in% maintenance_cols){
+          maintenance_cols[!maintenance_cols == 'AirTemp_C_Average']
+        }
+        
+        Met[Time,maintenance_cols] <- 0
+        
+      }else if (flag %in% c(4)){
+        
+        if(is.na(adjustment_code)){ ## Just use updated value if no adjustment code is provided
+          Met[Time,paste0("Flag_",maintenance_cols)] <- flag
+          Met[Time,maintenance_cols] <- update_value
+          
+        } else if(!is.na(adjustment_code)){ ## Use adjustment code if it's non-NA
+          #original_values <- Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols]
+          
+          Met[Time,paste0("Flag_",maintenance_cols)] <- flag
+          Met[Time,maintenance_cols] <- eval(parse(text = adjustment_code))
+        }
+        
+      }else if(flag %in% c(5)){
+        # UPDATE THE MANUAL ISSUE FLAGS (BAD SAMPLE / USER ERROR) BUT KEEP ORIGINAL VALUE
+        Met[Time,paste0("Flag_",maintenance_cols)] <- flag
+        
+      }else{
+        warning("Flag not coded in the L1 script. See Austin or Adrienne")
+      }
     }
   }
- }
-
-    
+  
+  
   #### END NEW MAINTENANCE LOG CODE
+  
+  print("Maintenance Log worked")
   
   #### Rain totals QAQC######
   
@@ -234,6 +243,8 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   Met[Rain, "Flag_Rain_Total_mm"]<-4
   Met[Rain, "Rain_Total_mm"] <- NA
   
+  
+ # print("Rain worked")
   
   ####Air temperature data cleaning ####
   # This is how to find the linear regression but don't need it now so can comment it out. 
@@ -266,6 +277,8 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   Met[b,"Note_AirTemp_C_Average"]<-"Outlier set to NA. Value over 40.6"
   Met[b, "Flag_AirTemp_C_Average"]<-4
   Met[b, "AirTemp_C_Average"]<-NA
+  
+  #print("Temperature worked")
   
   ###Infared radiation cleaning####
   #fix infrared radiation voltage reading after airtemp correction
@@ -376,6 +389,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   #   Met<-Met%>%dplyr::rename("Rain_Total_mm"="Rain_Total_mm.x")
   # }
   
+ # print("IR worked")
   
   ###Impossible Outliers####
   #take out impossible outliers and Infinite values before the other outliers are removed
@@ -398,6 +412,8 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     }
   }
   
+ # print("Impossible outliers worked")
+  
   ###Wind Outliers####
   # Take out if wind direction is not between 0 and 360 and if wind speed is above 50 m/s
   
@@ -416,6 +432,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   Met[Ws, "Flag_WindSpeed_Average_m_s"]<-4
   Met[Ws, "WindSpeed_Average_m_s"]<-NA
   
+ # print("Wind outliers")
   ####Remove barometric pressure outliers####
   # Name of which argument used below and then flag and replace when BP is less than 98.5
   BP<-c(which(Met$BP_Average_kPa<95.5 & !is.na(Met$BP_Average_kPa)))
@@ -424,6 +441,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   Met[BP,"Flag_BP_Average_kPa"]<-4
   Met[BP,"BP_Average_kPa"]<-NA
   
+ # print("baro outliers")
   
   #####remove high PAR values at night ######
   #get sunrise and sunset times
@@ -475,6 +493,8 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   Met[Par_Avg,"Note_PAR_umolm2s_Average"]<-"Outlier set to NA. Above 3000 umolm2s"
   Met[Par_Avg,"PAR_umolm2s_Average"]<-NA
   
+ # print("Par outliers")
+  
   
   #Remove shortwave radiation outliers
   #first shortwave upwelling
@@ -520,6 +540,8 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   Met[Alb, "Note_Albedo_Average_W_m2"]<-"Set to NA because Shortwave equals NA"
   Met[Alb, "Albedo_Average_W_m2"]<-NA
   
+  
+  
   # Take out the columns we don't need any more and add Reservoir and Site columns
   Met=Met%>%
     select(-c(date, lat, lon, sunrise, sunset,daylight_intvl,during_day))%>%
@@ -555,17 +577,9 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     return(Met_final)
   }else{
     # convert datetimes to characters so that they are properly formatted in the output file
-    Met_final$DateTime <- as.character(Met_final$DateTime)
+    Met_final$DateTime <- as.character(format(Met_final$DateTime))
+    
     write_csv(Met_final, output_file)
   }
   print("CCR Met file qaqc")
 }
-
-# # Example Use
-# sdf <- qaqc_ccrmet(data_file = 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-met.csv',
-# data2_file = 'https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCRMetstation_L1.csv',
-# maintenance_file = 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data-qaqc/CCRM_Maintenancelog_new.csv',
-# output_file = NULL,
-# start_date = force_tz(as.POSIXct("2023-01-01 00:00:00"), tzone = "EST"),
-# end_date = Sys.Date(),
-# notes = TRUE)
