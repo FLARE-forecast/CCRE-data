@@ -162,6 +162,12 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     ccrwater[c(which((ccrwater[,k]<0))),paste0("Flag_",k)] <- 3
     ccrwater[c(which((ccrwater[,k]<0))),k] <- 0 #replaces value with 0
   }
+
+    # Convert Pressure to Depth
+  
+  #create depth column
+  ccrwater <- ccrwater%>%mutate(LvlDepth_m_13=LvlPressure_psi_13*0.70455)#1psi=2.31ft, 1ft=0.305m
+  
   
   #####Maintenance Log QAQC############ 
   
@@ -223,7 +229,13 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     ### Get the name of the flag column
     
     flag_cols <- paste0("Flag_", maintenance_cols)
+
     
+     # Flag the pressure transducer values when fixing the LvlDepth column
+      
+      if("Flag_LvlDepth_m_13" %in% flag_cols){
+        flag_cols <- "Flag_LvlPressure_psi_13"
+      }
     
     ### Getting the start and end time vector to fix. If the end time is NA then it will put NAs 
     # until the maintenance log is updated
@@ -280,11 +292,20 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
       
     } else if (flag==6){ #adjusting the conductivity based on the equation in the maintenance log 
       
-      #if (maintenance_cols %in% c("EXOCond_uScm_1.5", "EXOSpCond_uScm_1.5", "EXOTDS_mgL_1.5")){
+      if (!is.na(update_value)){
+
+        # change a vlue to something different
+          
+          ccrwater[Time, maintenance_cols]<- update_value
+          
+        }else{
+
+        # use code in the maintenance log to adjust a value
         
         ccrwater[Time, maintenance_cols] <- eval(parse(text=adjustment_code))
         
         ccrwater[Time, flag_cols] <- flag
+      }
         
       }else if (flag==7){
         # Data was not collected and already flagged as NA above 
@@ -408,10 +429,6 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   print("leading and lagging worked")
   
   ### Remove observations when sensors are out of the water ###
-  
-  #create depth column
-  ccrwater <- ccrwater%>%mutate(LvlDepth_m_13=LvlPressure_psi_13*0.70455)#1psi=2.31ft, 1ft=0.305m
-  
   
   # Using the find_depths function
   
