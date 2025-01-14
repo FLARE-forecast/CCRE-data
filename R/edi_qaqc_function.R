@@ -9,7 +9,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   
   # Call the source function to get the depths
   
-  source_url("https://raw.githubusercontent.com/LTREB-reservoirs/vera4cast/main/targets/target_functions/find_depths.R")
+  source("https://raw.githubusercontent.com/LTREB-reservoirs/vera4cast/main/targets/target_functions/find_depths.R")
   
   CATPRES_COL_NAMES = c("DateTime", "RECORD", "CR3000Battery_V", "CR3000Panel_Temp_C", 
                         "ThermistorTemp_C_1", "ThermistorTemp_C_2", "ThermistorTemp_C_3", "ThermistorTemp_C_4",
@@ -25,7 +25,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
                         "EXOCablepower_V_9", "EXOWiper_V_9","LvlPressure_psi_13", "LvlTemp_C_13")
   
   #Adjustment period of time to stabilization after cleaning in seconds
-  ADJ_PERIOD = 2*60*60 
+  ADJ_PERIOD_DO = 2*60*60 
   ADJ_PERIOD_Temp = 30*60
   
   if(is.character(data_file)){
@@ -280,7 +280,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
       
     } else if (flag==6){ #adjusting the conductivity based on the equation in the maintenance log 
       
-      if (maintenance_cols %in% c("EXOCond_uScm_1.5", "EXOSpCond_uScm_1.5", "EXOTDS_mgL_1.5")){
+      #if (maintenance_cols %in% c("EXOCond_uScm_1.5", "EXOSpCond_uScm_1.5", "EXOTDS_mgL_1.5")){
         
         ccrwater[Time, maintenance_cols] <- eval(parse(text=adjustment_code))
         
@@ -323,7 +323,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
         ccrwater[Time_adj_Temp, flag_cols[flag_cols%in%Temp]] <- flag
       }
     }
-  }    
+      
 }
   ############## Remove and Flag when sensor is out of position ####################
   
