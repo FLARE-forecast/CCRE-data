@@ -234,6 +234,12 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   #### END NEW MAINTENANCE LOG CODE
   
   print("Maintenance Log worked")
+
+  # Correct wind directions that became negative after the correction from the maintenance log
+
+  Met <- Met|>
+  mutate(
+    WindDir_degrees = ifelse(WindDir_degrees<0, 360+WindDir_degrees, WindDir_degrees))
   
   #### Rain totals QAQC######
   
