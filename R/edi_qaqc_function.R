@@ -437,9 +437,9 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   ccrwater2 <- find_depths (data_file = ccrwater, # data_file = the file of most recent data either from EDI or GitHub. Currently reads in the L1 file
                             depth_offset = "https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data-qaqc/CCR_Depth_offsets.csv",  # depth_offset = the file of depth of each sensor relative to each other. This file for BVR is on GitHub
                             output = NULL, # output = the path where you would like the data saved
-                            date_offset = NULL, # Date_offset = the date we moved the sensors so we know where to split the file. If you don't need to split the file put NULL
-                            offset_column1 = "Offset",# offset_column1 = name of the column in the depth_offset file to subtract against the actual depth to get the sensor depth
-                            offset_column2 = NULL, # offset_column2 = name of the second column if applicable for the column with the depth offsets
+                             date_offset = "2024-01-23", # Date_offset = the date we moved the sensors so we know where to split the file. If you don't need to split the file put NULL
+                             offset_column1 = "Offset_before_23JAN24",# offset_column1 = name of the column in the depth_offset file to subtract against the actual depth to get the sensor depth
+                            offset_column2 = "Offset_after_23JAN24", # offset_column2 = name of the second column if applicable for the column with the depth offsets
                             round_digits = 2, #round_digits = number of digits you would like to round to
                             bin_width = 0.25, # bin width in m
                             wide_data = T)  
