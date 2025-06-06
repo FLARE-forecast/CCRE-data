@@ -1,5 +1,4 @@
 qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-waterquality.csv",
-                     data2_file = "https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCRWaterquality_L1.csv",
                      EXO2_manual_file = "https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCR_1_5_EXO_L1.csv", 
                      maintenance_file = "https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data-qaqc/CCRW_MaintenanceLog.csv", 
                      output_file, 
@@ -9,6 +8,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   # Call the source function to get the depths
   
   source("https://raw.githubusercontent.com/LTREB-reservoirs/vera4cast/main/targets/target_functions/find_depths.R")
+  
   
   CATPRES_COL_NAMES = c("DateTime", "RECORD", "CR3000Battery_V", "CR3000Panel_Temp_C", 
                         "ThermistorTemp_C_1", "ThermistorTemp_C_2", "ThermistorTemp_C_3", "ThermistorTemp_C_4",
@@ -23,112 +23,129 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
                         "EXOfDOM_RFU_9", "EXOfDOM_QSU_9","EXOPressure_psi_9", "EXODepth_m_9", "EXOBattery_V_9",
                         "EXOCablepower_V_9", "EXOWiper_V_9","LvlPressure_psi_13", "LvlTemp_C_13")
   
-  #Adjustment period of time to stabilization after cleaning in seconds
-  ADJ_PERIOD_DO = 2*60*60 
-  ADJ_PERIOD_Temp = 30*60
-  
-  if(is.character(data_file)){
-    # read catwalk data and maintenance log
-    # NOTE: date-times throughout this script are processed as UTC
-    ccrwater <- read_csv(data_file, skip = 1, col_names = CATPRES_COL_NAMES,
-                         col_types = cols(.default = col_double(), DateTime = col_datetime()))
-  } else {
-    
-    ccrwater <- data_file
-  }
-  
-  ## clean up the data frame after adding turbidity sensor. Will make an if statement after fixing the df on the data logger
   
   # Add the turbidity columns to the header list
   
   CATPRES_COL_NAMES2 <- append(CATPRES_COL_NAMES, c("EXOTurbidity_FNU_1", "EXOTSS_mgL_1"), after = 31)
   
-  # Filter out before adding the sensor
-  pturb <- ccrwater|>
-    filter(DateTime < ymd_hms("2025-04-03 09:30:00"))
+  
+  #Adjustment period of time to stabilization after cleaning in seconds
+  ADJ_PERIOD_DO = 2*60*60 
+  ADJ_PERIOD_Temp = 30*60
+  
+  # use a for loop to loop over the different data files
+  
+  # create a blank data frame  
+  df_ccr <- NULL  
+  
+  for(i in 1:length(data_file)){
     
-  
-  # Filter out 9:40 and 9:50 because they are 53 columns
-  
-  pturb2 <- ccrwater|>
-    filter(grepl("2025-04-03 09:40:00|2025-04-03 09:50:00", DateTime))%>%
-    bind_rows(pturb, .)|>
-    # add in the new columns
-    mutate(EXOTurbidity_FNU_1 = NA, 
-           EXOTSS_mgL_1 = NA)
+    # if statement to read in the data file
+    if(is.character(data_file[i])){
+      
+      # read in the first row to see how many columns there are
+      first <- read_csv(data_file[i], skip = 1, n_max=1)
+      
+      
+      if(ncol(first)%in% 53){
+        
+        # read catwalk data and maintenance log
+        # NOTE: date-times throughout this script are processed as UTC
+        ccrwater <- read_csv(data_file[i], skip = 1, col_names = CATPRES_COL_NAMES,
+                             col_types = cols(.default = col_double(), DateTime = col_datetime()))
+        
+        ## clean up the data frame after adding turbidity sensor. Will make an if statement after fixing the df on the data logger
+        
+        # this is when we added the sensor
+        if(ymd_hms("2025-04-03 09:30:00") %in% ccrwater$DateTime){
+          
+          
+          # Filter out before adding the sensor
+          pturb <- ccrwater|>
+            filter(DateTime < ymd_hms("2025-04-03 09:30:00"))
+          
+          
+          # Filter out 9:40 and 9:50 because they are 53 columns
+          
+          pturb2 <- ccrwater|>
+            filter(grepl("2025-04-03 09:40:00|2025-04-03 09:50:00", DateTime))%>%
+            bind_rows(pturb, .)|>
+            # add in the new columns
+            mutate(EXOTurbidity_FNU_1 = NA, 
+                   EXOTSS_mgL_1 = NA)
+          
+          options(timeout=500)
+          # read in the file without headers 
+          aturb <- read.csv(data_file[i])
+          
+          # count the number of rows to use in the index below
+          fg <- nrow(aturb)
+          
+          # get the df when added turbidity sensor
+          def3 <-aturb[209844:fg,]
+          
+          # Filter out so just the rows that have the date in the correct column. 
+          def4 <- dplyr::filter(def3, grepl('^202', TIMESTAMP))
+          
+          # take out 9:40 and 9:50 because they are are 53 columns and not 55
+          def6 <- def4|>
+            dplyr::filter(!grepl("2025-04-03 09:40:00|2025-04-03 09:50:00", TIMESTAMP))
+          
+          # Filter out just the pressure transducer readings
+          def5 <- def3|>
+            dplyr::filter(!grepl('^202', TIMESTAMP))|>
+            dplyr::rename("LvlPressure_psi_13" = TIMESTAMP,
+                          "LvlTemp_C_13" = RECORD)|>
+            select(LvlPressure_psi_13, LvlTemp_C_13)
+          
+          # combine columns
+          
+          def7 <- cbind(def6, def5)
+          
+          # rename the columns with turbidity
+          names(def7) <- CATPRES_COL_NAMES2
+          
+          def8 <- def7 |>
+            mutate(DateTime = ymd_hms(DateTime))|>
+            mutate_if(is.character, as.numeric)
+          
+          # Combine the two data frames with turbidity
+          ccrwater <- bind_rows(def8, pturb2)|>
+            arrange(DateTime)
+        }
+        
+      }else if(ncol(first)%in% 55){
+        ccrwater <- read_csv(data_file[i], skip = 1, col_names = CATPRES_COL_NAMES2,
+                             col_types = cols(.default = col_double(), DateTime = col_datetime()))
+        
+      } else{
+        warning("The data file has a different number of columns than usual and you need to check the column names in the CCR_qaqc function.")
+      } 
+      
+    } else {
+      
+      # rename the data file if it is already a data frame
+      ccrwater <- data_file[i]
+    }
     
-  options(timeout=500)
-  # read in the file without headers 
-  aturb <- read.csv(data_file)
+    # bind the files
+    df_ccr <- bind_rows(df_ccr, ccrwater)
+  }  
   
-  # count the number of rows to use in the index below
-  fg <- nrow(aturb)
+  # There are going to be lots of duplicates so get rid of them
+  ccrwater <- df_ccr[!duplicated(df_ccr$DateTime), ]
   
-  # get the df when added turbidity sensor
-  def3 <-aturb[209844:fg,]
-  
-  # Filter out so just the rows that have the date in the correct column. 
-  def4 <- dplyr::filter(def3, grepl('^202', TIMESTAMP))
-  
-  # take out 9:40 and 9:50 because they are are 53 columns and not 55
-  def6 <- def4|>
-    dplyr::filter(!grepl("2025-04-03 09:40:00|2025-04-03 09:50:00", TIMESTAMP))
-  
-  # Filter out just the pressure transducer readings
-  def5 <- def3|>
-    dplyr::filter(!grepl('^202', TIMESTAMP))|>
-    dplyr::rename("LvlPressure_psi_13" = TIMESTAMP,
-                  "LvlTemp_C_13" = RECORD)|>
-    select(LvlPressure_psi_13, LvlTemp_C_13)
-  
-  # combine columns
-  
-  def7 <- cbind(def6, def5)
-  
-  # rename the columns with turbidity
-  names(def7) <- CATPRES_COL_NAMES2
-  
-  def8 <- def7 |>
-    mutate(DateTime = ymd_hms(DateTime))|>
-    mutate_if(is.character, as.numeric)
-  
-  # Combine the two data frames with turbidity
-  ccrwater <- bind_rows(def8, pturb2)|>
-    arrange(DateTime)
-  
-  
-  
-  
-  
-  #read in manual data from the data logger to fill in missing gaps
-  
-  if(is.null(data2_file)){
-    
-    # If there is no manual files then set data2_file to NULL
-    ccrwater2 <- NULL
-    
-  } else{
-    
-    ccrwater2 <- read_csv(data2_file, skip = 1, col_names = CATPRES_COL_NAMES,
-                          col_types = cols(.default = col_double(), DateTime = col_datetime()))
-  }
+  #reorder 
+  ccrwater <- ccrwater[order(ccrwater$DateTime),]
   
   # Read in EXO file
   
   EXO <- read_csv(EXO2_manual_file, col_names=T,
-                  col_types = cols(.default = col_double(), DateTime = col_datetime()), show_col_types = T)
+                  col_types = cols(.default = col_double(), DateTime = col_datetime()), show_col_types = T)|>
+    # add in the new columns
+    mutate(EXOTurbidity_FNU_1 = NA, 
+           EXOTSS_mgL_1 = NA)
   
-  
-  
-  # Bind the streaming data and the manual downloads together so we can get any missing observations 
-  ccrwater <-bind_rows(ccrwater,ccrwater2)%>%
-    drop_na(DateTime)
-  
-  # There are going to be lots of duplicates so get rid of them
-  ccrwater <- ccrwater[!duplicated(ccrwater$DateTime), ]
-  
-  #reorder 
-  ccrwater <- ccrwater[order(ccrwater$DateTime),]
   
   ### Add in the EXO here ####
   
@@ -142,7 +159,8 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   
   # #rearrange the column headers based on the original file since they get jumbled during the join 
   ccrwater <- CCR%>%
-    select(all_of(CATPRES_COL_NAMES)) 
+    select(all_of(CATPRES_COL_NAMES2))|>
+    filter(!is.na(DateTime))
   
   # Set timezone as EST. Streaming sensors don't observe daylight savings
   ccrwater$DateTime <- force_tz(as.POSIXct(ccrwater$DateTime), tzone = "EST")
@@ -158,7 +176,6 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   
   # convert NaN to NAs in the dataframe
   ccrwater[sapply(ccrwater, is.nan)] <- NA
-  
   
   ## read in maintenance file 
   log <- read_csv2(maintenance_file, col_types = cols(
@@ -541,7 +558,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     return(ccrwater2)
   }else{
     # convert datetimes to characters so that they are properly formatted in the output file
-    ccrwater2$DateTime <- as.character(ccrwater2$DateTime)
+    ccrwater2$DateTime <- as.character(format(ccrwater2$DateTime))
     write_csv(ccrwater2, output_file)
   }
   print("CCR WQ file qaqced")
