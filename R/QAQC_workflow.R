@@ -31,7 +31,7 @@ last_edi_date <- as.Date(xml_text(date_attribute)) + lubridate::days(1)
 day_of_run <- Sys.Date() + lubridate::days(1)
 
 ## assign data files 
-wq_data <- c('ccre-waterquality.csv', 'ccre-waterquality2.csv' , 'https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCRWaterquality_L1.csv')
+wq_data <- c('ccre-waterquality.csv', 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-waterquality2.csv' , 'https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCRWaterquality_L1.csv')
 EXO2 <- "https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCR_1_5_EXO_L1.csv"
 maintenance_file <- 'CCRW_MaintenanceLog.csv'
 outfile <-'ccre-waterquality_L1.csv'
