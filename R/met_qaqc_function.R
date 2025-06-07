@@ -1,5 +1,4 @@
 qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-met.csv',
-                        data2_file = 'https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCRMetstation_L1.csv',
                         maintenance_file = 'https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data-qaqc/CCRM_Maintenancelog_new.csv', 
                         output_file, 
                         start_date = NULL, 
@@ -20,32 +19,11 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
                    "ShortwaveRadiationDown_Average_W_m2", "InfraredRadiationUp_Average_W_m2",
                    "InfraredRadiationDown_Average_W_m2", "Albedo_Average_W_m2")
   }else {
-    Met=data_file
+    Met <- data_file
   }
   
   print("read in raw file")
   #read in manual data from the data logger to fill in missing gaps
-  
-  if(is.null(data2_file)){
-    
-    # If there is no manual files then set data2_file to NULL
-    data2_file <- NULL
-    
-  } else{
-    
-    Met2<-read_csv(data2_file, skip = 1, col_names=F, show_col_types = F)
-    Met2[,17]<-NULL #remove column
-    names(Met2) = c("DateTime","Record", "CR3000Battery_V", "CR3000Panel_Temp_C", 
-                    "PAR_umolm2s_Average", "PAR_Total_mmol_m2", "BP_Average_kPa", "AirTemp_C_Average", 
-                    "RH_percent", "Rain_Total_mm", "WindSpeed_Average_m_s", "WindDir_degrees", "ShortwaveRadiationUp_Average_W_m2",
-                    "ShortwaveRadiationDown_Average_W_m2", "InfraredRadiationUp_Average_W_m2",
-                    "InfraredRadiationDown_Average_W_m2", "Albedo_Average_W_m2")
-  }
-  
-  print("read in manual file")
-  # Bind the streaming data and the manual downloads together so we can get any missing observations 
-  Met <-bind_rows(Met,Met2)%>%
-    drop_na(DateTime)
   
   # Set timezone as EST. Streaming sensors don't observe daylight savings
   Met$DateTime <- force_tz(as.POSIXct(Met$DateTime), tzone = "EST")
@@ -96,9 +74,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
       filter(TIMESTAMP_end >= start_date)
   }
   
-  
-  
- # print("subset maintenance log")
+  # print("subset maintenance log")
   ####Create data flags for publishing ####
   #get rid of NaNs
   #create flag + notes columns for data columns c(5:17)
@@ -114,7 +90,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     Met[c(which(is.na(Met[,i]))),paste0("Note_",colnames(Met[i]))] <- "Sample not collected" #note for flag 2
   }
   
- # print("make flag columns")
+  # print("make flag columns")
   
   if(nrow(log)==0){
     print('No Maintenance Events Found...')
@@ -133,9 +109,6 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
       
       ### Get the Site Number
       Site <- as.numeric(log$Site[i])
-      
-      ### Get the depth value
-      #Depth <- as.numeric(log$Depth[i]) ## IS THERE SUPPOSED TO BE A COLUMN ADDED TO MAINT LOG CALLED NEW_VALUE?
       
       ### Get the Maintenance Flag
       flag <- as.numeric(log$flag[i])
@@ -161,17 +134,17 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
         maintenance_cols <- colnames(Met%>%select((colname_start)))
         
       }else{
-        maint_col_df <- Met |> 
-          select(-contains(c('Flag','Note', 'CR3000'))) |>
-          select("DateTime","Record", 
-                 "PAR_umolm2s_Average", "PAR_Total_mmol_m2", "BP_Average_kPa", "AirTemp_C_Average", 
-                 "RH_percent", "Rain_Total_mm", "WindSpeed_Average_m_s", "WindDir_degrees", "ShortwaveRadiationUp_Average_W_m2",
-                 "ShortwaveRadiationDown_Average_W_m2", "InfraredRadiationUp_Average_W_m2",
-                 "InfraredRadiationDown_Average_W_m2", "Albedo_Average_W_m2")
-        
-        maintenance_cols <- colnames(maint_col_df%>%select((colname_start:colname_end)))
+        maintenance_cols <- colnames(Met%>%select(colname_start:colname_end))
         
       }
+      
+      # remove supplement cols we don't need just in case
+      avoid_cols <- c('Record','CR3000Battery_V','CR3000Panel_Temp_C')
+      maintenance_cols <- maintenance_cols[!maintenance_cols %in% avoid_cols]
+      
+      # remove flag and notes cols in the maint_col vector
+      maintenance_cols <- maintenance_cols[!grepl('Flag', maintenance_cols)]
+      maintenance_cols <- maintenance_cols[!grepl('Note', maintenance_cols)]
       
       ### Getting the start and end time vector to fix. If the end time is NA then it will put NAs 
       # until the maintenance log is updated
@@ -179,24 +152,23 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
       if(is.na(end)){
         # If there the maintenance is on going then the columns will be removed until
         # and end date is added
-        Time <- Met$DateTime >= start
+        Time <- Met |> filter(DateTime >= start) |> select(DateTime)
         
       }else if (is.na(start)){
         # If there is only an end date change columns from beginning of data frame until end date
-        Time <- Met$DateTime <= end
+        Time <- Met |> filter(DateTime <= end) |> select(DateTime)
         
       }else {
-        
-        Time <- Met$DateTime >= start & Met$DateTime <= end
-        
+        Time <- Met |> filter(DateTime >= start & DateTime <= end) |> select(DateTime)
       }
       
       ### This is where information in the maintenance log gets updated
       
       if(flag %in% c(1,2)){
         # The observations are changed to NA for maintenance or other issues found in the maintenance log
-        Met[Time, maintenance_cols] <- NA
-        Met[Time, paste0("Flag_",maintenance_cols)] <- flag
+        Met[Met$DateTime %in% Time$DateTime, maintenance_cols] <- NA
+        Met[Met$DateTime %in% Time$DateTime, paste0("Flag_",maintenance_cols)] <- flag
+       # Met[Time, paste0("Note_",maintenance_cols)] <- notes
         
       }else if (flag %in% c(3)){
         ## change negative values but exclude air temperature
@@ -205,24 +177,24 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
           maintenance_cols[!maintenance_cols == 'AirTemp_C_Average']
         }
         
-        Met[Time,maintenance_cols] <- 0
+        Met[Met$DateTime %in% Time$DateTime,maintenance_cols] <- 0
         
       }else if (flag %in% c(4)){
         
         if(is.na(adjustment_code)){ ## Just use updated value if no adjustment code is provided
-          Met[Time,paste0("Flag_",maintenance_cols)] <- flag
-          Met[Time,maintenance_cols] <- update_value
+          Met[Met$DateTime %in% Time$DateTime,paste0("Flag_",maintenance_cols)] <- flag
+          Met[Met$DateTime %in% Time$DateTime,maintenance_cols] <- update_value
           
         } else if(!is.na(adjustment_code)){ ## Use adjustment code if it's non-NA
           #original_values <- Met[c(which(Met[,'Site'] == Site & Met$DateTime %in% Time$DateTime)),maintenance_cols]
           
-          Met[Time,paste0("Flag_",maintenance_cols)] <- flag
-          Met[Time,maintenance_cols] <- eval(parse(text = adjustment_code))
+          Met[Met$DateTime %in% Time$DateTime,paste0("Flag_",maintenance_cols)] <- flag
+          Met[Met$DateTime %in% Time$DateTime,maintenance_cols] <- eval(parse(text = adjustment_code))
         }
         
       }else if(flag %in% c(5)){
         # UPDATE THE MANUAL ISSUE FLAGS (BAD SAMPLE / USER ERROR) BUT KEEP ORIGINAL VALUE
-        Met[Time,paste0("Flag_",maintenance_cols)] <- flag
+        Met[Met$DateTime %in% Time$DateTime,paste0("Flag_",maintenance_cols)] <- flag
         
       }else{
         warning("Flag not coded in the L1 script. See Austin or Adrienne")
@@ -234,12 +206,12 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   #### END NEW MAINTENANCE LOG CODE
   
   print("Maintenance Log worked")
-
+  
   # Correct wind directions that became negative after the correction from the maintenance log
-
+  
   Met <- Met|>
-  mutate(
-    WindDir_degrees = ifelse(WindDir_degrees<0, 360+WindDir_degrees, WindDir_degrees))
+    mutate(
+      WindDir_degrees = ifelse(WindDir_degrees<0, 360+WindDir_degrees, WindDir_degrees))
   
   #### Rain totals QAQC######
   
@@ -250,7 +222,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   Met[Rain, "Rain_Total_mm"] <- NA
   
   
- # print("Rain worked")
+  # print("Rain worked")
   
   ####Air temperature data cleaning ####
   # This is how to find the linear regression but don't need it now so can comment it out. 
@@ -395,7 +367,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   #   Met<-Met%>%dplyr::rename("Rain_Total_mm"="Rain_Total_mm.x")
   # }
   
- # print("IR worked")
+  # print("IR worked")
   
   ###Impossible Outliers####
   #take out impossible outliers and Infinite values before the other outliers are removed
@@ -418,7 +390,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
     }
   }
   
- # print("Impossible outliers worked")
+  # print("Impossible outliers worked")
   
   ###Wind Outliers####
   # Take out if wind direction is not between 0 and 360 and if wind speed is above 50 m/s
@@ -438,7 +410,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   Met[Ws, "Flag_WindSpeed_Average_m_s"]<-4
   Met[Ws, "WindSpeed_Average_m_s"]<-NA
   
- # print("Wind outliers")
+  # print("Wind outliers")
   ####Remove barometric pressure outliers####
   # Name of which argument used below and then flag and replace when BP is less than 98.5
   BP<-c(which(Met$BP_Average_kPa<95.5 & !is.na(Met$BP_Average_kPa)))
@@ -447,7 +419,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   Met[BP,"Flag_BP_Average_kPa"]<-4
   Met[BP,"BP_Average_kPa"]<-NA
   
- # print("baro outliers")
+  # print("baro outliers")
   
   #####remove high PAR values at night ######
   #get sunrise and sunset times
@@ -499,7 +471,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   Met[Par_Avg,"Note_PAR_umolm2s_Average"]<-"Outlier set to NA. Above 3000 umolm2s"
   Met[Par_Avg,"PAR_umolm2s_Average"]<-NA
   
- # print("Par outliers")
+  # print("Par outliers")
   
   
   #Remove shortwave radiation outliers
