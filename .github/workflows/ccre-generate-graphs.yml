@@ -45,7 +45,7 @@ jobs:
         run: |
           Rscript -e '
             .libPaths("~/rlib")
-            packages <- c("lubridate", "gridExtra", "openair", "ggplot2")
+            packages <- c("lubridate", "gridExtra", "openair", "ggplot2", "forcats", "gridExtra", "ggpubr", "tidyverse")
             install_if_missing <- function(pkg) {
               if (!require(pkg, character.only = TRUE))
                 install.packages(pkg, lib = "~/rlib", repos = "https://cloud.r-project.org")
@@ -67,7 +67,8 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add CCRMetDataFigures_$(date '+%Y-%m-%d').pdf \
-          CCRWaterQualityDataFigures_$(date '+%Y-%m-%d').pdf
+          CCRWaterQualityDataFigures_$(date '+%Y-%m-%d').pdf \
+          CCRWQ_Managers_DataFigures_$(date '+%Y-%m-%d').pdf
           git commit -m "ccre-generate-graphs-$(date '+%Y-%m-%d')"
           git branch ccre-graphs
           git push --force origin ccre-graphs
