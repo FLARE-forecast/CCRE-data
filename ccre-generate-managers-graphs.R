@@ -116,7 +116,7 @@ max_min_plot <- function(
 plot <- ggplot()+
   geom_label( 
     data=tail(current_data, n= 1), # Filter data first
-    aes(x = as.Date(DOY-1), y = .data[[variable]], label=round(.data[[variable]], digits = 1)), nudge_x = 15
+    aes(x = as.Date(DOY-1), y = .data[[variable]], label=round(.data[[variable]], digits = 1)), nudge_x = 17
   ) +
   geom_point(data =current_data, aes(x = as.Date(DOY-1), y = .data[[variable]]), color = col, size = 2) +
   {if(Hist)geom_ribbon(data = historical_data, aes(x = as.Date(DOY-1), ymax = .data[[paste0(variable,"_max")]] , ymin = .data[[paste0(variable,"_min")]]), alpha = 0.3, linejoin = "round")} +
