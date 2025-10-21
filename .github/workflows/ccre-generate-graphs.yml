@@ -61,6 +61,11 @@ jobs:
         env:
           R_LIBS: ~/rlib
 
+      - name: Run R Script to make manager plot with custom lib path
+        run: Rscript ccre-generate-managers-graphs.R
+        env:
+          R_LIBS: ~/rlib
+
       # Commit files ,and push
       - name: Commit files
         run: |
