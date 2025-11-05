@@ -438,9 +438,9 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   exo_flag <- grep("^Flag_EXO.*_1$",colnames(ccrwater))
   
   #Flag the data that was removed with 2 for outliers
-  ccrwater[which(ccrwater$EXODepth_m_1< 0.75),exo_flag]<- 2
-  #Change the EXO data to NAs when the EXO is above 0.75m and not already flagged as maintenance
-  ccrwater[which(ccrwater$EXODepth_m_1 < 0.75), exo_idx] <- NA
+  ccrwater[which(ccrwater$EXODepth_m_1< 0.4),exo_flag]<- 2
+  #Change the EXO data to NAs when the EXO is above 0.75m and not already flagged as maintenance. Change to 0.4 right now to have data
+  ccrwater[which(ccrwater$EXODepth_m_1 < 0.4), exo_idx] <- NA
   
   
   #index only the colummns with EXO at the beginning
