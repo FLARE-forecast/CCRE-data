@@ -112,22 +112,30 @@ max_min_plot <- function(
     Hist = F
   }
   
-# make the plot  
-plot <- ggplot()+
-  geom_label( 
-    data=tail(current_data, n= 1), # Filter data first
-    aes(x = as.Date(DOY-1), y = .data[[variable]], label=round(.data[[variable]], digits = 1)), nudge_x = 17
-  ) +
-  geom_point(data =current_data, aes(x = as.Date(DOY-1), y = .data[[variable]]), color = col, size = 2) +
-  {if(Hist)geom_ribbon(data = historical_data, aes(x = as.Date(DOY-1), ymax = .data[[paste0(variable,"_max")]] , ymin = .data[[paste0(variable,"_min")]]), alpha = 0.3, linejoin = "round")} +
-  scale_x_date(date_breaks = "month", date_labels = "%b", expand = c(0, 0), limits = c(as.Date("1970-01-01"), as.Date("1970-12-31"))) +
-  ylab(ylabel)+ 
-  xlab("")+
-  ggtitle(title)+
-  theme_bw(base_size = 15) +
-  theme(plot.title = element_text(hjust = 0.5)) 
-
-return(plot)
+ # Check to make sure there are observations for the label if not take the previous observation
+  
+  label_data <- tail(current_data, n = 1)
+  
+  if(label_data[[variable]] == "NaN"){
+    label_data <- current_data[nrow(current_data)-1,]
+  }
+  
+  # make the plot  
+  plot <- ggplot()+
+    geom_label( 
+      data=label_data, # data from above and just the most recent non NA values
+      aes(x = as.Date(DOY-1), y = .data[[variable]], label=round(.data[[variable]], digits = 1)), nudge_x = 17
+    ) +
+    geom_point(data =current_data, aes(x = as.Date(DOY-1), y = .data[[variable]]), color = col, size = 2) +
+    {if(Hist)geom_ribbon(data = historical_data, aes(x = as.Date(DOY-1), ymax = .data[[paste0(variable,"_max")]] , ymin = .data[[paste0(variable,"_min")]]), alpha = 0.3, linejoin = "round")} +
+    scale_x_date(date_breaks = "month", date_labels = "%b", expand = c(0, 0), limits = c(as.Date("1970-01-01"), as.Date("1970-12-31"))) +
+    ylab(ylabel)+ 
+    xlab("")+
+    ggtitle(title)+
+    theme_bw(base_size = 15) +
+    theme(plot.title = element_text(hjust = 0.5)) 
+  
+  return(plot)
 }
 
 # chla plot made
