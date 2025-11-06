@@ -6,6 +6,7 @@
 # 18 March 2024- add section for eddyflux fluxes
 # 29 Sept. 2024- added in the water level to CCR
 # 09 Dec. 2024 - added in an if statment to read in BVR file because added back in the data logger header. Add print statment when plots printed. 
+# 06 Nov. 2025 - added a plot of the surface EXO depth to watch it especially as the water level changes
 
 continue_on_error <- function()
 {
@@ -144,7 +145,9 @@ if (length(na.omit(ccrwaterdata$TIMESTAMP[ccrwaterdata$TIMESTAMP>start.time1]))<
   plot(obs5$TIMESTAMP, obs5$EXO_wiper_9, main= "Wiper Voltage", xlab="Time", ylab="Volts", type='l', ylim=c(0,3))
   points(obs5$TIMESTAMP, obs5$EXO_wiper_1, col="red", type="l", lwd=1.5)
   legend("topleft", c("1.5m EXO", "9m EXO"), text.col=c("red","black"), x.intersp=0.001)
-  
+
+  # add in the depth of the EXO. Good thing to check as the water level drops
+  plot(obs5$TIMESTAMP, obs5$EXO_depth_1, main= "Surface EXO depth", xlab="Time", ylab="Meters", type='l')
   
   plot(obs5$TIMESTAMP,obs5$EXO_pressure_9, main="Sonde Pressure", xlab="Time", ylab="psi", type='l', ylim=c(-1,37))
   points(obs5$TIMESTAMP, obs5$EXO_pressure_1, col="purple", type="l", lwd=1.5)
