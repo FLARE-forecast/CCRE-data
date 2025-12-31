@@ -87,7 +87,7 @@ CCR;51;CCRW; 2024-03-09 01:55:00 EST; 2024-03-09 02:05:00 EST; EXOTemp_C_9; EXOW
 CCR;51;CCRW; 2024-03-30 13:25:00 EST; 2024-03-30 13:35:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
 CCR;51;CCRW; 2024-03-30 13:45:00 EST; 2024-03-30 14:55:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for cleaning
 CCR;51;CCRW; 2024-03-30 14:25:00 EST; 2024-03-30 14:55:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
-CCR;51;CCRW; 2024-03-30 14:45:00 EST; 2024-05-16 10:25:00 EST; LvlDepth_m_13; NA;6;NA;(ccrwater[Time, 'EXODepth_m_9'] *1.654)+4.246; Pressure transducer not getting power. Used the 9m EXO3 depth to estimate depth
+CCR;51;CCRW; 2024-03-30 14:45:00 EST; 2024-05-16 10:25:00 EST; LvlDepth_m_13; NA;6;NA;"(ccrwater[Time, 'EXODepth_m_9'] *1.654)+4.246"; Pressure transducer not getting power. Used the 9m EXO3 depth to estimate depth
 CCR;51;CCRW; 2024-05-16 09:55:00 EST; 2024-05-16 11:15:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for cleaning
 CCR;51;CCRW; 2024-05-16 10:25:00 EST; 2024-05-16 11:15:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
 CCR;51;CCRW; 2024-06-11 04:55:00 EST; 2024-06-11 05:45:00 EST; EXOCond_uScm_9;EXOTDS_mgL_9;5;NA;NA; weird low condutivity in the early morning 
@@ -110,7 +110,7 @@ CCR;51;CCRW; 2025-03-04 14:05:00 EST; 2025-03-13 10:55:00 EST; ThermistorTemp_C_
 CCR;51;CCRW; 2025-03-04 14:05:00 EST; 2025-03-13 10:55:00 EST; LvlPressure_psi_13; LvlTemp_C_13;1;NA;NA; temp string caught on a log and all out of wack so removing these observations
 CCR;51;CCRW; 2025-03-18 03:05:00 EST; 2025-03-18 03:15:00 EST; ThermistorTemp_C_1; ThermistorTemp_C_13;1;NA;NA; temp string out of line and probably after a blow off so removing
 CCR;51;CCRW; 2025-03-18 03:05:00 EST; 2025-03-18 03:15:00 EST; LvlPressure_psi_13; LvlTemp_C_13;1;NA;NA; temp string out of line and probably after a blow off so removing
-CCR;51;CCRW; 2025-03-13 11:00:00 EST; 2025-04-03 09:55:00 EST; LvlDepth_m_13; NA;6;NA;"ccrwater[Time, maintenance_cols] + 0.06"; Pressure transducer out of line so adding an offset until it was moved into correct position
+CCR;51;CCRW; 2025-03-13 11:00:00 EST; 2025-04-03 09:55:00 EST; LvlPressure_psi_13; NA;6;NA;"ccrwater[Time, maintenance_cols] + 0.06"; Pressure transducer out of line so adding an offset until it was moved into correct position
 CCR;51;CCRW; 2025-03-20 10:15:00 EST; 2025-03-20 11:05:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; clean and check EXO2
 CCR;51;CCRW; 2025-04-03 08:45:00 EST; 2025-04-03 09:15:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXO2 and put back the EXO3 after calibration
 CCR;51;CCRW; 2025-04-05 15:05:00 EST; 2025-04-05 15:45:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs
