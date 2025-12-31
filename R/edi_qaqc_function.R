@@ -244,13 +244,6 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     ccrwater[c(which((ccrwater[,k]<0))),k] <- 0 #replaces value with 0
   }
   
-  # Convert Pressure to Depth
-  # Convert pressure to depth only if the pressure readin is above 16 psi the lower values get removed
-  
-  #create depth column
-  ccrwater <- ccrwater%>%
-    mutate(LvlDepth_m_13=ifelse(LvlPressure_psi_13>16, LvlPressure_psi_13*0.70455, NA))#1psi=2.31ft, 1ft=0.305m
-  
   
   #####Maintenance Log QAQC############ 
   
@@ -530,6 +523,13 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   
   
   ### Remove observations when sensors are out of the water ###
+
+  # Convert Pressure to Depth
+  # Convert pressure to depth only if the pressure readin is above 16 psi the lower values get removed
+  
+  #create depth column
+  ccrwater <- ccrwater%>%
+    mutate(LvlDepth_m_13=ifelse(LvlPressure_psi_13>16, LvlPressure_psi_13*0.70455, NA))#1psi=2.31ft, 1ft=0.305m
   
   # Using the find_depths function
   
