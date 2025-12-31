@@ -214,10 +214,12 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   
   
   #####Create Flag columns#####
-  
+
+  # create the Depth column before the flags columns are created
+  ccrwater$LvlDepth_m_13 <- NA
   
   # for loop to create flag columns
-  for(j in colnames(ccrwater%>%select(ThermistorTemp_C_1:LvlTemp_C_13))) { #for loop to create new columns in data frame
+  for(j in colnames(ccrwater%>%select(ThermistorTemp_C_1:LvlTemp_C_13, LvlDepth_m_13))) { #for loop to create new columns in data frame
     ccrwater[,paste0("Flag_",j)] <- 0 #creates flag column + name of variable
     ccrwater[c(which(is.na(ccrwater[,j]))),paste0("Flag_",j)] <-7 #puts in flag 7 if value not collected
   }
@@ -525,11 +527,11 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   ### Remove observations when sensors are out of the water ###
 
   # Convert Pressure to Depth
-  # Convert pressure to depth only if the pressure readin is above 16 psi the lower values get removed
+  # Convert pressure to depth only if the pressure reading is above 16 psi and not NA the lower values get removed
   
   #create depth column
   ccrwater <- ccrwater%>%
-    mutate(LvlDepth_m_13=ifelse(LvlPressure_psi_13>16, LvlPressure_psi_13*0.70455, NA))#1psi=2.31ft, 1ft=0.305m
+    mutate(LvlDepth_m_13=ifelse(LvlPressure_psi_13>16 & !is.na(LvlPressure_psi_13), LvlPressure_psi_13*0.70455, NA))#1psi=2.31ft, 1ft=0.305m
   
   # Using the find_depths function
   
