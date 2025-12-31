@@ -5,6 +5,8 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
                      start_date = NULL, 
                      end_date = NULL)
 {
+  
+  
   # Call the source function to get the depths
   
   source("https://raw.githubusercontent.com/LTREB-reservoirs/vera4cast/main/targets/target_functions/find_depths.R")
@@ -237,7 +239,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "EXOBGAPC_ugL_1"]<- (ccrwater[c(which(is.na(ccrwater$EXOBGAPC_ugL_1) & !is.na(ccrwater$EXOBGAPC_RFU_1))), "EXOBGAPC_RFU_1"]*1.00)-0.59
   
   #update 
-  for(k in colnames(ccrwater%>%select(EXOCond_uScm_1:EXOfDOM_QSU_1,EXOCond_uScm_9:EXOfDOM_QSU_9 ))) { #for loop to create new columns in data frame
+  for(k in colnames(ccrwater%>%select(EXOCond_uScm_1:EXOTSS_mgL_1,EXOCond_uScm_9:EXOfDOM_QSU_9 ))) { #for loop to create new columns in data frame
     ccrwater[c(which((ccrwater[,k]<0))),paste0("Flag_",k)] <- 3
     ccrwater[c(which((ccrwater[,k]<0))),k] <- 0 #replaces value with 0
   }
@@ -441,7 +443,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   ccrwater[which(ccrwater$EXODepth_m_1< 0.1),exo_flag]<- 2
   #Change the EXO data to NAs when the EXO is above 0.75m and not already flagged as maintenance. Change to 0.4 right now to have data
   ccrwater[which(ccrwater$EXODepth_m_1 < 0.1), exo_idx] <- NA
-
+  
   # Flag data but leave in if depth between 0.1 and 0.75
   ccrwater[which(ccrwater$EXODepth_m_1> 0.1 & ccrwater$EXODepth_m_1<0.75),exo_flag]<- 5
   
@@ -511,6 +513,22 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   
   print("leading and lagging worked")
   
+  ### Flag very high Conductivity and Turbidity values ###
+  
+  # conductivity, sp. cond and turbidity. Take out values if conductivity is over 1000
+  
+  
+  for(k in colnames(ccrwater%>%select(EXOCond_uScm_1:EXOTDS_mgL_1,EXOCond_uScm_9:EXOTDS_mgL_9))) { #for loop to create new columns in data frame
+    ccrwater[c(which((ccrwater[,k]>1000))),paste0("Flag_",k)] <- 2
+    ccrwater[c(which((ccrwater[,k]>1000))),k] <- NA #replaces value with NA
+  }
+  
+  # take out turbidity values greater than 500 
+  
+  ccrwater[ccrwater$EXOTurbidity_FNU_1>500, ccrwater$Flag_EXOTurbidity_FNU_1] <- 2
+  ccrwater[ccrwater$EXOTurbidity_FNU_1>500, ccrwater$Flag_EXOTurbidity_FNU_1] <- NA
+  
+  
   ### Remove observations when sensors are out of the water ###
   
   # Using the find_depths function
@@ -535,8 +553,9 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   #############################################################################################################################  
   
   
-  # reorder columns
-  ccrwater2 <- ccrwater2 %>% select(Reservoir, Site, DateTime,  
+ # reorder columns
+  ccrwater2 <- ccrwater2 %>% 
+    select(Reservoir, Site, DateTime,  
                                     ThermistorTemp_C_1, ThermistorTemp_C_2, ThermistorTemp_C_3, ThermistorTemp_C_4,
                                     ThermistorTemp_C_5, ThermistorTemp_C_6, ThermistorTemp_C_7, ThermistorTemp_C_8,
                                     ThermistorTemp_C_9,ThermistorTemp_C_10,ThermistorTemp_C_11, ThermistorTemp_C_12,
@@ -548,7 +567,8 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
                                     EXOSpCond_uScm_9, EXOTDS_mgL_9, EXODOsat_percent_9, EXODO_mgL_9, 
                                     EXOfDOM_RFU_9, EXOfDOM_QSU_9,EXOPressure_psi_9, EXODepth_m_9, EXOBattery_V_9,
                                     EXOCablepower_V_9, EXOWiper_V_9,LvlPressure_psi_13,LvlDepth_m_13, LvlTemp_C_13, 
-                                    RECORD, CR3000Battery_V, CR3000Panel_Temp_C,everything())
+                                    RECORD, CR3000Battery_V, CR3000Panel_Temp_C,everything())%>%
+    select(-c(EXOTSS_mgL_1, Flag_EXOTSS_mgL_1)) # take out TSS for now because it isn't calibrated
   
   
   # write_csv was giving the wrong times. Let's see if this is better. 
@@ -565,5 +585,4 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
 
 # # Example usage
 #  qaqc_ccr(output_file = "CCRCatwalk_L1.csv", start_date = as.Date("2023-01-01"), end_date = Sys.Date())
-
 
