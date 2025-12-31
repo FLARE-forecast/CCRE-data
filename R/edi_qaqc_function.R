@@ -520,8 +520,8 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   
   # take out turbidity values greater than 500 
   
-  ccrwater[ccrwater$EXOTurbidity_FNU_1>500, ccrwater$Flag_EXOTurbidity_FNU_1] <- 2
-  ccrwater[ccrwater$EXOTurbidity_FNU_1>500, ccrwater$Flag_EXOTurbidity_FNU_1] <- NA
+  ccrwater[which(ccrwater$EXOTurbidity_FNU_1>500), "Flag_EXOTurbidity_FNU_1"] <- 2
+  ccrwater[which(ccrwater$EXOTurbidity_FNU_1>500), "EXOTurbidity_FNU_1"] <- NA
   
   
   ### Remove observations when sensors are out of the water ###
