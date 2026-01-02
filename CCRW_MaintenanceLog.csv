@@ -30,7 +30,7 @@ CCR;51;CCRW; 2021-12-03 14:00:00 EST; 2021-12-03 14:00:00 EST; EXOTemp_C_9; EXOW
 CCR;51;CCRW; 2021-12-03 15:10:00 EST; 2021-12-03 15:10:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
 CCR;51;CCRW; 2021-12-04 11:40:00 EST; 2021-12-04 11:40:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
 CCR;51;CCRW; 2021-12-14 10:45:00 EST; 2021-12-14 10:55:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
-CCR;51;CCRW; 2022-01-11 12:05:00 EST; 2022-01-11 10:15:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
+CCR;51;CCRW; 2022-01-11 12:05:00 EST; 2022-01-11 12:15:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
 CCR;51;CCRW; 2022-01-14 00:00:00 EST; 2022-01-26 17:00:00 EST; EXOTemp_C_9; EXOWiper_V_9;4;NA;NA; 9m EXO removed observations because sensor malfunctioned
 CCR;51;CCRW; 2022-01-26 16:50:00 EST; 2022-01-26 17:40:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO was up for maintenance and data download
 CCR;51;CCRW; 2022-01-26 17:10:00 EST; 2022-04-20 15:10:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO removed for service
@@ -96,7 +96,7 @@ CCR;51;CCRW; 2024-06-17 14:25:00 EST; 2024-06-17 14:45:00 EST; EXOTemp_C_9; EXOW
 CCR;51;CCRW; 2024-08-05 14:55:00 EST; 2024-08-05 15:05:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for cleaning
 CCR;51;CCRW; 2024-08-05 14:35:00 EST; 2024-08-05 14:55:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
 CCR;51;CCRW; 2024-09-16 13:45:00 EST; 2024-09-16 14:05:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; Both EXOs up for cleaning
-CCR;51;CCRW; 2024-12-05 14:15:00 EST; 2024-12-05 15:55:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for cleaning and swapped out for maintenance replaced with SN19H103086
+CCR;51;CCRW; 2024-12-05 14:15:00 EST; 2024-12-05 17:25:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for cleaning and swapped out for maintenance replaced with SN19H103086
 CCR;51;CCRW; 2024-12-05 16:25:00 EST; 2024-12-05 16:45:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning when EXO2 1m was changed
 CCR;51;CCRW; 2024-12-05 14:15:00 EST; 2024-12-16 15:45:00 EST; EXOBGAPC_RFU_1;EXOBGAPC_ugL_1;6;NA;"ccrwater[Time, maintenance_cols]+1.3"; adjust the BGAPC values up 1.3 because back up EXO off
 CCR;51;CCRW; 2024-12-05 14:15:00 EST; 2024-12-16 15:45:00 EST; EXOfDOM_RFU_1;NA;6;NA;"ccrwater[Time, maintenance_cols]+0.8"; adjust the fDOM value up 0.8 RFU because back up EXO off
@@ -106,6 +106,7 @@ CCR;51;CCRW; 2024-12-24 08:55:00 EST; 2024-12-24 09:15:00 EST; EXOTemp_C_1; EXOW
 CCR;51;CCRW; 2024-12-27 12:45:00 EST; 2024-12-27 13:55:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; Both EXOs up because EXO2 at 1m not sending data. Set to internally logging. 
 CCR;51;CCRW; 2025-01-08 13:15:00 EST; 2025-01-08 14:05:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; Both EXOs up because EXO2 at 1m not sending data. 
 CCR;51;CCRW; 2025-01-27 14:35:00 EST; 2025-01-27 15:25:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs
+CCR;51;CCRW; 2025-01-29 12:05:00 EST; 2025-01-29 13:25:00 EST; ThermistorTemp_C_2; NA;2;NA;NA; sensor out of the water and out of regular position 
 CCR;51;CCRW; 2025-03-04 14:05:00 EST; 2025-03-13 10:55:00 EST; ThermistorTemp_C_1; ThermistorTemp_C_13;1;NA;NA; temp string caught on a log and all out of wack so removing these observations
 CCR;51;CCRW; 2025-03-04 14:05:00 EST; 2025-03-13 10:55:00 EST; LvlPressure_psi_13; LvlTemp_C_13;1;NA;NA; temp string caught on a log and all out of wack so removing these observations
 CCR;51;CCRW; 2025-03-18 03:05:00 EST; 2025-03-18 03:15:00 EST; ThermistorTemp_C_1; ThermistorTemp_C_13;2;NA;NA; temp string out of line and probably after a blow off so removing
@@ -114,7 +115,7 @@ CCR;51;CCRW; 2025-03-13 11:00:00 EST; 2025-04-04 00:55:00; LvlPressure_psi_13; N
 CCR;51;CCRW; 2025-03-20 10:15:00 EST; 2025-03-20 11:05:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; clean and check EXO2
 CCR;51;CCRW; 2025-04-03 08:45:00 EST; 2025-04-03 09:15:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXO2 and put back the EXO3 after calibration
 CCR;51;CCRW; 2025-04-05 15:05:00 EST; 2025-04-05 15:45:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs
-CCR;51;CCRW; 2025-04-04 21:35:00 EST; 2025-04-16 13:45:00 EST; EXOTemp_C_9; EXOTDS_mgL_9;2;NA;NA; Bad temp and conductivity sensor reading 0 so change to NA
+CCR;51;CCRW; 2025-04-03 09:15:00 EST; 2025-04-16 13:45:00 EST; EXOTemp_C_9; EXOTDS_mgL_9;2;NA;NA; Bad temp and conductivity sensor reading 0 so change to NA
 CCR;51;CCRW; 2025-04-04 21:35:00 EST; 2025-04-16 13:45:00 EST; EXODOsat_percent_9; EXOfDOM_QSU_9;5;NA;NA; Flag values because don't have a working temp sensor on the EXO3
 CCR;51;CCRW; 2025-04-16 13:45:00 EST; 2025-04-16 13:55:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; EXOs up to replace the temp sensor on 9 m EXO3
 CCR;51;CCRW; 2025-05-28 13:05:00 EST; 2025-05-28 13:45:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs
