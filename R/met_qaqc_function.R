@@ -415,7 +415,7 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
   # Name of which argument used below and then flag and replace when BP is less than 98.5
   BP<-c(which(Met$BP_Average_kPa<95.5 & !is.na(Met$BP_Average_kPa)))
   
-  Met[BP,"Note_BP_Average_kPa"]<-"Outlier set to NA. Value below 98.5"
+  Met[BP,"Note_BP_Average_kPa"]<-"Outlier set to NA. Value below 95.5"
   Met[BP,"Flag_BP_Average_kPa"]<-4
   Met[BP,"BP_Average_kPa"]<-NA
   
