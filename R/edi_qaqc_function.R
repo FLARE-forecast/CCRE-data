@@ -520,7 +520,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   # conductivity, sp. cond and turbidity. Take out values if conductivity is over 1000
   
   
-  for(k in colnames(ccrwater%>%select(EXOCond_uScm_1:EXOTDS_mgL_1,EXOCond_uScm_9:EXOTDS_mgL_9))) { #for loop to create new columns in data frame
+  for(k in colnames(ccrwater%>%select(EXOCond_uScm_1:EXOTurbidity_FNU_1,EXOCond_uScm_9:EXOTDS_mgL_9))) { #for loop to create new columns in data frame
     ccrwater[c(which((ccrwater[,k]>1000))),paste0("Flag_",k)] <- 2
     ccrwater[c(which((ccrwater[,k]>1000))),k] <- NA #replaces value with NA
   }
