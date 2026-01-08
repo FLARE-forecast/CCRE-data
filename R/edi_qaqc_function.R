@@ -563,7 +563,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
     mutate(Modeled_elevation_ft = (LvlPressure_psi_13*2.36)+1105.147,
            Modeled_Water_Level_ft = Modeled_elevation_ft-1170,
            Modeled_Depth_m = (Modeled_Water_Level_ft * 0.3048) + 23,
-           Modeled_Depth_m = ifelse(DateTime>as.Date("2024-01-23") & DateTime < as.Date("2024-02-26"), NA, modeled_depth_m))|>
+           Modeled_Depth_m = ifelse(DateTime>as.Date("2024-01-23") & DateTime < as.Date("2024-02-26"), NA, Modeled_Depth_m))|>
     select(-c(Modeled_elevation_ft, Modeled_Water_Level_ft))
   
   #############################################################################################################################  
