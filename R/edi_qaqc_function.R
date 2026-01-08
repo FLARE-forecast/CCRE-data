@@ -1,3 +1,10 @@
+# Function to QAQC the data from the CCR catwalk
+# Author: A. Breef-Pilz
+# Created: Jan. 2024
+
+# Edits:
+# 07 Jan 2025: added a modeled depth equation to the data frame. Need to check if the reservoir is 21 m or 23 m deep at full pond. 
+
 qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-waterquality.csv",
                      EXO2_manual_file = "https://raw.githubusercontent.com/CareyLabVT/ManualDownloadsSCCData/master/current_files/CCR_1_5_EXO_L1.csv", 
                      maintenance_file = "https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data-qaqc/CCRW_MaintenanceLog.csv", 
@@ -550,7 +557,14 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   }
   
   
+  ### Add a calculated reservoir depth column
   
+  ccrwater2 <- ccrwater2|>
+    mutate(Modeled_elevation_ft = (LvlPressure_psi_13*2.36)+1105.147,
+           Modeled_Water_Level_ft = Modeled_elevation_ft-1170,
+           Modeled_Depth_m = (modeled_water_level_ft * 0.3048) + 21,
+           Modeled_Depth_m = ifelse(DateTime>as.Date("2024-01-23") & DateTime < as.Date("2024-02-26"), NA, modeled_depth_m))|>
+    select(-c(Modeled_elevation_ft, Modeled_Water_Level_ft))
   
   #############################################################################################################################  
   
@@ -568,7 +582,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
                                     EXOTemp_C_9, EXOCond_uScm_9,
                                     EXOSpCond_uScm_9, EXOTDS_mgL_9, EXODOsat_percent_9, EXODO_mgL_9, 
                                     EXOfDOM_RFU_9, EXOfDOM_QSU_9,EXOPressure_psi_9, EXODepth_m_9, EXOBattery_V_9,
-                                    EXOCablepower_V_9, EXOWiper_V_9,LvlPressure_psi_13,LvlDepth_m_13, LvlTemp_C_13, 
+                                    EXOCablepower_V_9, EXOWiper_V_9,LvlPressure_psi_13,LvlDepth_m_13, LvlTemp_C_13, Modeled_Depth_m,
                                     RECORD, CR3000Battery_V, CR3000Panel_Temp_C,everything())%>%
     select(-c(EXOTSS_mgL_1, Flag_EXOTSS_mgL_1)) # take out TSS for now because it isn't calibrated
   
