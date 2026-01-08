@@ -89,7 +89,7 @@ CCR;51;CCRW; 2024-03-30 13:45:00 EST; 2024-03-30 14:55:00 EST; EXOTemp_C_1; EXOW
 CCR;51;CCRW; 2024-03-30 14:25:00 EST; 2024-03-30 14:55:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
 CCR;51;CCRW; 2024-03-30 14:45:00 EST; 2024-05-16 10:25:00 EST; LvlDepth_m_13; NA;6;NA;"(ccrwater[Time, 'EXODepth_m_9'] *1.654)+4.246"; Pressure transducer not getting power. Used the 9m EXO3 depth to estimate depth
 CCR;51;CCRW; 2024-05-16 09:55:00 EST; 2024-05-16 11:15:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for cleaning
-CCR;51;CCRW; 2024-05-16 10:25:00 EST; 2024-05-16 11:15:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
+CCR;51;CCRW; 2024-05-16 10:25:00 EST; 2024-05-16 11:15:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning and replacing EXO wiper
 CCR;51;CCRW; 2024-06-11 04:55:00 EST; 2024-06-11 05:45:00 EST; EXOCond_uScm_9;EXOTDS_mgL_9;5;NA;NA; weird low condutivity in the early morning 
 CCR;51;CCRW; 2024-06-17 14:25:00 EST; 2024-06-17 15:05:00 EST; EXOTemp_C_1; EXOWiper_V_1;1;NA;NA; 1m EXO2 up for cleaning
 CCR;51;CCRW; 2024-06-17 14:25:00 EST; 2024-06-17 14:45:00 EST; EXOTemp_C_9; EXOWiper_V_9;1;NA;NA; 9m EXO3 up for cleaning
@@ -123,9 +123,12 @@ CCR;51;CCRW; 2025-04-16 13:45:00 EST; 2025-04-16 13:55:00 EST; EXOTemp_C_1; EXOW
 CCR;51;CCRW; 2025-05-28 13:05:00 EST; 2025-05-28 13:45:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs
 CCR;51;CCRW; 2025-06-11 08:15:00 EST; 2025-06-11 09:55:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs
 CCR;51;CCRW; 2025-07-23 09:45:00 EST; 2025-07-23 12:05:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs and set the 9m EXO3 to internally log
+CCR;51;CCRW; 2025-09-30 19:19:30 EST; 2025-09-30 19:20:30 EST; EXODO_mgL_1; NA;2;NA;NA; Low DO obs and the % sat was by the qaqc
 CCR;51;CCRW; 2025-09-27 00:00:00 EST; 2025-10-06 13:15:00 EST; EXOChla_RFU_1; EXOTurbidity_FNU_1;5;NA;NA; wiper not set in the program so overestimating chla and turbidity while underestimating fdom
 CCR;51;CCRW; 2025-10-06 13:15:00 EST; 2025-10-06 13:25:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs
 CCR;51;CCRW; 2025-11-11 14:55:00 EST; 2025-11-11 15:15:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs
+CCR;51;CCRW; 2025-10-21 17:19:30 EST; 2025-10-21 17;20:30 EST; EXOCond_uScm_1;EXOTDS_mgL_1;2;NA;NA; weird low condutivity 
+CCR;51;CCRW; 2025-11-08 17:19:30 EST; 2025-11-08 17;20:30 EST; EXOCond_uScm_1;EXOTDS_mgL_1;2;NA;NA; weird low condutivity 
 CCR;51;CCRW; 2025-11-11 15:15:00 EST; 2025-11-25 11:05:00 EST; EXOChla_RFU_1; EXOTurbidity_FNU_1;5;NA;NA; wiper not set in the program so overestimating chla and turbidity while underestimating fdom
 CCR;51;CCRW; 2025-11-25 11:05:00 EST; 2025-11-25 11:35:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs and lowered surface EXO2 so it was at the correct depth and wiper enabled
 CCR;51;CCRW; 2025-12-02 10:15:00 EST; 2025-12-02 10:35:00 EST; EXOTemp_C_1; EXOWiper_V_9;1;NA;NA; clean and check EXOs 
