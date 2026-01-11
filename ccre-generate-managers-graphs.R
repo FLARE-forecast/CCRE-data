@@ -1,6 +1,8 @@
 # New CCR viz for the managers
 # Author: A.Breef-Pilz
 # Written: 21 Oct. 2025
+# Edit:
+# 11 Jan 2026 - added a filter to the L1 data for only the current year. 
 
 # These are plots made by A. Breef-Pilz with the help of Eric Powers from the WVWA. This script uses the L1 files and the EDI published files. The link to the EDI data needs to be updated each year after the data are published. 
 
@@ -27,7 +29,9 @@ pacman::p_load(tidyverse, plotly, forcats, gridExtra, ggpubr)
 
 # Read in the L1 file
 
-ccr_L1 <- read_csv("https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/refs/heads/ccre-dam-data-qaqc/ccre-waterquality_L1.csv")
+ccr_L1 <- read_csv("https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/refs/heads/ccre-dam-data-qaqc/ccre-waterquality_L1.csv")|>
+  filter(year(DateTime) %in% year(Sys.Date())) # filter out for the current year before EDI data are published. 
+
 
 
 # historical EDI data- have to update each year with the new link. 
