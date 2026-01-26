@@ -3,6 +3,7 @@
 # Written: 21 Oct. 2025
 # Edit:
 # 11 Jan 2026 - added a filter to the L1 data for only the current year. 
+# 26 Jan 2026 - updated the EDI link with 2025 data. 
 
 # These are plots made by A. Breef-Pilz with the help of Eric Powers from the WVWA. This script uses the L1 files and the EDI published files. The link to the EDI data needs to be updated each year after the data are published. 
 
@@ -36,7 +37,7 @@ ccr_L1 <- read_csv("https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/r
 
 # historical EDI data- have to update each year with the new link. 
 
-EDI_data <- read_csv("https://pasta.lternet.edu/package/data/eml/edi/1069/3/4afb209b30ebed898334badd3819d854")
+EDI_data <- read_csv("https://pasta.lternet.edu/package/data/eml/edi/1069/4/42e6d8bb3d379d40a4a4fb566d4ff36e")
 
 # internet slow downloaded and read in data
 #EDI_data <- read_csv("ccre-waterquality_2021_2024.csv")
