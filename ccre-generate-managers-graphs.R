@@ -171,7 +171,7 @@ fdom <- max_min_plot(
 turb <- max_min_plot(
   variable = "mean_EXOTurbidity_FNU_1",
   col = "darkorange",
-  title = "Average daily turbidity (FNU) at 9 m",
+  title = "Average daily turbidity (FNU) at 1 m",
   ylabel = "Formazin Nephelometric Units")
 
 # specific conductivity
@@ -269,7 +269,7 @@ All_temp_elv <- merge(All_temp, elevation, by = "Sensor")
  
 # Arrange the plots and save the pdf on multiple pages
  
- multi.page <- ggarrange(Press_plot, chla, do, fdom, turb, spcond, temp_15, temp,
+ multi.page <- ggarrange(Press_plot, chla, turb, do, fdom, spcond, temp_15, temp,
                          nrow = 2, ncol = 1)
  
 # temp2 <- list(ggarrange(temp_15,temp, nrow = 2, ncol = 1))
