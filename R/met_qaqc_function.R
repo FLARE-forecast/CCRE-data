@@ -190,6 +190,12 @@ qaqc_ccrmet <- function(data_file = 'https://raw.githubusercontent.com/FLARE-for
           
           Met[Met$DateTime %in% Time$DateTime,paste0("Flag_",maintenance_cols)] <- flag
           Met[Met$DateTime %in% Time$DateTime,maintenance_cols] <- eval(parse(text = adjustment_code))
+
+          # fix the wind direction from the maintenance log and fix it to be less than 360 
+          
+          Met <- Met|>
+            mutate(WindDir_degrees = ifelse(WindDir_degrees>360, WindDir_degrees-360, WindDir_degrees),
+                   WindDir_degrees = ifelse(WindDir_degrees == 360, 0, WindDir_degrees))
         }
         
       }else if(flag %in% c(5)){
