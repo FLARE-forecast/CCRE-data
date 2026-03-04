@@ -1,9 +1,9 @@
 name: CCRE QAQC eddyflux data 7 daily
 on:
-  #workflow_dispatch:
+  workflow_dispatch:
 
-   schedule:
-    - cron: '30 05 * * *'  # runs at 5:30am UTC before generate plots
+  # schedule:
+  #  - cron: '30 05 * * *'  # runs at 5:30am UTC before generate plots
    
   # push:
     #  branches: [ fcre-eddyflux-data-qaqc ]
