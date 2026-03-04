@@ -7,6 +7,7 @@
 # 29 Sept. 2024- added in the water level to CCR
 # 09 Dec. 2024 - added in an if statment to read in BVR file because added back in the data logger header. Add print statment when plots printed. 
 # 06 Nov. 2025 - added a plot of the surface EXO depth to watch it especially as the water level changes
+# 04 Mar. 2026 - added in EddyFlux plots 
 
 continue_on_error <- function()
 {
@@ -25,9 +26,7 @@ options(timeout=500)
 
 download.file('https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-waterquality2.csv', 'ccre-waterquality.csv')
 download.file('https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-dam-data/ccre-met.csv', 'ccre-met.csv')
-
-
-
+download.file('https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/ccre-eddyflux-data-qaqc/CCRE_EddyFlux_streaming_L1.csv', 'Eddyflux.csv')
 
 #CCR met data
 
@@ -205,3 +204,154 @@ if (length(na.omit(ccrwaterdata$TIMESTAMP[ccrwaterdata$TIMESTAMP>start.time1]))<
   dev.off() #file made!
   print("CCR WQ file made with data")
 }
+
+### EddyFlux plots
+# Let's make the QAQC plots for streaming EddyFlux files
+
+# Read in the data file
+eflux<-read.csv("Eddyflux.csv") 
+
+# Make the datetime column
+eflux$datetime <- ymd_hms(paste0(eflux$date," ",eflux$time), tz="America/New_York")
+
+
+eflux <- eflux%>%
+  filter(grepl("^20", datetime))%>% #keep only the right TIMESTAMP rows 
+  distinct(datetime, .keep_all= TRUE) #taking out the duplicate values 
+
+end.time3 <- with_tz(as.POSIXct(strptime(Sys.time(), format = "%Y-%m-%d %H")), tzone = "America/New_York") #gives us current time with rounded minutes in EDT
+start.time3 <- end.time3 - days(7) #to give us seven days of data for looking at changes
+full_time3 <- as.data.frame(seq(start.time3, end.time3, by = "30 min")) #create sequence of dates from past 7 days to fill in data and make it a dataframe
+colnames(full_time3)=c("datetime") #make it a data frame to merge to make obs1 later
+
+
+if (length(na.omit(eflux$datetime[eflux$datetime>start.time3]))==0) { #if there is no data after start time, then a pdf will be made explaining this
+  pdf(paste0("CCRE_EddyFluxDataFigures_", Sys.Date(), ".pdf"), width=8.5, height=11) #call PDF file
+  plot(NA, xlim=c(0,5), ylim=c(0,5), bty='n',xaxt='n', yaxt='n', xlab='', ylab='') #creates empty plot
+  mtext(paste("No data found between", start.time2, "and", end.time2, sep = " ")) #fills in text in top margin of plot
+  dev.off() #file made!
+} else { #else, do normal data wrangling and plotting
+  
+  # Make the data frame for the last 7 days
+  obs6 <- merge(full_time3,eflux, all.x = TRUE)#merge the data frame to get the last 7 days
+  
+  
+  # Plots
+  pdf(paste0("CCRE_EddyFluxDataFigures_", Sys.Date(), ".pdf"), width=8.5, height=11) #call PDF file
+  
+  #Create the first page
+  plot(0:10, type = "n", xaxt="n", yaxt="n", bty="n", xlab = "", ylab = "")
+  
+  text(5, 8, "EC Data Fluxes in Carvins Cove Reservoir, Roanoke, VA")
+  text(5, 7, paste0("Start: ",obs6[1,'date']))
+  
+  
+  # Now the plots for the first page
+  p1=obs6 %>% 
+    ggplot(aes(datetime, ch4_flux_umolm2s)) + geom_point() + geom_line() + theme_bw()
+  
+  p2=obs6 %>% 
+    ggplot(aes(datetime, co2_flux_umolm2s)) + geom_point() + geom_line() + theme_bw()
+  
+  # CO2 and CH4 signal strength
+  
+  p3=obs6 %>% 
+    ggplot(aes(datetime, rssi_77_mean)) + geom_point() + geom_line() +
+    ylab("CH4 signal strength (%)")+
+    theme_bw()
+  
+  #CO2 signal changes when took out the 7200
+  if("co2_signal_strength_7200_mean" %in% names(obs6)) {
+    p4=obs6 %>% 
+      ggplot(aes(datetime, co2_signal_strength_7200_mean)) + geom_point() + geom_line() +
+      ylab("CO2 signal strength (%)")+
+      theme_bw()
+  } else {
+    p4=obs6 %>% 
+      ggplot(aes(datetime, co2_signal_strength_7500_mean)) + geom_point() + geom_line() +
+      ylab("CO2 signal strength (%)")+
+      theme_bw()
+  }
+  
+  #Smartflux voltage in 
+  p5=obs6 %>% 
+    ggplot(aes(datetime, vin_sf_mean)) + geom_point() +
+    theme_bw() +
+    geom_line() +
+    xlab(" ") +
+    ylab('Smartflux voltage (V)') +
+    scale_x_datetime(date_breaks = "1 days", date_labels = "%m-%d") 
+  theme(axis.text.x = element_text(size = 14, color = "black", angle = 60, hjust = 1),
+        axis.text.y = element_text(size = 14, color = "black"),
+        axis.title = element_text(size = 16, color = "black"))
+  
+  grid.arrange(p1,p2,p3,nrow=3)
+  
+  # plot ustar distribution, wind speed, windrose and temperature
+  # Create a histogram of u*
+  p6=obs6 %>% 
+    ggplot(aes(x=u_star_ms)) + geom_histogram()+
+    geom_histogram(color="black", fill="white")+
+    xlab('u star (m s^-1)')+
+    theme_bw()
+  
+  # Wind Speed U,V,W
+  p7=obs6 %>% 
+    ggplot(aes(datetime, u_var_ms)) + geom_point() + geom_line() +
+    ylab("U (m/s)")+
+    theme_bw()
+  p8=obs6 %>% 
+    ggplot(aes(datetime, v_var_ms)) + geom_point() + geom_line() +
+    ylab("V (m/s)")+
+    theme_bw()
+  p9=obs6 %>% 
+    ggplot(aes(datetime, w_var_ms)) + geom_point() + geom_line() +
+    ylab("W (m/s)")+
+    theme_bw()
+  
+  grid.arrange(p6,p7,p8,p9,nrow=4)
+  
+  # Visualize wind directions that 
+  chicago_wind=obs6%>%
+    select(datetime,wind_speed_ms,wind_dir)%>%
+    dplyr::rename(date = datetime, ws = wind_speed_ms, wd = wind_dir)
+  pollutionRose(chicago_wind, pollutant="ws")
+  
+  # Sonic Temperature
+  p10=obs6 %>% mutate(sonicC=sonic_temperature_k-273.15)%>%
+    ggplot(aes(datetime, sonicC)) + geom_point() + geom_line() +
+    ylab("Sonic Temperature (Degrees C)")+
+    theme_bw()
+  
+  # H and LE
+  p11=obs6 %>% 
+    ggplot(aes(datetime, H_wm2)) + geom_point() + 
+    ylab("Sensible heat flux (W m^(-2))")+
+    theme_bw()
+  
+  p12=obs6 %>% 
+    ggplot(aes(datetime, LE_wm2)) + geom_point() +
+    ylab("Latent heat flux (W m^(-2))")+
+    theme_bw()
+  
+  grid.arrange(p11,p12,nrow=2)
+  
+  # Flow Rate
+  if("flowrate_mean" %in% names(obs6)) {
+    p13=obs6 %>%
+      ggplot(aes(datetime, flowrate_mean*60000)) + geom_point() +
+      theme_bw() +
+      geom_line() +
+      xlab(" ") +
+      ylab('Flowrate (L min-1)') 
+  } else {
+    p13=obs6%>%
+      ggplot(aes(datetime,60000))+geom_blank()+theme_bw()+
+      labs(title="CO2 sensor is out for service and there is no flowrate")
+  }
+  grid.arrange(p10,p13,nrow=2)
+  
+  dev.off()
+  print("EddyFlux file made")
+}
+
