@@ -34,11 +34,11 @@ jobs:
 
       - name: Checkout files from the data branch
         run: |
-            # git config --global --add safe.directory "$GITHUB_WORKSPACE"
-            # git checkout ccre-eddyflux-data-qaqc
-            # git branch -v
-            git config --global --add safe.directory "$GITHUB_WORKSPACE"
-            git checkout ccre-eddyflux-data -- .
+             git config --global --add safe.directory "$GITHUB_WORKSPACE"
+             git checkout ccre-eddyflux-data-qaqc
+             git branch -v
+             git config --global --add safe.directory "$GITHUB_WORKSPACE"
+             git checkout ccre-eddyflux-data -- .
            
      # - name: Status
      #   run: |
