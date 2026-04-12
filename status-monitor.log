@@ -26608,3 +26608,94 @@
 04/12/26 08:25:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
 04/12/26 08:25:06 EST -0500 | rtt min/avg/max/mdev = 34.927/39.943/43.654/3.680 ms
 04/12/26 08:25:06 EST -0500 | ##########  END  ##########
+04/12/26 14:25:02 EST -0500 | ########## START ##########
+04/12/26 14:25:02 EST -0500 |  14:25:02 up 14:05,  0 users,  load average: 0.00, 0.00, 0.00
+04/12/26 14:25:02 EST -0500 | reboot   system boot  5.15.0-119-gener Sun Apr 12 00:19   still running
+04/12/26 14:25:02 EST -0500 | reboot   system boot  5.15.0-119-gener Sun Apr 12 00:10   still running
+04/12/26 14:25:02 EST -0500 | reboot   system boot  5.15.0-119-gener Sat Apr 11 00:19 - 00:10  (23:50)
+04/12/26 14:25:02 EST -0500 | reboot   system boot  5.15.0-119-gener Sat Apr 11 00:10 - 00:10  (23:59)
+04/12/26 14:25:02 EST -0500 | reboot   system boot  5.15.0-119-gener Fri Apr 10 00:19 - 00:10  (23:50)
+04/12/26 14:25:02 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+04/12/26 14:25:02 EST -0500 | Bus 001 Device 003: ID 1410:9030 Novatel Wireless MiFi USB730L
+04/12/26 14:25:02 EST -0500 | Bus 001 Device 002: ID 0781:cfcb SanDisk Corp. SDDR-B531
+04/12/26 14:25:02 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+04/12/26 14:25:02 EST -0500 | [    2.268593] cdc_ether 1-6:1.0 enx0015ff025968: renamed from eth1
+04/12/26 14:25:02 EST -0500 | [20451.490023] device nebula1 left promiscuous mode
+04/12/26 14:25:02 EST -0500 | [20456.224777] device nebula1 entered promiscuous mode
+04/12/26 14:25:02 EST -0500 | [24057.016706] device nebula1 entered promiscuous mode
+04/12/26 14:25:02 EST -0500 | [27652.879648] device nebula1 entered promiscuous mode
+04/12/26 14:25:02 EST -0500 | [31253.635513] device nebula1 entered promiscuous mode
+04/12/26 14:25:02 EST -0500 | [34854.423228] device nebula1 entered promiscuous mode
+04/12/26 14:25:02 EST -0500 | [38455.006057] device nebula1 entered promiscuous mode
+04/12/26 14:25:02 EST -0500 | [42055.917019] device nebula1 entered promiscuous mode
+04/12/26 14:25:02 EST -0500 | [45651.647316] device nebula1 entered promiscuous mode
+04/12/26 14:25:02 EST -0500 | [49252.404882] device nebula1 entered promiscuous mode
+04/12/26 14:25:02 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+04/12/26 14:25:02 EST -0500 | tmpfs                              776M  1.4M  774M   1% /run
+04/12/26 14:25:02 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   28G  9.5G   17G  37% /
+04/12/26 14:25:02 EST -0500 | tmpfs                              3.8G     0  3.8G   0% /dev/shm
+04/12/26 14:25:02 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+04/12/26 14:25:02 EST -0500 | /dev/nvme0n1                       229G  349M  217G   1% /data
+04/12/26 14:25:02 EST -0500 | /dev/sdb2                          2.0G  130M  1.7G   8% /boot
+04/12/26 14:25:02 EST -0500 | /dev/sdb1                          1.1G  6.1M  1.1G   1% /boot/efi
+04/12/26 14:25:02 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+04/12/26 14:25:02 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+04/12/26 14:25:02 EST -0500 |     inet 127.0.0.1/8 scope host lo
+04/12/26 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+04/12/26 14:25:02 EST -0500 |     inet6 ::1/128 scope host 
+04/12/26 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+04/12/26 14:25:02 EST -0500 | 2: eno1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+04/12/26 14:25:02 EST -0500 |     link/ether 00:01:c0:33:52:e8 brd ff:ff:ff:ff:ff:ff
+04/12/26 14:25:02 EST -0500 |     altname enp0s29f1
+04/12/26 14:25:02 EST -0500 | 3: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+04/12/26 14:25:02 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+04/12/26 14:25:02 EST -0500 |     inet 100.71.52.182/30 metric 100 brd 100.71.52.183 scope global dynamic enx0015ff025968
+04/12/26 14:25:02 EST -0500 |        valid_lft 6880sec preferred_lft 6880sec
+04/12/26 14:25:02 EST -0500 |     inet6 2600:1003:b85f:27c2:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+04/12/26 14:25:02 EST -0500 |        valid_lft 86394sec preferred_lft 14394sec
+04/12/26 14:25:02 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+04/12/26 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+04/12/26 14:25:02 EST -0500 | 4: eno2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+04/12/26 14:25:02 EST -0500 |     link/ether 00:01:c0:33:52:e9 brd ff:ff:ff:ff:ff:ff
+04/12/26 14:25:02 EST -0500 |     altname enp0s29f2
+04/12/26 14:25:02 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno2
+04/12/26 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+04/12/26 14:25:02 EST -0500 |     inet6 fe80::201:c0ff:fe33:52e9/64 scope link 
+04/12/26 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+04/12/26 14:25:02 EST -0500 | 5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+04/12/26 14:25:02 EST -0500 |     link/ether f2:ea:1d:29:f1:ba brd ff:ff:ff:ff:ff:ff
+04/12/26 14:25:02 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+04/12/26 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+04/12/26 14:25:02 EST -0500 | 20: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+04/12/26 14:25:02 EST -0500 |     link/none 
+04/12/26 14:25:02 EST -0500 |     inet 10.10.200.10/24 scope global nebula1
+04/12/26 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+04/12/26 14:25:02 EST -0500 |     inet6 fe80::c603:4682:6271:4630/64 scope link stable-privacy 
+04/12/26 14:25:02 EST -0500 |        valid_lft forever preferred_lft forever
+04/12/26 14:25:02 EST -0500 | Sun Apr 12 14:18:30 2026 [pid 440450] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1225 bytes, 12.41Kbyte/sec
+04/12/26 14:25:02 EST -0500 | Sun Apr 12 14:18:31 2026 [pid 440456] CONNECT: Client "::ffff:10.10.1.1"
+04/12/26 14:25:02 EST -0500 | Sun Apr 12 14:18:31 2026 [pid 440455] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+04/12/26 14:25:02 EST -0500 | Sun Apr 12 14:18:33 2026 [pid 440457] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1225 bytes, 13.06Kbyte/sec
+04/12/26 14:25:02 EST -0500 | Sun Apr 12 14:20:54 2026 [pid 441813] CONNECT: Client "::ffff:10.10.1.1"
+04/12/26 14:25:02 EST -0500 | Sun Apr 12 14:20:54 2026 [pid 441812] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+04/12/26 14:25:02 EST -0500 | Sun Apr 12 14:20:57 2026 [pid 441814] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality2.csv", 373 bytes, 10.87Kbyte/sec
+04/12/26 14:25:02 EST -0500 | Sun Apr 12 14:20:58 2026 [pid 441820] CONNECT: Client "::ffff:10.10.1.1"
+04/12/26 14:25:02 EST -0500 | Sun Apr 12 14:20:58 2026 [pid 441819] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+04/12/26 14:25:02 EST -0500 | Sun Apr 12 14:21:00 2026 [pid 441821] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality2.csv", 373 bytes, 10.81Kbyte/sec
+04/12/26 14:25:02 EST -0500 | PING github.com (140.82.112.3) 56(84) bytes of data.
+04/12/26 14:25:02 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=1 ttl=46 time=51.1 ms
+04/12/26 14:25:03 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=2 ttl=46 time=44.6 ms
+04/12/26 14:25:04 EST -0500 | 64 bytes from lb-140-82-112-3-iad.github.com (140.82.112.3): icmp_seq=3 ttl=46 time=45.8 ms
+04/12/26 14:25:04 EST -0500 | 
+04/12/26 14:25:04 EST -0500 | --- github.com ping statistics ---
+04/12/26 14:25:04 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+04/12/26 14:25:04 EST -0500 | rtt min/avg/max/mdev = 44.632/47.187/51.100/2.809 ms
+04/12/26 14:25:04 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+04/12/26 14:25:04 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=40.8 ms
+04/12/26 14:25:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=59.6 ms
+04/12/26 14:25:06 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=113 time=42.7 ms
+04/12/26 14:25:06 EST -0500 | 
+04/12/26 14:25:06 EST -0500 | --- 8.8.8.8 ping statistics ---
+04/12/26 14:25:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+04/12/26 14:25:06 EST -0500 | rtt min/avg/max/mdev = 40.840/47.722/59.637/8.458 ms
+04/12/26 14:25:06 EST -0500 | ##########  END  ##########
