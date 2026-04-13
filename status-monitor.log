@@ -26960,3 +26960,94 @@
 04/13/26 00:20:27 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
 04/13/26 00:20:27 EST -0500 | rtt min/avg/max/mdev = 41.154/46.193/49.548/3.627 ms
 04/13/26 00:20:27 EST -0500 | ##########  END  ##########
+04/13/26 00:25:01 EST -0500 | ########## START ##########
+04/13/26 00:25:01 EST -0500 |  00:25:01 up 5 min,  0 users,  load average: 0.01, 0.10, 0.06
+04/13/26 00:25:01 EST -0500 | reboot   system boot  5.15.0-119-gener Mon Apr 13 00:19   still running
+04/13/26 00:25:01 EST -0500 | reboot   system boot  5.15.0-119-gener Mon Apr 13 00:10   still running
+04/13/26 00:25:01 EST -0500 | reboot   system boot  5.15.0-119-gener Sun Apr 12 00:19 - 00:10  (23:50)
+04/13/26 00:25:01 EST -0500 | reboot   system boot  5.15.0-119-gener Sun Apr 12 00:10 - 00:10  (23:59)
+04/13/26 00:25:01 EST -0500 | reboot   system boot  5.15.0-119-gener Sat Apr 11 00:19 - 00:10  (23:50)
+04/13/26 00:25:01 EST -0500 | Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+04/13/26 00:25:01 EST -0500 | Bus 001 Device 003: ID 1410:9030 Novatel Wireless MiFi USB730L
+04/13/26 00:25:01 EST -0500 | Bus 001 Device 002: ID 0781:cfcb SanDisk Corp. SDDR-B531
+04/13/26 00:25:01 EST -0500 | Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+04/13/26 00:25:01 EST -0500 | [    2.262508] cdc_ether 1-6:1.0 enx0015ff025968: renamed from eth0
+04/13/26 00:25:01 EST -0500 | [   10.884769] intel-eth-pci 0000:00:1d.1 eno1: configuring for inband/sgmii link mode
+04/13/26 00:25:01 EST -0500 | [   14.911054] intel-eth-pci 0000:00:1d.2 eno2: Link is Up - 1Gbps/Full - flow control rx/tx
+04/13/26 00:25:01 EST -0500 | [   14.911093] IPv6: ADDRCONF(NETDEV_CHANGE): eno2: link becomes ready
+04/13/26 00:25:01 EST -0500 | [   15.303241] loop0: detected capacity change from 0 to 8
+04/13/26 00:25:01 EST -0500 | [   15.734558] audit: type=1400 audit(1776057566.680:11): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=1631 comm="apparmor_parser"
+04/13/26 00:25:01 EST -0500 | [   15.753089] audit: type=1400 audit(1776057566.700:12): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1631 comm="apparmor_parser"
+04/13/26 00:25:01 EST -0500 | [   18.628839] audit: type=1400 audit(1776057569.576:13): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=1676 comm="apparmor_parser"
+04/13/26 00:25:01 EST -0500 | [   19.445882] Initializing XFRM netlink socket
+04/13/26 00:25:01 EST -0500 | [   19.839632] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+04/13/26 00:25:01 EST -0500 | [  104.565797] device nebula1 entered promiscuous mode
+04/13/26 00:25:01 EST -0500 | Filesystem                         Size  Used Avail Use% Mounted on
+04/13/26 00:25:01 EST -0500 | tmpfs                              776M  1.4M  774M   1% /run
+04/13/26 00:25:01 EST -0500 | /dev/mapper/ubuntu--vg-ubuntu--lv   28G  9.5G   17G  37% /
+04/13/26 00:25:01 EST -0500 | tmpfs                              3.8G     0  3.8G   0% /dev/shm
+04/13/26 00:25:01 EST -0500 | tmpfs                              5.0M     0  5.0M   0% /run/lock
+04/13/26 00:25:01 EST -0500 | /dev/nvme0n1                       229G  349M  217G   1% /data
+04/13/26 00:25:01 EST -0500 | /dev/sdb2                          2.0G  130M  1.7G   8% /boot
+04/13/26 00:25:01 EST -0500 | /dev/sdb1                          1.1G  6.1M  1.1G   1% /boot/efi
+04/13/26 00:25:01 EST -0500 | 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+04/13/26 00:25:01 EST -0500 |     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+04/13/26 00:25:01 EST -0500 |     inet 127.0.0.1/8 scope host lo
+04/13/26 00:25:01 EST -0500 |        valid_lft forever preferred_lft forever
+04/13/26 00:25:01 EST -0500 |     inet6 ::1/128 scope host 
+04/13/26 00:25:01 EST -0500 |        valid_lft forever preferred_lft forever
+04/13/26 00:25:01 EST -0500 | 2: eno1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+04/13/26 00:25:01 EST -0500 |     link/ether 00:01:c0:33:52:e8 brd ff:ff:ff:ff:ff:ff
+04/13/26 00:25:01 EST -0500 |     altname enp0s29f1
+04/13/26 00:25:01 EST -0500 | 3: eno2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+04/13/26 00:25:01 EST -0500 |     link/ether 00:01:c0:33:52:e9 brd ff:ff:ff:ff:ff:ff
+04/13/26 00:25:01 EST -0500 |     altname enp0s29f2
+04/13/26 00:25:01 EST -0500 |     inet 10.10.1.2/24 brd 10.10.1.255 scope global eno2
+04/13/26 00:25:01 EST -0500 |        valid_lft forever preferred_lft forever
+04/13/26 00:25:01 EST -0500 |     inet6 fe80::201:c0ff:fe33:52e9/64 scope link 
+04/13/26 00:25:01 EST -0500 |        valid_lft forever preferred_lft forever
+04/13/26 00:25:01 EST -0500 | 4: enx0015ff025968: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+04/13/26 00:25:01 EST -0500 |     link/ether 00:15:ff:02:59:68 brd ff:ff:ff:ff:ff:ff
+04/13/26 00:25:01 EST -0500 |     inet 100.76.177.14/30 metric 100 brd 100.76.177.15 scope global dynamic enx0015ff025968
+04/13/26 00:25:01 EST -0500 |        valid_lft 6892sec preferred_lft 6892sec
+04/13/26 00:25:01 EST -0500 |     inet6 2600:1003:b867:5c95:215:ffff:fe02:5968/64 scope global dynamic mngtmpaddr noprefixroute 
+04/13/26 00:25:01 EST -0500 |        valid_lft 86367sec preferred_lft 14367sec
+04/13/26 00:25:01 EST -0500 |     inet6 fe80::215:ffff:fe02:5968/64 scope link 
+04/13/26 00:25:01 EST -0500 |        valid_lft forever preferred_lft forever
+04/13/26 00:25:01 EST -0500 | 5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+04/13/26 00:25:01 EST -0500 |     link/ether 5a:d1:e4:a5:cf:65 brd ff:ff:ff:ff:ff:ff
+04/13/26 00:25:01 EST -0500 |     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+04/13/26 00:25:01 EST -0500 |        valid_lft forever preferred_lft forever
+04/13/26 00:25:01 EST -0500 | 6: nebula1: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1300 qdisc fq_codel state UNKNOWN group default qlen 500
+04/13/26 00:25:01 EST -0500 |     link/none 
+04/13/26 00:25:01 EST -0500 |     inet 10.10.200.10/24 scope global nebula1
+04/13/26 00:25:01 EST -0500 |        valid_lft forever preferred_lft forever
+04/13/26 00:25:01 EST -0500 |     inet6 fe80::a3e5:ad8:79cc:2663/64 scope link stable-privacy 
+04/13/26 00:25:01 EST -0500 |        valid_lft forever preferred_lft forever
+04/13/26 00:25:01 EST -0500 | Mon Apr 13 00:19:29 2026 [pid 1643] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-met.csv", 1302 bytes, 10.76Kbyte/sec
+04/13/26 00:25:01 EST -0500 | Mon Apr 13 00:19:30 2026 [pid 1679] CONNECT: Client "::ffff:10.10.1.1"
+04/13/26 00:25:01 EST -0500 | Mon Apr 13 00:19:30 2026 [pid 1678] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+04/13/26 00:25:01 EST -0500 | Mon Apr 13 00:19:32 2026 [pid 1684] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-met.csv", 1302 bytes, 13.48Kbyte/sec
+04/13/26 00:25:01 EST -0500 | Mon Apr 13 00:20:53 2026 [pid 4762] CONNECT: Client "::ffff:10.10.1.1"
+04/13/26 00:25:01 EST -0500 | Mon Apr 13 00:20:53 2026 [pid 4761] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+04/13/26 00:25:01 EST -0500 | Mon Apr 13 00:20:55 2026 [pid 4786] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-data/ccre-waterquality2.csv", 375 bytes, 10.90Kbyte/sec
+04/13/26 00:25:01 EST -0500 | Mon Apr 13 00:20:56 2026 [pid 4847] CONNECT: Client "::ffff:10.10.1.1"
+04/13/26 00:25:01 EST -0500 | Mon Apr 13 00:20:56 2026 [pid 4846] [ftpuser] OK LOGIN: Client "::ffff:10.10.1.1"
+04/13/26 00:25:01 EST -0500 | Mon Apr 13 00:20:58 2026 [pid 4848] [ftpuser] OK UPLOAD: Client "::ffff:10.10.1.1", "/data/datalogger-raw-data/ccre-waterquality2.csv", 375 bytes, 10.86Kbyte/sec
+04/13/26 00:25:01 EST -0500 | PING github.com (140.82.114.4) 56(84) bytes of data.
+04/13/26 00:25:01 EST -0500 | 64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=1 ttl=46 time=32.2 ms
+04/13/26 00:25:02 EST -0500 | 64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=2 ttl=46 time=40.2 ms
+04/13/26 00:25:03 EST -0500 | 64 bytes from lb-140-82-114-4-iad.github.com (140.82.114.4): icmp_seq=3 ttl=46 time=39.9 ms
+04/13/26 00:25:03 EST -0500 | 
+04/13/26 00:25:03 EST -0500 | --- github.com ping statistics ---
+04/13/26 00:25:03 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+04/13/26 00:25:03 EST -0500 | rtt min/avg/max/mdev = 32.165/37.410/40.205/3.711 ms
+04/13/26 00:25:03 EST -0500 | PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+04/13/26 00:25:03 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=1 ttl=113 time=33.1 ms
+04/13/26 00:25:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=2 ttl=113 time=74.0 ms
+04/13/26 00:25:05 EST -0500 | 64 bytes from 8.8.8.8: icmp_seq=3 ttl=113 time=40.9 ms
+04/13/26 00:25:05 EST -0500 | 
+04/13/26 00:25:06 EST -0500 | --- 8.8.8.8 ping statistics ---
+04/13/26 00:25:06 EST -0500 | 3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+04/13/26 00:25:06 EST -0500 | rtt min/avg/max/mdev = 33.077/49.326/74.017/17.747 ms
+04/13/26 00:25:06 EST -0500 | ##########  END  ##########
