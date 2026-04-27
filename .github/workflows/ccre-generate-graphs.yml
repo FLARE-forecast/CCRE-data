@@ -41,6 +41,21 @@ jobs:
       - name: Create ~/rlib directory
         run: mkdir -p ~/rlib
 
+      - name: Install system dependencies for tidyverse
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y \
+            libcurl4-openssl-dev \
+            libssl-dev \
+            libxml2-dev \
+            libfontconfig1-dev \
+            libharfbuzz-dev \
+            libfribidi-dev \
+            libfreetype6-dev \
+            libpng-dev \
+            libtiff5-dev \
+            libjpeg-dev
+
       - name: Install packages to ~/rlib
         run: |
           Rscript -e '
