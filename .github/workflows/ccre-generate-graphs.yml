@@ -28,8 +28,10 @@ jobs:
             libpng-dev \
             libtiff5-dev \
             libjpeg-dev \
+            libwebp-dev \
             libharfbuzz-dev \
             libfribidi-dev \
+            libuv1-dev \
             libcurl4-openssl-dev \
             libssl-dev \
             libxml2-dev
