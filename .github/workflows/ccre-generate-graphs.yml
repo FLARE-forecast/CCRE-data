@@ -46,6 +46,7 @@ jobs:
   
       - name: Install packages to ~/rlib
         run: |
+          rm -rf ~/rlib/00LOCK-*
           Rscript -e '
             .libPaths("~/rlib")
             packages <- c("lubridate", "gridExtra","readr" , "openair", "ggplot2", "forcats", "gridExtra", "ggpubr", "tidyverse")
