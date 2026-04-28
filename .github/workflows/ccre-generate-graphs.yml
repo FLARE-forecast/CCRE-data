@@ -43,26 +43,12 @@ jobs:
       - name: Create ~/rlib directory
         run: mkdir -p ~/rlib
 
-      - name: Install system dependencies for tidyverse
-        run: |
-          sudo apt-get update -y
-          sudo apt-get install -y \
-            libcurl4-openssl-dev \
-            libssl-dev \
-            libxml2-dev \
-            libfontconfig1-dev \
-            libharfbuzz-dev \
-            libfribidi-dev \
-            libfreetype6-dev \
-            libpng-dev \
-            libtiff5-dev \
-            libjpeg-dev
-
+  
       - name: Install packages to ~/rlib
         run: |
           Rscript -e '
             .libPaths("~/rlib")
-            packages <- c("lubridate", "gridExtra", "openair", "ggplot2", "forcats", "gridExtra", "ggpubr", "tidyverse")
+            packages <- c("lubridate", "gridExtra","readr" , "openair", "ggplot2", "forcats", "gridExtra", "ggpubr", "tidyverse")
             install_if_missing <- function(pkg) {
               if (!require(pkg, character.only = TRUE))
                 install.packages(pkg, lib = "~/rlib", repos = "https://cloud.r-project.org")
