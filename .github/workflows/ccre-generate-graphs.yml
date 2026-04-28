@@ -1,33 +1,18 @@
 name: ccre-generate-graphs
 
-# Controls when the action will run.
 on:
   schedule:
     - cron: '00 06 * * *'
   workflow_dispatch:
   workflow_run:
-    workflows: ["Generate Graphs"]  # Replace with your actual workflow name
+    workflows: ["Generate Graphs"]
     types:
       - completed
 
-jobs: 
+jobs:
   generate-graphs:
-    # The type of runner that the job will run on
     runs-on: self-hosted
 
-    # # Specify retry settings with delays
-    # strategy:
-    #   fail-fast: false
-    #   matrix:
-    #     max-retries: [5]  # Number of retries
-    #     retry-delay-seconds: [15, 60, 300, 1800, 7200]  # Delays between retries in seconds
-
-        # Wrap the job in a strategy matrix for retries
-    # strategy:
-    #   matrix:
-    #     max-retries: [0, 1, 2]  # Adjust the number of retries as needed
-
-    # Load repo and install R
     steps:
       - name: Checkout with ccre-generate-graphs branch
         uses: actions/checkout@v2
@@ -35,52 +20,74 @@ jobs:
           ref: ccre-generate-graphs
           fetch-depth: 1
 
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libfreetype6-dev \
+            libpng-dev \
+            libtiff5-dev \
+            libjpeg-dev \
+            libharfbuzz-dev \
+            libfribidi-dev \
+            libcurl4-openssl-dev \
+            libssl-dev \
+            libxml2-dev
+
       - name: Set Up R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: '4.5.3'
+          r-version: '4.4.0'   
 
       - name: Create ~/rlib directory
         run: mkdir -p ~/rlib
-
-  
-      - name: Install packages to ~/rlib
+      
+      - name: Install R packages
         run: |
           rm -rf ~/rlib/00LOCK-*
           Rscript -e '
             .libPaths("~/rlib")
-            packages <- c("lubridate", "gridExtra","readr" , "openair", "ggplot2", "forcats", "gridExtra", "ggpubr", "tidyverse")
-            install_if_missing <- function(pkg) {
-              if (!require(pkg, character.only = TRUE))
-                install.packages(pkg, lib = "~/rlib", repos = "https://cloud.r-project.org")
-            }
-            invisible(lapply(packages, install_if_missing))
+            install.packages("pacman", lib="~/rlib", repos="https://cloud.r-project.org")
+            library(pacman)
+            p_load(
+              Rcpp,
+              generics,
+              lubridate,
+              dplyr,
+              ggplot2,
+              tidyr,
+              purrr,
+              forcats,
+              gridExtra,
+              openair,
+              magrittr,
+              lib = "~/rlib"
+            )
           '
         env:
           R_LIBS: ~/rlib
 
-
-      - name: Run R Script with custom lib path
+      - name: Run R Script
         run: Rscript ccre-generate-graphs.R
         env:
           R_LIBS: ~/rlib
 
-      - name: Run R Script to make manager plot with custom lib path
+      - name: Run R Script to make manager plot
         run: Rscript ccre-generate-managers-graphs.R
         env:
           R_LIBS: ~/rlib
 
-      # Commit files ,and push
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add CCRMetDataFigures_$(date '+%Y-%m-%d').pdf \
-          CCRWaterQualityDataFigures_$(date '+%Y-%m-%d').pdf \
-          CCRWQ_Managers_DataFigures_$(date '+%Y-%m-%d').pdf \
-          CCRE_EddyFluxDataFigures_$(date '+%Y-%m-%d').pdf 
+          git add \
+            CCRMetDataFigures_$(date '+%Y-%m-%d').pdf \
+            CCRWaterQualityDataFigures_$(date '+%Y-%m-%d').pdf \
+            CCRWQ_Managers_DataFigures_$(date '+%Y-%m-%d').pdf \
+            CCRE_EddyFluxDataFigures_$(date '+%Y-%m-%d').pdf
           git commit -m "ccre-generate-graphs-$(date '+%Y-%m-%d')"
-          git branch ccre-graphs
+          git branch -f ccre-graphs
           git push --force origin ccre-graphs
       
   send-mail:
