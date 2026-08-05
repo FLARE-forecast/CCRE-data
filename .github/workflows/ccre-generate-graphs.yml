@@ -78,6 +78,7 @@ jobs:
         run: Rscript ccre-generate-managers-graphs.R
         env:
           R_LIBS: ~/rlib
+          EDI_ACCESS_KEY: ${{ secrets.EDI_ACCESS_KEY }}
 
       - name: Commit files
         run: |
