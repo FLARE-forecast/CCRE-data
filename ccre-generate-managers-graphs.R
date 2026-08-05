@@ -27,6 +27,9 @@ options(error=continue_on_error)
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tidyverse, plotly, forcats, gridExtra, ggpubr)
 
+## set EDI API Key
+edi_access_key = Sys.getenv('EDI_ACCESS_KEY')
+
 
 # Read in the L1 file
 
@@ -37,7 +40,7 @@ ccr_L1 <- read_csv("https://raw.githubusercontent.com/FLARE-forecast/CCRE-data/r
 
 # historical EDI data- have to update each year with the new link. 
 
-EDI_data <- read_csv("https://pasta.lternet.edu/package/data/eml/edi/1069/4/42e6d8bb3d379d40a4a4fb566d4ff36e")
+EDI_data <- read_csv(paste0("https://pasta.lternet.edu/package/data/eml/edi/1069/4/42e6d8bb3d379d40a4a4fb566d4ff36e?key=", edi_access_key))
 
 # internet slow downloaded and read in data
 #EDI_data <- read_csv("ccre-waterquality_2021_2024.csv")
