@@ -1,14 +1,15 @@
 #install.packages("EDIutils")
 #install.packages("xml2")
 #install.packages("here")
-library(tidyverse)
-library(EDIutils)
-library(xml2)
-library(lubridate)
+#library(tidyverse)
+#library(EDIutils)
+#library(xml2)
+#library(lubridate)
 
 #install.packages('suncalc')
-library(suncalc)
+#library(suncalc)
 
+pacman::p_load(tidyverse, EDIutils, xml2, lubridate, suncalc)
 
 home_directory <- here::here()
 setwd(home_directory)
