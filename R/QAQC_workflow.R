@@ -15,6 +15,9 @@ library(devtools)
 home_directory <- here::here()
 setwd(home_directory)
 
+edi_access_key = Sys.getenv("EDI_ACCESS_KEY")
+login(key = edi_access_key)
+
 ### pull in QAQC function directly from EDI -- keep for now, but will need to update the function
 #source('https://portal-s.edirepository.org/nis/dataviewer?packageid=edi.157.25&entityid=0531eb02833855f84d0b3b54c41ec61e')
 
