@@ -163742,3 +163742,33 @@ Completed at 08/17/23 12:24:22 EST
 08/11/26 00:12:54 EST -0500 | error: failed to push some refs to 'github.com:FLARE-forecast/CCRE-data.git'
 08/11/26 00:12:54 EST -0500 | hint: Updates were rejected because the remote contains work that you do
 08/11/26 00:12:54 EST -0500 | hint: not have locally. This is usually caused by another repository pushing
+08/11/26 00:12:54 EST -0500 | hint: to the same ref. You may want to first integrate the remote changes
+08/11/26 00:12:54 EST -0500 | hint: (e.g., 'git pull ...') before pushing again.
+08/11/26 00:12:54 EST -0500 | hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+08/11/26 00:12:54 EST -0500 | Failed to push: 9d990c8ef97d13e376ae8cf8f546c7d7b4b96faa
+08/11/26 00:12:54 EST -0500 | Processing: /data/annie-logs
+08/11/26 00:12:55 EST -0500 | [annie-logs ab445fe] Tue 2026-08-11 00:12:54 EST
+08/11/26 00:12:55 EST -0500 |  3 files changed, 117 insertions(+)
+08/11/26 00:12:55 EST -0500 | Found unpushed commit(s).
+08/11/26 00:12:59 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/11/26 00:12:59 EST -0500 |    d2186ea..ab445fe  ab445fe6e28543ce5af5b3355415a7f7b6d45524 -> annie-logs
+08/11/26 00:12:59 EST -0500 | Successfully pushed: ab445fe6e28543ce5af5b3355415a7f7b6d45524
+08/11/26 00:12:59 EST -0500 | Processing: /data/ccre-eddyflux-data
+08/11/26 00:12:59 EST -0500 | [ccre-eddyflux-data 5067024] Tue 2026-08-11 00:12:59 EST
+08/11/26 00:12:59 EST -0500 |  2 files changed, 50 insertions(+)
+08/11/26 00:12:59 EST -0500 |  create mode 100755 2026-08-11_AIU-1657_EP-Summary.txt
+08/11/26 00:12:59 EST -0500 | Found unpushed commit(s).
+08/11/26 00:13:01 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/11/26 00:13:01 EST -0500 |    41d90b9..5067024  506702457cc359d982f6e663f8f29200cf7e2f59 -> ccre-eddyflux-data
+08/11/26 00:13:01 EST -0500 | Successfully pushed: 506702457cc359d982f6e663f8f29200cf7e2f59
+08/11/26 00:13:01 EST -0500 | ##########  END  ##########
+08/11/26 00:13:13 EST -0500 | ########## START ##########
+08/11/26 00:13:13 EST -0500 | Processing: /data/ccre-dam-data
+08/11/26 00:13:13 EST -0500 | On branch ccre-dam-data
+08/11/26 00:13:13 EST -0500 | Your branch is ahead of 'origin/ccre-dam-data' by 22 commits.
+08/11/26 00:13:13 EST -0500 |   (use "git push" to publish your local commits)
+08/11/26 00:13:13 EST -0500 | 
+08/11/26 00:13:13 EST -0500 | nothing to commit, working tree clean
+08/11/26 00:13:13 EST -0500 | Found unpushed commit(s).
+08/11/26 00:13:14 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+08/11/26 00:13:14 EST -0500 |  ! [rejected]        9d990c8ef97d13e376ae8cf8f546c7d7b4b96faa -> ccre-dam-data (fetch first)
