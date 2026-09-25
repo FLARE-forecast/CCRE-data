@@ -174290,3 +174290,31 @@ Completed at 08/17/23 12:24:22 EST
 09/25/26 00:23:38 EST -0500 | fatal: Could not read from remote repository.
 09/25/26 00:23:38 EST -0500 | 
 09/25/26 00:23:38 EST -0500 | Please make sure you have the correct access rights
+09/25/26 00:23:38 EST -0500 | and the repository exists.
+09/25/26 00:23:38 EST -0500 | Failed to push: d83e432d85c12d61692bfabbf0a7ee6c420d6e36
+09/25/26 00:23:38 EST -0500 | Processing: /data/annie-logs
+09/25/26 00:23:39 EST -0500 | [annie-logs 114772c] Fri 2026-09-25 00:23:38 EST
+09/25/26 00:23:39 EST -0500 |  2 files changed, 100 insertions(+)
+09/25/26 00:23:39 EST -0500 | Found unpushed commit(s).
+09/25/26 00:23:59 EST -0500 | ssh: Could not resolve hostname github.com: Temporary failure in name resolution
+09/25/26 00:23:59 EST -0500 | fatal: Could not read from remote repository.
+09/25/26 00:23:59 EST -0500 | 
+09/25/26 00:23:59 EST -0500 | Please make sure you have the correct access rights
+09/25/26 00:23:59 EST -0500 | and the repository exists.
+09/25/26 00:23:59 EST -0500 | Failed to push: 114772c1e3835a91d27aab595a97823d8c9a0fcb
+09/25/26 00:23:59 EST -0500 | Processing: /data/ccre-eddyflux-data
+09/25/26 00:23:59 EST -0500 | On branch ccre-eddyflux-data
+09/25/26 00:23:59 EST -0500 | Your branch is up to date with 'origin/ccre-eddyflux-data'.
+09/25/26 00:23:59 EST -0500 | 
+09/25/26 00:23:59 EST -0500 | nothing to commit, working tree clean
+09/25/26 00:23:59 EST -0500 | ##########  END  ##########
+09/25/26 00:24:14 EST -0500 | ########## START ##########
+09/25/26 00:24:14 EST -0500 | Processing: /data/ccre-dam-data
+09/25/26 00:24:14 EST -0500 | On branch ccre-dam-data
+09/25/26 00:24:14 EST -0500 | Your branch is ahead of 'origin/ccre-dam-data' by 1 commit.
+09/25/26 00:24:14 EST -0500 |   (use "git push" to publish your local commits)
+09/25/26 00:24:14 EST -0500 | 
+09/25/26 00:24:14 EST -0500 | nothing to commit, working tree clean
+09/25/26 00:24:14 EST -0500 | Found unpushed commit(s).
+09/25/26 00:24:30 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+09/25/26 00:24:30 EST -0500 |    bcd4d0e..d83e432  d83e432d85c12d61692bfabbf0a7ee6c420d6e36 -> ccre-dam-data
