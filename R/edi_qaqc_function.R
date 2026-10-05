@@ -464,7 +464,7 @@ qaqc_ccr <- function(data_file = "https://raw.githubusercontent.com/FLARE-foreca
   #Flag the data that was removed with 2 for outliers
   ccrwater[which(ccrwater$EXODepth_m_9 < 6),exo_flag9]<- 2
   #Change the EXO data to NAs when the EXO is above 6m and not due to maintenance
-  ccrwater[which(ccrwater$EXODepth_m_9 < 6), exo_idx9] <- NA
+  #ccrwater[which(ccrwater$EXODepth_m_9 < 6), exo_idx9] <- NA  ## COME BACK TO THIS (SHALLOW WATER DEPTH ISSUE)
   
   
   # Flag the EXO data when the wiper isn't parked in the right position because it could be on the sensor when taking a reading
