@@ -4,6 +4,7 @@
 # Edit:
 # 11 Jan 2026 - added a filter to the L1 data for only the current year. 
 # 26 Jan 2026 - updated the EDI link with 2025 data. 
+# 07 Oct 2026 - Updated the water level with a labeled observation
 
 # These are plots made by A. Breef-Pilz with the help of Eric Powers from the WVWA. This script uses the L1 files and the EDI published files. The link to the EDI data needs to be updated each year after the data are published. 
 
@@ -60,12 +61,20 @@ DOY_current <- ccr_L1|>
          Elevation_ft = (mean_LvlPressure_psi_13 * 2.34)+1104.85,
          ddate = as.Date(DOY-1)) # make the DOY into a date but it is off by 1 so subtract and then convert it into a date format. This way they all have the same year and will stack on top of one another)
 
+# Isolate the last observation
+depth_data <- tail(DOY_current, n = 1)
+
 
 # relate pressure to historical water level observations 
 
 # Make the plot. Clean up aesthetics later
-Press_plot <- ggplot(DOY_current, aes(x = Date, y = Elevation_ft))+
-  geom_line(linewidth = 1.5, lineend = "round")+
+Press_plot <- ggplot() +
+  geom_label(
+    data=depth_data,
+    aes(x = Date, y = Elevation_ft, label=round(Elevation_ft, digits = 1)), 
+    nudge_x = 17
+  ) +
+  geom_line(data = DOY_current, aes(x = Date, y = Elevation_ft), linewidth = 1.5, lineend = "round") +
   scale_y_continuous(limits = c(1120, 1180),
                      n.breaks = 6) + 
   scale_x_date(date_breaks = "month", date_labels = "%b") +
@@ -75,7 +84,6 @@ Press_plot <- ggplot(DOY_current, aes(x = Date, y = Elevation_ft))+
   theme(plot.title = element_text(hjust = 0.5))
 
 Press_plot
-
 # Make the plots of historical min and max over current observation
 
 # clean up the data frame and take only the varaibles we want and get daily average
