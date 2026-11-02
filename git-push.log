@@ -183463,3 +183463,34 @@ Completed at 08/17/23 12:24:22 EST
 11/02/26 00:23:56 EST -0500 | 
 11/02/26 00:23:56 EST -0500 | Please make sure you have the correct access rights
 11/02/26 00:23:56 EST -0500 | and the repository exists.
+11/02/26 00:23:56 EST -0500 | Failed to push: dc6f63bb688543638d9ee2393654fd9420590e7f
+11/02/26 00:23:56 EST -0500 | Processing: /data/annie-logs
+11/02/26 00:23:57 EST -0500 | [annie-logs b0b0dd8] Mon 2026-11-02 00:23:56 EST
+11/02/26 00:23:57 EST -0500 |  2 files changed, 101 insertions(+)
+11/02/26 00:23:57 EST -0500 | Found unpushed commit(s).
+11/02/26 00:24:17 EST -0500 | ssh: Could not resolve hostname github.com: Temporary failure in name resolution
+11/02/26 00:24:17 EST -0500 | fatal: Could not read from remote repository.
+11/02/26 00:24:17 EST -0500 | 
+11/02/26 00:24:17 EST -0500 | Please make sure you have the correct access rights
+11/02/26 00:24:17 EST -0500 | and the repository exists.
+11/02/26 00:24:17 EST -0500 | Failed to push: b0b0dd8120faf8d4900f6960fb94c430d30fbe78
+11/02/26 00:24:17 EST -0500 | Processing: /data/ccre-eddyflux-data
+11/02/26 00:24:17 EST -0500 | On branch ccre-eddyflux-data
+11/02/26 00:24:17 EST -0500 | Your branch is up to date with 'origin/ccre-eddyflux-data'.
+11/02/26 00:24:17 EST -0500 | 
+11/02/26 00:24:17 EST -0500 | nothing to commit, working tree clean
+11/02/26 00:24:17 EST -0500 | ##########  END  ##########
+11/02/26 00:24:35 EST -0500 | ########## START ##########
+11/02/26 00:24:35 EST -0500 | Processing: /data/ccre-dam-data
+11/02/26 00:24:35 EST -0500 | On branch ccre-dam-data
+11/02/26 00:24:35 EST -0500 | Your branch is ahead of 'origin/ccre-dam-data' by 1 commit.
+11/02/26 00:24:35 EST -0500 |   (use "git push" to publish your local commits)
+11/02/26 00:24:35 EST -0500 | 
+11/02/26 00:24:35 EST -0500 | nothing to commit, working tree clean
+11/02/26 00:24:35 EST -0500 | Found unpushed commit(s).
+11/02/26 00:24:41 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+11/02/26 00:24:41 EST -0500 | remote: warning: File ccre-met.csv is 53.45 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+11/02/26 00:24:41 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+11/02/26 00:24:42 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+11/02/26 00:24:42 EST -0500 |    bbcec9b..dc6f63b  dc6f63bb688543638d9ee2393654fd9420590e7f -> ccre-dam-data
+11/02/26 00:24:42 EST -0500 | Successfully pushed: dc6f63bb688543638d9ee2393654fd9420590e7f
