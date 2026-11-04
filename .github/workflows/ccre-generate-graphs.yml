@@ -52,6 +52,7 @@ jobs:
             install.packages("pacman", lib="~/rlib", repos="https://cloud.r-project.org")
             library(pacman)
             p_load(
+              arrow,
               Rcpp,
               generics,
               lubridate,
@@ -59,6 +60,7 @@ jobs:
               ggplot2,
               tidyr,
               purrr,
+              furrr
               forcats,
               gridExtra,
               openair,
@@ -80,6 +82,13 @@ jobs:
           R_LIBS: ~/rlib
           EDI_ACCESS_KEY: ${{ secrets.EDI_ACCESS_KEY }}
 
+      - name: Run R Script to make Saw Mill Branch plots
+        run: Rscript Daily_email_SawMillBranch.R
+        env: 
+          R_LIBS: ~/rlib
+          AWS_ACCESS_KEY_ID: ${{ secrets.MW_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.MW_ACCESS_SECRET }}
+
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -88,7 +97,8 @@ jobs:
             CCRMetDataFigures_$(date '+%Y-%m-%d').pdf \
             CCRWaterQualityDataFigures_$(date '+%Y-%m-%d').pdf \
             CCRWQ_Managers_DataFigures_$(date '+%Y-%m-%d').pdf \
-            CCRE_EddyFluxDataFigures_$(date '+%Y-%m-%d').pdf
+            CCRE_EddyFluxDataFigures_$(date '+%Y-%m-%d').pdf \
+            SawMillBranchDataFigures_$(date '+%Y-%m-%d').pdf
           git commit -m "ccre-generate-graphs-$(date '+%Y-%m-%d')"
           git branch -f ccre-graphs
           git push --force origin ccre-graphs
