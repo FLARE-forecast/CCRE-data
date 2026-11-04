@@ -60,7 +60,7 @@ jobs:
               ggplot2,
               tidyr,
               purrr,
-              furrr
+              furrr,
               forcats,
               gridExtra,
               openair,
