@@ -79,7 +79,7 @@ fetch_parse <- function(key) {
 key <- arrow::s3_bucket("cef-carvins-streams", region = "us-east-2")$ls("/CCR_301_SawMill/WaterLevel/", recursive = T)|>
    str_subset("PUT") 
 
-plan(multisession, workers = 8)
+plan(multisession, workers = 4)
 
 # use the function and future_map to read in the json file and then deconstruct it so they can be combined together. 
 parts <- future_map(
@@ -89,7 +89,7 @@ parts <- future_map(
   .options  = furrr_options(seed = TRUE, chunk_size = 5)
 )
 
-plan(sequential)
+#plan(sequential)
 
 # bind together to make a data frame
 dt <- rbindlist(compact(parts), use.names = TRUE, fill = TRUE)
@@ -124,7 +124,7 @@ colnames(full_time2)=c("DateTime") #make it a data frame to merge to make obs1 l
 
 #final_df$DateTime <- as.POSIXct(strptime(final_df$DateTime, "%Y-%m-%d %H:%M"), tz = "EST") #get dates aligned
 
-if (length(na.omit(weirdata$TIMESTAMP[weirdata$TIMESTAMP>start.time2]))<2) { #if there is no data after start time, then a pdf will be made explaining this
+if (length(na.omit(final_df$DateTime[final_df$DateTime>start.time2]))<2) { #if there is no data after start time, then a pdf will be made explaining this
   pdf(paste0("SawMillBranchDataFigures_", Sys.Date(), ".pdf"), width=8.5, height=11) #call PDF file
   plot(NA, xlim=c(0,5), ylim=c(0,5), bty='n',xaxt='n', yaxt='n', xlab='', ylab='') #creates empty plot
   mtext(paste("No data found between", start.time2, "and", end.time2, sep = " ")) #fills in text in top margin of plot
