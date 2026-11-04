@@ -10,8 +10,12 @@ pacman::p_load(arrow, lubridate, tidyverse,furrr,purrr, data.table)
 
 # AWS access keys
 
-Sys.setenv("AWS_ACCESS_KEY_ID" = Sys.getenv('MW_ACCESS_KEY_ID'),
-           "AWS_SECRET_ACCESS_KEY" = Sys.getenv('MW_ACCESS_SECRET'))
+#Sys.setenv("AWS_ACCESS_KEY_ID" = Sys.getenv('MW_ACCESS_KEY_ID'),
+#           "AWS_SECRET_ACCESS_KEY" = Sys.getenv('MW_ACCESS_SECRET'))
+
+duckdbfs::duckdb_secrets(
+  key = Sys.getenv("AWS_ACCESS_KEY_ID"),
+  secret = Sys.getenv("AWS_SECRET_ACCESS_KEY"))
 
 # Name the bucket, region, and column headers for the file
 BUCKET <- "cef-carvins-streams"
