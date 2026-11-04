@@ -53,6 +53,7 @@ jobs:
             library(pacman)
             p_load(
               arrow,
+              duckdbfs,
               Rcpp,
               generics,
               lubridate,
