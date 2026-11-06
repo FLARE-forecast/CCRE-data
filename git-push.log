@@ -184618,3 +184618,27 @@ Completed at 08/17/23 12:24:22 EST
 11/06/26 00:30:33 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
 11/06/26 00:30:33 EST -0500 |    6333c1e..c699133  c699133bd52fbcaf20cd03d4cc813e113d1ed2ec -> ccre-dam-data
 11/06/26 00:30:33 EST -0500 | Successfully pushed: c699133bd52fbcaf20cd03d4cc813e113d1ed2ec
+11/06/26 00:30:33 EST -0500 | Processing: /data/annie-logs
+11/06/26 00:30:34 EST -0500 | [annie-logs 971150d] Fri 2026-11-06 00:30:33 EST
+11/06/26 00:30:34 EST -0500 |  1 file changed, 21 insertions(+)
+11/06/26 00:30:34 EST -0500 | Found unpushed commit(s).
+11/06/26 00:30:37 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+11/06/26 00:30:37 EST -0500 |    b775cea..971150d  971150da0aa353fc278d17fd03e98d98ef5c14a4 -> annie-logs
+11/06/26 00:30:38 EST -0500 | Successfully pushed: 971150da0aa353fc278d17fd03e98d98ef5c14a4
+11/06/26 00:30:38 EST -0500 | Processing: /data/ccre-eddyflux-data
+11/06/26 00:30:38 EST -0500 | On branch ccre-eddyflux-data
+11/06/26 00:30:38 EST -0500 | Your branch is up to date with 'origin/ccre-eddyflux-data'.
+11/06/26 00:30:38 EST -0500 | 
+11/06/26 00:30:38 EST -0500 | nothing to commit, working tree clean
+11/06/26 00:30:38 EST -0500 | ##########  END  ##########
+11/06/26 08:30:01 EST -0500 | ########## START ##########
+11/06/26 08:30:01 EST -0500 | Processing: /data/ccre-dam-data
+11/06/26 08:30:04 EST -0500 | [ccre-dam-data 34ac602] Fri 2026-11-06 08:30:01 EST
+11/06/26 08:30:04 EST -0500 |  2 files changed, 527 insertions(+)
+11/06/26 08:30:04 EST -0500 | Found unpushed commit(s).
+11/06/26 08:30:12 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+11/06/26 08:30:12 EST -0500 | remote: warning: File ccre-met.csv is 54.22 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+11/06/26 08:30:12 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+11/06/26 08:30:13 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+11/06/26 08:30:14 EST -0500 |    c699133..34ac602  34ac602ad025dadac6c045f761fe93e9c1db865f -> ccre-dam-data
+11/06/26 08:30:14 EST -0500 | Successfully pushed: 34ac602ad025dadac6c045f761fe93e9c1db865f
