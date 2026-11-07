@@ -184706,3 +184706,28 @@ Completed at 08/17/23 12:24:22 EST
 11/07/26 00:13:27 EST -0500 | Your branch is up to date with 'origin/ccre-dam-data'.
 11/07/26 00:13:27 EST -0500 | 
 11/07/26 00:13:27 EST -0500 | nothing to commit, working tree clean
+11/07/26 00:13:27 EST -0500 | Processing: /data/annie-logs
+11/07/26 00:13:27 EST -0500 | [annie-logs 1f87bf2] Sat 2026-11-07 00:13:27 EST
+11/07/26 00:13:27 EST -0500 |  1 file changed, 18 insertions(+)
+11/07/26 00:13:27 EST -0500 | Found unpushed commit(s).
+11/07/26 00:13:31 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+11/07/26 00:13:31 EST -0500 |    fb08f2b..1f87bf2  1f87bf2cbc4fa5fc6622ab37b4f2950bbbd1c08d -> annie-logs
+11/07/26 00:13:31 EST -0500 | Successfully pushed: 1f87bf2cbc4fa5fc6622ab37b4f2950bbbd1c08d
+11/07/26 00:13:31 EST -0500 | Processing: /data/ccre-eddyflux-data
+11/07/26 00:13:31 EST -0500 | On branch ccre-eddyflux-data
+11/07/26 00:13:31 EST -0500 | Your branch is up to date with 'origin/ccre-eddyflux-data'.
+11/07/26 00:13:31 EST -0500 | 
+11/07/26 00:13:31 EST -0500 | nothing to commit, working tree clean
+11/07/26 00:13:31 EST -0500 | ##########  END  ##########
+11/07/26 00:23:35 EST -0500 | ########## START ##########
+11/07/26 00:23:35 EST -0500 | Processing: /data/ccre-dam-data
+11/07/26 00:23:39 EST -0500 | [ccre-dam-data d53701d] Sat 2026-11-07 00:23:35 EST
+11/07/26 00:23:39 EST -0500 |  2 files changed, 79 insertions(+)
+11/07/26 00:23:39 EST -0500 | Found unpushed commit(s).
+11/07/26 00:23:45 EST -0500 | remote: warning: See https://gh.io/lfs for more information.        
+11/07/26 00:23:45 EST -0500 | remote: warning: File ccre-met.csv is 54.33 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+11/07/26 00:23:45 EST -0500 | remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+11/07/26 00:23:47 EST -0500 | To github.com:FLARE-forecast/CCRE-data.git
+11/07/26 00:23:47 EST -0500 |    c12ad81..d53701d  d53701de08fe392095ee807ccca176b0f177b346 -> ccre-dam-data
+11/07/26 00:23:47 EST -0500 | Successfully pushed: d53701de08fe392095ee807ccca176b0f177b346
+11/07/26 00:23:47 EST -0500 | Processing: /data/annie-logs
